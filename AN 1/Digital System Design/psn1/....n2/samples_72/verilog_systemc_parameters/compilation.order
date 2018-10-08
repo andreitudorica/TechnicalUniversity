@@ -1,0 +1,7 @@
+.\src\systemc2verilog\integer\verilog.v
+.\src\systemc2verilog\real\verilog.v
+.\src\systemc2verilog\string\verilog.v
+.\src\systemc2verilog\vector\verilog.v
+.\src\verilog2systemc\integer\verilog.v
+.\src\verilog2systemc\real\verilog.v
+.\src\verilog2systemc\string\verilog.v

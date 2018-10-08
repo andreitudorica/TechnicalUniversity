@@ -1,0 +1,12 @@
+[Version]
+Version=7.2
+[Designs]
+num8_din2=.\num8_din2\num8_din2.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+num8_din2=1

@@ -1,0 +1,284 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity decoder is 
+	port(data:in std_logic_vector(7 downto 0);clk:in std_logic;
+	afis:out std_logic_vector(6 downto 0);anod:out std_logic_vector(3 downto 0));
+end decoder;
+
+architecture decode of decoder is
+signal intQ: std_logic_vector(6 downto 0);
+begin	
+	process(clk)
+	begin
+	anod<="0111";
+	if (clk'event) and (clk='1') then
+	case data is
+		when "01000101" => intq<="0000001"; -- 0 
+		when "00011100" => intq<="0001000"; -- A
+		when "00100001" => intq<="0110001"; -- C
+		when "00100100" => intq<="0110000"; -- E
+		when "00101011" => intq<="0111000"; -- F
+      when "00010110" => intq<="1001111"; -- 1
+      when "00011110" => intq<="0010010"; -- 2
+      when "00100110" => intq<="0000110"; -- 3
+      when "00100101" => intq<="1001100"; -- 4
+      when others => intq<="1111110";		
+	end case;
+	end if;
+	afis<=intq;
+	end process;
+end decode;
+	
+
+
+--------------------------------------------------------------------------------------------
+
+
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity reg is
+	port (clk:in std_logic; reset:in std_logic; d:in std_logic_vector(7 downto 0); we:in std_logic;
+	q:out std_logic_vector(7 downto 0));
+end reg;
+
+architecture reg1 of reg is		
+signal int:std_logic_vector(7 downto 0);
+begin		
+p1:process(clk)	
+variable int2:std_logic_vector(7 downto 0);
+begin
+	if reset='1' then
+		int2:="00000000";
+	else if (we='1') then
+		if (clk'event)and(clk='1') then
+			int2:=d;
+		end if;
+	end if;	
+	end if;	 
+	q<=int2;
+	end process p1;
+end reg1;
+
+
+
+
+-----------------------------------------------------------------------------------------------
+
+
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity shift_register is
+	port (din:in std_logic; clk:in std_logic; rst:in std_logic;
+	q:out std_logic_vector(7 downto 0));
+end shift_register;			
+
+architecture arh1 of shift_register is	
+signal aux:std_logic_vector(10 downto 0);
+begin	
+	process(clk,rst)
+	begin
+		if (rst='1') then	   
+			aux<="00000000000";
+		else if (clk='1')and (clk'event) then 
+			for i in 0 to 9 loop 
+				aux(i)<=aux(i+1);
+			end loop;
+			aux(10)<=din;
+		end if;
+		end if;	 
+	q<=aux(8 downto 1);
+	end process;
+end arh1;
+
+
+------------------------------------------------------------------------------------------------------
+
+
+
+
+
+library ieee;
+use ieee.std_logic_1164.all;
+ 
+entity D_FF is
+   port
+   (
+      clk:in std_logic;
+      rst:in std_logic;
+      pre:in std_logic;
+      ce:in std_logic;
+      d:in std_logic;
+      q:out std_logic
+   );
+end entity D_FF;
+ 
+architecture D of D_FF is
+begin
+   process (clk) is
+   begin
+      if (clk'event) and (clk='1') then  
+         if (rst='1') then   
+            q <= '0';
+         elsif (pre='1') then
+            q <= '1';
+         elsif (ce='1') then
+            q <= d;
+         end if;
+      end if;
+   end process;
+end architecture D;	
+
+
+----------------------------------------------------------------------------------------------------------
+
+
+
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity counter is 
+	port(clk:in std_logic; z:out std_logic);
+end counter;
+
+architecture count of counter is 
+signal intz:std_logic;
+begin
+	count1:process(clk)
+	variable v:integer range 0 to 10:=0;
+	begin
+		if(clk'event)and(clk='1')then
+			if (v=10) then
+				intz<='1';
+				v:=0;
+			else 
+				intz<='0';
+				v:=v+1;
+			end if;
+		end if;
+	z<=intz;
+	end process count1;
+end count;
+
+
+
+------------------------------------------------------------------------------------------------------------
+
+
+
+
+		   
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity debounce is
+  generic(
+    c_s:integer := 10); --counter size 
+  port(
+    clk:in std_logic;  --input clock
+    b:in std_logic;  --input signal to be debounced
+    r:out std_logic); --debounced signal
+end debounce;
+
+architecture deb of debounce is
+  signal ff :std_logic_vector (1 downto 0); --input flip flops
+  signal cset : std_logic;--sync reset to zero
+  signal cout : std_logic_vector(c_s downto 0):=(others=>'0'); --counter output
+BEGIN
+
+  cset<=ff(0) xor ff(1);--determine when to start/reset counter
+  
+  process(clk)
+  begin
+    if(clk'event )and (clk = '1') then
+      ff(0)<=b;
+      ff(1)<=ff(0);
+      If(cset = '1') THEN                  --reset counter because input is changing
+        cout<=(others=>'0');
+      elsif(cout(c_s)='0')then			 --stable input time is not yet met
+        cout<= cout+1;
+      else                                       --stable input time is met
+        r<=ff(1);
+     end if;    
+    end if;
+  end process;
+end deb;
+
+
+------------------------------------------------------------------------------------------------------------
+
+
+
+					  library ieee;	   
+library work;
+use ieee.std_logic_1164.all;
+use work.all;
+
+
+entity ps_2 is
+	port(serial:in std_logic; clk:in std_logic; rst:in std_logic; ps2_clock:in std_logic;
+	afis:out std_logic_vector(6 downto 0); anod: out std_logic_vector(3 downto 0));
+end ps_2;
+
+architecture keyboard of ps_2 is
+	component shift_register
+		port (din:in std_logic; clk:in std_logic; rst:in std_logic;
+	q:out std_logic_vector(7 downto 0));
+	end component;
+	
+	component reg 
+		port (clk:in std_logic; reset:in std_logic; d:in std_logic_vector(7 downto 0); we:in std_logic;
+	q:out std_logic_vector(7 downto 0));
+	end component;
+	
+	component decoder 
+		port(data:in std_logic_vector(7 downto 0); clk:in std_logic;
+	afis:out std_logic_vector(6 downto 0); anod:out std_logic_vector(3 downto 0));
+	end component;	   
+	
+	component D_FF
+		port(
+      clk:in std_logic;
+      rst:in std_logic;
+      pre:in std_logic;
+      ce :in std_logic;
+      d:in std_logic;
+      q:out std_logic);
+   end component;  
+   
+   component counter 
+	port(clk:in std_logic; z:out std_logic);
+end component; 
+
+component debounce
+	port(
+    clk:in std_logic; 
+    b:in std_logic;  --button
+    r:out std_logic); --result
+end component;
+	
+	signal int_shift_mem : std_logic_vector(7 downto 0);
+	signal int_mem_dec : std_logic_vector(7 downto 0);
+	signal int_reset,rst_we : std_logic;	
+	signal ps2_clock_sync,serial_data,ps2_clock_debounced,serial_data_debounced:std_logic;
+begin 			
+	deb1:debounce port map(clk,ps2_clock_sync,ps2_clock_debounced);
+	deb2:debounce port map(clk,serial_data,serial_data_debounced);
+	count:counter port map(ps2_clock_debounced,rst_we);
+	d_clock:D_FF port map(clk,rst,'0','1',ps2_clock,ps2_clock_sync);
+	d_data:D_FF port map(clk,rst,'0','1',serial,serial_data);
+	d1:D_FF port map(clk, rst, '0','1',rst_we,int_reset);	  	 
+	sh1:shift_register port map(serial_data_debounced,ps2_clock_debounced,rst,int_shift_mem);
+	r1:reg port map(clk,rst,int_shift_mem,int_reset,int_mem_dec);
+	de1:decoder port map(int_mem_dec,clk,afis,anod);
+end keyboard;

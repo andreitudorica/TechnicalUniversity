@@ -1,0 +1,149 @@
+<html>
+<head>
+	<title>Readme</title>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+	<meta name="author" content="Arek Golec">
+	<link rel="stylesheet" type="text/css" href="../readme_files/style.css">
+</head>
+
+<body>
+<h3>DESCRIPTION:</h3>
+
+<p>
+	The MATLAB_DEMODULATOR is a simple Verilog example of a digital demodulator using a low pass filter to extract the shape of the modulating signal.
+</p>
+
+<p>
+	The purpose of this design is to demonstrate the capabilities of the Active-HDL CoSimulation Interface to MATLAB&reg;.
+</p>
+
+<p>
+	MATLAB&reg; software can be downloaded from the MathWorks website <a href="http://www.mathworks.com">www.mathworks.com</a>.
+</p>
+
+<p>
+	The design consists of a demodulator design and a testbench. Both are described in VHDL. Block Diagrams are used to connect basic blocks coded in Verilog. The demodulator consists of a block calculating an absolute value of the modulated signal and two types of a low pass filter. A simple averaging filter and a 2-nd order Bessel filter compete against each other. The purpose of the testbench is to analyze the quality of the output signal received from both filters. The testbench uses a set of foreign functions and procedures provided by the Active-HDL Co-simulation Interface to MATLAB. These functions allow to move a part of the testbench to the MATLAB environment and use its analysis and visualization capabilities. The testbench is created as a Block Diagram. This makes it well legible and simplifies design understanding.
+</p>
+
+<p>
+	<img src="../readme_files/matlab_cosim.png" alt="Fig. 1. Active-HDL Co-simulation Interface to MATLAB"><br>
+	<i>Fig. 1. Active-HDL Co-simulation Interface to MATLAB</i>
+</p>
+<p>
+	The Verilog part of the testbench generates control signals for the filter (RESET, CLK, RDY), instantiates the FFT entity, and uses functions responsible for the control over MATLAB and data transfer between Active-HDL and the MATLAB workspace.<br>
+	The MATLAB part of testbench is divided to four processes. First, the "prepare_wave" initial block configures parameters of generated signal, generates 1024 samples, plots the waveform in the MATLAB graph along with its spectrum, and transfers it to Verilog in order to drive the demodulator input. The second process, "feed_wave" takes subsequent samples and drives the input. The third process "collect_output" gathers the last 512 samples of the output signal. The last process, "analyze_output", transfers collected data to MATLAB, calculates the FFT and the parameters of output signals: the amplitude of the demodulated signal, the carrier to signal power ratio, and the total harmonic distortion. Finally, it draws the spectra of both output signals. 
+</p>
+
+<h3>THE TESTBENCH SCENARIO:</h3>
+
+<ol>
+	<li>Generate the modulated signal in MATLAB,</li>
+	<li>Visualize the input waveform and its spectrum in MATLAB.</li>
+	<li>Drive the demodulator design with the modulated signal in Verilog,</li>
+	<li>Visualize contents and compare quality of the output signals in MATLAB.</li>
+	<li>Print a report in Active-HDL console.</li>
+</ol>
+
+<h3>FILES:</h3>
+<ol>
+	<li>Active-HDL design resources:
+		<ul>
+			<li>readme.html - this file</li>
+			<li>compile.do - compilation macro</li>
+			<li>run.do - simulation macro</li>
+			<li>abs.v - rectifier Verilog source file</li>
+			<li>filter_simple.v - averaging filter Verilog source file</li>
+			<li>filter_bessel.v - Bessel filter Verilog source file</li>
+			<li>DSP.bde - demodulator Block Diagram source file</li>
+			<li>DSP_test.bde - testbench Block Diagram source file</li>
+		</ul>
+
+		<br>
+	</li>
+
+	<li>MATLAB M-files:
+		<ul>
+			<li>do_mod.m - modulated signal generation and plotting</li>
+			<li>do_fft.m - quality analysis of demodulator outputs</li>
+		</ul>
+
+		<br>
+	</li>
+</ol>
+
+
+<H3>SETUP:</H3>
+<p>
+	Before the very first use of the interface, type in the following command at the command prompt: "matlab /regserver". The command needs to be entered only once. (You do not need to re-enter it even after a system restart.)
+</p>
+<p>
+	Before co-simulation, all folders containing M-Files and other files referred in MATLAB during co-simulation must be added to MATLAB search path. This step is not necessary as long as the M-Files are located in Active-HDL current folder (pwd) when the co-simulation starts (i.e. when the asim command is invoked). The M-Files for this design are located in the "$DSN/src" directory. As long as the current folder is set to "$DSN/src" (this is the default) you do not have to worry about MATLAB search path.
+</p>
+
+<p>
+	Additionally, the "$MATLAB\bin\win32" folder (where $MATLAB stands for the MATLAB installation folder) must be added to the system path (%PATH%).
+</p>
+
+
+<h3>COSIMULATION:</h3>
+<p>
+	The macro files attached to the design are provided for automation of the co-simulation process. Use the 'compile.do' macro to compile the necessary design files. Use the 'run.do' macro to start the co-simulation. During simulation, the 'MATLAB Command Window' opens and a set of plots visualize the analyzed data.
+</p>
+<p>
+	The connection to MATLAB is established automatically when any of the following tasks is reached in the VHDL code:
+</p>
+
+<ul>
+	<li>$eval_string()</li>
+	<li>$put_variable()</li>
+	<li>$get_variable()</li>
+	<li>$put_item()</li>
+	<li>$get_item()</li>
+	<li>$hdl2ml()</li>
+	<li>$ml2hdl()</li>
+</ul>
+
+<p>
+	In the example, the first executed procedure call is $put_variable().
+</p>
+
+<p>
+	After you execute the "run.do" macro, connection to MATLAB is established and as the co-simulation advances, a set of plots presented below, displaying input and output signals can be observed.<br>
+</p>
+
+<p>
+	<img src="../readme_files/results.png" alt="Fig. 2. Analysis results in MATLAB plots"><br>
+	<i>Fig. 2. Analysis results in MATLAB plots</i>
+<p>
+
+<p>
+	As a result of co-simulation a report is printed on console:
+</p>
+
+<p>
+<ul>
+	<li># KERNEL: Parameters of signal demodulated using simple filter:</li>
+	<li># KERNEL: 1. Amplitude: 1.133838 (relative to the modulating signal)</li>
+	<li># KERNEL: 2. Carrier Power to Signal Power ratio: -16.373621 dB.</li>
+	<li># KERNEL: 3. THD: 18.576054 %.</li>
+	<li># KERNEL: Parameters of signal demodulated using Bessel filter:</li>
+	<li># KERNEL: 1. Amplitude: 1.216866 (relative to the modulating signal)</li>
+	<li># KERNEL: 2. Carrier Power to Signal Power ratio: -35.037565 dB.</li>
+	<li># KERNEL: 3. THD: 3.161448 %.</li>
+</ul>
+</p>
+<p>
+	In Active-HDL you can observe the shapes of output signals so you can examine them visually.
+</p>
+<p>
+	<img src="../readme_files/results_wave.png" alt="Fig. 3. Analysis results in Active-HDL waveform"><br>
+	<i>Fig. 3. Analysis results in Active-HDL waveform</i>
+
+<p>
+	You can replace example filters with your own filters and analyze their quality. 
+</p> 
+
+
+</body>
+</html>
+

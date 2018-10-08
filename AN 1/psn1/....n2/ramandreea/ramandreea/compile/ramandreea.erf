@@ -1,0 +1,4 @@
+MESSAGE "File: c:\My_Designs\ramandreea\ramandreea\src\ramandreea.vhd" 
+MESSAGE "Compile Entity "RAM"" 
+MESSAGE "Compile Architecture "architecture_RAM" of Entity "RAM"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [s]" 

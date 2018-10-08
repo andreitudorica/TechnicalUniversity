@@ -1,0 +1,4 @@
+MESSAGE "File: c:\My_Designs\Colocviu\20\a20\src\douazeci.vhd" 
+MESSAGE "Compile Entity "a20"" 
+MESSAGE "Compile Architecture "arhitectura_a20" of Entity "a20"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 

@@ -1,0 +1,5 @@
+MESSAGE "File: D:\Incercari\VHDL\lift3i\lif\src\main.vhd" 
+MESSAGE "Compile Entity "main"" 
+MESSAGE "Entity `main' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "arh_main" of Entity "main"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]" 

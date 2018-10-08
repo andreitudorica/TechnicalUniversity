@@ -1,0 +1,12 @@
+[Version]
+Version=7.2
+[Designs]
+kjh=.\kjh\kjh.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+kjh=1

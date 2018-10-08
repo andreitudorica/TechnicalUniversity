@@ -1,0 +1,4 @@
+MESSAGE "File: C:\My_Designs\memrom\memrom\src\memrom.vhd" 
+MESSAGE "Compile Entity "mem_rom"" 
+MESSAGE "Compile Architecture "rom" of Entity "mem_rom"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [s]" 

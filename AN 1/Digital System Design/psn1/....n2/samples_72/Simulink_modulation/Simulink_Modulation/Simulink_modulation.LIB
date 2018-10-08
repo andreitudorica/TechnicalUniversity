@@ -1,0 +1,31 @@
+timestamp=1172132570088
+
+[fir_32tap_8_8]
+A/behavioural=21|./src/fir_32.vhd|30|
+S/fir_32tap_8_8=S/FIR_32tap_8_8 40|0|2*0
+
+[m_abs]
+A/beh=21|./src/abs.vhd|13|
+S/m_abs=40|0|2*2358
+
+[sign]
+A/beh=21|./src/sign.vhd|11|
+S/sign=40|0|2*3508
+
+[top_demodulator]
+A/top_demodulator=24|.\src\top_demodulator.bde|10000|
+
+[~A]
+ModifyID=77
+Version=73
+
+[~MFT]
+0=0|0Simulink_modulation.mgf|811|0
+2=0|2Simulink_modulation.mgf|3508|0
+
+[~U]
+fir_32tap_8_8=FIR_32tap_8_8 11|0*0||0x3
+m_abs=11|0*504||0x3
+sign=11|0*659||0x3
+top_demodulator=11|0*811|
+

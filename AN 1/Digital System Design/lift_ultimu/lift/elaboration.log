@@ -1,0 +1,18 @@
+elbread.dll ver. 1.0.5.365 Thu May 21 20:15:16 2009
+
+
+--------------------------------
+Entity  | Architecture | Library
+--------------------------------
+main    | arh_main     | lift
+--------------------------------
+
+-----------------------------
+Package             | Library
+-----------------------------
+standard            | std
+std_logic_1164      | ieee
+std_logic_arith     | ieee
+numeric_std         | ieee
+std_logic_unsigned  | ieee
+-----------------------------

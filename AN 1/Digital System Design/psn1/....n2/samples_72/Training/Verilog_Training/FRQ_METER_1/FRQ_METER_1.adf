@@ -1,0 +1,50 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=1
+modified=14
+Current Config=compile
+
+[Configurations]
+compile=FRQ_METER_1
+
+[Library]
+FRQ_METER_1=.\FRQ_METER_1.LIB
+
+[Groups]
+FUNCTIONAL=1
+
+[Settings]
+SYNTH_TOOL=Synopsys
+IMPL_TOOL=Xilinx
+FAMILY=XC4000E
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+
+[$LibMap$]
+FRQ_METER_1=.
+Active_lib=XC4000E
+xilinxun=XC4000E
+UnlinkedDesignLibrary=XC4000E
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/CNT_4b.do=-1
+FUNCTIONAL/AND2.v=-1
+FUNCTIONAL/HEX2LED.v=-1
+FUNCTIONAL/CNT_4b.v=-1
+FUNCTIONAL/CNT_BCD.bde=-1
+
+[Files.Data]
+.\src\CNT_4b.do=Macro
+.\src\FUNCTIONAL\AND2.v=Verilog Source Code
+.\src\FUNCTIONAL\HEX2LED.v=Verilog Source Code
+.\src\FUNCTIONAL\CNT_4b.v=Verilog Source Code
+.\src\FUNCTIONAL\CNT_BCD.bde=Block Diagram
+

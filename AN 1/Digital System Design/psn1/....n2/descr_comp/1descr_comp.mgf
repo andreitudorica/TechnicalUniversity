@@ -1,0 +1,32 @@
+V 000051 55 1502          1304511640236 descr_comp
+(_unit VHDL (sumator 0 28 (descr_comp 0 35 ))
+  (_version v38)
+  (_time 1304511640237 2011.05.04 15:20:40)
+  (_source (\./src/descr_comp.vhd\))
+  (_use (std(standard))(ieee(std_logic_1164)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304511640233)
+    (_use )
+  )
+  (_object
+    (_port (_internal a ~extSTD.STANDARD.BIT 0 29 (_entity (_in ))))
+    (_port (_internal b ~extSTD.STANDARD.BIT 0 29 (_entity (_in ))))
+    (_port (_internal cin ~extSTD.STANDARD.BIT 0 29 (_entity (_in ))))
+    (_port (_internal s ~extSTD.STANDARD.BIT 0 30 (_entity (_out ))))
+    (_port (_internal cout ~extSTD.STANDARD.BIT 0 30 (_entity (_out ))))
+    (_variable (_internal L ~extSTD.STANDARD.INTEGER 0 38 (_process 0 )))
+    (_type (_internal ~BIT_VECTOR{0~to~3}~13 0 39 (_array ~extSTD.STANDARD.BIT ((_to (i 0)(i 3))))))
+    (_constant (_internal tabel_s ~BIT_VECTOR{0~to~3}~13 0 39 (_process 0 (_string \"0101"\))))
+    (_type (_internal ~BIT_VECTOR{0~to~3}~132 0 40 (_array ~extSTD.STANDARD.BIT ((_to (i 0)(i 3))))))
+    (_constant (_internal tabel_cout ~BIT_VECTOR{0~to~3}~132 0 40 (_process 0 (_string \"0011"\))))
+    (_process
+      (line__37(_architecture 0 0 37 (_process (_simple)(_target(4)(3))(_sensitivity(2)(1)(0)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+    (_type (_external ~extSTD.STANDARD.INTEGER (std STANDARD INTEGER)))
+    (_type (_external ~extSTD.STANDARD.BIT_VECTOR (std STANDARD BIT_VECTOR)))
+  )
+  (_model . descr_comp 1 -1
+  )
+)

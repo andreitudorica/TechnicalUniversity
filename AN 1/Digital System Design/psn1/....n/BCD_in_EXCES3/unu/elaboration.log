@@ -1,0 +1,20 @@
+elbread.dll ver. 1.0.5.375 Tue May 17 14:26:20 2011
+
+
+------------------------------------------
+Entity    | Architecture         | Library
+------------------------------------------
+unu       | arhitectura_unu      | unu
+inversor  | arhitectura_inversor | unu
+si        | arhitectura_si       | unu
+sau_2     | sau_2                | unu
+sau_3     | arhitectura_sau_3    | unu
+si_3      | si_3                 | unu
+------------------------------------------
+
+-------------------------
+Package         | Library
+-------------------------
+standard        | std
+std_logic_1164  | ieee
+-------------------------

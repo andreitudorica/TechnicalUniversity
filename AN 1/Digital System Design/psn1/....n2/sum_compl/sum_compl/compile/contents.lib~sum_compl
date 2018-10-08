@@ -1,0 +1,3 @@
+4
+~E 1 "./src/sum_compl.vhd" 28 sum_compl
+~A 1 "./src/sum_compl.vhd" 36 struct_sum_compl

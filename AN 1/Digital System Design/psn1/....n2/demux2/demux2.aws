@@ -1,0 +1,12 @@
+[Version]
+Version=7.2
+[Designs]
+demux2=.\demux2\demux2.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+demux2=1

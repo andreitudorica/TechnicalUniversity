@@ -1,0 +1,650 @@
+V 000043 40 5469 1047632870799 automachine
+SYMB0100
+HEADER
+{
+ VARIABLES
+ {
+  #DESCRIPTION=""
+  #FUB="1"
+  #LANGUAGE="VHDL"
+  #MODIFIED="1002109769"
+ }
+}
+PAGE "" 
+{
+ PAGEHEADER
+ {
+  RECT (0,0,240,240)
+  FREEID 63
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (0,0,240,240)
+  }
+  TEXT  4, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (14,208,54,232)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 3
+  }
+  TEXT  9, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (14,168,55,192)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 8
+  }
+  TEXT  14, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (14,148,54,172)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 13
+  }
+  TEXT  19, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (14,128,55,152)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 18
+  }
+  TEXT  24, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (14,108,55,132)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 23
+  }
+  TEXT  29, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (14,68,49,92)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 28
+  }
+  TEXT  34, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (14,48,48,72)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 33
+  }
+  TEXT  39, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (14,8,36,32)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 38
+  }
+  TEXT  44, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (147,28,227,52)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 43
+  }
+  TEXT  49, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (174,68,227,92)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 48
+  }
+  TEXT  54, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (187,128,227,152)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 53
+  }
+  TEXT  62, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (176,168,217,192)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 61
+  }
+  PIN  3, 0, 0
+  {
+   COORD (0,220)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LABEL="In"
+    #MODIFIED="1"
+    #NAME="CLK"
+    #NUMBER="1"
+    #SIDE="left"
+    #VHDL_TYPE="std_logic"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (0,-10), (0,10), (10,0), (0,-10) )
+    FILL (0,(0,0,0),0)
+   }
+  }
+  PIN  8, 0, 0
+  {
+   COORD (0,180)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LABEL="In"
+    #MODIFIED="1"
+    #NAME="DET"
+    #NUMBER="2"
+    #SIDE="left"
+    #VHDL_TYPE="std_logic"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (0,-10), (0,10), (10,0), (0,-10) )
+    FILL (0,(0,0,0),0)
+   }
+  }
+  PIN  13, 0, 0
+  {
+   COORD (0,160)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LABEL="In"
+    #MODIFIED="1"
+    #NAME="STP"
+    #NUMBER="3"
+    #SIDE="left"
+    #VHDL_TYPE="std_logic"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (0,-10), (0,10), (10,0), (0,-10) )
+    FILL (0,(0,0,0),0)
+   }
+  }
+  PIN  18, 0, 0
+  {
+   COORD (0,140)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LABEL="In"
+    #MODIFIED="1"
+    #NAME="STR"
+    #NUMBER="4"
+    #SIDE="left"
+    #VHDL_TYPE="std_logic"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (0,-10), (0,10), (10,0), (0,-10) )
+    FILL (0,(0,0,0),0)
+   }
+  }
+  PIN  23, 0, 0
+  {
+   COORD (0,120)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LABEL="In"
+    #MODIFIED="1"
+    #NAME="RST"
+    #NUMBER="5"
+    #SIDE="left"
+    #VHDL_TYPE="std_logic"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (0,-10), (0,10), (10,0), (0,-10) )
+    FILL (0,(0,0,0),0)
+   }
+  }
+  PIN  28, 0, 0
+  {
+   COORD (0,80)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LABEL="In"
+    #MODIFIED="1"
+    #NAME="TIM"
+    #NUMBER="6"
+    #SIDE="left"
+    #VHDL_TYPE="std_logic"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (0,-10), (0,10), (10,0), (0,-10) )
+    FILL (0,(0,0,0),0)
+   }
+  }
+  PIN  33, 0, 0
+  {
+   COORD (0,60)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LABEL="In"
+    #MODIFIED="1"
+    #NAME="LIM"
+    #NUMBER="7"
+    #SIDE="left"
+    #VHDL_TYPE="std_logic"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (0,-10), (0,10), (10,0), (0,-10) )
+    FILL (0,(0,0,0),0)
+   }
+  }
+  PIN  38, 0, 0
+  {
+   COORD (0,20)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LABEL="In"
+    #MODIFIED="1"
+    #NAME="clr"
+    #NUMBER="8"
+    #SIDE="left"
+    #VHDL_TYPE="std_logic"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (0,-10), (0,10), (10,0), (0,-10) )
+    FILL (0,(0,0,0),0)
+   }
+  }
+  PIN  43, 0, 0
+  {
+   COORD (240,40)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LABEL="Out"
+    #MODIFIED="1"
+    #NAME="OUTPUT"
+    #NUMBER="9"
+    #SIDE="right"
+    #VHDL_TYPE="std_logic"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (0,0), (-10,-10), (-10,10), (0,0) )
+    FILL (0,(0,0,0),0)
+   }
+  }
+  PIN  48, 0, 0
+  {
+   COORD (240,80)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LABEL="Bus Out"
+    #MODIFIED="1"
+    #NAME="Y(2:0)"
+    #NUMBER="10"
+    #SIDE="right"
+    #VHDL_TYPE="std_logic_vector"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (0,0), (-10,-10), (-10,10), (0,0) )
+    FILL (0,(0,0,0),0)
+   }
+  }
+  PIN  53, 0, 0
+  {
+   COORD (240,140)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LABEL="Out"
+    #MODIFIED="1"
+    #NAME="CEL"
+    #NUMBER="11"
+    #SIDE="right"
+    #VHDL_TYPE="std_logic"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (0,0), (-10,-10), (-10,10), (0,0) )
+    FILL (0,(0,0,0),0)
+   }
+  }
+  PIN  61, 0, 0
+  {
+   COORD (240,180)
+   VARIABLES
+   {
+    #DIRECTION="INOUT"
+    #LABEL="InOut"
+    #MODIFIED="1"
+    #NAME="CET"
+    #NUMBER="12"
+    #SIDE="right"
+    #VHDL_TYPE="std_logic"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (0,0), (-10,-10), (-20,0), (-10,10), (0,0) )
+    FILL (0,(0,0,0),0)
+   }
+  }
+ }
+}
+V 000040 40 4345 1047632870809 counters
+SYMB0100
+HEADER
+{
+ VARIABLES
+ {
+  #DESCRIPTION=""
+  #FUB="1"
+  #LANGUAGE="VHDL"
+  #MODIFIED="1047632858"
+ }
+}
+PAGE "" 
+{
+ PAGEHEADER
+ {
+  RECT (0,0,220,200)
+  FREEID 122
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (0,0,220,200)
+  }
+  TEXT  63, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (105,148,206,172)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 62
+  }
+  TEXT  69, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (14,128,54,152)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 68
+  }
+  TEXT  75, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (14,28,55,52)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 74
+  }
+  TEXT  81, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (115,108,206,132)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 80
+  }
+  TEXT  87, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (14,148,77,172)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 86
+  }
+  TEXT  93, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (14,8,36,32)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 92
+  }
+  TEXT  99, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (171,48,206,72)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 98
+  }
+  TEXT  105, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (172,28,206,52)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 104
+  }
+  TEXT  111, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (14,68,54,92)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 110
+  }
+  TEXT  117, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (14,88,55,112)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 116
+  }
+  PIN  62, 0, 0
+  {
+   COORD (220,160)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #FAMILY="Fub"
+    #MODIFIED="1"
+    #NAME="TIMER(9:0)"
+    #NUMBER="0"
+    #PIN_STATE="0"
+    #SIDE="right"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (-10,10), (-10,-10), (0,0) )
+   }
+  }
+  PIN  68, 0, 0
+  {
+   COORD (0,140)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #MODIFIED="1"
+    #NAME="CLK"
+    #NUMBER="0"
+    #PIN_STATE="0"
+    #SIDE="left"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,-10), (0,10), (10,0), (0,-10) )
+   }
+  }
+  PIN  74, 0, 0
+  {
+   COORD (0,40)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #MODIFIED="1"
+    #NAME="DET"
+    #NUMBER="0"
+    #PIN_STATE="0"
+    #SIDE="left"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,-10), (0,10), (10,0), (0,-10) )
+   }
+  }
+  PIN  80, 0, 0
+  {
+   COORD (220,120)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #FAMILY="Fub"
+    #MODIFIED="1"
+    #NAME="LIMIT(5:0)"
+    #NUMBER="0"
+    #PIN_STATE="0"
+    #SIDE="right"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (-10,10), (-10,-10), (0,0) )
+   }
+  }
+  PIN  86, 0, 0
+  {
+   COORD (0,160)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #MODIFIED="1"
+    #NAME="CLK_T"
+    #NUMBER="0"
+    #PIN_STATE="0"
+    #SIDE="left"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,-10), (0,10), (10,0), (0,-10) )
+   }
+  }
+  PIN  92, 0, 0
+  {
+   COORD (0,20)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #MODIFIED="1"
+    #NAME="clr"
+    #NUMBER="0"
+    #PIN_STATE="0"
+    #SIDE="left"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,-10), (0,10), (10,0), (0,-10) )
+   }
+  }
+  PIN  98, 0, 0
+  {
+   COORD (220,60)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #FAMILY="Fub"
+    #MODIFIED="1"
+    #NAME="TIM"
+    #NUMBER="0"
+    #PIN_STATE="0"
+    #SIDE="right"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (-10,10), (-10,-10), (0,0) )
+   }
+  }
+  PIN  104, 0, 0
+  {
+   COORD (220,40)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #FAMILY="Fub"
+    #MODIFIED="1"
+    #NAME="LIM"
+    #NUMBER="0"
+    #PIN_STATE="0"
+    #SIDE="right"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (-10,10), (-10,-10), (0,0) )
+   }
+  }
+  PIN  110, 0, 0
+  {
+   COORD (0,80)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #MODIFIED="1"
+    #NAME="CEL"
+    #NUMBER="0"
+    #PIN_STATE="0"
+    #SIDE="left"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,-10), (0,10), (10,0), (0,-10) )
+   }
+  }
+  PIN  116, 0, 0
+  {
+   COORD (0,100)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #MODIFIED="1"
+    #NAME="CET"
+    #NUMBER="0"
+    #PIN_STATE="0"
+    #SIDE="left"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,-10), (0,10), (10,0), (0,-10) )
+   }
+  }
+ }
+}

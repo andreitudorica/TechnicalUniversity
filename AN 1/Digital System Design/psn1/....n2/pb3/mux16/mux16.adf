@@ -1,0 +1,34 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=mux16
+
+[Library]
+mux16=.\mux16.LIB
+
+[$LibMap$]
+mux16=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[Files]
+/mux16.vhd=-1
+
+[Files.Data]
+.\src\mux16.vhd=VHDL Source Code
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=mux|muxx|0  
+ShowHide=ShowTopLevel
+Selected=

@@ -1,0 +1,5 @@
+55
+~E 1 "./src/demux2.vhd" 6 demux2
+~A 1 "./src/demux2.vhd" 14 arhdemux2
+~E 1 "./src/demux2.vhd" 28 simdemux
+~A 1 "./src/demux2.vhd" 33 arhsim

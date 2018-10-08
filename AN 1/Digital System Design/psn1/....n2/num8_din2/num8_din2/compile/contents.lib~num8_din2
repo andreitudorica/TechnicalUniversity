@@ -1,0 +1,5 @@
+45
+~E 1 "./src/num8_din2.vhd" 6 num2
+~A 1 "./src/num8_din2.vhd" 12 n2
+~E 1 "./src/num8_din2.vhd" 28 num8
+~A 1 "./src/num8_din2.vhd" 37 n8

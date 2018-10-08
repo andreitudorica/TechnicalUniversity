@@ -1,0 +1,21 @@
+acom -work operations $DSN/src/operatii.vhd $DSN/src/scadere.vhd $DSN/src/impartire.vhd $DSN/src/inmultire.vhd $DSN/src/adunare.vhd $DSN/src/multiplexor.vhd
+# Compile...
+# File: C:\Users\Bobby\Desktop\Calculatorul de buzunar\operations\src\operatii.vhd
+# Compile Entity "operations"
+# Compile Architecture "operatii" of Entity "operations"
+# File: C:\Users\Bobby\Desktop\Calculatorul de buzunar\operations\src\scadere.vhd
+# Compile Entity "scadere"
+# Compile Architecture "substraction" of Entity "scadere"
+# File: C:\Users\Bobby\Desktop\Calculatorul de buzunar\operations\src\impartire.vhd
+# Compile Entity "impartire"
+# Compile Architecture "division" of Entity "impartire"
+# File: C:\Users\Bobby\Desktop\Calculatorul de buzunar\operations\src\inmultire.vhd
+# Compile Entity "inmultire"
+# Compile Architecture "multiplication" of Entity "inmultire"
+# File: C:\Users\Bobby\Desktop\Calculatorul de buzunar\operations\src\adunare.vhd
+# Compile Entity "adunare"
+# Compile Architecture "adding" of Entity "adunare"
+# File: C:\Users\Bobby\Desktop\Calculatorul de buzunar\operations\src\multiplexor.vhd
+# Compile Entity "multiplexor"
+# Compile Architecture "multiplexer" of Entity "multiplexor"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]

@@ -1,0 +1,6 @@
+MESSAGE "File: c:\My_Designs\scaz_compl\scaz_compl\src\scaz_compl.vhd" 
+MESSAGE "Compile Entity "scaz_compl"" 
+MESSAGE "Compile Architecture "arhscaz_compl" of Entity "scaz_compl"" 
+MESSAGE "Compile Entity "modul"" 
+MESSAGE "Compile Architecture "arhmodul" of Entity "modul"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 

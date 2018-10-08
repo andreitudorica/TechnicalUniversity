@@ -1,0 +1,4 @@
+MESSAGE "File: C:\Documents and Settings\Carmen Zdroba\Desktop\New Folder\NR_BIN\NR_BIN\src\noua.vhd" 
+MESSAGE "Compile Entity "noua"" 
+MESSAGE "Compile Architecture "arhitectura_noua" of Entity "noua"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]" 

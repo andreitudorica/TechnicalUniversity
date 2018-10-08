@@ -1,0 +1,8 @@
+V3 3
+FL D:/project_Laci/calculator.vhd 2011/05/17.11:45:58 O.40d
+EN work/calculator 1305621963 FL D:/project_Laci/calculator.vhd \
+      PB ieee/std_logic_1164 1296775758 PB ieee/std_logic_arith 1296775759 \
+      PB ieee/NUMERIC_STD 1296775759 PB ieee/NUMERIC_BIT 1296775758 \
+      PB ieee/STD_LOGIC_UNSIGNED 1296775760
+AR work/calculator/calc 1305621964 \
+      FL D:/project_Laci/calculator.vhd EN work/calculator 1305621963

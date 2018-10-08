@@ -1,0 +1,18 @@
+[General]
+CurrentVersion=103
+[CACHESIMPLE|Aldec.SymbolsCommands.7]
+Numarator_zecimal_sinc=1
+RAM_16X16=0
+Sumator_Scazator_4bit=0
+ROM_16X16=0
+Built-in symbols=0
+BCDtoDecimal=0
+BCDtoExcess3=0
+Comparator_2bit=0
+jk_sincron=0
+MUX_16_1=0
+Numarator_binar_sincron=0
+[CACHEDOC|Aldec.Project.Generic.7|c:\My_Designs\Colocviu_PSN\Numarator_zecimal_sinc\Numarator_zecimal_sinc.adf|]
+Path=
+[Gui config]
+RunFor=10 ns

@@ -1,0 +1,6 @@
+MESSAGE "File: c:\My_Designs\nimic\nimic\src\nimic.vhd" 
+MESSAGE "Compile Entity "and_b"" 
+MESSAGE "Compile Architecture "arhand_b" of Entity "and_b"" 
+MESSAGE "Compile Entity "nimic"" 
+MESSAGE "Compile Architecture "arhnimic" of Entity "nimic"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [s]" 

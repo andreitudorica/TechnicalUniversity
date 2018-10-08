@@ -1,0 +1,5 @@
+MESSAGE "File: C:\My_Designs\examen\bariere_pb2_sub2\src\cale_ferata.vhd" 
+MESSAGE "Compile Entity "senzori"" 
+MESSAGE "Entity `senzori' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "arh_senzori" of Entity "senzori"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]" 

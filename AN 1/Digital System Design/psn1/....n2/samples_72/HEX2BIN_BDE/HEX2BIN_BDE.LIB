@@ -1,0 +1,90 @@
+timestamp=1106043848602
+
+[ADRCNT]
+A/ADRCNT=24|.\src\ADRCNT.bde|10000|
+P/~emb=234,489,793,1332
+S/adrcnt=S/ADRCNT 40|0|2*0
+
+[ASCIIDEC]
+A/ASCIIDEC=22|./src/asciidec.v|25|
+P/~emb=191,399,593,713
+S/asciidec=S/ASCIIDEC 40|0|2*3001
+
+[CD4029]
+A/CD4029=22|./src/cd4029.v|25|
+P/~emb=253,435,677,851
+S/cd4029=S/CD4029 40|0|2*5292
+
+[COMP]
+A/COMP=22|./src/comp.v|25|
+P/~emb=139,280,450,530
+S/comp=S/COMP 40|0|2*8074
+
+[DAC_SC1]
+A/DAC_SC1=24|.\src\DAC_SC1.bde|10000|
+P/~emb=297,695,1094,1670
+
+[DATREG]
+A/DATREG=22|./src/datreg.v|25|
+P/~emb=205,401,608,725
+S/datreg=S/DATREG 40|0|2*9537
+
+[DAT_CNT]
+A/DAT_CNT=22|./src/dat_cnt.v|25|
+P/~emb=232,429,690,822
+S/dat_cnt=S/DAT_CNT 40|0|2*12196
+
+[INTELHEX]
+A/INTELHEX=22|./src/intelhex.v|25|
+P/~emb=463,759,1516,1825
+S/intelhex=S/INTELHEX 40|0|2*15212
+
+[LRC]
+A/LRC=24|.\src\LRC.bde|10000|
+P/~emb=229,536,985,1407
+S/lrc=S/LRC 40|0|2*21228
+
+[REG4]
+A/REG4=22|./src/reg4.v|25|
+P/~emb=194,358,544,649
+S/reg4=S/REG4 40|0|2*24268
+
+[SUB]
+A/SUB=22|./src/sub.v|25|
+P/~emb=55,486,773,965
+S/sub=S/SUB 40|0|2*26417
+
+[~A]
+ModifyID=785
+Version=73
+./compile/ADRCNT.v=0*8459*9104
+./compile/dac_sc1.v=0*10778*11546
+./compile/lrc.v=0*9558*10327
+./src/CD4029.v=0*0*534
+./src/INTELHEX.v=0*2005*3341
+./src/REG4.v=0*5653*6093
+./src/asciidec.v=0*984*1537
+./src/comp.v=0*4856*5205
+./src/dat_cnt.v=0*3809*4405
+./src/datreg.v=0*7482*8009
+./src/sub.v=0*6541*7035
+./src/uut_pli.v=0*13405*14419
+./src/uut_std.v=0*12001*12954
+
+[~MFT]
+0=0|0HEX2BIN_BDE.mgf|29395|0
+2=0|2HEX2BIN_BDE.mgf|26417|0
+
+[~U]
+ADRCNT=12|0*14918||0x93
+ASCIIDEC=12|0*16534||0x93
+CD4029=12|0*17592||0x93
+COMP=12|0*18719||0x93
+DAC_SC1=12|0*19407||0x90
+DATREG=12|0*21337||0x93
+DAT_CNT=12|0*22389||0x93
+INTELHEX=12|0*23589||0x93
+LRC=12|0*26689||0x93
+REG4=12|0*28535||0x93
+SUB=12|0*29395||0x93
+

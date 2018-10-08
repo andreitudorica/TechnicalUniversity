@@ -1,0 +1,40 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=Comparator
+
+[Library]
+Comparator=.\Comparator.LIB
+
+[$LibMap$]
+Comparator=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[Files]
+/patru.vhd=-1
+/si.vhd=-1
+/sau.vhd=-1
+/inversor.vhd=-1
+
+[Files.Data]
+.\src\patru.vhd=VHDL Source Code
+.\src\si.vhd=VHDL Source Code
+.\src\sau.vhd=VHDL Source Code
+.\src\inversor.vhd=VHDL Source Code
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=patru|arhitectura_patru|0   
+ShowHide=ShowTopLevel
+Selected=

@@ -1,0 +1,18 @@
+elbread.dll ver. 1.0.5.375 Tue May 17 15:44:47 2011
+
+
+----------------------------------
+Entity  | Architecture | Library
+----------------------------------
+num8    | n8           | num8_din2
+num2    | n2           | num8_din2
+----------------------------------
+
+-----------------------------
+Package             | Library
+-----------------------------
+standard            | std
+std_logic_1164      | ieee
+std_logic_arith     | ieee
+std_logic_unsigned  | ieee
+-----------------------------

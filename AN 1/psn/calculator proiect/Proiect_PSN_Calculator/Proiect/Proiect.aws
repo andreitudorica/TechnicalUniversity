@@ -1,0 +1,8 @@
+[Version]
+Version=8.1
+[Designs]
+Proiect=Proiect.adf
+[Settings]
+Active=Proiect
+[Expand]
+proiect=1

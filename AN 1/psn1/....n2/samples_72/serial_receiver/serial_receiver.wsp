@@ -1,0 +1,10 @@
+[General]
+CurrentVersion=103
+[CACHEDOC|Aldec.Project.Generic.7|C:\ncsrc\PROJECTS50\serial_receiver\serial_receiver.adf|]
+Path=
+[CACHEDOC|Aldec.Project.Generic.7|c:\My_Designs\Samples_72\serial_receiver\serial_receiver.adf|]
+Path=
+[CACHEDOC|Aldec.Project.Generic.7|C:\SVN_DATA\active-hdl\trunk\ncsrc\samples_72SE\serial_receiver\serial_receiver.adf|]
+Path=
+[Gui config]
+RunFor=100 ns

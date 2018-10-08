@@ -1,0 +1,14 @@
+1702
+~E 0 "./src/zecimal_BCD.vhd" 6 convertor
+~A 1 "./src/zecimal_bcd.vhd" 11 arch_convertor
+~E 0 "./src/ALU.vhd" 6 alu
+~A 1 "./src/ALU.vhd" 14 alu_arh
+~E 0 "./src/afisoare.vhd" 6 afisoare
+~A 1 "./src/afisoare.vhd" 13 arch_afisoare
+~E 1 "./src/calculator.vhd" 6 calculator
+~A 1 "./src/calculator.vhd" 15 arh_calc
+~E 0 "./src/Impartire.vhd" 7 impartire
+~E 0 "./src/div_frec.vhd" 6 div_frec
+~A 1 "./src/div_frec.vhd" 13 arch_div_frec
+~E 0 "./src/Memory.vhd" 5 reg_mem
+~A 1 "./src/memory.vhd" 13 reg

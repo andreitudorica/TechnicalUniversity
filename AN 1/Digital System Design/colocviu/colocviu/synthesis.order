@@ -1,0 +1,16 @@
+i<>.\src\porti_logice.vhd
+i<>.\src\xor_structural.vhd
+i<>.\src\sau_ex_comp.vhd
+i<>.\src\bcd_to_gray.vhd
+i<>.\src\priority_encoder.vhd
+i<>.\src\exces3_bcd.vhd
+i<>.\src\mux.vhd
+i<>.\src\si_flow.vhd
+i<>.\src\sau_flow.vhd
+i<>.\src\not_flow.vhd
+i<>.\src\DCD3_8.vhd
+i<>.\src\MUX_generics.vhd
+i<>.\src\Dmux_generics.vhd
+i<>.\src\comparator2biti_struct.vhd
+i<>.\src\and4.vhd
+i<>.\src\or6.vhd

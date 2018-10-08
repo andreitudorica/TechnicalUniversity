@@ -1,0 +1,17 @@
+elbread.dll ver. 1.0.5.375 Tue May 17 15:14:46 2011
+
+
+----------------------------------
+Entity    | Architecture | Library
+----------------------------------
+final     | arhfinal     | pseudo
+registru  | arhregistru  | pseudo
+entxor    | arhxor       | pseudo
+----------------------------------
+
+-------------------------
+Package         | Library
+-------------------------
+standard        | std
+std_logic_1164  | ieee
+-------------------------

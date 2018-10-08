@@ -1,0 +1,188 @@
+I 000053 55 1246          1304845324505 arhnumarator
+(_unit VHDL (numarator 0 7 (arhnumarator 0 15 ))
+  (_version v38)
+  (_time 1304845324505 2011.05.08 12:02:04)
+  (_source (\./src/numarator.vhd\))
+  (_use (std(standard))(ieee(numeric_bit))(ieee(std_logic_1164)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304845225857)
+    (_use )
+  )
+  (_object
+    (_port (_internal mr ~extSTD.STANDARD.BIT 0 8 (_entity (_in ))))
+    (_port (_internal pl ~extSTD.STANDARD.BIT 0 8 (_entity (_in ))))
+    (_port (_internal clk ~extSTD.STANDARD.BIT 0 8 (_entity (_in )(_event))))
+    (_type (_internal ~UNSIGNED{7~downto~0}~12 0 9 (_array ~extSTD.STANDARD.BIT ((_downto (i 7)(i 0))))))
+    (_port (_internal d ~UNSIGNED{7~downto~0}~12 0 9 (_entity (_in ))))
+    (_type (_internal ~UNSIGNED{7~downto~0}~122 0 10 (_array ~extSTD.STANDARD.BIT ((_downto (i 7)(i 0))))))
+    (_port (_internal q ~UNSIGNED{7~downto~0}~122 0 10 (_entity (_inout ))))
+    (_process
+      (line__17(_architecture 0 0 17 (_process (_simple)(_target(4))(_sensitivity(0)(2))(_read(1)(3)(4)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+    (_type (_external ~extieee.numeric_bit.UNSIGNED (ieee numeric_bit UNSIGNED)))
+  )
+  (_static
+    (0 0 )
+  )
+  (_model . arhnumarator 1 -1
+  )
+)
+I 000053 55 1246          1304846205155 arhnumarator
+(_unit VHDL (numarator 0 7 (arhnumarator 0 15 ))
+  (_version v38)
+  (_time 1304846205155 2011.05.08 12:16:45)
+  (_source (\./src/numarator.vhd\))
+  (_use (std(standard))(ieee(numeric_bit))(ieee(std_logic_1164)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304845225857)
+    (_use )
+  )
+  (_object
+    (_port (_internal mr ~extSTD.STANDARD.BIT 0 8 (_entity (_in ))))
+    (_port (_internal pl ~extSTD.STANDARD.BIT 0 8 (_entity (_in ))))
+    (_port (_internal clk ~extSTD.STANDARD.BIT 0 8 (_entity (_in )(_event))))
+    (_type (_internal ~UNSIGNED{7~downto~0}~12 0 9 (_array ~extSTD.STANDARD.BIT ((_downto (i 7)(i 0))))))
+    (_port (_internal d ~UNSIGNED{7~downto~0}~12 0 9 (_entity (_in ))))
+    (_type (_internal ~UNSIGNED{7~downto~0}~122 0 10 (_array ~extSTD.STANDARD.BIT ((_downto (i 7)(i 0))))))
+    (_port (_internal q ~UNSIGNED{7~downto~0}~122 0 10 (_entity (_inout ))))
+    (_process
+      (line__17(_architecture 0 0 17 (_process (_simple)(_target(4))(_sensitivity(0)(2))(_read(1)(3)(4)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+    (_type (_external ~extieee.numeric_bit.UNSIGNED (ieee numeric_bit UNSIGNED)))
+  )
+  (_static
+    (0 0 )
+  )
+  (_model . arhnumarator 1 -1
+  )
+)
+I 000053 55 1246          1304846300614 arhnumarator
+(_unit VHDL (numarator 0 7 (arhnumarator 0 15 ))
+  (_version v38)
+  (_time 1304846300614 2011.05.08 12:18:20)
+  (_source (\./src/numarator.vhd\))
+  (_use (std(standard))(ieee(numeric_bit))(ieee(std_logic_1164)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304845225857)
+    (_use )
+  )
+  (_object
+    (_port (_internal mr ~extSTD.STANDARD.BIT 0 8 (_entity (_in ))))
+    (_port (_internal pl ~extSTD.STANDARD.BIT 0 8 (_entity (_in ))))
+    (_port (_internal clk ~extSTD.STANDARD.BIT 0 8 (_entity (_in )(_event))))
+    (_type (_internal ~UNSIGNED{7~downto~0}~12 0 9 (_array ~extSTD.STANDARD.BIT ((_downto (i 7)(i 0))))))
+    (_port (_internal d ~UNSIGNED{7~downto~0}~12 0 9 (_entity (_in ))))
+    (_type (_internal ~UNSIGNED{7~downto~0}~122 0 10 (_array ~extSTD.STANDARD.BIT ((_downto (i 7)(i 0))))))
+    (_port (_internal q ~UNSIGNED{7~downto~0}~122 0 10 (_entity (_inout ))))
+    (_process
+      (line__17(_architecture 0 0 17 (_process (_simple)(_target(4))(_sensitivity(0)(2))(_read(1)(3)(4)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+    (_type (_external ~extieee.numeric_bit.UNSIGNED (ieee numeric_bit UNSIGNED)))
+  )
+  (_static
+    (0 0 )
+  )
+  (_model . arhnumarator 1 -1
+  )
+)
+I 000053 55 1246          1304846341928 arhnumarator
+(_unit VHDL (numarator 0 7 (arhnumarator 0 15 ))
+  (_version v38)
+  (_time 1304846341928 2011.05.08 12:19:01)
+  (_source (\./src/numarator.vhd\))
+  (_use (std(standard))(ieee(numeric_bit))(ieee(std_logic_1164)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304845225857)
+    (_use )
+  )
+  (_object
+    (_port (_internal mr ~extSTD.STANDARD.BIT 0 8 (_entity (_in ))))
+    (_port (_internal pl ~extSTD.STANDARD.BIT 0 8 (_entity (_in ))))
+    (_port (_internal clk ~extSTD.STANDARD.BIT 0 8 (_entity (_in )(_event))))
+    (_type (_internal ~UNSIGNED{7~downto~0}~12 0 9 (_array ~extSTD.STANDARD.BIT ((_downto (i 7)(i 0))))))
+    (_port (_internal d ~UNSIGNED{7~downto~0}~12 0 9 (_entity (_in ))))
+    (_type (_internal ~UNSIGNED{7~downto~0}~122 0 10 (_array ~extSTD.STANDARD.BIT ((_downto (i 7)(i 0))))))
+    (_port (_internal q ~UNSIGNED{7~downto~0}~122 0 10 (_entity (_inout ))))
+    (_process
+      (line__17(_architecture 0 0 17 (_process (_simple)(_target(4))(_sensitivity(0)(2))(_read(1)(3)(4)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+    (_type (_external ~extieee.numeric_bit.UNSIGNED (ieee numeric_bit UNSIGNED)))
+  )
+  (_static
+    (0 0 )
+  )
+  (_model . arhnumarator 1 -1
+  )
+)
+I 000053 55 1265          1304846715365 arhnumarator
+(_unit VHDL (numarator 0 7 (arhnumarator 0 15 ))
+  (_version v38)
+  (_time 1304846715365 2011.05.08 12:25:15)
+  (_source (\./src/numarator.vhd\))
+  (_use (std(standard))(ieee(numeric_bit))(ieee(std_logic_1164)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304846715344)
+    (_use )
+  )
+  (_object
+    (_port (_internal mr ~extSTD.STANDARD.BIT 0 8 (_entity (_in ))))
+    (_port (_internal pl ~extSTD.STANDARD.BIT 0 8 (_entity (_in ))))
+    (_port (_internal clk ~extSTD.STANDARD.BIT 0 8 (_entity (_in )(_event))))
+    (_type (_internal ~UNSIGNED{7~downto~0}~12 0 9 (_array ~extSTD.STANDARD.BIT ((_downto (i 7)(i 0))))))
+    (_port (_internal d ~UNSIGNED{7~downto~0}~12 0 9 (_entity (_in ))))
+    (_type (_internal ~UNSIGNED{7~downto~0}~122 0 10 (_array ~extSTD.STANDARD.BIT ((_downto (i 7)(i 0))))))
+    (_port (_internal q ~UNSIGNED{7~downto~0}~122 0 10 (_entity (_inout ))))
+    (_process
+      (line__17(_architecture 0 0 17 (_process (_simple)(_target(4))(_sensitivity(0)(2))(_read(1)(3)(4)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+    (_type (_external ~extieee.numeric_bit.UNSIGNED (ieee numeric_bit UNSIGNED)))
+  )
+  (_static
+    (0 0 )
+    (0 16777216 )
+  )
+  (_model . arhnumarator 1 -1
+  )
+)
+V 000053 55 1265          1304846726359 arhnumarator
+(_unit VHDL (numarator 0 7 (arhnumarator 0 15 ))
+  (_version v38)
+  (_time 1304846726359 2011.05.08 12:25:26)
+  (_source (\./src/numarator.vhd\))
+  (_use (std(standard))(ieee(numeric_bit))(ieee(std_logic_1164)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304846715344)
+    (_use )
+  )
+  (_object
+    (_port (_internal mr ~extSTD.STANDARD.BIT 0 8 (_entity (_in ))))
+    (_port (_internal pl ~extSTD.STANDARD.BIT 0 8 (_entity (_in ))))
+    (_port (_internal clk ~extSTD.STANDARD.BIT 0 8 (_entity (_in )(_event))))
+    (_type (_internal ~UNSIGNED{7~downto~0}~12 0 9 (_array ~extSTD.STANDARD.BIT ((_downto (i 7)(i 0))))))
+    (_port (_internal d ~UNSIGNED{7~downto~0}~12 0 9 (_entity (_in ))))
+    (_type (_internal ~UNSIGNED{7~downto~0}~122 0 10 (_array ~extSTD.STANDARD.BIT ((_downto (i 7)(i 0))))))
+    (_port (_internal q ~UNSIGNED{7~downto~0}~122 0 10 (_entity (_inout ))))
+    (_process
+      (line__17(_architecture 0 0 17 (_process (_simple)(_target(4))(_sensitivity(0)(2))(_read(1)(3)(4)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+    (_type (_external ~extieee.numeric_bit.UNSIGNED (ieee numeric_bit UNSIGNED)))
+  )
+  (_static
+    (0 0 )
+    (0 16777216 )
+  )
+  (_model . arhnumarator 1 -1
+  )
+)

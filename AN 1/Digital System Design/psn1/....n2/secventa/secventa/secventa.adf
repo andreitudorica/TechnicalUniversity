@@ -1,0 +1,34 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=secventa
+
+[Library]
+secventa=.\secventa.LIB
+
+[$LibMap$]
+secventa=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[Files]
+/secventa.vhd=-1
+
+[Files.Data]
+.\src\secventa.vhd=VHDL Source Code
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=secventa|arhsecventa|0     
+ShowHide=ShowTopLevel
+Selected=

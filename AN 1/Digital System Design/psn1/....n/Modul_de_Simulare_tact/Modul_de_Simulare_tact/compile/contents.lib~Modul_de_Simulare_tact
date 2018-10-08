@@ -1,0 +1,5 @@
+35
+~E 1 "./src/bistabil_d.vhd" 28 bistabil_d
+~A 1 "./src/bistabil_d.vhd" 37 arhitectura_bistabil_d
+~E 1 "./src/MS.vhd" 28 ms
+~A 1 "./src/MS.vhd" 33 arhitectura_ms

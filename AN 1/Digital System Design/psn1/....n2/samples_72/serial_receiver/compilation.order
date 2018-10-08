@@ -1,0 +1,13 @@
+.\src\testwrapper.dlm
+.\src\vhdl\test_env.bde
+.\src\vhdl\rcv.bde
+.\src\vhdl\rcv_reg.vhd
+.\src\vhdl\synchronizer.vhd
+.\src\vhdl\latched_val.vhd
+.\src\vhdl\clk_gen.vhd
+.\src\verilog\rcv.bde
+.\src\verilog\test_env.bde
+.\src\verilog\clk_gen.v
+.\src\verilog\latched_val.v
+.\src\verilog\rcv_reg.v
+.\src\verilog\synchronizer.v

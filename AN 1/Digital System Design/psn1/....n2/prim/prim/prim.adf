@@ -1,0 +1,34 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=prim
+
+[Library]
+prim=.\prim.LIB
+
+[$LibMap$]
+prim=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[Files]
+/prim.vhd=-1
+
+[Files.Data]
+.\src\prim.vhd=VHDL Source Code
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=deplasare|fct_depla|0   
+ShowHide=ShowTopLevel
+Selected=

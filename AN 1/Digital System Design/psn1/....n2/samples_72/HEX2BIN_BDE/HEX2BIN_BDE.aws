@@ -1,0 +1,14 @@
+[Version]
+Version=7.2
+[Designs]
+HEX2BIN_BDE=HEX2BIN_BDE.adf
+[Settings]
+Active=HEX2BIN_BDE
+[Browser]
+sort=order
+mode=none
+[Expand]
+hex2bin_bde=1
+[Order]
+order=1
+macro=

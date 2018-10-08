@@ -1,0 +1,16 @@
+elbread.dll ver. 1.0.5.375 Tue May 17 02:31:00 2011
+
+
+----------------------------------
+Entity    | Architecture | Library
+----------------------------------
+simulare  | arhsim       | simjk
+simjk     | arhsimjk     | simjk
+----------------------------------
+
+-------------------------
+Package         | Library
+-------------------------
+standard        | std
+std_logic_1164  | ieee
+-------------------------

@@ -1,0 +1,11 @@
+25
+~E 1 "./src/pro.vhd" 57 deplasare
+~A 1 "./src/pro.vhd" 62 fct_depla
+~E 1 "./src/pro.vhd" 97 decodificatorpr
+~A 1 "./src/pro.vhd" 109 proiect
+~E 1 "./src/pro.vhd" 6 numardep
+~A 1 "./src/pro.vhd" 13 numaratoruldep
+~E 1 "./src/pro.vhd" 35 numaraf
+~A 1 "./src/pro.vhd" 40 numaratorulaf
+~E 1 "./src/pro.vhd" 204 tot
+~A 1 "./src/pro.vhd" 209 struct

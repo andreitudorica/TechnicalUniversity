@@ -1,0 +1,24 @@
+timestamp=1304796974985
+
+[decodificator]
+A/arhitectura=A/Arhitectura 21|./src/bcd_zec.vhd|31|1*0
+B/arhitectura=3*0
+H/arhitectura=0*0
+I/arhitectura=I/Arhitectura 0*3962
+M=11|0|v38|1304796974856|./src/bcd_zec.vhd|0*2439*0x954352630fc9ce544892a2957e8bc4c9e02d91c5|0*2992*0xab87650576a395126dc296abb9b0e065
+M/arhitectura=M/Arhitectura 21|0|v38|1304796974861|./src/bcd_zec.vhd|0*3064*0x0d2f7102e650f4026ca7a6386478a4942a8495df|0*3875*0xab87650576a395126dc296abb9b0e065
+R=./src/bcd_zec.vhd|4
+V=0*1201
+
+[~A]
+ModifyID=5
+Version=73
+
+[~MFT]
+0=8|0bcd_zec.mgf|3962|0
+1=0|1bcd_zec.mgf|0|0
+3=0|3bcd_zec.mgf|0|0
+
+[~U]
+decodificator=Decodificator 11|0*98|0*543
+

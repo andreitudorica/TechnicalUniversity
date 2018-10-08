@@ -1,0 +1,12 @@
+[Version]
+Version=7.2
+[Designs]
+memfifo=.\memfifo\memfifo.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+memfifo=1

@@ -1,0 +1,18 @@
+elbread.dll ver. 1.0.5.375 Mon May 16 22:03:59 2011
+
+
+---------------------------------------------
+Entity    | Architecture         | Library 
+---------------------------------------------
+patru     | arhitectura_patru    | Comparator
+inversor  | arhitectura_inversor | comparator
+si        | si                   | comparator
+sau       | sau                  | comparator
+---------------------------------------------
+
+-------------------------
+Package         | Library
+-------------------------
+standard        | std
+std_logic_1164  | ieee
+-------------------------

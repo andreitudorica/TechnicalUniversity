@@ -1,0 +1,8 @@
+MESSAGE "File: C:\Documents and Settings\Carmen Zdroba\Desktop\New Folder (2)\pseudo\pseudo\src\pseudo.vhd" 
+MESSAGE "Compile Entity "entxor"" 
+MESSAGE "Compile Architecture "arhxor" of Entity "entxor"" 
+MESSAGE "Compile Entity "registru"" 
+MESSAGE "Compile Architecture "arhregistru" of Entity "registru"" 
+MESSAGE "Compile Entity "final"" 
+MESSAGE "Compile Architecture "arhfinal" of Entity "final"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 

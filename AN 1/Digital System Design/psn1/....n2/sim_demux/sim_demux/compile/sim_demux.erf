@@ -1,0 +1,6 @@
+MESSAGE "File: C:\Documents and Settings\Carmen Zdroba\Desktop\New Folder (2)\sim_demux\sim_demux\src\sim_demux.vhd" 
+MESSAGE "Compile Entity "demux"" 
+MESSAGE "Compile Architecture "arhdemux" of Entity "demux"" 
+MESSAGE "Compile Entity "simdemux"" 
+MESSAGE "Compile Architecture "arhsim" of Entity "simdemux"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 

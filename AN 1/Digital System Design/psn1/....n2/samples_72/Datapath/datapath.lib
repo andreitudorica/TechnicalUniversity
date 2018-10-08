@@ -1,0 +1,90 @@
+[addsub]
+A/addsub=A/ADDSUB 21|./src/ADDSUB.vhd|34|
+S/addsub=S/ADDSUB 40|0|2*0
+
+[alu]
+A/alu=A/ALU 24|.\src\ALU.bde|10000|
+
+[comp]
+A/comp=A/COMP 24|.\src\COMP.bde|10000|
+
+[comparator]
+A/comparator=A/COMPARATOR 21|./src/COMPARATOR.vhd|33|
+S/comparator=S/COMPARATOR 40|0|2*2046
+
+[control]
+A/control=A/CONTROL 24|.\src\CONTROL.bde|10000|
+
+[control_fsm]
+A/control_fsm_arch=23|.\src\CONTROL_FSM.asf|10000|
+S/control_fsm=S/CONTROL_FSM 40|0|2*3662
+
+[counter]
+A/counter=A/COUNTER 21|./src/COUNTER.vhd|31|
+S/counter=S/COUNTER 40|0|2*9253
+
+[datapath]
+A/datapath=24|.\src\DATAPATH.bde|10000|
+
+[mux]
+A/mux=A/MUX 21|./src/MUX.vhd|31|
+S/mux=S/MUX 40|0|2*11616
+
+[reg]
+A/reg=A/REG 21|./src/REG.vhd|32|
+S/reg=S/REG 40|0|2*13668
+
+[regs]
+A/regs=A/REGS 24|.\src\REGS.bde|10000|
+
+[top]
+A/top=24|.\src\top.bde|10000|
+
+[~A]
+./compile/ALU.vhd~ALU=0*0
+./compile/ALU.vhd~ALUALU=0*338
+./compile/COMP.vhd~COMP=0*1374
+./compile/COMP.vhd~COMPCOMP=0*1774
+./compile/CONTROL.vhd~CONTROL=0*3020
+./compile/CONTROL.vhd~CONTROLCONTROL=0*3432
+./compile/CONTROL_FSM.vhd~control_fsm=0*4652
+./compile/CONTROL_FSM.vhd~control_fsm_archcontrol_fsm=0*5231
+./compile/REGS.vhd~REGS=0*7238
+./compile/REGS.vhd~REGSREGS=0*7644
+./compile/datapath.vhd~datapath=0*8362
+./compile/datapath.vhd~datapathdatapath=0*8853
+./compile/top.vhd~top=0*10506
+./compile/top.vhd~toptop=0*10914
+./src/ADDSUB.vhd~ADDSUB=0*12339
+./src/ADDSUB.vhd~ADDSUBADDSUB=0*12676
+./src/COMPARATOR.vhd~COMPARATOR=0*12909
+./src/COMPARATOR.vhd~COMPARATORCOMPARATOR=0*13214
+./src/COUNTER.vhd~COUNTER=0*13436
+./src/COUNTER.vhd~COUNTERCOUNTER=0*13733
+./src/MUX.vhd~MUX=0*14211
+./src/MUX.vhd~MUXMUX=0*14531
+./src/REG.vhd~REG=0*14667
+./src/REG.vhd~REGREG=0*14989
+./src/testbench.vhd~TB_ARCHITECTUREtop_testbench=0*15225
+./src/testbench.vhd~top_testbench=0*23069
+ModifyID=367
+Version=73
+
+[~MFT]
+0=0|0datapath.mgf|26522|0
+2=0|2datapath.mgf|13668|0
+
+[~U]
+addsub=ADDSUB 11|0*23330||7
+alu=ALU 11|0*23583|
+comp=COMP 11|0*23840|
+comparator=COMPARATOR 11|0*24146||7
+control=CONTROL 11|0*24373|
+control_fsm=11|0*24696||7
+counter=COUNTER 11|0*25116||7
+datapath=11|0*25335|
+mux=MUX 11|0*25726||7
+reg=REG 11|0*25965||3
+regs=REGS 11|0*26210|
+top=11|0*26522|
+

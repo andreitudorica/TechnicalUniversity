@@ -1,0 +1,59 @@
+acom -reorder -work memrom $DSN/src/memrom.vhd
+# Compile with File Reorder...
+# File: C:\My_Designs\memrom\memrom\src\memrom.vhd
+# Compile Entity "mem_rom"
+# Compile Architecture "rom" of Entity "mem_rom"
+# Top-level unit(s) detected:
+# Entity  =>   mem_rom
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim mem_rom rom
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using a Student Edition of Active-HDL. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: To receive an unrestricted version contact sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1611 kB (elbread=1031 elab2=298 kernel=281 sdf=0)
+#  2:36 PM, Sunday, May 08, 2011
+#  Simulation has been initialized
+#  Selected Top-Level: mem_rom (rom)
+run 10 ns
+# KERNEL: stopped at time: 10 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 10 ns
+# KERNEL: stopped at time: 20 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 10 ns
+# KERNEL: stopped at time: 30 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -work memrom $DSN/src/memrom.vhd
+# Compile...
+# File: C:\My_Designs\memrom\memrom\src\memrom.vhd
+# Compile Entity "mem_rom"
+# Compile Architecture "rom" of Entity "mem_rom"
+# Error: COMP96_0367: memrom.vhd : (20, 8): Improper array length. Actual length is 16. Expected length is 4.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [s]
+endsim
+#  Simulation has been stopped
+acom -work memrom $DSN/src/memrom.vhd
+# Compile...
+# File: C:\My_Designs\memrom\memrom\src\memrom.vhd
+# Compile Entity "mem_rom"
+# Compile Architecture "rom" of Entity "mem_rom"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [s]
+acom -work memrom $DSN/src/memrom.vhd
+# Compile...
+# File: C:\My_Designs\memrom\memrom\src\memrom.vhd
+# Compile Entity "mem_rom"
+# Compile Architecture "rom" of Entity "mem_rom"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [s]

@@ -1,0 +1,108 @@
+MESSAGE "File: C:\Users\Vlad\Desktop\LAB\Bilete_tren\Bilete_tren\src\AFISARE_7_segmente.vhd" 
+BEGINPROGRESS C:\Users\Vlad\Desktop\LAB\Bilete_tren\Bilete_tren\src\AFISARE_7_segmente.vhd
+UPDATEPROGRESS 1
+MESSAGE "Compile Entity "BCD_to_7_seg"" 
+UPDATEPROGRESS 2
+MESSAGE "Entity `BCD_to_7_seg' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "a1" of Entity "BCD_to_7_seg"" 
+UPDATEPROGRESS 8
+UPDATEPROGRESS 9
+UPDATEPROGRESS 10
+MESSAGE "Compile Entity "MUX_4_to_1"" 
+UPDATEPROGRESS 12
+MESSAGE "Entity `MUX_4_to_1' has been skipped - no difference detected." 
+UPDATEPROGRESS 13
+MESSAGE "Compile Architecture "MUX" of Entity "MUX_4_to_1"" 
+UPDATEPROGRESS 16
+UPDATEPROGRESS 17
+UPDATEPROGRESS 18
+MESSAGE "Compile Entity "count_to_3"" 
+UPDATEPROGRESS 19
+MESSAGE "Entity `count_to_3' has been skipped - no difference detected." 
+UPDATEPROGRESS 20
+MESSAGE "Compile Architecture "count" of Entity "count_to_3"" 
+UPDATEPROGRESS 22
+UPDATEPROGRESS 23
+UPDATEPROGRESS 25
+MESSAGE "Compile Entity "an_select"" 
+UPDATEPROGRESS 26
+MESSAGE "Entity `an_select' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "an" of Entity "an_select"" 
+UPDATEPROGRESS 30
+UPDATEPROGRESS 31
+UPDATEPROGRESS 33
+MESSAGE "Compile Entity "afisare_numar"" 
+UPDATEPROGRESS 35
+MESSAGE "Entity `afisare_numar' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "afis_nr" of Entity "afisare_numar"" 
+UPDATEPROGRESS 36
+UPDATEPROGRESS 37
+UPDATEPROGRESS 38
+UPDATEPROGRESS 41
+UPDATEPROGRESS 42
+UPDATEPROGRESS 43
+UPDATEPROGRESS 44
+UPDATEPROGRESS 46
+UPDATEPROGRESS 47
+UPDATEPROGRESS 49
+MESSAGE "Compile Entity "afisare_pret"" 
+UPDATEPROGRESS 50
+MESSAGE "Entity `afisare_pret' has been skipped - no difference detected." 
+UPDATEPROGRESS 51
+MESSAGE "Compile Architecture "AP" of Entity "afisare_pret"" 
+UPDATEPROGRESS 52
+UPDATEPROGRESS 54
+UPDATEPROGRESS 98
+UPDATEPROGRESS 99
+UPDATEPROGRESS 100
+ENDPROGRESS C:\Users\Vlad\Desktop\LAB\Bilete_tren\Bilete_tren\src\AFISARE_7_segmente.vhd
+MESSAGE "File: C:\Users\Vlad\Desktop\LAB\Bilete_tren\Bilete_tren\src\timer.vhd" 
+MESSAGE "Compile Entity "DFF"" 
+MESSAGE "Entity `DFF' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "store" of Entity "DFF"" 
+MESSAGE "Compile Entity "CLK_1s"" 
+MESSAGE "Entity `CLK_1s' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "divider" of Entity "CLK_1s"" 
+MESSAGE "Compile Entity "timer"" 
+MESSAGE "Entity `timer' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "time_7_s" of Entity "timer"" 
+MESSAGE "File: C:\Users\Vlad\Desktop\LAB\Bilete_tren\Bilete_tren\src\Registu.vhd" 
+MESSAGE "Compile Entity "registru_9b"" 
+MESSAGE "Entity `registru_9b' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "memorare" of Entity "registru_9b"" 
+MESSAGE "File: C:\Users\Vlad\Desktop\LAB\Bilete_tren\Bilete_tren\src\Comparator.vhd" 
+MESSAGE "Compile Entity "comparator"" 
+MESSAGE "Entity `comparator' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "comparare" of Entity "comparator"" 
+MESSAGE "File: C:\Users\Vlad\Desktop\LAB\Bilete_tren\Bilete_tren\src\nrtor.vhd" 
+MESSAGE "Compile Entity "numarator"" 
+MESSAGE "Entity `numarator' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "numara" of Entity "numarator"" 
+MESSAGE "File: C:\Users\Vlad\Desktop\LAB\Bilete_tren\Bilete_tren\src\sumator_comportamental.vhd" 
+MESSAGE "Compile Entity "sumator_9b"" 
+MESSAGE "Entity `sumator_9b' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "comportamental" of Entity "sumator_9b"" 
+MESSAGE "File: C:\Users\Vlad\Desktop\LAB\Bilete_tren\Bilete_tren\src\Sumator_complet.vhd" 
+MESSAGE "Compile Entity "full_adder"" 
+MESSAGE "Entity `full_adder' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "ARHAS" of Entity "full_adder"" 
+MESSAGE "Compile Entity "FA"" 
+MESSAGE "Entity `FA' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "sumator_complet" of Entity "FA"" 
+MESSAGE "File: C:\Users\Vlad\Desktop\LAB\Bilete_tren\Bilete_tren\src\sumator_scazator.vhd" 
+MESSAGE "Compile Entity "sumator_scazator"" 
+MESSAGE "Entity `sumator_scazator' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "operatie" of Entity "sumator_scazator"" 
+MESSAGE "File: C:\Users\Vlad\Desktop\LAB\Bilete_tren\Bilete_tren\src\MUX_2_1.vhd" 
+MESSAGE "Compile Entity "MUX_2_1"" 
+MESSAGE "Entity `MUX_2_1' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "multiplexare_Nbiti" of Entity "MUX_2_1"" 
+MESSAGE "File: C:\Users\Vlad\Desktop\LAB\Bilete_tren\Bilete_tren\src\MUX_7_1.vhd" 
+MESSAGE "Compile Entity "MUX_BANI"" 
+MESSAGE "Entity `MUX_BANI' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "multiplex" of Entity "MUX_BANI"" 
+MESSAGE "File: C:\Users\Vlad\Desktop\LAB\Bilete_tren\Bilete_tren\src\APARAT.vhd" 
+MESSAGE "Compile Entity "APARAT"" 
+MESSAGE "Entity `APARAT' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "bilete" of Entity "aparat"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  4.0 [s]" 

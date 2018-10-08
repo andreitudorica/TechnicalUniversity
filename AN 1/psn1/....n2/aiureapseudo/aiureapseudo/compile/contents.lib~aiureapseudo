@@ -1,0 +1,7 @@
+14
+~E 1 "./src/aiureapseudo.vhd" 14 registru
+~A 1 "./src/aiureapseudo.vhd" 19 arhreg
+~E 1 "./src/aiureapseudo.vhd" 43 gen_a
+~A 1 "./src/aiureapseudo.vhd" 49 arh_struct
+~E 1 "./src/aiureapseudo.vhd" 5 xor_b
+~A 1 "./src/aiureapseudo.vhd" 9 arh_xor

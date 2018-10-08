@@ -1,0 +1,23 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed May 04 14:52:46 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "ps2_clock" LOCATE = SITE "B1" LEVEL 1;
+COMP "clk" LOCATE = SITE "B8" LEVEL 1;
+COMP "afis<0>" LOCATE = SITE "M12" LEVEL 1;
+COMP "afis<1>" LOCATE = SITE "L13" LEVEL 1;
+COMP "afis<2>" LOCATE = SITE "P12" LEVEL 1;
+COMP "afis<3>" LOCATE = SITE "N11" LEVEL 1;
+COMP "afis<4>" LOCATE = SITE "N14" LEVEL 1;
+COMP "afis<5>" LOCATE = SITE "H12" LEVEL 1;
+COMP "afis<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "serial" LOCATE = SITE "C3" LEVEL 1;
+COMP "anod<0>" LOCATE = SITE "F12" LEVEL 1;
+COMP "anod<1>" LOCATE = SITE "J12" LEVEL 1;
+COMP "anod<2>" LOCATE = SITE "M13" LEVEL 1;
+COMP "anod<3>" LOCATE = SITE "K14" LEVEL 1;
+COMP "rst" LOCATE = SITE "A7" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\project_Laci\calculator.ncd
+OUTFILE=D:\project_Laci\calculator.bit
+FAMILY=Spartan3E
+PART=xc3s250e-4cp132
+WORKINGDIR=D:\project_Laci
+LICENSE=WebPack
+USER_INFO=205301687_0_0_339

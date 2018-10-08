@@ -1,0 +1,11 @@
+.\src\systemc2vhdl\bit_vector\vhdl.vhd
+.\src\systemc2vhdl\character\vhdl.vhd
+.\src\systemc2vhdl\integer\vhdl.vhd
+.\src\systemc2vhdl\real\vhdl.vhd
+.\src\systemc2vhdl\std_logic_vector\vhdl.vhd
+.\src\systemc2vhdl\string\vhdl.vhd
+.\src\systemc2vhdl\user_defined_enumeration\vhdl.vhd
+.\src\systemc2vhdl\user_defined_integer\vhdl.vhd
+.\src\vhdl2systemc\integer\vhdl.vhd
+.\src\vhdl2systemc\real\vhdl.vhd
+.\src\vhdl2systemc\string\vhdl.vhd

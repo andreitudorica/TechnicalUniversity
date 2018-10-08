@@ -1,0 +1,4 @@
+MESSAGE "File: C:\My_Designs\sum_scaz\sum_scaz\src\sum_scaz.vhd" 
+MESSAGE "Compile Entity "adder8"" 
+MESSAGE "Compile Architecture "archit" of Entity "adder8"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]" 

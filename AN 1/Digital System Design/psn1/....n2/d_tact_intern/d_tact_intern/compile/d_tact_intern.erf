@@ -1,0 +1,4 @@
+MESSAGE "File: c:\My_Designs\d_tact_intern\d_tact_intern\src\d_tact_intern.vhd" 
+MESSAGE "Compile Entity "d_tact_intern"" 
+MESSAGE "Compile Architecture "arhd_tact_intern" of Entity "d_tact_intern"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]" 

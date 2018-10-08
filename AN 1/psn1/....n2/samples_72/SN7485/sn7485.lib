@@ -1,0 +1,125 @@
+timestamp=1106046260165
+
+[e_and2]
+A/a_and2=21|./src/Gates.vhd|42|
+S/e_and2=40|0|2*0
+
+[e_and3]
+A/a_and3=21|./src/Gates.vhd|62|
+S/e_and3=40|0|2*1841
+
+[e_and4]
+A/a_and4=21|./src/Gates.vhd|82|
+S/e_and4=40|0|2*4149
+
+[e_and5]
+A/a_and5=21|./src/Gates.vhd|102|
+S/e_and5=40|0|2*6927
+
+[e_nor2]
+A/a_nor2=21|./src/Gates.vhd|223|
+S/e_nor2=40|0|2*10178
+
+[e_nor3]
+A/a_nor3=21|./src/Gates.vhd|243|
+S/e_nor3=40|0|2*12019
+
+[e_not1]
+A/a_not1=21|./src/Gates.vhd|22|
+S/e_not1=40|0|2*14367
+
+[e_or5]
+A/a_or5=21|./src/Gates.vhd|182|
+S/e_or5=40|0|2*15739
+
+[fub0]
+A/fub0=A/Fub0 24|.\src\Fub0.bde|10000|
+
+[fub1]
+A/fub1=A/Fub1 24|.\src\Fub1.bde|10000|
+
+[fub2]
+A/fub2=A/Fub2 24|.\src\Fub2.bde|10000|
+
+[fub3]
+A/fub3=A/Fub3 24|.\src\Fub3.bde|10000|
+
+[fub4]
+A/fub4=A/Fub4 24|.\src\Fub4.bde|10000|
+
+[fub5]
+A/fub5=A/Fub5 24|.\src\Fub5.bde|10000|
+
+[sn7485_top]
+A/sn7485_top=A/SN7485_TOP 24|.\src\SN7485_TOP.bde|10000|
+
+[~A]
+./compile/Fub0.vhd~Fub0=0*14010*14355
+./compile/Fub0.vhd~Fub0Fub0=0*14418*15692
+./compile/Fub1.vhd~Fub1=0*12805*13195
+./compile/Fub1.vhd~Fub1Fub1=0*13258*13943
+./compile/Fub2.vhd~Fub2=0*11144*11463
+./compile/Fub2.vhd~Fub2Fub2=0*11526*12738
+./compile/Fub3.vhd~Fub3=0*9587*9879
+./compile/Fub3.vhd~Fub3Fub3=0*9942*11077
+./compile/Fub4.vhd~Fub4=0*8212*8477
+./compile/Fub4.vhd~Fub4Fub4=0*8540*9520
+./compile/Fub5.vhd~Fub5=0*7096*7542
+./compile/Fub5.vhd~Fub5Fub5=0*7605*8145
+./compile/SN7485_TOP.vhd~SN7485_TOP=0*15759*16230
+./compile/SN7485_TOP.vhd~SN7485_TOPSN7485_TOP=0*16305*19264
+./src/Gates.vhd~a_and2e_and2=0*710*875
+./src/Gates.vhd~a_and3e_and3=0*1199*1378
+./src/Gates.vhd~a_and4e_and4=0*1709*1902
+./src/Gates.vhd~a_and5e_and5=0*2240*2447
+./src/Gates.vhd~a_and6e_and6=0*2792*3013
+./src/Gates.vhd~a_nand3e_nand3=0*4840*5026
+./src/Gates.vhd~a_nor2e_nor2=0*5345*5510
+./src/Gates.vhd~a_nor3e_nor3=0*5834*6016
+./src/Gates.vhd~a_nor4e_nor4=0*6350*6546
+./src/Gates.vhd~a_not1e_not1=0*242*393
+./src/Gates.vhd~a_or2e_or2=0*3327*3487
+./src/Gates.vhd~a_or3e_or3=0*3806*3980
+./src/Gates.vhd~a_or5e_or5=0*4313*4515
+./src/Gates.vhd~a_xor2e_xor2=0*6863*7028
+./src/Gates.vhd~e_and2=0*461*648
+./src/Gates.vhd~e_and3=0*943*1137
+./src/Gates.vhd~e_and4=0*1446*1647
+./src/Gates.vhd~e_and5=0*1970*2178
+./src/Gates.vhd~e_and6=0*2515*2730
+./src/Gates.vhd~e_nand3=0*4581*4777
+./src/Gates.vhd~e_nor2=0*5096*5283
+./src/Gates.vhd~e_nor3=0*5578*5772
+./src/Gates.vhd~e_nor4=0*6084*6288
+./src/Gates.vhd~e_not1=0*0*180
+./src/Gates.vhd~e_or2=0*3081*3266
+./src/Gates.vhd~e_or3=0*3553*3745
+./src/Gates.vhd~e_or5=0*4046*4252
+./src/Gates.vhd~e_xor2=0*6614*6801
+./src/SN7485_TOP_TB.vhd~TB_ARCHITECTUREsn7485_top_tb=0*19659*23327
+./src/SN7485_TOP_TB.vhd~TESTBENCH_FOR_SN7485_TOPsn7485_top_tb=0*23419*23702
+./src/SN7485_TOP_TB.vhd~sn7485_top_tb=0*19349*19582
+ModifyID=554
+Version=73
+
+[~MFT]
+0=0|0SN7485.mgf|26791|0
+2=0|2SN7485.mgf|15739|0
+
+[~U]
+e_and2=11|0*23803||0x3
+e_and3=11|0*23956||0x3
+e_and4=11|0*24129||0x3
+e_and5=11|0*24322||0x3
+e_nor2=11|0*24535||0x3
+e_nor3=11|0*24688||0x3
+e_not1=11|0*24861||0x3
+e_or5=11|0*24993||0x3
+fub0=Fub0 11|0*25203|
+fub1=Fub1 11|0*25470|
+fub2=Fub2 11|0*25776|
+fub3=Fub3 11|0*26020|
+fub4=Fub4 11|0*26240|
+fub5=Fub5 11|0*26436|
+sn7485_top=SN7485_TOP 11|0*26791|
+

@@ -1,0 +1,23 @@
+timestamp=1305558249288
+
+[reclama]
+A/arh_reclama=A/ARH_Reclama 21|./src/Reclama avon.vhd|10|1*8578
+B/arh_reclama=3*0
+I=0*866
+I/arh_reclama=I/ARH_Reclama 0*4056
+M=11|0|v147|1305545023448|./src/Reclama avon.vhd|0*567*0xc7d957e4c679566a26da4bf06e12ff98ba9d561d|0*789*0x7bd7e13dc0415552f89596087806a8cf
+M/arh_reclama=M/ARH_Reclama 21|0|v147|1305558249195|./src/Reclama avon.vhd|0*3597*0x42842cf060fe2607a8726e8b9f50c7f56bc858b8|0*3964*0x7bd7e13dc0415552f89596087806a8cf
+R=./src/Reclama avon.vhd|5
+
+[~A]
+ModifyID=38
+Version=73
+
+[~MFT]
+0=36|0Reclama.mgf|4056|2682
+1=10|1Reclama.mgf|8578|8578
+3=0|3Reclama.mgf|0|0
+
+[~U]
+reclama=11|0*414|
+

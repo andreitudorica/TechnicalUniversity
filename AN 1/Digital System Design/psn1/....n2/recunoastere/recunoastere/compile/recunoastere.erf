@@ -1,0 +1,4 @@
+MESSAGE "File: c:\My_Designs\recunoastere\recunoastere\src\recunoastere.vhd" 
+MESSAGE "Compile Entity "recunoastere"" 
+MESSAGE "Compile Architecture "simpla" of Entity "recunoastere"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [s]" 

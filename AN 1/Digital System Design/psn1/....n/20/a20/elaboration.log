@@ -1,0 +1,16 @@
+elbread.dll ver. 1.0.5.375 Sat May 14 19:32:02 2011
+
+
+-------------------------------------------
+Entity    | Architecture          | Library
+-------------------------------------------
+a20       | arhitectura_a20       | a20
+registru  | arhitectura_registrul | a20
+-------------------------------------------
+
+-------------------------
+Package         | Library
+-------------------------
+standard        | std
+std_logic_1164  | ieee
+-------------------------

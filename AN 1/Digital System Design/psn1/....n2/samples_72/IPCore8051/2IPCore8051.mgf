@@ -1,0 +1,1001 @@
+V 000038 40 4773 1024312837049 al8051
+SYMB0100
+
+HEADER
+{
+ FREEID 35
+ VARIABLES
+ {
+  #DESCRIPTION=""
+  #HDL_ENTRIES=
+"library IEEE;\n"+
+"use ieee.std_logic_1164;"
+  #LANGUAGE="VHDL"
+  #MODIFIED="1024312837"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (0,0,320,280)
+ }
+ 
+ BODY
+ {
+  PIN  4, 0, 0
+  {
+   COORD (0,40)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO=""
+    #INITIAL_VALUE=""
+    #LENGTH="20"
+    #NAME="CLK"
+    #NUMBER="0"
+    #VHDL_TYPE=""
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,1, (64,92,92)
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (24,29,64,53)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 4
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  PIN  7, 0, 0
+  {
+   COORD (0,160)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO=""
+    #INITIAL_VALUE=""
+    #LENGTH="20"
+    #NAME="ALE"
+    #NUMBER="0"
+    #SIDE="left"
+    #VHDL_TYPE=""
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,1, (64,92,92)
+    POINTS ( (20,0), (0,0) )
+   }
+  }
+  TEXT  8, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (26,149,65,173)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 7
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  PIN  10, 0, 0
+  {
+   COORD (0,80)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO=""
+    #INITIAL_VALUE=""
+    #LENGTH="20"
+    #NAME="EA"
+    #NUMBER="0"
+    #VHDL_TYPE=""
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,1, (64,92,92)
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  11, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (24,69,52,93)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 10
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  PIN  13, 0, 0
+  {
+   COORD (0,200)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO=""
+    #INITIAL_VALUE=""
+    #LENGTH="20"
+    #NAME="PSEN"
+    #NUMBER="0"
+    #SIDE="left"
+    #VHDL_TYPE=""
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,1, (64,92,92)
+    POINTS ( (20,0), (0,0) )
+   }
+  }
+  TEXT  14, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (26,189,80,213)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 13
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  PIN  16, 0, 0
+  {
+   COORD (0,120)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO=""
+    #INITIAL_VALUE=""
+    #LENGTH="20"
+    #NAME="RST"
+    #NUMBER="0"
+    #VHDL_TYPE=""
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,1, (64,92,92)
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  17, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (24,109,65,133)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 16
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  PIN  19, 0, 0
+  {
+   COORD (320,80)
+   VARIABLES
+   {
+    #DIRECTION="INOUT"
+    #DOWNTO="1"
+    #INITIAL_VALUE=""
+    #LENGTH="20"
+    #NAME="Port0(7:0)"
+    #NUMBER="0"
+    #SIDE="right"
+    #VHDL_TYPE=""
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,3, (64,92,92)
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  TEXT  20, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (207,69,294,93)
+   ALIGN 6
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 19
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  PIN  22, 0, 0
+  {
+   COORD (320,120)
+   VARIABLES
+   {
+    #DIRECTION="INOUT"
+    #DOWNTO="1"
+    #INITIAL_VALUE=""
+    #LENGTH="20"
+    #NAME="Port1(7:0)"
+    #NUMBER="0"
+    #SIDE="right"
+    #VHDL_TYPE=""
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,3, (64,92,92)
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  TEXT  23, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (207,109,294,133)
+   ALIGN 6
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 22
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  PIN  25, 0, 0
+  {
+   COORD (320,160)
+   VARIABLES
+   {
+    #DIRECTION="INOUT"
+    #DOWNTO="1"
+    #INITIAL_VALUE=""
+    #LENGTH="20"
+    #NAME="Port2(7:0)"
+    #NUMBER="0"
+    #SIDE="right"
+    #VHDL_TYPE=""
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,3, (64,92,92)
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  TEXT  26, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (207,149,294,173)
+   ALIGN 6
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 25
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  PIN  28, 0, 0
+  {
+   COORD (320,200)
+   VARIABLES
+   {
+    #DIRECTION="INOUT"
+    #DOWNTO="1"
+    #INITIAL_VALUE=""
+    #LENGTH="20"
+    #NAME="Port3(7:0)"
+    #NUMBER="0"
+    #SIDE="right"
+    #VHDL_TYPE=""
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,3, (64,92,92)
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  TEXT  29, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (207,189,294,213)
+   ALIGN 6
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 28
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  RECT  32, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   OUTLINE 0,2, (132,0,0)
+   AREA (20,0,300,280)
+   FILL (0,(255,255,180),0)
+  }
+ }
+ 
+}
+
+V 000039 40 3797 1024312854391 display
+SYMB0100
+
+HEADER
+{
+ FREEID 29
+ VARIABLES
+ {
+  #DESCRIPTION=""
+  #HDL_ENTRIES="library IEEE;I8051_EXAMPLE;\\nuse ieee.std_logic_1164;i8051_example.Types;"
+  #LANGUAGE="VHDL"
+  #MODIFIED="1024312854"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (0,0,340,280)
+ }
+ 
+ BODY
+ {
+  PIN  4, 0, 0
+  {
+   COORD (0,80)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #INITIAL_VALUE=""
+    #LENGTH="20"
+    #NAME="ADDRESS(4:0)"
+    #NUMBER="0"
+    #SIDE="left"
+    #VHDL_TYPE=""
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,3, (64,92,92)
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (24,69,159,93)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 4
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  PIN  7, 0, 0
+  {
+   COORD (0,40)
+   VARIABLES
+   {
+    #DIRECTION="INOUT"
+    #DOWNTO="1"
+    #INITIAL_VALUE=""
+    #LENGTH="20"
+    #NAME="DATA(7:0)"
+    #NUMBER="0"
+    #SIDE="left"
+    #VHDL_TYPE=""
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,3, (64,92,92)
+    POINTS ( (20,0), (0,0) )
+   }
+  }
+  TEXT  8, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (26,29,119,53)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 7
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  PIN  10, 0, 0
+  {
+   COORD (0,160)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO=""
+    #INITIAL_VALUE=""
+    #LENGTH="20"
+    #NAME="CTR"
+    #NUMBER="0"
+    #VHDL_TYPE=""
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,1, (64,92,92)
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  11, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (24,149,66,173)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 10
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  PIN  13, 0, 0
+  {
+   COORD (340,140)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO=""
+    #INITIAL_VALUE=""
+    #LENGTH="20"
+    #NAME="SCREEN"
+    #NUMBER="0"
+    #SIDE="right"
+    #VHDL_TYPE="ScrType"
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,1, (64,92,92)
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  TEXT  14, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (232,129,314,153)
+   ALIGN 6
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 13
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  PIN  16, 0, 0
+  {
+   COORD (0,120)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO=""
+    #INITIAL_VALUE=""
+    #LENGTH="20"
+    #NAME="nCS"
+    #NUMBER="0"
+    #VHDL_TYPE=""
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,1, (64,92,92)
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  17, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (24,109,63,133)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 16
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  PIN  19, 0, 0
+  {
+   COORD (0,200)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO=""
+    #INITIAL_VALUE=""
+    #LENGTH="20"
+    #NAME="nRD"
+    #NUMBER="0"
+    #VHDL_TYPE=""
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,1, (64,92,92)
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  20, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (24,189,64,213)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 19
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  PIN  22, 0, 0
+  {
+   COORD (0,240)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO=""
+    #INITIAL_VALUE=""
+    #LENGTH="20"
+    #NAME="nWR"
+    #NUMBER="0"
+    #VHDL_TYPE=""
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,1, (64,92,92)
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  23, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (24,229,69,253)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 22
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  RECT  26, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   OUTLINE 0,2, (132,0,0)
+   AREA (20,0,320,280)
+   FILL (0,(255,255,180),0)
+  }
+ }
+ 
+}
+
+V 000040 40 6988 1024312843345 keyboard
+SYMB0100
+
+HEADER
+{
+ FREEID 50
+ VARIABLES
+ {
+  #DESCRIPTION=""
+  #FUB=""
+  #HDL_ENTRIES="library IEEE;\\nuse ieee.std_logic_1164;"
+  #LANGUAGE="VHDL"
+  #MODIFIED="1024312843"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (0,0,260,520)
+ }
+ 
+ BODY
+ {
+  PIN  4, 0, 0
+  {
+   COORD (0,480)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO=""
+    #INITIAL_VALUE=""
+    #LENGTH="20"
+    #NAME="ACKA"
+    #NUMBER="0"
+    #VHDL_TYPE=""
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,1, (64,92,92)
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (24,469,79,493)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 4
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  PIN  7, 0, 0
+  {
+   COORD (260,220)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #INITIAL_VALUE=""
+    #LENGTH="20"
+    #NAME="CODE(3:0)"
+    #NUMBER="0"
+    #VHDL_TYPE=""
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,3, (64,92,92)
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  TEXT  8, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (137,209,234,233)
+   ALIGN 6
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 7
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  PIN  10, 0, 0
+  {
+   COORD (0,80)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO=""
+    #INITIAL_VALUE=""
+    #LENGTH="20"
+    #NAME="Key_0"
+    #NUMBER="0"
+    #VHDL_TYPE=""
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,1, (64,92,92)
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  11, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (24,69,81,93)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 10
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  PIN  13, 0, 0
+  {
+   COORD (260,300)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO=""
+    #INITIAL_VALUE=""
+    #LENGTH="20"
+    #NAME="INTA"
+    #NUMBER="0"
+    #SIDE="right"
+    #VHDL_TYPE=""
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,1, (64,92,92)
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  TEXT  14, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (194,288,240,312)
+   ALIGN 6
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 13
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  PIN  16, 0, 0
+  {
+   COORD (0,120)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO=""
+    #INITIAL_VALUE=""
+    #LENGTH="20"
+    #NAME="Key_1"
+    #NUMBER="0"
+    #VHDL_TYPE=""
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,1, (64,92,92)
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  17, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (24,109,81,133)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 16
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  PIN  19, 0, 0
+  {
+   COORD (0,160)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO=""
+    #INITIAL_VALUE=""
+    #LENGTH="20"
+    #NAME="Key_2"
+    #NUMBER="0"
+    #VHDL_TYPE=""
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,1, (64,92,92)
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  20, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (24,149,81,173)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 19
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  PIN  22, 0, 0
+  {
+   COORD (0,200)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO=""
+    #INITIAL_VALUE=""
+    #LENGTH="20"
+    #NAME="Key_3"
+    #NUMBER="0"
+    #VHDL_TYPE=""
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,1, (64,92,92)
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  23, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (24,189,81,213)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 22
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  PIN  25, 0, 0
+  {
+   COORD (0,240)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO=""
+    #INITIAL_VALUE=""
+    #LENGTH="20"
+    #NAME="Key_4"
+    #NUMBER="0"
+    #VHDL_TYPE=""
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,1, (64,92,92)
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  26, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (24,229,81,253)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 25
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  PIN  28, 0, 0
+  {
+   COORD (0,280)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO=""
+    #INITIAL_VALUE=""
+    #LENGTH="20"
+    #NAME="Key_5"
+    #NUMBER="0"
+    #VHDL_TYPE=""
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,1, (64,92,92)
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  29, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (24,269,81,293)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 28
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  PIN  31, 0, 0
+  {
+   COORD (0,320)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO=""
+    #INITIAL_VALUE=""
+    #LENGTH="20"
+    #NAME="Key_6"
+    #NUMBER="0"
+    #VHDL_TYPE=""
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,1, (64,92,92)
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  32, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (24,309,81,333)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 31
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  PIN  34, 0, 0
+  {
+   COORD (0,360)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO=""
+    #INITIAL_VALUE=""
+    #LENGTH="20"
+    #NAME="Key_7"
+    #NUMBER="0"
+    #VHDL_TYPE=""
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,1, (64,92,92)
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  35, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (24,349,81,373)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 34
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  PIN  37, 0, 0
+  {
+   COORD (0,400)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO=""
+    #INITIAL_VALUE=""
+    #LENGTH="20"
+    #NAME="Key_8"
+    #NUMBER="0"
+    #VHDL_TYPE=""
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,1, (64,92,92)
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  38, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (24,389,81,413)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 37
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  PIN  40, 0, 0
+  {
+   COORD (0,440)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO=""
+    #INITIAL_VALUE=""
+    #LENGTH="20"
+    #NAME="Key_9"
+    #NUMBER="0"
+    #VHDL_TYPE=""
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,1, (64,92,92)
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  41, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (24,429,81,453)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 40
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  PIN  43, 0, 0
+  {
+   COORD (0,40)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO=""
+    #INITIAL_VALUE=""
+    #LENGTH="20"
+    #NAME="RESET"
+    #NUMBER="0"
+    #SIDE="left"
+    #VHDL_TYPE=""
+   }
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,1, (64,92,92)
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  44, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (24,29,91,53)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 43
+   FONT (8,0,0,400,0,0,0,"Arial")
+  }
+  RECT  47, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   OUTLINE 0,2, (132,0,0)
+   AREA (20,0,240,520)
+   FILL (0,(255,255,180),0)
+  }
+ }
+ 
+}
+

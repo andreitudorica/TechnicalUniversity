@@ -1,0 +1,4 @@
+MESSAGE "File: c:\My_Designs\Colocviu\Comparator\Comparator\src\patru.vhd" 
+MESSAGE "Compile Entity "patru"" 
+MESSAGE "Compile Architecture "arhitectura_patru" of Entity "patru"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [s]" 

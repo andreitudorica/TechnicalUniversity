@@ -1,0 +1,14 @@
+[Version]
+Version=7.2
+[Designs]
+vhdl_systemc_parameters=vhdl_systemc_parameters.adf
+[Settings]
+Active=vhdl_systemc_parameters
+[Expand]
+vhdl_systemc_parameters=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

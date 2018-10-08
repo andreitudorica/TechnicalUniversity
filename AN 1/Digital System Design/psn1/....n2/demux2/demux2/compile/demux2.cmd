@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\demux2\library.cfg"  -j "c:\My_Designs\demux2\demux2\projlib.cfg"  -d "c:\My_Designs\demux2\demux2\compile\"  -work demux2 -dbg -e 100 "c:\My_Designs\demux2\demux2\src\demux2.vhd" 

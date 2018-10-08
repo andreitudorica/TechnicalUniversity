@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1449781680 source:c:\users\andrei\desktop\scoala\cp\arbore preordine\main.c
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<conio.h>
+	<stdlib.h>
+	<string.h>
+

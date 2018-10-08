@@ -1,0 +1,69 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=Modulation
+
+[Library]
+Modulation=.\Modulation.LIB
+
+[$LibMap$]
+Modulation=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+SYNTH_TOOL=
+IMPL_TOOL=
+FAMILY=
+FLOWTOOLS=ONLY_IMPL
+CSYNTH_TOOL=<none>
+Celoxica=0
+UseCeloxica=0
+C_SERVER_SIM=NONE
+ON_SERVERFARM_SIM=0
+C_SERVER_SYNTH=NONE
+ON_SERVERFARM_SYNTH=0
+C_SERVER_IMPL=NONE
+ON_SERVERFARM_IMPL=0
+REFRESH_FLOW=1
+
+[IMPLEMENTATION]
+UCF=
+FAMILY=
+DEVICE=
+SPEED=
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
+[SYNTHESIS]
+CeloxicaPath=
+FAMILY=
+
+[ORDER]
+Synchronize=1
+
+[Files]
+/readme.html=-1
+/compile.do=-1
+/sign.vhd=-1
+/mult.vhd=-1
+/mult1.vhd=-1
+/abs.vhd=-1
+
+[Files.Data]
+.\src\readme.html=HTML Document
+.\src\compile.do=Macro
+.\src\sign.vhd=VHDL Source Code
+.\src\mult.vhd=VHDL Source Code
+.\src\mult1.vhd=VHDL Source Code
+.\src\abs.vhd=VHDL Source Code
+

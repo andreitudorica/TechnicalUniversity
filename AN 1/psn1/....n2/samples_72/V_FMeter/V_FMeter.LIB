@@ -1,0 +1,45 @@
+[BIN2BCD]
+A/BIN2BCD=22|./src/bin2bcd.v|2|
+P/~emb=406,738,1076,1128
+S/bin2bcd=S/BIN2BCD 40|0|2*0
+
+[CNT_10B]
+A/CNT_10B=24|.\src\CNT_10B.bde|10000|
+P/~emb=223,480,713,765
+S/cnt_10b=S/CNT_10B 40|0|2*3964
+
+[CONTROL]
+A/CONTROL=23|.\src\CONTROL.asf|10000|
+P/~emb=261,596,909,961
+S/control=S/CONTROL 40|0|2*6503
+
+[HEX2LED]
+A/HEX2LED=22|./src/hex2led.v|2|
+P/~emb=124,413,515,567
+S/hex2led=S/HEX2LED 40|0|2*9508
+
+[freq_m]
+A/freq_m=24|.\src\freq_m.bde|10000|
+P/~emb=77,551,821,1014
+
+[~A]
+../compile/CNT_10B.v=0*0*455
+../compile/CONTROL.v=0*876*1736
+../compile/freq_m.v=0*2157*2810
+./Bin2bcd.v=0*3230*4020
+./FREQUENCY_METER_TB.v=0*4432*5241
+./Hex2led.v=0*5680*6000
+ModifyID=255
+Version=73
+
+[~MFT]
+0=0|0V_FMeter.mgf|11849|1
+2=0|2V_FMeter.mgf|9508|1
+
+[~U]
+BIN2BCD=12|0*6412||147
+CNT_10B=12|0*8232||147
+CONTROL=12|0*9348||147
+HEX2LED=12|0*11040||147
+freq_m=12|0*11849||144
+

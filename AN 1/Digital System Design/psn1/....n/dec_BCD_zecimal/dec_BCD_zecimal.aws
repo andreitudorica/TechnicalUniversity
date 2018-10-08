@@ -1,0 +1,12 @@
+[Version]
+Version=7.2
+[Designs]
+dec_bcd_zecimal=.\dec_BCD_zecimal\dec_BCD_zecimal.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+dec_bcd_zecimal=1

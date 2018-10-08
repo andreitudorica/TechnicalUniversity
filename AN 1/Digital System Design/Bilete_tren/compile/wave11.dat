@@ -1,0 +1,236 @@
+$WAVE4TIMED
+$RESOLUTION 1000
+I 1 "e#9#std_logicc9 UX01ZWLH-"
+$IN 1 1 Enter
+$IN 5 1 Input1
+$IN 9 1 RESET
+I 2 "a#28#std_logic_vector(7 downto 0)1 ricd7 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS IN 45 2 8 BusInput0
+$SC 13-41/4
+$BUS IN 78 2 8 Dist
+$SC 46-74/4
+$BUS INOUT +37 2 8 BusBidirectional0
+$SC 79-+28/4
+$BUS S +37 2 8 BUS266
+$SC 112-+28/4
+$IN +5 1 IncarcareBilete
+$BUS IN +36 2 8 CounterValue
+$SC 149-+28/4
+$BUS OUT +37 2 8 Nr_bilete
+$SC 182-+28/4
+$OUT +5 1 Eliberare_bilet
+$ENDTIME 100000
+$WAVES 9
+=0 T 0
+$VALUES
+V 1
+1
+$END
+$WAVES 215
+*0
+=1 D 0 4
+$VALUES
+V 2
+U
+X
+$END
+$WAVES 5
+*0
+R 1 2 =2 T 50k
+$VALUES
+V 3
+0
+1
+0
+$END
+$WAVES 1 13-41/4 +5-74/4 +71-+32/4
+*0
+$VALUES
+V 1
+0
+$END
+$WAVES 79-+28/4
+*0
+=3 D 0 1
+=4 D 50k 2
+$VALUES
+V 3
+U
+X
+0
+$END
+$WAVES +5-+20/4
+*0
+=5 D 0 3
+=6 D 50k 5
+$VALUES
+V 3
+U
+X
+0
+$END
+$WAVES +4 +4
+*0
+*5
+=7 D 50k 4
+$VALUES
+V 3
+U
+X
+0
+$END
+$WAVES +42-+28/4
+*0
+*3
+=8 D 0 2
+$VALUES
+V 3
+U
+X
+0
+$END
+$ENDTIME 200000
+$WAVES +5
+=9 D 100k 7
+$VALUES
+V 1
+1
+$END
+$WAVES 5
+=10 T 150k
+*2
+$VALUES
+V 2
+1
+0
+$END
+$WAVES 1
+=11 D 100k 2
+$VALUES
+V 1
+1
+$END
+$ENDTIME 300000
+$WAVES 5
+=12 T 250k
+*2
+$VALUES
+V 2
+1
+0
+$END
+$WAVES 1
+=13 D 200k 2
+$VALUES
+V 1
+0
+$END
+$ENDTIME 400000
+$WAVES 5
+=14 T 350k
+*2
+$VALUES
+V 2
+1
+0
+$END
+$WAVES 1
+=15 D 300k 2
+$VALUES
+V 1
+1
+$END
+$ENDTIME 500000
+$WAVES 5
+=16 T 450k
+*2
+$VALUES
+V 2
+1
+0
+$END
+$WAVES 1
+=17 D 400k 2
+$VALUES
+V 1
+0
+$END
+$ENDTIME 600000
+$WAVES 9
+=18 D 500k 2
+$VALUES
+V 1
+0
+$END
+$WAVES 5
+=19 T 550k
+*2
+$VALUES
+V 2
+1
+0
+$END
+$ENDTIME 700000
+$WAVES 215
+=20 D 650k 5
+$VALUES
+V 1
+0
+$END
+$WAVES 5
+=21 T 650k
+*2
+$VALUES
+V 2
+1
+0
+$END
+$WAVES 140
+=22 D 600k 4
+*7
+$VALUES
+V 2
+1
+0
+$END
+$WAVES 37
+=23 D 600k 2
+$VALUES
+V 1
+1
+$END
+$WAVES +4
+*23
+$VALUES
+V 1
+1
+$END
+$WAVES +95
+*22
+*7
+=24 D 0 5
+$VALUES
+V 3
+1
+0
+1
+$END
+$WAVES 107
+=25 D 650k 2
+$VALUES
+V 1
+1
+$END
+$WAVES +-4
+*25
+$VALUES
+V 1
+1
+$END
+$WAVES +29
+*20
+$VALUES
+V 1
+1
+$END
+$ENDWAVE

@@ -1,0 +1,16 @@
+elbread.dll ver. 1.0.5.375 Tue May 17 15:01:27 2011
+
+
+-------------------------------------------
+Entity       | Architecture   | Library  
+-------------------------------------------
+simulare     | arhsim         | buffer8biti
+buffer8biti  | arhbuffer8biti | buffer8biti
+-------------------------------------------
+
+-------------------------
+Package         | Library
+-------------------------
+standard        | std
+std_logic_1164  | ieee
+-------------------------

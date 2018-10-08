@@ -1,0 +1,4 @@
+MESSAGE "File: c:\My_Designs\Colocviu\ROM16x16\ROM16x16\src\sase.vhd" 
+MESSAGE "Compile Entity "sase"" 
+MESSAGE "Compile Architecture "arhitectura_sase" of Entity "sase"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 

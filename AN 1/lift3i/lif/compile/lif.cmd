@@ -1,0 +1,1 @@
+-w -s "D:\Incercari\VHDL\lift3i\library.cfg"  -j "D:\Incercari\VHDL\lift3i\lif\projlib.cfg"  -d "D:\Incercari\VHDL\lift3i\lif\compile\"  -work lif -dbg -e 100 "D:\Incercari\VHDL\lift3i\lif\src\main.vhd" 

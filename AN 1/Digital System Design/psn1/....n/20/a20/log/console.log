@@ -1,0 +1,672 @@
+# Design: Design a20 already active.
+# DESIGN: Default Design Language: VHDL
+# DESIGN: Default BDE Language: VHDL
+# DESIGN: Flow Manager: Not Defined
+# Design: Design a20 already active.
+# Design: Design a20 already active.
+acom -reorder -work a20 $DSN/src/douazeci.vhd
+# Compile with File Reorder...
+# File: c:\My_Designs\Colocviu\20\a20\src\douazeci.vhd
+# Compile Entity "a20"
+# Compile Architecture "arhitectura_a20" of Entity "a20"
+# Error: COMP96_0078: douazeci.vhd : (47, 24): Unknown identifier "perioda_tact".
+# Error: COMP96_0133: douazeci.vhd : (47, 24): Cannot find object declaration.
+# Error: COMP96_0085: douazeci.vhd : (47, 24): Time expression expected.
+# Top-level unit(s) detected:
+# Entity  =>   a20
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -work a20 $DSN/src/douazeci.vhd
+# Compile...
+# File: c:\My_Designs\Colocviu\20\a20\src\douazeci.vhd
+# Compile Entity "a20"
+# Compile Architecture "arhitectura_a20" of Entity "a20"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+acom -work a20 $DSN/src/douazeci.vhd
+# Compile...
+# File: c:\My_Designs\Colocviu\20\a20\src\douazeci.vhd
+# Compile Entity "a20"
+# Compile Architecture "arhitectura_a20" of Entity "a20"
+# Error: COMP96_0015: douazeci.vhd : (53, 3): ';' expected.
+# Error: COMP96_0015: douazeci.vhd : (66, 2): ';' expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [s]
+acom -work a20 $DSN/src/douazeci.vhd
+# Compile...
+# File: c:\My_Designs\Colocviu\20\a20\src\douazeci.vhd
+# Compile Entity "a20"
+# Compile Architecture "arhitectura_a20" of Entity "a20"
+# Error: COMP96_0367: douazeci.vhd : (59, 12): Improper array length. Actual length is 6. Expected length is 8.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [s]
+acom -work a20 $DSN/src/douazeci.vhd
+# Compile...
+# File: c:\My_Designs\Colocviu\20\a20\src\douazeci.vhd
+# Compile Entity "a20"
+# Compile Architecture "arhitectura_a20" of Entity "a20"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.7 [s]
+acom -work a20 $DSN/src/douazeci.vhd $DSN/src/registru.vhd
+# Compile...
+# File: c:\My_Designs\Colocviu\20\a20\src\douazeci.vhd
+# Compile Entity "a20"
+# Compile Architecture "arhitectura_a20" of Entity "a20"
+# File: c:\My_Designs\Colocviu\20\a20\src\registru.vhd
+# Compile Entity "registru"
+# Compile Architecture "arhitectura_registrul" of Entity "registru"
+# Error: COMP96_0020: registru.vhd : (40, 1): Variable can be declared only in a process or subprogram.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -work a20 $DSN/src/registru.vhd
+# Compile...
+# File: c:\My_Designs\Colocviu\20\a20\src\registru.vhd
+# Compile Entity "registru"
+# Compile Architecture "arhitectura_registrul" of Entity "registru"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+# Design: Design a20 already active.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim a20 arhitectura_a20
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using a Student Edition of Active-HDL. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: To receive an unrestricted version contact sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1612 kB (elbread=1031 elab2=299 kernel=281 sdf=0)
+#  19:08, 14 mai 2011
+#  Simulation has been initialized
+#  Selected Top-Level: a20 (arhitectura_a20)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+run 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim registru arhitectura_registrul
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using a Student Edition of Active-HDL. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: To receive an unrestricted version contact sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1611 kB (elbread=1031 elab2=298 kernel=281 sdf=0)
+#  19:09, 14 mai 2011
+#  Simulation has been initialized
+#  Selected Top-Level: registru (arhitectura_registrul)
+# Signal enable not found in design
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+run 100 ns
+# KERNEL: stopped at time: 700 ns
+run 100 ns
+# KERNEL: stopped at time: 800 ns
+run 100 ns
+# KERNEL: stopped at time: 900 ns
+run 100 ns
+# KERNEL: stopped at time: 1 us
+run 100 ns
+# KERNEL: stopped at time: 1100 ns
+run 100 ns
+# KERNEL: stopped at time: 1200 ns
+run 100 ns
+# KERNEL: stopped at time: 1300 ns
+run 100 ns
+# KERNEL: stopped at time: 1400 ns
+run 100 ns
+# KERNEL: stopped at time: 1500 ns
+run 100 ns
+# KERNEL: stopped at time: 1600 ns
+run 100 ns
+# KERNEL: stopped at time: 1700 ns
+run 100 ns
+# KERNEL: stopped at time: 1800 ns
+run 100 ns
+# KERNEL: stopped at time: 1900 ns
+run 100 ns
+# KERNEL: stopped at time: 2 us
+run 100 ns
+# KERNEL: stopped at time: 2100 ns
+run 100 ns
+# KERNEL: stopped at time: 2200 ns
+run 100 ns
+# KERNEL: stopped at time: 2300 ns
+run 100 ns
+# KERNEL: stopped at time: 2400 ns
+run 100 ns
+# KERNEL: stopped at time: 2500 ns
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim a20 arhitectura_a20
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using a Student Edition of Active-HDL. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: To receive an unrestricted version contact sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1612 kB (elbread=1031 elab2=299 kernel=281 sdf=0)
+#  19:11, 14 mai 2011
+#  Simulation has been initialized
+#  Selected Top-Level: a20 (arhitectura_a20)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+endsim
+#  Simulation has been stopped
+asim a20 arhitectura_a20
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using a Student Edition of Active-HDL. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: To receive an unrestricted version contact sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1612 kB (elbread=1031 elab2=299 kernel=281 sdf=0)
+#  19:12, 14 mai 2011
+#  Simulation has been initialized
+#  Selected Top-Level: a20 (arhitectura_a20)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+endsim
+#  Simulation has been stopped
+asim a20 arhitectura_a20
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using a Student Edition of Active-HDL. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: To receive an unrestricted version contact sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1612 kB (elbread=1031 elab2=299 kernel=281 sdf=0)
+#  19:12, 14 mai 2011
+#  Simulation has been initialized
+#  Selected Top-Level: a20 (arhitectura_a20)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+endsim
+#  Simulation has been stopped
+asim a20 arhitectura_a20
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using a Student Edition of Active-HDL. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: To receive an unrestricted version contact sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1612 kB (elbread=1031 elab2=299 kernel=281 sdf=0)
+#  19:13, 14 mai 2011
+#  Simulation has been initialized
+#  Selected Top-Level: a20 (arhitectura_a20)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+run 100 ns
+# KERNEL: stopped at time: 700 ns
+run 100 ns
+# KERNEL: stopped at time: 800 ns
+run 100 ns
+# KERNEL: stopped at time: 900 ns
+run 100 ns
+# KERNEL: stopped at time: 1 us
+run 100 ns
+# KERNEL: stopped at time: 1100 ns
+run 100 ns
+# KERNEL: stopped at time: 1200 ns
+endsim
+#  Simulation has been stopped
+asim a20 arhitectura_a20
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using a Student Edition of Active-HDL. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: To receive an unrestricted version contact sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1612 kB (elbread=1031 elab2=299 kernel=281 sdf=0)
+#  19:13, 14 mai 2011
+#  Simulation has been initialized
+#  Selected Top-Level: a20 (arhitectura_a20)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+endsim
+#  Simulation has been stopped
+asim a20 arhitectura_a20
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using a Student Edition of Active-HDL. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: To receive an unrestricted version contact sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1612 kB (elbread=1031 elab2=299 kernel=281 sdf=0)
+#  19:14, 14 mai 2011
+#  Simulation has been initialized
+#  Selected Top-Level: a20 (arhitectura_a20)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+endsim
+#  Simulation has been stopped
+asim a20 arhitectura_a20
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using a Student Edition of Active-HDL. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: To receive an unrestricted version contact sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1612 kB (elbread=1031 elab2=299 kernel=281 sdf=0)
+#  19:14, 14 mai 2011
+#  Simulation has been initialized
+#  Selected Top-Level: a20 (arhitectura_a20)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+endsim
+#  Simulation has been stopped
+asim a20 arhitectura_a20
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using a Student Edition of Active-HDL. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: To receive an unrestricted version contact sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1612 kB (elbread=1031 elab2=299 kernel=281 sdf=0)
+#  19:23, 14 mai 2011
+#  Simulation has been initialized
+#  Selected Top-Level: a20 (arhitectura_a20)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+run 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+#  Simulation has been stopped
+asim a20 arhitectura_a20
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+acom -work a20 $DSN/src/douazeci.vhd
+# Compile...
+# File: c:\My_Designs\Colocviu\20\a20\src\douazeci.vhd
+# Compile Entity "a20"
+# Compile Architecture "arhitectura_a20" of Entity "a20"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.9 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using a Student Edition of Active-HDL. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: To receive an unrestricted version contact sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1612 kB (elbread=1031 elab2=299 kernel=281 sdf=0)
+#  19:25, 14 mai 2011
+#  Simulation has been initialized
+#  Selected Top-Level: a20 (arhitectura_a20)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+run 100 ns
+# KERNEL: stopped at time: 700 ns
+run 100 ns
+# KERNEL: stopped at time: 800 ns
+run 100 ns
+# KERNEL: stopped at time: 900 ns
+run 100 ns
+# KERNEL: stopped at time: 1 us
+run 100 ns
+# KERNEL: stopped at time: 1100 ns
+run 100 ns
+# KERNEL: stopped at time: 1200 ns
+run 100 ns
+# KERNEL: stopped at time: 1300 ns
+run 100 ns
+# KERNEL: stopped at time: 1400 ns
+acom -work a20 $DSN/src/douazeci.vhd
+# Compile...
+# File: c:\My_Designs\Colocviu\20\a20\src\douazeci.vhd
+# Compile Entity "a20"
+# Compile Architecture "arhitectura_a20" of Entity "a20"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+endsim
+#  Simulation has been stopped
+asim a20 arhitectura_a20
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using a Student Edition of Active-HDL. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: To receive an unrestricted version contact sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1611 kB (elbread=1031 elab2=298 kernel=281 sdf=0)
+#  19:26, 14 mai 2011
+#  Simulation has been initialized
+#  Selected Top-Level: a20 (arhitectura_a20)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+run 100 ns
+# KERNEL: stopped at time: 700 ns
+run 100 ns
+# KERNEL: stopped at time: 800 ns
+run 100 ns
+# KERNEL: stopped at time: 900 ns
+run 100 ns
+# KERNEL: stopped at time: 1 us
+run 100 ns
+# KERNEL: stopped at time: 1100 ns
+run 100 ns
+# KERNEL: stopped at time: 1200 ns
+run 100 ns
+# KERNEL: stopped at time: 1300 ns
+run 100 ns
+# KERNEL: stopped at time: 1400 ns
+run 100 ns
+# KERNEL: stopped at time: 1500 ns
+run 100 ns
+# KERNEL: stopped at time: 1600 ns
+run 100 ns
+# KERNEL: stopped at time: 1700 ns
+run 100 ns
+# KERNEL: stopped at time: 1800 ns
+run 100 ns
+# KERNEL: stopped at time: 1900 ns
+run 100 ns
+# KERNEL: stopped at time: 2 us
+run 100 ns
+# KERNEL: stopped at time: 2100 ns
+run 100 ns
+# KERNEL: stopped at time: 2200 ns
+run 100 ns
+# KERNEL: stopped at time: 2300 ns
+run 100 ns
+# KERNEL: stopped at time: 2400 ns
+run 100 ns
+# KERNEL: stopped at time: 2500 ns
+run 100 ns
+# KERNEL: stopped at time: 2600 ns
+run 100 ns
+# KERNEL: stopped at time: 2700 ns
+run 100 ns
+# KERNEL: stopped at time: 2800 ns
+run 100 ns
+# KERNEL: stopped at time: 2900 ns
+run 100 ns
+# KERNEL: stopped at time: 3 us
+acom -work a20 $DSN/src/douazeci.vhd
+# Compile...
+# File: c:\My_Designs\Colocviu\20\a20\src\douazeci.vhd
+# Compile Entity "a20"
+# Compile Architecture "arhitectura_a20" of Entity "a20"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+endsim
+#  Simulation has been stopped
+asim a20 arhitectura_a20
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using a Student Edition of Active-HDL. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: To receive an unrestricted version contact sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1611 kB (elbread=1031 elab2=298 kernel=281 sdf=0)
+#  19:30, 14 mai 2011
+#  Simulation has been initialized
+#  Selected Top-Level: a20 (arhitectura_a20)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+endsim
+#  Simulation has been stopped
+asim a20 arhitectura_a20
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using a Student Edition of Active-HDL. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: To receive an unrestricted version contact sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1611 kB (elbread=1031 elab2=298 kernel=281 sdf=0)
+#  19:30, 14 mai 2011
+#  Simulation has been initialized
+#  Selected Top-Level: a20 (arhitectura_a20)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+run 100 ns
+# KERNEL: stopped at time: 700 ns
+run 100 ns
+# KERNEL: stopped at time: 800 ns
+acom -work a20 $DSN/src/douazeci.vhd
+# Compile...
+# File: c:\My_Designs\Colocviu\20\a20\src\douazeci.vhd
+# Compile Entity "a20"
+# Compile Architecture "arhitectura_a20" of Entity "a20"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+endsim
+#  Simulation has been stopped
+asim a20 arhitectura_a20
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using a Student Edition of Active-HDL. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: To receive an unrestricted version contact sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1613 kB (elbread=1031 elab2=300 kernel=281 sdf=0)
+#  19:32, 14 mai 2011
+#  Simulation has been initialized
+#  Selected Top-Level: a20 (arhitectura_a20)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+#  Simulation has been stopped

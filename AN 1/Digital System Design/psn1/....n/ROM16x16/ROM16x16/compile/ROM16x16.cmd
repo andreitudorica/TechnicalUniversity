@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\Colocviu\ROM16x16\library.cfg"  -j "c:\My_Designs\Colocviu\ROM16x16\ROM16x16\projlib.cfg"  -d "c:\My_Designs\Colocviu\ROM16x16\ROM16x16\compile\"  -work ROM16x16 -dbg -e 100 "c:\My_Designs\Colocviu\ROM16x16\ROM16x16\src\sase.vhd" 

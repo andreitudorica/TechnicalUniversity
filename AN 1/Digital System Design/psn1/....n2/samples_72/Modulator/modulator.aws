@@ -1,0 +1,14 @@
+[Version]
+Version=7.2
+[Designs]
+modulator=modulator.adf
+[Settings]
+Active=modulator
+[Expand]
+modulator=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

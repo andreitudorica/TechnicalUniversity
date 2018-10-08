@@ -1,0 +1,7 @@
+vhdl work "reg.vhd"
+vhdl work "eleven-bit_sreg.vhd"
+vhdl work "eleven-bit_counter.vhd"
+vhdl work "DFF.vhd"
+vhdl work "decoder.vhd"
+vhdl work "Debounce.vhd"
+vhdl work "top_level.vhd"

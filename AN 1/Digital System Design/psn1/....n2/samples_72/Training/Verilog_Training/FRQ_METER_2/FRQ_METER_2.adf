@@ -1,0 +1,58 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=1
+modified=18
+Current Config=compile
+
+[Configurations]
+compile=FRQ_METER_2
+
+[Library]
+FRQ_METER_2=.\FRQ_METER_2.LIB
+
+[Settings]
+SYNTH_TOOL=Synopsys
+IMPL_TOOL=Xilinx
+FAMILY=XC4000E
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+
+[$LibMap$]
+FRQ_METER_2=.
+Active_lib=XC4000E
+xilinxun=XC4000E
+UnlinkedDesignLibrary=XC4000E
+
+[Groups]
+FUNCTIONAL=1
+TestBench=1
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/CNT_4b.do=-1
+FUNCTIONAL/AND2.v=-1
+FUNCTIONAL/CNT_4b.v=-1
+FUNCTIONAL/CNT_BCD.bde=-1
+FUNCTIONAL/CONTROL.asf=-1
+FUNCTIONAL/HEX2LED.v=-1
+FUNCTIONAL/TOP_FRQM.bde=-1
+TestBench/TOP_FRQM_TB.v=-1
+TestBench/TOP_FRQM_TB_runtest.do=-1
+
+[Files.Data]
+.\src\CNT_4b.do=Macro
+.\src\FUNCTIONAL\AND2.v=Verilog Source Code
+.\src\FUNCTIONAL\CNT_4b.v=Verilog Source Code
+.\src\FUNCTIONAL\CNT_BCD.bde=Block Diagram
+.\src\FUNCTIONAL\CONTROL.asf=State Diagram
+.\src\FUNCTIONAL\HEX2LED.v=Verilog Source Code
+.\src\FUNCTIONAL\TOP_FRQM.bde=Block Diagram
+.\src\TestBench\TOP_FRQM_TB.v=Verilog Source Code
+.\src\TestBench\TOP_FRQM_TB_runtest.do=Macro
+

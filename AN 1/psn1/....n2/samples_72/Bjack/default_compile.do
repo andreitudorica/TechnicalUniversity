@@ -1,0 +1,5 @@
+acom -dbg "$DSN/src/bjack_c.asf"
+acom -dbg "$DSN/src/disp_units.vhd"
+acom -dbg "$DSN/src/gates.vhd"
+acom -dbg "$DSN/src/bjack.vhd"
+acom -dbg "$DSN/src/testbench.vhd"

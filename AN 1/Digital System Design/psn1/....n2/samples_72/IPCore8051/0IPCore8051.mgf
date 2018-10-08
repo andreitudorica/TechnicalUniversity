@@ -1,0 +1,89 @@
+V 000040 11 449 1139295537125 a8051_exp
+E A8051_exp VHDL
+L IEEE;IPCORE8051;
+U ieee.std_logic_1164;IPCore8051.types;
+P CLK _in std_logic
+P KEY_0 _in std_logic
+P KEY_1 _in std_logic
+P KEY_2 _in std_logic
+P KEY_3 _in std_logic
+P KEY_4 _in std_logic
+P KEY_5 _in std_logic
+P KEY_6 _in std_logic
+P KEY_7 _in std_logic
+P KEY_8 _in std_logic
+P KEY_9 _in std_logic
+P RESET _in std_logic
+P nWRS _in std_logic
+P DATAS _in std_logic_vector[7:0]
+P BUSY _out std_logic
+P SCREEN _out ScrType
+X A8051_exp
+V 000037 11 304 1139295532218 al8051
+E AL8051 VHDL
+L IEEE;
+U ieee.std_logic_1164;
+P Port0 _inout std_logic_vector[7:0]
+P Port1 _inout std_logic_vector[7:0]
+P Port2 _inout std_logic_vector[7:0]
+P Port3 _inout std_logic_vector[7:0]
+P CLK _in std_logic
+P ALE _out std_logic
+P PSEN _out std_logic
+P EA _in std_logic
+P RST _in std_logic
+X AL8051
+V 000038 11 258 1139295526500 display
+E display VHDL
+L IEEE;IPCORE8051;
+U ieee.std_logic_1164;IPCore8051.types;
+P nCS _in std_logic
+P CTR _in std_logic
+P nWR _in std_logic
+P nRD _in std_logic
+P ADDRESS _in std_logic_vector[4:0]
+P DATA _inout std_logic_vector[7:0]
+P SCREEN _out ScrType
+X display
+V 000035 11 572 1139296718313 fpga
+E Fpga VHDL
+L IEEE;
+U ieee.std_logic_1164;
+P ALE _in std_logic = 'X'
+P nCS _out std_logic
+P RESET _in std_logic = 'X'
+P INTA _in std_logic = 'X'
+P nWRS _in std_logic = 'X'
+P nRD _out std_logic
+P BUSY _out std_logic
+P nWR _out std_logic
+P ACKA _out std_logic
+P CTR _out std_logic
+P PORT1 _out std_logic_vector[3:0]
+P PORT2 _in std_logic_vector[7:0]
+P PORT3_IN _in std_logic_vector[4:0]
+P CODE _in std_logic_vector[3:0]
+P ADDRESS _out std_logic_vector[4:0]
+P PORT3_OUT _out std_logic_vector[2:0]
+P PORT0 _inout std_logic_vector[7:0]
+P DATAS _in std_logic_vector[7:0]
+X Fpga
+V 000039 11 377 1139295529725 keyboard
+E keyboard VHDL
+L IEEE;
+U ieee.std_logic_1164;
+P Key_0 _in std_logic
+P Key_1 _in std_logic
+P Key_2 _in std_logic
+P Key_3 _in std_logic
+P Key_4 _in std_logic
+P Key_5 _in std_logic
+P Key_6 _in std_logic
+P Key_7 _in std_logic
+P Key_8 _in std_logic
+P Key_9 _in std_logic
+P RESET _in std_logic
+P ACKA _in std_logic
+P INTA _out std_logic
+P CODE _out std_logic_vector[3:0]
+X keyboard

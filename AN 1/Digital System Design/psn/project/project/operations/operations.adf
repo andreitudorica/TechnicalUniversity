@@ -1,0 +1,52 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=operations
+
+[Library]
+operations=.\operations.LIB
+
+[$LibMap$]
+operations=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+SYNTH_TOOL=<none>
+IMPL_TOOL=<none>
+FAMILY=
+FLOWTOOLS=ONLY_IMPL
+
+[IMPLEMENTATION]
+UCF=
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=           
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/operatii.vhd=-1
+/scadere.vhd=-1
+/impartire.vhd=-1
+/inmultire.vhd=-1
+/adunare.vhd=-1
+/multiplexor.vhd=-1
+/Waveform Editor 1.awf=-1
+
+[Files.Data]
+.\src\operatii.vhd=VHDL Source Code
+.\src\scadere.vhd=VHDL Source Code
+.\src\impartire.vhd=VHDL Source Code
+.\src\inmultire.vhd=VHDL Source Code
+.\src\adunare.vhd=VHDL Source Code
+.\src\multiplexor.vhd=VHDL Source Code
+.\src\Waveform Editor 1.awf=Waveform File
+

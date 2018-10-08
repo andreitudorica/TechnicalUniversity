@@ -1,0 +1,36 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -work nimic $DSN/src/nimic.vhd
+# Compile...
+# File: c:\My_Designs\nimic\nimic\src\nimic.vhd
+# Compile Entity "and_b"
+# Compile Architecture "arhand_b" of Entity "and_b"
+# Compile Entity "nimic"
+# Compile Architecture "arhnimic" of Entity "nimic"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [s]
+asim and_b arhand_b nimic arhnimic
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using a Student Edition of Active-HDL. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: To receive an unrestricted version contact sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1611 kB (elbread=1031 elab2=298 kernel=281 sdf=0)
+#  2:53 PM, Wednesday, May 04, 2011
+#  Simulation has been initialized
+#  Selected Top-Level: and_b (arhand_b) nimic (arhnimic)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+#  Simulation has been stopped

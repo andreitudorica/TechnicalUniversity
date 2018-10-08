@@ -1,0 +1,12 @@
+[Version]
+Version=7.2
+[Designs]
+rom16x16=.\ROM16x16\ROM16x16.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+rom16x16=1

@@ -1,0 +1,15 @@
+elbread.dll ver. 1.0.5.375 Wed May 11 10:17:58 2011
+
+
+--------------------------------------------------------
+Entity           | Architecture        | Library      
+--------------------------------------------------------
+comparator_2bit  | arh_str             | Comparator_2bit
+comp_1           | arh_comportamentala | comparator_2bit
+--------------------------------------------------------
+
+-------------------
+Package   | Library
+-------------------
+standard  | std
+-------------------

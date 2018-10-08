@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\generic_si\library.cfg"  -j "c:\My_Designs\generic_si\generic_si\projlib.cfg"  -d "c:\My_Designs\generic_si\generic_si\compile\"  -work generic_si -dbg -e 100 "c:\My_Designs\generic_si\generic_si\src\generic_si.vhd" 

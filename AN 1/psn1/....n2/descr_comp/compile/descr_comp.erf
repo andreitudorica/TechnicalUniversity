@@ -1,0 +1,6 @@
+MESSAGE "File: c:\My_Designs\descr_comp\src\descr_comp.vhd" 
+MESSAGE "Compile Entity "sumator"" 
+MESSAGE "Compile Architecture "descr_comp" of Entity "sumator"" 
+MESSAGE "Top-level unit(s) detected:" 
+MESSAGE "Entity  =>   sumator" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 

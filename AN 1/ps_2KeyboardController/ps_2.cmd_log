@@ -1,0 +1,114 @@
+xst -intstyle ise -ifn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.xst" -ofn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.syr" 
+xst -intstyle ise -ifn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.xst" -ofn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ps_2.ucf -bm eleven-bit_sreg.bmm -p xc3s100e-cp132-5 "ps_2.ngc" ps_2.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ps_2.ucf -p xc3s100e-cp132-5 "ps_2.ngc" ps_2.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o ps_2_map.ncd ps_2.ngd ps_2.pcf 
+par -w -intstyle ise -ol high -t 1 ps_2_map.ncd ps_2.ncd ps_2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ps_2.twx ps_2.ncd -o ps_2.twr ps_2.pcf -ucf ps_2.ucf 
+bitgen -intstyle ise -f ps_2.ut ps_2.ncd 
+xst -intstyle ise -ifn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.xst" -ofn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ps_2.ucf -p xc3s100e-cp132-5 "ps_2.ngc" ps_2.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o ps_2_map.ncd ps_2.ngd ps_2.pcf 
+par -w -intstyle ise -ol high -t 1 ps_2_map.ncd ps_2.ncd ps_2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ps_2.twx ps_2.ncd -o ps_2.twr ps_2.pcf -ucf ps_2.ucf 
+bitgen -intstyle ise -f ps_2.ut ps_2.ncd 
+xst -intstyle ise -ifn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.xst" -ofn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ps_2.ucf -p xc3s100e-cp132-5 "ps_2.ngc" ps_2.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o ps_2_map.ncd ps_2.ngd ps_2.pcf 
+par -w -intstyle ise -ol high -t 1 ps_2_map.ncd ps_2.ncd ps_2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ps_2.twx ps_2.ncd -o ps_2.twr ps_2.pcf -ucf ps_2.ucf 
+bitgen -intstyle ise -f ps_2.ut ps_2.ncd 
+xst -intstyle ise -ifn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.xst" -ofn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.syr" 
+xst -intstyle ise -ifn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.xst" -ofn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.syr" 
+xst -intstyle ise -ifn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.xst" -ofn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.syr" 
+xst -intstyle ise -ifn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.xst" -ofn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.syr" 
+xst -intstyle ise -ifn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.xst" -ofn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ps_2.ucf -p xc3s100e-cp132-5 "ps_2.ngc" ps_2.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o ps_2_map.ncd ps_2.ngd ps_2.pcf 
+par -w -intstyle ise -ol high -t 1 ps_2_map.ncd ps_2.ncd ps_2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ps_2.twx ps_2.ncd -o ps_2.twr ps_2.pcf -ucf ps_2.ucf 
+bitgen -intstyle ise -f ps_2.ut ps_2.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ps_2.ucf -p xc3s100e-cp132-5 "ps_2.ngc" ps_2.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o ps_2_map.ncd ps_2.ngd ps_2.pcf 
+par -w -intstyle ise -ol high -t 1 ps_2_map.ncd ps_2.ncd ps_2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ps_2.twx ps_2.ncd -o ps_2.twr ps_2.pcf -ucf ps_2.ucf 
+bitgen -intstyle ise -f ps_2.ut ps_2.ncd 
+xst -intstyle ise -ifn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.xst" -ofn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.syr" 
+xst -intstyle ise -ifn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.xst" -ofn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.syr" 
+xst -intstyle ise -ifn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.xst" -ofn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.syr" 
+xst -intstyle ise -ifn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.xst" -ofn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.syr" 
+xst -intstyle ise -ifn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.xst" -ofn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.syr" 
+xst -intstyle ise -ifn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.xst" -ofn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ps_2.ucf -p xc3s100e-cp132-5 "ps_2.ngc" ps_2.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o ps_2_map.ncd ps_2.ngd ps_2.pcf 
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o ps_2_map.ncd ps_2.ngd ps_2.pcf 
+par -w -intstyle ise -ol high -t 1 ps_2_map.ncd ps_2.ncd ps_2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ps_2.twx ps_2.ncd -o ps_2.twr ps_2.pcf -ucf ps_2.ucf 
+bitgen -intstyle ise -f ps_2.ut ps_2.ncd 
+xst -intstyle ise -ifn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.xst" -ofn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ps_2.ucf -p xc3s100e-cp132-5 "ps_2.ngc" ps_2.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o ps_2_map.ncd ps_2.ngd ps_2.pcf 
+par -w -intstyle ise -ol high -t 1 ps_2_map.ncd ps_2.ncd ps_2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ps_2.twx ps_2.ncd -o ps_2.twr ps_2.pcf -ucf ps_2.ucf 
+bitgen -intstyle ise -f ps_2.ut ps_2.ncd 
+xst -intstyle ise -ifn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.xst" -ofn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ps_2.ucf -p xc3s100e-cp132-5 "ps_2.ngc" ps_2.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o ps_2_map.ncd ps_2.ngd ps_2.pcf 
+par -w -intstyle ise -ol high -t 1 ps_2_map.ncd ps_2.ncd ps_2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ps_2.twx ps_2.ncd -o ps_2.twr ps_2.pcf -ucf ps_2.ucf 
+bitgen -intstyle ise -f ps_2.ut ps_2.ncd 
+xst -intstyle ise -ifn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.xst" -ofn "D:/PS_2 KeyboardCtrl/ps_2KeyboardController/ps_2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ps_2.ucf -p xc3s100e-cp132-5 "ps_2.ngc" ps_2.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ps_2.ucf -p xc3s100e-cp132-5 ps_2.ngc ps_2.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ps_2.ucf -p xc3s100e-cp132-5 ps_2.ngc ps_2.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ps_2.ucf -p xc3s100e-cp132-5 ps_2.ngc ps_2.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ps_2.ucf -p xc3s100e-cp132-5 ps_2.ngc ps_2.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o ps_2_map.ncd ps_2.ngd ps_2.pcf 
+par -w -intstyle ise -ol high -t 1 ps_2_map.ncd ps_2.ncd ps_2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ps_2.twx ps_2.ncd -o ps_2.twr ps_2.pcf -ucf ps_2.ucf 
+bitgen -intstyle ise -f ps_2.ut ps_2.ncd 
+xst -intstyle ise -ifn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.xst" -ofn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ps_2.ucf -p xc3s100e-cp132-5 ps_2.ngc ps_2.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o ps_2_map.ncd ps_2.ngd ps_2.pcf 
+par -w -intstyle ise -ol high -t 1 ps_2_map.ncd ps_2.ncd ps_2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ps_2.twx ps_2.ncd -o ps_2.twr ps_2.pcf -ucf ps_2.ucf 
+bitgen -intstyle ise -f ps_2.ut ps_2.ncd 
+xst -intstyle ise -ifn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.xst" -ofn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ps_2.ucf -p xc3s100e-cp132-5 ps_2.ngc ps_2.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o ps_2_map.ncd ps_2.ngd ps_2.pcf 
+par -w -intstyle ise -ol high -t 1 ps_2_map.ncd ps_2.ncd ps_2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ps_2.twx ps_2.ncd -o ps_2.twr ps_2.pcf -ucf ps_2.ucf 
+bitgen -intstyle ise -f ps_2.ut ps_2.ncd 
+xst -intstyle ise -ifn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.xst" -ofn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ps_2.ucf -p xc3s100e-cp132-5 ps_2.ngc ps_2.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o ps_2_map.ncd ps_2.ngd ps_2.pcf 
+par -w -intstyle ise -ol high -t 1 ps_2_map.ncd ps_2.ncd ps_2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ps_2.twx ps_2.ncd -o ps_2.twr ps_2.pcf -ucf ps_2.ucf 
+bitgen -intstyle ise -f ps_2.ut ps_2.ncd 
+xst -intstyle ise -ifn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.xst" -ofn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.syr" 
+xst -intstyle ise -ifn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.xst" -ofn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.syr" 
+xst -intstyle ise -ifn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.xst" -ofn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.syr" 
+xst -intstyle ise -ifn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.xst" -ofn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.syr" 
+xst -intstyle ise -ifn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.xst" -ofn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.syr" 
+xst -intstyle ise -ifn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.xst" -ofn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.syr" 
+xst -intstyle ise -ifn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.xst" -ofn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.syr" 
+xst -intstyle ise -ifn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.xst" -ofn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.syr" 
+xst -intstyle ise -ifn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.xst" -ofn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.syr" 
+xst -intstyle ise -ifn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.xst" -ofn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.syr" 
+xst -intstyle ise -ifn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.xst" -ofn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.syr" 
+xst -intstyle ise -ifn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.xst" -ofn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.syr" 
+xst -intstyle ise -ifn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.xst" -ofn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.syr" 
+xst -intstyle ise -ifn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.xst" -ofn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.syr" 
+xst -intstyle ise -ifn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.xst" -ofn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ps_2.ucf -p xc3s100e-cp132-5 ps_2.ngc ps_2.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o ps_2_map.ncd ps_2.ngd ps_2.pcf 
+par -w -intstyle ise -ol high -t 1 ps_2_map.ncd ps_2.ncd ps_2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ps_2.twx ps_2.ncd -o ps_2.twr ps_2.pcf -ucf ps_2.ucf 
+bitgen -intstyle ise -f ps_2.ut ps_2.ncd 
+xst -intstyle ise -ifn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.xst" -ofn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.syr" 
+xst -intstyle ise -ifn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.xst" -ofn "C:/Users/Andrei/Desktop/ps_2KeyboardController/ps_2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ps_2.ucf -p xc3s100e-cp132-5 ps_2.ngc ps_2.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o ps_2_map.ncd ps_2.ngd ps_2.pcf 
+par -w -intstyle ise -ol high -t 1 ps_2_map.ncd ps_2.ncd ps_2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ps_2.twx ps_2.ncd -o ps_2.twr ps_2.pcf -ucf ps_2.ucf 
+bitgen -intstyle ise -f ps_2.ut ps_2.ncd 

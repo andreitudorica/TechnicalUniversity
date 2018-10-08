@@ -1,0 +1,818 @@
+I 000048 55 694           1304801640525 arh_sau
+(_unit VHDL (poarta_sau 0 11 (arh_sau 0 16 ))
+  (_version v38)
+  (_time 1304801640525 2011.05.07 23:54:00)
+  (_source (\./src/compar.vhd\))
+  (_use (std(standard)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304801640523)
+    (_use )
+  )
+  (_object
+    (_port (_internal x ~extSTD.STANDARD.BIT 0 12 (_entity (_in ))))
+    (_port (_internal y ~extSTD.STANDARD.BIT 0 12 (_entity (_in ))))
+    (_port (_internal z ~extSTD.STANDARD.BIT 0 13 (_entity (_out ))))
+    (_process
+      (line__18(_architecture 0 0 18 (_assignment (_simple)(_target(2))(_sensitivity(0)(1)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+  (_model . arh_sau 1 -1
+  )
+)
+I 000048 55 619           1304801640584 arh_inv
+(_unit VHDL (inversor 0 32 (arh_inv 0 37 ))
+  (_version v38)
+  (_time 1304801640583 2011.05.07 23:54:00)
+  (_source (\./src/compar.vhd\))
+  (_use (std(standard)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304801640582)
+    (_use )
+  )
+  (_object
+    (_port (_internal x ~extSTD.STANDARD.BIT 0 33 (_entity (_in ))))
+    (_port (_internal z ~extSTD.STANDARD.BIT 0 34 (_entity (_out ))))
+    (_process
+      (line__39(_architecture 0 0 39 (_assignment (_simple)(_target(1))(_sensitivity(0)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+  (_model . arh_inv 1 -1
+  )
+)
+I 000056 55 711           1304801640624 arh_coincidenta
+(_unit VHDL (coincidenta 0 42 (arh_coincidenta 0 47 ))
+  (_version v38)
+  (_time 1304801640623 2011.05.07 23:54:00)
+  (_source (\./src/compar.vhd\))
+  (_use (std(standard)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304801640622)
+    (_use )
+  )
+  (_object
+    (_port (_internal x ~extSTD.STANDARD.BIT 0 43 (_entity (_in ))))
+    (_port (_internal y ~extSTD.STANDARD.BIT 0 43 (_entity (_in ))))
+    (_port (_internal z ~extSTD.STANDARD.BIT 0 44 (_entity (_out ))))
+    (_process
+      (line__49(_architecture 0 0 49 (_assignment (_simple)(_target(2))(_sensitivity(1)(0)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+  (_model . arh_coincidenta 1 -1
+  )
+)
+I 000048 55 694           1304801676021 arh_sau
+(_unit VHDL (poarta_sau 0 11 (arh_sau 0 16 ))
+  (_version v38)
+  (_time 1304801676020 2011.05.07 23:54:36)
+  (_source (\./src/compar.vhd\))
+  (_use (std(standard)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304801640523)
+    (_use )
+  )
+  (_object
+    (_port (_internal x ~extSTD.STANDARD.BIT 0 12 (_entity (_in ))))
+    (_port (_internal y ~extSTD.STANDARD.BIT 0 12 (_entity (_in ))))
+    (_port (_internal z ~extSTD.STANDARD.BIT 0 13 (_entity (_out ))))
+    (_process
+      (line__18(_architecture 0 0 18 (_assignment (_simple)(_target(2))(_sensitivity(0)(1)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+  (_model . arh_sau 1 -1
+  )
+)
+I 000047 55 691           1304801676059 arh_si
+(_unit VHDL (poarta_si 0 22 (arh_si 0 27 ))
+  (_version v38)
+  (_time 1304801676058 2011.05.07 23:54:36)
+  (_source (\./src/compar.vhd\))
+  (_use (std(standard)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304801640577)
+    (_use )
+  )
+  (_object
+    (_port (_internal x ~extSTD.STANDARD.BIT 0 23 (_entity (_in ))))
+    (_port (_internal y ~extSTD.STANDARD.BIT 0 23 (_entity (_in ))))
+    (_port (_internal z ~extSTD.STANDARD.BIT 0 24 (_entity (_out ))))
+    (_process
+      (line__29(_architecture 0 0 29 (_assignment (_simple)(_target(2))(_sensitivity(1)(0)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+  (_model . arh_si 1 -1
+  )
+)
+I 000048 55 619           1304801676095 arh_inv
+(_unit VHDL (inversor 0 32 (arh_inv 0 37 ))
+  (_version v38)
+  (_time 1304801676094 2011.05.07 23:54:36)
+  (_source (\./src/compar.vhd\))
+  (_use (std(standard)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304801640582)
+    (_use )
+  )
+  (_object
+    (_port (_internal x ~extSTD.STANDARD.BIT 0 33 (_entity (_in ))))
+    (_port (_internal z ~extSTD.STANDARD.BIT 0 34 (_entity (_out ))))
+    (_process
+      (line__39(_architecture 0 0 39 (_assignment (_simple)(_target(1))(_sensitivity(0)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+  (_model . arh_inv 1 -1
+  )
+)
+I 000056 55 711           1304801676134 arh_coincidenta
+(_unit VHDL (coincidenta 0 42 (arh_coincidenta 0 47 ))
+  (_version v38)
+  (_time 1304801676133 2011.05.07 23:54:36)
+  (_source (\./src/compar.vhd\))
+  (_use (std(standard)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304801640622)
+    (_use )
+  )
+  (_object
+    (_port (_internal x ~extSTD.STANDARD.BIT 0 43 (_entity (_in ))))
+    (_port (_internal y ~extSTD.STANDARD.BIT 0 43 (_entity (_in ))))
+    (_port (_internal z ~extSTD.STANDARD.BIT 0 44 (_entity (_out ))))
+    (_process
+      (line__49(_architecture 0 0 49 (_assignment (_simple)(_target(2))(_sensitivity(1)(0)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+  (_model . arh_coincidenta 1 -1
+  )
+)
+I 000048 55 694           1304801687088 arh_sau
+(_unit VHDL (poarta_sau 0 11 (arh_sau 0 16 ))
+  (_version v38)
+  (_time 1304801687088 2011.05.07 23:54:47)
+  (_source (\./src/compar.vhd\))
+  (_use (std(standard)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304801640523)
+    (_use )
+  )
+  (_object
+    (_port (_internal x ~extSTD.STANDARD.BIT 0 12 (_entity (_in ))))
+    (_port (_internal y ~extSTD.STANDARD.BIT 0 12 (_entity (_in ))))
+    (_port (_internal z ~extSTD.STANDARD.BIT 0 13 (_entity (_out ))))
+    (_process
+      (line__18(_architecture 0 0 18 (_assignment (_simple)(_target(2))(_sensitivity(0)(1)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+  (_model . arh_sau 1 -1
+  )
+)
+I 000047 55 691           1304801687132 arh_si
+(_unit VHDL (poarta_si 0 22 (arh_si 0 27 ))
+  (_version v38)
+  (_time 1304801687131 2011.05.07 23:54:47)
+  (_source (\./src/compar.vhd\))
+  (_use (std(standard)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304801640577)
+    (_use )
+  )
+  (_object
+    (_port (_internal x ~extSTD.STANDARD.BIT 0 23 (_entity (_in ))))
+    (_port (_internal y ~extSTD.STANDARD.BIT 0 23 (_entity (_in ))))
+    (_port (_internal z ~extSTD.STANDARD.BIT 0 24 (_entity (_out ))))
+    (_process
+      (line__29(_architecture 0 0 29 (_assignment (_simple)(_target(2))(_sensitivity(1)(0)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+  (_model . arh_si 1 -1
+  )
+)
+I 000048 55 619           1304801687168 arh_inv
+(_unit VHDL (inversor 0 32 (arh_inv 0 37 ))
+  (_version v38)
+  (_time 1304801687167 2011.05.07 23:54:47)
+  (_source (\./src/compar.vhd\))
+  (_use (std(standard)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304801640582)
+    (_use )
+  )
+  (_object
+    (_port (_internal x ~extSTD.STANDARD.BIT 0 33 (_entity (_in ))))
+    (_port (_internal z ~extSTD.STANDARD.BIT 0 34 (_entity (_out ))))
+    (_process
+      (line__39(_architecture 0 0 39 (_assignment (_simple)(_target(1))(_sensitivity(0)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+  (_model . arh_inv 1 -1
+  )
+)
+I 000056 55 711           1304801687208 arh_coincidenta
+(_unit VHDL (coincidenta 0 42 (arh_coincidenta 0 47 ))
+  (_version v38)
+  (_time 1304801687208 2011.05.07 23:54:47)
+  (_source (\./src/compar.vhd\))
+  (_use (std(standard)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304801640622)
+    (_use )
+  )
+  (_object
+    (_port (_internal x ~extSTD.STANDARD.BIT 0 43 (_entity (_in ))))
+    (_port (_internal y ~extSTD.STANDARD.BIT 0 43 (_entity (_in ))))
+    (_port (_internal z ~extSTD.STANDARD.BIT 0 44 (_entity (_out ))))
+    (_process
+      (line__49(_architecture 0 0 49 (_assignment (_simple)(_target(2))(_sensitivity(1)(0)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+  (_model . arh_coincidenta 1 -1
+  )
+)
+I 000048 55 694           1304801695693 arh_sau
+(_unit VHDL (poarta_sau 0 11 (arh_sau 0 16 ))
+  (_version v38)
+  (_time 1304801695692 2011.05.07 23:54:55)
+  (_source (\./src/compar.vhd\))
+  (_use (std(standard)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304801640523)
+    (_use )
+  )
+  (_object
+    (_port (_internal x ~extSTD.STANDARD.BIT 0 12 (_entity (_in ))))
+    (_port (_internal y ~extSTD.STANDARD.BIT 0 12 (_entity (_in ))))
+    (_port (_internal z ~extSTD.STANDARD.BIT 0 13 (_entity (_out ))))
+    (_process
+      (line__18(_architecture 0 0 18 (_assignment (_simple)(_target(2))(_sensitivity(0)(1)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+  (_model . arh_sau 1 -1
+  )
+)
+I 000047 55 691           1304801695732 arh_si
+(_unit VHDL (poarta_si 0 22 (arh_si 0 27 ))
+  (_version v38)
+  (_time 1304801695731 2011.05.07 23:54:55)
+  (_source (\./src/compar.vhd\))
+  (_use (std(standard)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304801640577)
+    (_use )
+  )
+  (_object
+    (_port (_internal x ~extSTD.STANDARD.BIT 0 23 (_entity (_in ))))
+    (_port (_internal y ~extSTD.STANDARD.BIT 0 23 (_entity (_in ))))
+    (_port (_internal z ~extSTD.STANDARD.BIT 0 24 (_entity (_out ))))
+    (_process
+      (line__29(_architecture 0 0 29 (_assignment (_simple)(_target(2))(_sensitivity(1)(0)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+  (_model . arh_si 1 -1
+  )
+)
+I 000048 55 619           1304801695767 arh_inv
+(_unit VHDL (inversor 0 32 (arh_inv 0 37 ))
+  (_version v38)
+  (_time 1304801695767 2011.05.07 23:54:55)
+  (_source (\./src/compar.vhd\))
+  (_use (std(standard)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304801640582)
+    (_use )
+  )
+  (_object
+    (_port (_internal x ~extSTD.STANDARD.BIT 0 33 (_entity (_in ))))
+    (_port (_internal z ~extSTD.STANDARD.BIT 0 34 (_entity (_out ))))
+    (_process
+      (line__39(_architecture 0 0 39 (_assignment (_simple)(_target(1))(_sensitivity(0)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+  (_model . arh_inv 1 -1
+  )
+)
+I 000056 55 711           1304801695809 arh_coincidenta
+(_unit VHDL (coincidenta 0 42 (arh_coincidenta 0 47 ))
+  (_version v38)
+  (_time 1304801695808 2011.05.07 23:54:55)
+  (_source (\./src/compar.vhd\))
+  (_use (std(standard)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304801640622)
+    (_use )
+  )
+  (_object
+    (_port (_internal x ~extSTD.STANDARD.BIT 0 43 (_entity (_in ))))
+    (_port (_internal y ~extSTD.STANDARD.BIT 0 43 (_entity (_in ))))
+    (_port (_internal z ~extSTD.STANDARD.BIT 0 44 (_entity (_out ))))
+    (_process
+      (line__49(_architecture 0 0 49 (_assignment (_simple)(_target(2))(_sensitivity(1)(0)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+  (_model . arh_coincidenta 1 -1
+  )
+)
+I 000048 55 694           1304801708332 arh_sau
+(_unit VHDL (poarta_sau 0 11 (arh_sau 0 16 ))
+  (_version v38)
+  (_time 1304801708332 2011.05.07 23:55:08)
+  (_source (\./src/compar.vhd\))
+  (_use (std(standard)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304801640523)
+    (_use )
+  )
+  (_object
+    (_port (_internal x ~extSTD.STANDARD.BIT 0 12 (_entity (_in ))))
+    (_port (_internal y ~extSTD.STANDARD.BIT 0 12 (_entity (_in ))))
+    (_port (_internal z ~extSTD.STANDARD.BIT 0 13 (_entity (_out ))))
+    (_process
+      (line__18(_architecture 0 0 18 (_assignment (_simple)(_target(2))(_sensitivity(0)(1)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+  (_model . arh_sau 1 -1
+  )
+)
+I 000047 55 691           1304801708374 arh_si
+(_unit VHDL (poarta_si 0 22 (arh_si 0 27 ))
+  (_version v38)
+  (_time 1304801708373 2011.05.07 23:55:08)
+  (_source (\./src/compar.vhd\))
+  (_use (std(standard)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304801640577)
+    (_use )
+  )
+  (_object
+    (_port (_internal x ~extSTD.STANDARD.BIT 0 23 (_entity (_in ))))
+    (_port (_internal y ~extSTD.STANDARD.BIT 0 23 (_entity (_in ))))
+    (_port (_internal z ~extSTD.STANDARD.BIT 0 24 (_entity (_out ))))
+    (_process
+      (line__29(_architecture 0 0 29 (_assignment (_simple)(_target(2))(_sensitivity(1)(0)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+  (_model . arh_si 1 -1
+  )
+)
+I 000048 55 619           1304801708411 arh_inv
+(_unit VHDL (inversor 0 32 (arh_inv 0 37 ))
+  (_version v38)
+  (_time 1304801708410 2011.05.07 23:55:08)
+  (_source (\./src/compar.vhd\))
+  (_use (std(standard)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304801640582)
+    (_use )
+  )
+  (_object
+    (_port (_internal x ~extSTD.STANDARD.BIT 0 33 (_entity (_in ))))
+    (_port (_internal z ~extSTD.STANDARD.BIT 0 34 (_entity (_out ))))
+    (_process
+      (line__39(_architecture 0 0 39 (_assignment (_simple)(_target(1))(_sensitivity(0)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+  (_model . arh_inv 1 -1
+  )
+)
+I 000056 55 711           1304801708454 arh_coincidenta
+(_unit VHDL (coincidenta 0 42 (arh_coincidenta 0 47 ))
+  (_version v38)
+  (_time 1304801708453 2011.05.07 23:55:08)
+  (_source (\./src/compar.vhd\))
+  (_use (std(standard)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304801640622)
+    (_use )
+  )
+  (_object
+    (_port (_internal x ~extSTD.STANDARD.BIT 0 43 (_entity (_in ))))
+    (_port (_internal y ~extSTD.STANDARD.BIT 0 43 (_entity (_in ))))
+    (_port (_internal z ~extSTD.STANDARD.BIT 0 44 (_entity (_out ))))
+    (_process
+      (line__49(_architecture 0 0 49 (_assignment (_simple)(_target(2))(_sensitivity(1)(0)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+  (_model . arh_coincidenta 1 -1
+  )
+)
+I 000048 55 694           1304801719282 arh_sau
+(_unit VHDL (poarta_sau 0 11 (arh_sau 0 16 ))
+  (_version v38)
+  (_time 1304801719281 2011.05.07 23:55:19)
+  (_source (\./src/compar.vhd\))
+  (_use (std(standard)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304801640523)
+    (_use )
+  )
+  (_object
+    (_port (_internal x ~extSTD.STANDARD.BIT 0 12 (_entity (_in ))))
+    (_port (_internal y ~extSTD.STANDARD.BIT 0 12 (_entity (_in ))))
+    (_port (_internal z ~extSTD.STANDARD.BIT 0 13 (_entity (_out ))))
+    (_process
+      (line__18(_architecture 0 0 18 (_assignment (_simple)(_target(2))(_sensitivity(0)(1)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+  (_model . arh_sau 1 -1
+  )
+)
+I 000047 55 691           1304801719322 arh_si
+(_unit VHDL (poarta_si 0 22 (arh_si 0 27 ))
+  (_version v38)
+  (_time 1304801719322 2011.05.07 23:55:19)
+  (_source (\./src/compar.vhd\))
+  (_use (std(standard)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304801640577)
+    (_use )
+  )
+  (_object
+    (_port (_internal x ~extSTD.STANDARD.BIT 0 23 (_entity (_in ))))
+    (_port (_internal y ~extSTD.STANDARD.BIT 0 23 (_entity (_in ))))
+    (_port (_internal z ~extSTD.STANDARD.BIT 0 24 (_entity (_out ))))
+    (_process
+      (line__29(_architecture 0 0 29 (_assignment (_simple)(_target(2))(_sensitivity(1)(0)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+  (_model . arh_si 1 -1
+  )
+)
+I 000048 55 619           1304801719361 arh_inv
+(_unit VHDL (inversor 0 32 (arh_inv 0 37 ))
+  (_version v38)
+  (_time 1304801719360 2011.05.07 23:55:19)
+  (_source (\./src/compar.vhd\))
+  (_use (std(standard)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304801640582)
+    (_use )
+  )
+  (_object
+    (_port (_internal x ~extSTD.STANDARD.BIT 0 33 (_entity (_in ))))
+    (_port (_internal z ~extSTD.STANDARD.BIT 0 34 (_entity (_out ))))
+    (_process
+      (line__39(_architecture 0 0 39 (_assignment (_simple)(_target(1))(_sensitivity(0)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+  (_model . arh_inv 1 -1
+  )
+)
+I 000056 55 711           1304801719406 arh_coincidenta
+(_unit VHDL (coincidenta 0 42 (arh_coincidenta 0 47 ))
+  (_version v38)
+  (_time 1304801719405 2011.05.07 23:55:19)
+  (_source (\./src/compar.vhd\))
+  (_use (std(standard)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304801640622)
+    (_use )
+  )
+  (_object
+    (_port (_internal x ~extSTD.STANDARD.BIT 0 43 (_entity (_in ))))
+    (_port (_internal y ~extSTD.STANDARD.BIT 0 43 (_entity (_in ))))
+    (_port (_internal z ~extSTD.STANDARD.BIT 0 44 (_entity (_out ))))
+    (_process
+      (line__49(_architecture 0 0 49 (_assignment (_simple)(_target(2))(_sensitivity(1)(0)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+  (_model . arh_coincidenta 1 -1
+  )
+)
+V 000048 55 694           1304801753568 arh_sau
+(_unit VHDL (poarta_sau 0 11 (arh_sau 0 16 ))
+  (_version v38)
+  (_time 1304801753567 2011.05.07 23:55:53)
+  (_source (\./src/compar.vhd\))
+  (_use (std(standard)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304801640523)
+    (_use )
+  )
+  (_object
+    (_port (_internal x ~extSTD.STANDARD.BIT 0 12 (_entity (_in ))))
+    (_port (_internal y ~extSTD.STANDARD.BIT 0 12 (_entity (_in ))))
+    (_port (_internal z ~extSTD.STANDARD.BIT 0 13 (_entity (_out ))))
+    (_process
+      (line__18(_architecture 0 0 18 (_assignment (_simple)(_target(2))(_sensitivity(0)(1)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+  (_model . arh_sau 1 -1
+  )
+)
+V 000047 55 691           1304801753607 arh_si
+(_unit VHDL (poarta_si 0 22 (arh_si 0 27 ))
+  (_version v38)
+  (_time 1304801753606 2011.05.07 23:55:53)
+  (_source (\./src/compar.vhd\))
+  (_use (std(standard)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304801640577)
+    (_use )
+  )
+  (_object
+    (_port (_internal x ~extSTD.STANDARD.BIT 0 23 (_entity (_in ))))
+    (_port (_internal y ~extSTD.STANDARD.BIT 0 23 (_entity (_in ))))
+    (_port (_internal z ~extSTD.STANDARD.BIT 0 24 (_entity (_out ))))
+    (_process
+      (line__29(_architecture 0 0 29 (_assignment (_simple)(_target(2))(_sensitivity(1)(0)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+  (_model . arh_si 1 -1
+  )
+)
+V 000048 55 619           1304801753643 arh_inv
+(_unit VHDL (inversor 0 32 (arh_inv 0 37 ))
+  (_version v38)
+  (_time 1304801753642 2011.05.07 23:55:53)
+  (_source (\./src/compar.vhd\))
+  (_use (std(standard)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304801640582)
+    (_use )
+  )
+  (_object
+    (_port (_internal x ~extSTD.STANDARD.BIT 0 33 (_entity (_in ))))
+    (_port (_internal z ~extSTD.STANDARD.BIT 0 34 (_entity (_out ))))
+    (_process
+      (line__39(_architecture 0 0 39 (_assignment (_simple)(_target(1))(_sensitivity(0)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+  (_model . arh_inv 1 -1
+  )
+)
+V 000056 55 711           1304801753681 arh_coincidenta
+(_unit VHDL (coincidenta 0 42 (arh_coincidenta 0 47 ))
+  (_version v38)
+  (_time 1304801753681 2011.05.07 23:55:53)
+  (_source (\./src/compar.vhd\))
+  (_use (std(standard)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304801640622)
+    (_use )
+  )
+  (_object
+    (_port (_internal x ~extSTD.STANDARD.BIT 0 43 (_entity (_in ))))
+    (_port (_internal y ~extSTD.STANDARD.BIT 0 43 (_entity (_in ))))
+    (_port (_internal z ~extSTD.STANDARD.BIT 0 44 (_entity (_out ))))
+    (_process
+      (line__49(_architecture 0 0 49 (_assignment (_simple)(_target(2))(_sensitivity(1)(0)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+  (_model . arh_coincidenta 1 -1
+  )
+)
+V 000050 55 5515          1304801753717 arhcompar
+(_unit VHDL (compar 0 6 (arhcompar 0 54 ))
+  (_version v38)
+  (_time 1304801753717 2011.05.07 23:55:53)
+  (_source (\./src/compar.vhd\))
+  (_use (std(standard))(ieee(std_logic_1164)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304801640517)
+    (_use )
+  )
+  (_component
+    (inversor
+      (_object
+        (_port (_internal x ~extSTD.STANDARD.BIT 0 66 (_entity (_in ))))
+        (_port (_internal z ~extSTD.STANDARD.BIT 0 67 (_entity (_out ))))
+      )
+    )
+    (poarta_si
+      (_object
+        (_port (_internal x ~extSTD.STANDARD.BIT 0 61 (_entity (_in ))))
+        (_port (_internal y ~extSTD.STANDARD.BIT 0 61 (_entity (_in ))))
+        (_port (_internal z ~extSTD.STANDARD.BIT 0 62 (_entity (_out ))))
+      )
+    )
+    (coincidenta
+      (_object
+        (_port (_internal x ~extSTD.STANDARD.BIT 0 71 (_entity (_in ))))
+        (_port (_internal y ~extSTD.STANDARD.BIT 0 71 (_entity (_in ))))
+        (_port (_internal z ~extSTD.STANDARD.BIT 0 72 (_entity (_out ))))
+      )
+    )
+    (poarta_sau
+      (_object
+        (_port (_internal x ~extSTD.STANDARD.BIT 0 56 (_entity (_in ))))
+        (_port (_internal y ~extSTD.STANDARD.BIT 0 56 (_entity (_in ))))
+        (_port (_internal z ~extSTD.STANDARD.BIT 0 57 (_entity (_out ))))
+      )
+    )
+  )
+  (_instantiation u1 0 78 (_component inversor )
+    (_port
+      ((x)(c))
+      ((z)(y1))
+    )
+    (_use (_entity . inversor)
+    )
+  )
+  (_instantiation u2 0 79 (_component poarta_si )
+    (_port
+      ((x)(a))
+      ((y)(y1))
+      ((z)(y2))
+    )
+    (_use (_entity . poarta_si)
+    )
+  )
+  (_instantiation u3 0 80 (_component coincidenta )
+    (_port
+      ((x)(a))
+      ((y)(c))
+      ((z)(y3))
+    )
+    (_use (_entity . coincidenta)
+    )
+  )
+  (_instantiation u4 0 81 (_component inversor )
+    (_port
+      ((x)(d))
+      ((z)(y4))
+    )
+    (_use (_entity . inversor)
+    )
+  )
+  (_instantiation u5 0 82 (_component poarta_si )
+    (_port
+      ((x)(b))
+      ((y)(y4))
+      ((z)(y5))
+    )
+    (_use (_entity . poarta_si)
+    )
+  )
+  (_instantiation u6 0 83 (_component poarta_si )
+    (_port
+      ((x)(y3))
+      ((y)(y5))
+      ((z)(y6))
+    )
+    (_use (_entity . poarta_si)
+    )
+  )
+  (_instantiation u7 0 84 (_component poarta_sau )
+    (_port
+      ((x)(y2))
+      ((y)(y6))
+      ((z)(f1))
+    )
+    (_use (_entity . poarta_sau)
+    )
+  )
+  (_instantiation u8 0 86 (_component coincidenta )
+    (_port
+      ((x)(a))
+      ((y)(c))
+      ((z)(y7))
+    )
+    (_use (_entity . coincidenta)
+    )
+  )
+  (_instantiation u9 0 87 (_component coincidenta )
+    (_port
+      ((x)(b))
+      ((y)(d))
+      ((z)(y8))
+    )
+    (_use (_entity . coincidenta)
+    )
+  )
+  (_instantiation u10 0 88 (_component poarta_si )
+    (_port
+      ((x)(y7))
+      ((y)(y8))
+      ((z)(f2))
+    )
+    (_use (_entity . poarta_si)
+    )
+  )
+  (_instantiation u11 0 90 (_component inversor )
+    (_port
+      ((x)(a))
+      ((z)(y9))
+    )
+    (_use (_entity . inversor)
+    )
+  )
+  (_instantiation u12 0 91 (_component poarta_si )
+    (_port
+      ((x)(y9))
+      ((y)(c))
+      ((z)(y10))
+    )
+    (_use (_entity . poarta_si)
+    )
+  )
+  (_instantiation u13 0 92 (_component inversor )
+    (_port
+      ((x)(b))
+      ((z)(y11))
+    )
+    (_use (_entity . inversor)
+    )
+  )
+  (_instantiation u14 0 93 (_component poarta_si )
+    (_port
+      ((x)(y11))
+      ((y)(d))
+      ((z)(y12))
+    )
+    (_use (_entity . poarta_si)
+    )
+  )
+  (_instantiation u15 0 94 (_component poarta_si )
+    (_port
+      ((x)(y7))
+      ((y)(y12))
+      ((z)(y13))
+    )
+    (_use (_entity . poarta_si)
+    )
+  )
+  (_instantiation u16 0 95 (_component poarta_sau )
+    (_port
+      ((x)(y10))
+      ((y)(y13))
+      ((z)(f3))
+    )
+    (_use (_entity . poarta_sau)
+    )
+  )
+  (_object
+    (_port (_internal a ~extSTD.STANDARD.BIT 0 7 (_entity (_in ))))
+    (_port (_internal b ~extSTD.STANDARD.BIT 0 7 (_entity (_in ))))
+    (_port (_internal c ~extSTD.STANDARD.BIT 0 7 (_entity (_in ))))
+    (_port (_internal d ~extSTD.STANDARD.BIT 0 7 (_entity (_in ))))
+    (_port (_internal f1 ~extSTD.STANDARD.BIT 0 8 (_entity (_out ))))
+    (_port (_internal f2 ~extSTD.STANDARD.BIT 0 8 (_entity (_out ))))
+    (_port (_internal f3 ~extSTD.STANDARD.BIT 0 8 (_entity (_out ))))
+    (_signal (_internal y1 ~extSTD.STANDARD.BIT 0 76 (_architecture (_uni ))))
+    (_signal (_internal y2 ~extSTD.STANDARD.BIT 0 76 (_architecture (_uni ))))
+    (_signal (_internal y3 ~extSTD.STANDARD.BIT 0 76 (_architecture (_uni ))))
+    (_signal (_internal y4 ~extSTD.STANDARD.BIT 0 76 (_architecture (_uni ))))
+    (_signal (_internal y5 ~extSTD.STANDARD.BIT 0 76 (_architecture (_uni ))))
+    (_signal (_internal y6 ~extSTD.STANDARD.BIT 0 76 (_architecture (_uni ))))
+    (_signal (_internal y7 ~extSTD.STANDARD.BIT 0 76 (_architecture (_uni ))))
+    (_signal (_internal y8 ~extSTD.STANDARD.BIT 0 76 (_architecture (_uni ))))
+    (_signal (_internal y9 ~extSTD.STANDARD.BIT 0 76 (_architecture (_uni ))))
+    (_signal (_internal y10 ~extSTD.STANDARD.BIT 0 76 (_architecture (_uni ))))
+    (_signal (_internal y11 ~extSTD.STANDARD.BIT 0 76 (_architecture (_uni ))))
+    (_signal (_internal y12 ~extSTD.STANDARD.BIT 0 76 (_architecture (_uni ))))
+    (_signal (_internal y13 ~extSTD.STANDARD.BIT 0 76 (_architecture (_uni ))))
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+)

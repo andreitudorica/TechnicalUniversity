@@ -1,0 +1,36 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=Modul_de_Simulare_tact
+
+[Library]
+Modul_de_Simulare_tact=.\Modul_de_Simulare_tact.LIB
+
+[$LibMap$]
+Modul_de_Simulare_tact=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[Files]
+/MS.vhd=-1
+/bistabil_d.vhd=-1
+
+[Files.Data]
+.\src\MS.vhd=VHDL Source Code
+.\src\bistabil_d.vhd=VHDL Source Code
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=ms|arhitectura_ms|0  
+ShowHide=ShowTopLevel
+Selected=

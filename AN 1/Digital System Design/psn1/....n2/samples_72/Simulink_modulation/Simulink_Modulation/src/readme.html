@@ -1,0 +1,117 @@
+<html>
+<head>
+	<title>Readme</title>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+	<meta name="author" content="Arek Golec">
+	<link rel="stylesheet" type="text/css" href="../readme_files/style.css">
+</head>
+
+<body>
+<h2>DESCRIPTION:</h2> 
+<p><b>SIMULINK_MODULATION</b> is simple DSP design using several components written in VHDL to demonstrate the use of <b>Active-HDL Co-Simulation Interface to Simulink&reg;</b>.
+
+<p>MATLAB&reg; and Simulink&reg; software can be downloaded from the MathWorks website at <a href="http://www.mathworks.com/">www.mathworks.com</a>.
+
+<p>The top-level diagram is created using Simulink diagram editor. This diagram instantiates HDL Black-Boxes of modulator and demodulator, both described in VHDL.
+
+<p>The design <b>Simulink_modulation</b> contains a description of components used in Simulink block diagram. It includes:
+<ol>
+	<li>VHDL description of the multiplier (<i>mult.vhd</i>). 
+	<li>VHDL description of blocks required to build AM demodulator: abs, sign and FIR_filter connected together using Block Diagram (<i>top_demodulator.bde</i> with all instantiated files).
+</ol>
+
+<p>Simulink design is simple example of amplitude modulation/demodulation channel. Two sinusoidal signals, carrier and information, are multiplied using modulator HDL Black-Box. The amplitude modulated signal can be observed on its output.
+
+<p>This signal is applied to demodulator built using following functional blocks:
+<ul>
+	<li>rectifier which is simple abs function extracting absolute value of modulated signal ("Abs" block)
+	<li>information signal LowPass FIR filter used to attenuate carrier frequency from modulated signal and thus extract its envelope which holds information ("carrier_FIR" block)
+	<li>sign detector used to extract frequency of the carrier ("Sign" block)
+	<li>carrier LowPass FIR filter used to filter out high harmonic components from square wave present on sign detector's output ("envelope_FIR" block)
+</ul>
+
+<p>&nbsp;
+<p><h2>BLOCK DESCRIPTION GENERATION:</h2>
+
+<p>To start co-simulation of this design in Simulink, we need to use Active-HDL to create files that describe our HDL components in Simulink diagram.
+
+<p>Compile the <b>Simulink_modulation</b> design using <b><i>compile_all.do</i></b> macro. This macro includes also <span style="font-family: 'Courier New', monospace;">simulinkgenmod</span> macro command which generates block description files for Simulink.</p>
+<p>Alternatively, compile design files manually and for each of top-level modules (<b><i>top_demodulator</i></b> and <b><i>mult</i></b>), use the <b>Generate Block Description for Simulink</b> option from the pop-up menu (Figure 1). Confirm the default file names and locations by pressing OK in the <b>Save&nbsp;As</b> dialog box.
+<p><img SRC="../readme_files/generate_block.png" BORDER="0" ALT="Figure 1. Generating the block description file for co-simulation in Simulink"><br>
+<i>Figure 1. Generating the block description file for co-simulation in Simulink</i>
+
+<p>Once the block description files are created for all modules mentioned above, invoke <b>MATLAB</b>. If you use the co-simulation interface for the first time, browse to the <b>$ALDEC/Simulink</b> folder and type the <b><i>setup</i></b> command. (The <b>$ALDEC</b> variable points to the Active-HDL installation folder; you can examine its value using the <b><i>set</i></b> command in <nobr>Active-HDL</nobr> Console.)
+
+<p>&nbsp;
+<h2>CO-SIMULATION: </h2>
+
+<p>Open the <i>$WSP/Simulink/modulation_cosim.mdl</i> file in the Simulink environment. Make sure that the <I>$WSP/Simulink</I> folder is either set as the current folder or added to the MATLAB search path.<br>
+The model contains the <b>Active-HDL Co-Sim</b> block on the top-level diagram and two HDL Black-Boxes corresponding to instances of the top_demodulator and the mult entities (Figure 2). The name displayed in the middle of the HDL Black-Box symbol corresponds to the configuration filename. By default, it is the name of the entity/module, unless you change it with the <b>Generate Block Description for Simulink</b> option. The HDL Black-Boxes are distinguished graphically with the Active-HDL logo.
+
+<p><img SRC="../readme_files/modulation_mdl.png" BORDER="0" ALT="Figure 2. The Simulink model window"><br>
+<i>Figure 2. The Simulink model window</i>
+
+<p>Now, you can simply start simulation and observe the results on the Simulink scopes. For additional information on how to setup co-simulation, refer to the chapters below.<br>
+
+<p>&nbsp;
+<h2>PORTS CONFIGURATION:</h2>
+
+<p>Double-click on one of the HDL Black-Boxes. The <b>HDL Black-Box Parameters</b> dialog box (Figure 3.) allows you to control data transfer conditions and check properties of every port. Some of main properties are listed below.
+
+<dl class="F">
+<dt><b>Direction</b>
+	<dd>Shows the direction of data transfer or a mode for special signals. The <I>Custom</I> mode indicates that a signal has been added to the <b><I>Stimulators</I></b> tab, <I>Clock</I> and <I>Sync</I> indicate that signals have been added to the <b><I>Clocks</I></b> tab.</dd>
+<dt><B>Binary Point</B>
+	<dd>Allows specifying the binary point for a vector. Double numbers in Simulink are converted to binary numbers in fractional two's complement notation. This parameter defines position of the 2^0 bit.</dd>
+<dt><B>Sampling Period</B>
+	<dd>Specifies the sampling period or the reference signal defining the update rate of the output signal. You can specify an integer number related to the <b>Reference Period</b> or one of signals selected as Clock or Sync (Figure 5.). In this example, <i>Modulator</i> module uses sampling period of 2, while <i>Demodulator</i> uses its <i>clk</i> signal as reference.</dd>
+<dt><B>Multirate Sampling</B>
+	<dd>Allows you to use a different sampling period for each output.</dd>
+<dt><B>Waveform</B>
+	<dd>This tab allows to select signals to be displayed in the Active-HDL waveform viewer and customize display properties (e.g. <b>Radix</b>, <b>Notation</b>, <b>Analog Mode</b>) for each signal.</dd>
+</dl>
+
+<p> Please refer to the on-line documentation for detailed information on remaining dialog box options.
+
+<p><img SRC="../readme_files/port_signals.png" BORDER="0" ALT="Figure 3. HDL Black-Box Parameters dialog box (Inputs tab)"><br>
+<i>Figure 3. HDL Black-Box Parameters dialog box (Inputs tab)</i>
+
+<p>&nbsp;
+<h2>TIMING CONSIDERATIONS:</h2>
+
+<p>Most of HDL simulators, including Active-HDL, use an event-driven simulation methodology, while Simulink performs cycle-based simulation. This implies a major consequence: data can be exchanged between the two domains only at scheduled time steps. It means that none of <span>HDL&nbsp;Black-Boxes</span> can be evaluated and no data transfer occurs between time points resulting from the specified sampling period. The fixed-step discrete solver also needs to be used in Simulink to provide correct co-simulation results.<br>
+The sampling period and the relationship between Active-HDL and Simulink time domains is defined in the <b><nobr>Block&nbsp;Parameters</nobr></b> dialog box of the <b><nobr>Active-HDL&nbsp;Co-Sim</nobr></b> block in the <b>Reference Period</b> section:
+
+<p><img SRC="../readme_files/clk_system_period.png" BORDER="0" ALT="Figure 4: Reference Period Settings"><br>
+<i>Figure 4: Reference Period Settings</i>
+
+<p><dl class="F">
+<dt><b>In HDL Simulator</b> 
+	<dd>Specifies the sampling period for Active-HDL.</dd>
+<dt><b>In Simulink</b> 
+	<dd>Specifies the sampling period for Simulink. It can be defined explicitly or the <b>As In Simulator</b> option can be selected. If the period is specified implicitly, the absolute times in both Simulink and Active-HDL remain equal throughout the simulation.</dd>
+</dl>
+
+<p>The <b>Reference Period</b> section defines base sampling rate for all <span>HDL&nbsp;Black-Boxes</span>. The <b><span>HDL&nbsp;Black-Box</span> Parameters</b> dialog box allows setting the following timing parameters of an individual <span>HDL&nbsp;Black-Box</span>:
+<ul>
+	<li><b>Sampling Period</b> for outputs (separately for each output if <b>Multirate Sampling</b> is enabled);</li>
+	<li>selecting number of signals as <b>Clock</b> signals and specifying the <b>Period</b>, <b>Offset</b>, <b>Duty Cycle</b> parameters;</li>
+	<li>selecting number of signals as additional synchronization signals (<b>Sync</b>) referenced to one of Clock signals, and specifying <b>Period</b>, <b>Offset</b> and the <b>Active</b> level.</li>
+</ul>
+
+<p>All parameters specifying the time are defined as integers related to the <b>Reference Period</b>. The minimal clock period is 2, so the reference period has to be shortened twice with reference to the period of the fastest clock, assuming the duty cycle of 0.5.
+
+<p><i>NOTE: Be aware of the round-off error when specifying a period by using frequency units. The fractional part of the resulting period will be rounded to three digits.</i>
+
+<p>Figure 5. shows the clock settings in the HDL Black-Box Parameters of the Demodulator block:
+
+<p><img SRC="../readme_files/bb_sample_period.png" BORDER="0" ALT="Figure 5. Clocks settings for the Demodulator block"><br>
+<i>Figure 5. Clocks settings for the Demodulator block</i>
+
+<p>&nbsp;
+<p>For further information on Active-HDL Co-Simulation Interface to Simulink, refer to Active-HDL Online Documentation. 
+
+<p>The FIR implementation is a modification of an <i>opencore</i> downloaded from <A HREF="http://www.doulos.com/">www.doulos.com</A>. Refer to this site for copyright notices.
+
+</body>
+</html>

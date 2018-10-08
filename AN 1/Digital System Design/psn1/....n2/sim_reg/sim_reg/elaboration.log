@@ -1,0 +1,17 @@
+elbread.dll ver. 1.0.5.375 Tue May 17 15:52:49 2011
+
+
+----------------------------------
+Entity    | Architecture | Library
+----------------------------------
+simulare  | arh_sim      | sim_reg
+sim_reg   | arhsim_reg   | sim_reg
+----------------------------------
+
+-------------------------
+Package         | Library
+-------------------------
+standard        | std
+numeric_bit     | ieee
+std_logic_1164  | ieee
+-------------------------

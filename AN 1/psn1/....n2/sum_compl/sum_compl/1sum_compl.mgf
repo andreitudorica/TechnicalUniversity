@@ -1,0 +1,63 @@
+V 000057 55 2021          1304510728076 struct_sum_compl
+(_unit VHDL (sum_compl 0 28 (struct_sum_compl 0 36 ))
+  (_version v38)
+  (_time 1304510728076 2011.05.04 15:05:28)
+  (_source (\./src/sum_compl.vhd\))
+  (_use (std(standard))(ieee(std_logic_1164)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304510728073)
+    (_use )
+  )
+  (_component
+    (semi_sum
+      (_object
+        (_port (_internal a ~extSTD.STANDARD.BIT 0 38 (_entity (_in ))))
+        (_port (_internal b ~extSTD.STANDARD.BIT 0 38 (_entity (_in ))))
+        (_port (_internal cout ~extSTD.STANDARD.BIT 0 39 (_entity (_out ))))
+        (_port (_internal s ~extSTD.STANDARD.BIT 0 39 (_entity (_out ))))
+      )
+    )
+    (poarta_sau
+      (_object
+        (_port (_internal a ~extSTD.STANDARD.BIT 0 43 (_entity (_in ))))
+        (_port (_internal b ~extSTD.STANDARD.BIT 0 43 (_entity (_in ))))
+        (_port (_internal s ~extSTD.STANDARD.BIT 0 44 (_entity (_out ))))
+      )
+    )
+  )
+  (_instantiation c1 0 51 (_component semi_sum )
+    (_port
+      ((a)(a))
+      ((b)(b))
+      ((cout)(n1))
+      ((s)(n2))
+    )
+  )
+  (_instantiation c2 0 52 (_component semi_sum )
+    (_port
+      ((a)(n2))
+      ((b)(cin))
+      ((cout)(n3))
+      ((s)(s))
+    )
+  )
+  (_instantiation c3 0 53 (_component poarta_sau )
+    (_port
+      ((a)(n1))
+      ((b)(n3))
+      ((s)(cout))
+    )
+  )
+  (_object
+    (_port (_internal a ~extSTD.STANDARD.BIT 0 29 (_entity (_in ))))
+    (_port (_internal b ~extSTD.STANDARD.BIT 0 29 (_entity (_in ))))
+    (_port (_internal cin ~extSTD.STANDARD.BIT 0 29 (_entity (_in ))))
+    (_port (_internal s ~extSTD.STANDARD.BIT 0 30 (_entity (_out ))))
+    (_port (_internal cout ~extSTD.STANDARD.BIT 0 30 (_entity (_out ))))
+    (_signal (_internal n1 ~extSTD.STANDARD.BIT 0 47 (_architecture (_uni ))))
+    (_signal (_internal n2 ~extSTD.STANDARD.BIT 0 47 (_architecture (_uni ))))
+    (_signal (_internal n3 ~extSTD.STANDARD.BIT 0 47 (_architecture (_uni ))))
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+)

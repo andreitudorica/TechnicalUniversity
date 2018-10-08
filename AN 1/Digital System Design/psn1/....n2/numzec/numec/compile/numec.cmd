@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\numzec\library.cfg"  -j "c:\My_Designs\numzec\numec\projlib.cfg"  -d "c:\My_Designs\numzec\numec\compile\"  -work numec -dbg -e 100 "c:\My_Designs\numzec\numec\src\numzec.vhd" 

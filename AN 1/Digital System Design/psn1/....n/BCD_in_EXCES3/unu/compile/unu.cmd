@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\Colocviu\BCD_in_EXCES3\library.cfg"  -j "c:\My_Designs\Colocviu\BCD_in_EXCES3\unu\projlib.cfg"  -d "c:\My_Designs\Colocviu\BCD_in_EXCES3\unu\compile\"  -work unu -dbg -e 100 "c:\My_Designs\Colocviu\BCD_in_EXCES3\unu\src\unu.vhd" 

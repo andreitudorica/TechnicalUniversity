@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\pb3\library.cfg"  -j "c:\My_Designs\pb3\mux16\projlib.cfg"  -d "c:\My_Designs\pb3\mux16\compile\"  -work mux16 -dbg -e 100 "c:\My_Designs\pb3\mux16\src\mux16.vhd" 

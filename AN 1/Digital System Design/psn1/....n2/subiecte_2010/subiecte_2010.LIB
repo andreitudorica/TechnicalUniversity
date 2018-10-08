@@ -1,0 +1,530 @@
+timestamp=1304782022599
+
+[alu]
+A/arh_alu=21|./src/subiect 17.vhd|11|1*397662
+B/arh_alu=3*214919
+H/arh_alu=0*410530
+R=./src/subiect 17.vhd|5
+V=0*411958
+
+[and_b]
+A/poarta_si=21|./src/subiect1.vhd|26|1*236301
+B/poarta_si=3*128948
+H/poarta_si=0*257877
+R=./src/subiect1.vhd|22
+V=0*2080
+
+[bist_jk]
+A/bistabil=21|./src/subiect 19.vhd|9|1*126228
+B/bistabil=3*77601
+H/bistabil=0*122895
+R=./src/subiect 19.vhd|5
+V=0*124080
+
+[bist_t]
+A/bistabil=21|./src/subiect 20.vhd|9|1*127621
+B/bistabil=3*80133
+H/bistabil=0*125766
+R=./src/subiect 20.vhd|5
+V=0*125323
+
+[bistabil_d]
+A/bistabil=21|./src/subiect 18.vhd|9|1*124911
+B/bistabil=3*75921
+H/bistabil=0*120700
+R=./src/subiect 18.vhd|5
+V=0*120389
+
+[bistd]
+A/arh=21|./src/subiect 33.vhd|9|1*246918
+B/arh=3*137280
+H/arh=0*269216
+R=./src/subiect32.vhd|5
+V=0*230843
+
+[bistjk]
+A/arhit=21|./src/subiect 34.vhd|9|1*210455
+B/arhit=3*113335
+H/arhit=0*238889
+R=./src/subiect 34.vhd|5
+V=0*236556
+
+[bistt]
+A/arht=21|./src/subiect 35.vhd|9|1*221454
+B/arht=3*119775
+H/arht=0*248477
+R=./src/subiect 35.vhd|5
+V=0*241403
+
+[buff]
+A/buff3st=21|./src/subiect 32.vhd|10|1*199164
+B/buff3st=3*109068
+H/buff3st=0*227215
+R=./src/subiect 32.vhd|5
+V=0*218509
+
+[codif]
+A/codificator=21|./src/subiect5.vhd|9|1*388858
+B/codificator=3*208523
+H/codificator=0*397800
+R=./src/subiect5.vhd|5
+V=0*399075
+
+[coincidenta]
+A/arh_coincidenta=21|./src/subiect10+11+12.vhd|33|1*254180
+B/arh_coincidenta=3*145381
+H/arh_coincidenta=0*274793
+R=./src/subiect10+11+12.vhd|29
+V=0*57823
+
+[comp]
+A/comparator=21|./src/subiect 29.vhd|9|1*160604
+B/comparator=3*99662
+H/comparator=0*183372
+R=./src/subiect 29.vhd|5
+V=0*182709
+
+[comparator]
+A/comportamentala=21|./src/subiect10+11+12.vhd|8|1*251957
+A/flux_de_date=21|./src/subiect10+11+12.vhd|22|1*253071
+A/structurala=21|./src/subiect10+11+12.vhd|47|1*255705
+B/comportamentala=3*143784
+B/flux_de_date=3*144770
+H/comportamentala=0*273909
+H/flux_de_date=0*274386
+H/structurala=0*275480
+R=./src/subiect10+11+12.vhd|4
+V=0*56147
+
+[conv_2421]
+A/convertor=21|./src/subiect3.vhd|8|1*97133
+B/convertor=3*56289
+H/convertor=0*98460
+R=./src/subiect3.vhd|4
+V=0*32036
+
+[conv_excess3]
+A/convertor=21|./src/subiect4.vhd|8|1*98632
+B/convertor=3*59118
+H/convertor=0*99148
+R=./src/subiect4.vhd|4
+V=0*34588
+
+[convert_bcd]
+A/conv_bcd=21|./src/subiect2.vhd|8|1*95427
+B/conv_bcd=3*52021
+H/conv_bcd=0*97581
+R=./src/subiect2.vhd|4
+V=0*30197
+
+[decod]
+A/decodificator=21|./src/subiect6.vhd|9|1*402371
+B/decodificator=3*219050
+H/decodificator=0*417408
+R=./src/subiect6.vhd|5
+V=0*415616
+
+[demux]
+A/demultiplex=21|./src/subiect 31.vhd|9|1*185709
+A/demuxx=+21|./src/subiect9.vhd|10|1*177471
+B/demultiplex=3*104560
+H/demultiplex=0*213631
+R=./src/subiect 31.vhd|4
+V=0*208286
+
+[desc_struct_xor]
+A/struct_xor=21|./src/subiect1.vhd|55|1*92275
+H/struct_xor=0*95347
+R=./src/subiect1.vhd|51
+V=0*10048
+
+[descr_struct_and]
+A/struct_and=21|./src/subiect1.vhd|81|1*94378
+H/struct_and=0*96840
+R=./src/subiect1.vhd|69
+V=0*10970
+
+[descr_struct_xnor]
+A/struct_xnor=21|./src/subiect1.vhd|68|1*93323
+H/struct_xnor=0*96085
+R=./src/subiect1.vhd|60
+V=0*14979
+
+[fifo]
+A/arh1=21|./src/subiect25.vhd|11|1*141007
+B/arh1=3*88595
+H/arh1=0*159027
+R=./src/subiect25.vhd|5
+V=0*157838
+
+[gen_a]
+A/arh_struct=21|./src/subiect 24.vhd|48|1*362410
+B/arh_struct=3*161612
+H/arh_struct=0*368742
+R=./src/subiect 24.vhd|43
+V=0*281142
+
+[generator]
+A/arh1=21|./src/subiect24.vhd|11|1*137328
+B/arh1=3*86079
+H/arh1=0*150455
+R=./src/subiect24.vhd|5
+V=0*153407
+
+[lifo]
+A/arh=21|./src/subuect26.vhd|11|1*142844
+B/arh=3*91111
+H/arh=0*161656
+R=./src/subuect26.vhd|5
+V=0*164446
+
+[mem_rom]
+A/rom=21|./src/subiect 15.vhd|10|1*118132
+B/rom=3*73828
+H/rom=0*110595
+R=./src/subiect 15.vhd|5
+V=0*79661
+
+[mux]
+A/multiplex=+21|./src/subiect 30 .vhd|10|1*174267
+A/muxx=21|./src/subiect8.vhd|11|1*393503
+B/muxx=3*213755
+H/muxx=0*405683
+R=./src/subiect8.vhd|5
+V=0*406956
+
+[not_b]
+A/poarta_nu=21|./src/subiect1.vhd|46|1*237793
+B/poarta_nu=3*129805
+H/poarta_nu=0*258494
+R=./src/subiect1.vhd|42
+V=0*3597
+
+[numarator]
+A/num=21|./src/subiect 21.vhd|10|1*249274
+B/num=3*139094
+H/num=0*271078
+R=./src/subiect 21.vhd|5
+V=0*272157
+
+[or_b]
+A/poarta_sau=21|./src/subiect1.vhd|36|1*237046
+B/poarta_sau=3*129376
+H/poarta_sau=0*258184
+R=./src/subiect1.vhd|32
+V=0*252567
+
+[ram_m]
+A/ram=21|./src/subiect 16.vhd|11|1*120087
+B/ram=3*74610
+H/ram=0*112085
+R=./src/subiect 16.vhd|5
+V=0*89758
+
+[reg]
+A/arh=21|./src/subiect 36.vhd|10|1*385348
+B/arh=3*205178
+H/arh=0*394169
+R=./src/subiect 36.vhd|5
+V=0*375340
+
+[registru]
+A/arhreg=21|./src/subiect 24.vhd|19|1*361051
+A/reg=+21|./src/subiect23.vhd|11|1*135906
+B/arhreg=3*186755
+H/arhreg=0*368167
+R=./src/subiect 24.vhd|14
+V=0*355435
+
+[scad]
+A/scaz=21|./src/subiect 28.vhd|9|1*156996
+B/scaz=3*97696
+H/scaz=0*178202
+R=./src/subiect 28.vhd|5
+V=0*174875
+
+[scazator]
+A/scasator_arh=21|./src/subiect 13.vhd|43|1*114941
+H/scasator_arh=0*108097
+R=./src/subiect 13.vhd|39
+V=0*84741
+
+[si]
+A/poarta_si=21|./src/subiect10+11+12.vhd|42|1*254956
+B/poarta_si=3*145791
+H/poarta_si=0*275168
+R=./src/subiect10+11+12.vhd|38
+V=0*58889
+
+[si_sau_nu]
+A/struct=21|./src/subiect1.vhd|55|1*238465
+H/struct=0*258797
+R=./src/subiect1.vhd|51
+V=0*253732
+
+[sim]
+A/simulare=21|./src/subiect 31.vhd|22|1*183790
+B/simulare=3*103504
+H/simulare=0*210564
+R=./src/subiect 30 .vhd|22
+V=0*206622
+
+[simbist]
+A/simulare=21|./src/subiect 33.vhd|21|1*247798
+B/simulare=3*138050
+H/simulare=0*269564
+R=./src/subiect32.vhd|19
+V=0*232701
+
+[simbuff]
+A/simulare=21|./src/subiect 32.vhd|20|1*200630
+B/simulare=3*109518
+H/simulare=0*227532
+R=./src/subiect 32.vhd|18
+V=0*224161
+
+[simjk]
+A/simuljk=21|./src/subiect 34.vhd|30|1*211398
+B/simuljk=3*114936
+H/simuljk=0*239366
+R=./src/subiect 34.vhd|28
+V=0*237856
+
+[simt]
+A/simult=21|./src/subiect 35.vhd|29|1*222324
+B/simult=3*121015
+H/simult=0*248893
+R=./src/subiect 35.vhd|26
+V=0*243335
+
+[simul]
+A/simulare=21|./src/subiect 31.vhd|22|1*186948
+B/simulare=3*105194
+H/simulare=0*214222
+R=./src/subiect 31.vhd|20
+V=0*217516
+
+[simulare]
+A/sim=21|./src/subiect 28.vhd|16|1*158011
+A/simreg=21|./src/subiect 36.vhd|32|1*372532
+B/sim=3*98555
+B/simreg=3*193409
+H/sim=0*178548
+H/simreg=0*381211
+R=./src/subiect27.vhd|14
+V=0*167379
+
+[simularer]
+A/simreg=21|./src/subiect 36.vhd|32|1*386594
+B/simreg=3*206789
+H/simreg=0*394600
+R=./src/subiect 36.vhd|30
+V=0*381128
+
+[sum]
+A/arh=+21|./src/subiect27.vhd|9|1*147657
+A/sumator=21|./src/subiect 14.vhd|10|1*243870
+B/sumator=3*132778
+H/sumator=0*265645
+R=./src/subiect 14.vhd|6
+V=0*264489
+
+[xnor_b]
+A/coincidenta=21|./src/subiect1.vhd|16|1*235549
+B/coincidenta=3*128542
+H/coincidenta=0*257555
+R=./src/subiect1.vhd|12
+V=0*1296
+
+[xor_b]
+A/arh_xor=21|./src/subiect 24.vhd|9|1*360274
+A/sau_exclusiv=+21|./src/subiect1.vhd|6|1*234802
+B/arh_xor=3*186353
+H/arh_xor=0*367868
+R=./src/subiect 24.vhd|5
+V=0*277843
+
+[~A]
+./src/subiect 13.vhd~or_b=0*106634*106771
+./src/subiect 13.vhd~poarta_nunot_b=0*107883*108022
+./src/subiect 13.vhd~poarta_sauor_b=0*106931*107075
+./src/subiect 13.vhd~poarta_siand_b=0*106416*106559
+./src/subiect 13.vhd~sau_exclusivxor_b=0*105446*105603
+./src/subiect 13.vhd~scasator_arhscazator=0*109896*110514
+./src/subiect 13.vhd~scazator=0*84124*84280
+./src/subiect 13.vhd~xor_b=0*105141*105281
+./src/subiect 14.vhd~sum=0*263170*263421
+./src/subiect 14.vhd~sumatorsum=0*265734*265975
+./src/subiect 15.vhd~mem_rom=0*77263*77522
+./src/subiect 15.vhd~rommem_rom=0*111516*112014
+./src/subiect 16.vhd~ram_m=0*88870*89108
+./src/subiect 16.vhd~ramram_m=0*113006*113400
+./src/subiect 17.vhd~alu=0*410150*410466
+./src/subiect 17.vhd~arh_alualu=0*410619*411008
+./src/subiect 18.vhd~bistabil_d=0*119692*119903
+./src/subiect 18.vhd~bistabilbistabil_d=0*120856*121240
+./src/subiect 19.vhd~bist_jk=0*122608*122827
+./src/subiect 19.vhd~bistabilbist_jk=0*123051*123532
+./src/subiect 20.vhd~bist_t=0*124614*124825
+./src/subiect 20.vhd~bistabilbist_t=0*125922*126341
+./src/subiect 21.vhd~numarator=0*270747*271008
+./src/subiect 21.vhd~numnumarator=0*271159*271426
+./src/subiect 24.vhd~arh_structgen_a=0*371289*371778
+./src/subiect 24.vhd~arh_xorxor_b=0*367957*368094
+./src/subiect 24.vhd~arhregregistru=0*368254*368667
+./src/subiect 24.vhd~gen_a=0*280277*280481
+./src/subiect 24.vhd~registru=0*353909*354130
+./src/subiect 24.vhd~xor_b=0*276932*277122
+./src/subiect 28.vhd~scad=0*174179*174383
+./src/subiect 28.vhd~scazscad=0*178285*178479
+./src/subiect 28.vhd~simsimulare=0*179354*179727
+./src/subiect 29.vhd~comp=0*181589*181796
+./src/subiect 29.vhd~comparatorcomp=0*183467*183704
+./src/subiect 29.vhd~sim=0*181175*181266
+./src/subiect 29.vhd~simularesim=0*185281*185627
+./src/subiect 30 .vhd~multiplexmux=0*201196*201410
+./src/subiect 30 .vhd~mux=0*200805*201038
+./src/subiect 30 .vhd~sim=0*203132*203255
+./src/subiect 30 .vhd~simularesim=0*205804*206338
+./src/subiect 31.vhd~demultiplexdemux=0*213728*213951
+./src/subiect 31.vhd~demux=0*207059*207274
+./src/subiect 31.vhd~simul=0*214028*214156
+./src/subiect 31.vhd~simularesim=0*213053*213559
+./src/subiect 31.vhd~simularesimul=0*216711*217221
+./src/subiect 32.vhd~buff=0*217595*217844
+./src/subiect 32.vhd~buff3stbuff=0*227304*227460
+./src/subiect 32.vhd~simbuff=0*221027*221184
+./src/subiect 32.vhd~simularesimbuff=0*229616*230112
+./src/subiect 33.vhd~arhbistd=0*269297*269495
+./src/subiect 33.vhd~simularesimbist=0*270255*270671
+./src/subiect 34.vhd~arhitbistjk=0*238974*239294
+./src/subiect 34.vhd~bistjk=0*235373*235579
+./src/subiect 34.vhd~simjk=0*237396*237547
+./src/subiect 34.vhd~simuljksimjk=0*240176*240668
+./src/subiect 35.vhd~arhtbistt=0*248560*248823
+./src/subiect 35.vhd~bistt=0*240741*240939
+./src/subiect 35.vhd~simt=0*241709*241870
+./src/subiect 35.vhd~simultsimt=0*249580*249984
+./src/subiect 36.vhd~arhreg=0*394250*394533
+./src/subiect 36.vhd~reg=0*373975*374225
+./src/subiect 36.vhd~simregsimulare=0*383468*384050
+./src/subiect 36.vhd~simregsimularer=0*396857*397441
+./src/subiect 36.vhd~simularer=0*380736*380845
+./src/subiect1.vhd~and_b=0*1545*1707
+./src/subiect1.vhd~coincidentaxnor_b=0*257652*257801
+./src/subiect1.vhd~desc_struct_xor=0*9451*9614
+./src/subiect1.vhd~descr_struct_and=0*10306*10530
+./src/subiect1.vhd~descr_struct_xnor=0*14363*14533
+./src/subiect1.vhd~not_b=0*3099*3255
+./src/subiect1.vhd~or_b=0*251760*251890
+./src/subiect1.vhd~poarta_nunot_b=0*258587*258724
+./src/subiect1.vhd~poarta_sauor_b=0*258279*258421
+./src/subiect1.vhd~poarta_siand_b=0*257970*258111
+./src/subiect1.vhd~sau_exclusivxor_b=0*257329*257479
+./src/subiect1.vhd~si_sau_nu=0*253117*253272
+./src/subiect1.vhd~struct_anddescr_struct_and=0*97249*97496
+./src/subiect1.vhd~struct_xnordescr_struct_xnor=0*96498*96753
+./src/subiect1.vhd~struct_xordesc_struct_xor=0*95756*96001
+./src/subiect1.vhd~structsi_sau_nu=0*260058*260508
+./src/subiect1.vhd~xnor_b=0*751*917
+./src/subiect1.vhd~xor_b=0*250055*250188
+./src/subiect10+11+12.vhd~arh_coincidentacoincidenta=0*274898*275076
+./src/subiect10+11+12.vhd~coincidenta=0*57249*57407
+./src/subiect10+11+12.vhd~comparator=0*54910*55108
+./src/subiect10+11+12.vhd~comportamentalacomparator=0*274014*274295
+./src/subiect10+11+12.vhd~flux_de_datecomparator=0*274485*274705
+./src/subiect10+11+12.vhd~poarta_sisi=0*275261*275403
+./src/subiect10+11+12.vhd~si=0*58084*58215
+./src/subiect10+11+12.vhd~structuralacomparator=0*276405*276845
+./src/subiect2.vhd~conv_bcdconvert_bcd=0*97672*98382
+./src/subiect2.vhd~convert_bcd=0*28496*28718
+./src/subiect22.vhd~numarator=0*136097*136371
+./src/subiect22.vhd~numnumarator=0*138359*138708
+./src/subiect23.vhd~registru=0*144341*144610
+./src/subiect23.vhd~regregistru=0*147751*148078
+./src/subiect24.vhd~arh1generator=0*152011*152701
+./src/subiect24.vhd~generator=0*150110*150386
+./src/subiect25.vhd~arh1fifo=0*160583*161263
+./src/subiect25.vhd~fifo=0*154601*154862
+./src/subiect27.vhd~arhsum=0*168191*168369
+./src/subiect27.vhd~simsimulare=0*169233*169752
+./src/subiect27.vhd~simulare=0*166998*167103
+./src/subiect27.vhd~sum=0*165635*165833
+./src/subiect3.vhd~conv_2421=0*31232*31448
+./src/subiect3.vhd~convertorconv_2421=0*98553*99071
+./src/subiect32.vhd~arhbistd=0*232862*233059
+./src/subiect32.vhd~bistd=0*230188*230385
+./src/subiect32.vhd~simbist=0*231148*231250
+./src/subiect32.vhd~simularesimbist=0*233818*234233
+./src/subiect4.vhd~conv_excess3=0*33757*33982
+./src/subiect4.vhd~convertorconv_excess3=0*99241*99797
+./src/subiect5.vhd~codif=0*397517*397736
+./src/subiect5.vhd~codificatorcodif=0*397897*398489
+./src/subiect6.vhd~decod=0*414029*414264
+./src/subiect6.vhd~decodificatordecod=0*417509*418108
+./src/subiect7.vhd~decod=0*402720*402935
+./src/subiect7.vhd~decodificatordecod=0*403100*403699
+./src/subiect8.vhd~mux=0*405308*405621
+./src/subiect8.vhd~muxxmux=0*405766*405958
+./src/subiect9.vhd~demux=0*51285*51581
+./src/subiect9.vhd~demuxxdemux=0*206787*206989
+./src/subuect26.vhd~arhlifo=0*163210*163771
+./src/subuect26.vhd~lifo=0*161331*161592
+ModifyID=2329
+Version=73
+
+[~MFT]
+0=2522|0subiecte_2010.mgf|418108|289324
+1=589|1subiecte_2010.mgf|402371|323553
+3=526|3subiecte_2010.mgf|219050|157056
+
+[~U]
+alu=11|0*411079|0*411304
+and_b=11|0*1771|0*1887
+bist_jk=11|0*123608|0*123799
+bist_t=11|0*124892|0*125062
+bistabil_d=11|0*119974|0*120120
+bistd=11|0*230450|0*230582
+bistjk=11|0*236123|0*236275
+bistt=11|0*241005|0*241142
+buff=11|0*217909|0*218084
+codif=11|0*398564|0*398693
+coincidenta=11|0*57484|0*57618
+comp=11|0*182268|0*182393
+comparator=11|0*55614|0*55784
+conv_2421=11|0*31516|0*31658
+conv_excess3=11|0*34053|0*34204
+convert_bcd=11|0*29667|0*29815
+decod=11|0*415105|0*415234
+demux=11|0*207737|0*207898
+desc_struct_xor=11|0*9688|0*9835
+descr_struct_and=11|0*10605|0*10755
+descr_struct_xnor=11|0*14609|0*14762
+fifo=11|0*157230|0*157399
+gen_a=11|0*280547|0*280721
+generator=11|0*152774|0*152958
+lifo=11|0*163838|0*164007
+mem_rom=11|0*79080|0*79246
+mux=11|0*406024|0*406230
+not_b=11|0*3319|0*3423
+numarator=11|0*271499|0*271699
+or_b=11|0*252263|0*252376
+ram_m=11|0*89174|0*89349
+reg=11|0*374720|0*374887
+registru=11|0*354786|0*354988
+scad=11|0*174448|0*174594
+scazator=11|0*84349|0*84502
+si=11|0*58595|0*58702
+si_sau_nu=11|0*253340|0*253493
+sim=11|0*206411|0*206461
+simbist=11|0*232498|0*232560
+simbuff=11|0*223908|0*223970
+simjk=11|0*237613|0*237669
+simt=11|0*243097|0*243150
+simul=11|0*217295|0*217351
+simulare=11|0*167171|0*167236
+simularer=11|0*380915|0*380983
+sum=11|0*263886|0*264061
+xnor_b=11|0*982|0*1101
+xor_b=11|0*277487|0*277603
+

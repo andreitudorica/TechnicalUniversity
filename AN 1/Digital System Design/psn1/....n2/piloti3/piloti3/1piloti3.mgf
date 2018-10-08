@@ -1,0 +1,35 @@
+V 000051 55 1638          1304783562738 arhpiloti3
+(_unit VHDL (piloti3 0 28 (arhpiloti3 0 36 ))
+  (_version v38)
+  (_time 1304783562738 2011.05.07 18:52:42)
+  (_source (\./src/piloti3.vhd\))
+  (_use (std(standard))(ieee(std_logic_1164)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304783550934)
+    (_use )
+  )
+  (_object
+    (_port (_internal valid_a ~extSTD.STANDARD.BOOLEAN 0 29 (_entity (_in ))))
+    (_port (_internal valid_b ~extSTD.STANDARD.BOOLEAN 0 29 (_entity (_in ))))
+    (_port (_internal a ~extieee.std_logic_1164.std_logic 0 30 (_entity (_in ))))
+    (_port (_internal b ~extieee.std_logic_1164.std_logic 0 30 (_entity (_in ))))
+    (_port (_internal y ~extieee.std_logic_1164.std_logic 0 31 (_entity (_out ))))
+    (_signal (_internal sa ~extieee.std_logic_1164.std_logic 0 37 (_architecture (_uni ))))
+    (_signal (_internal sb ~extieee.std_logic_1164.std_logic 0 37 (_architecture (_uni ))))
+    (_process
+      (line__39(_architecture 0 0 39 (_assignment (_simple)(_target(5))(_sensitivity(2)(0)))))
+      (line__40(_architecture 1 0 40 (_assignment (_simple)(_target(6))(_sensitivity(3)(1)))))
+      (P1(_architecture 2 0 42 (_process (_simple)(_target(4))(_sensitivity(5)))))
+      (P2(_architecture 3 0 47 (_process (_simple)(_target(4))(_sensitivity(6)))))
+    )
+    (_subprogram
+      (_external resolved (ieee std_logic_1164 0))
+    )
+    (_type (_external ~extSTD.STANDARD.BOOLEAN (std STANDARD BOOLEAN)))
+    (_type (_external ~extieee.std_logic_1164.std_ulogic (ieee std_logic_1164 std_ulogic)))
+    (_type (_external ~extieee.std_logic_1164.std_logic (ieee std_logic_1164 std_logic)))
+  )
+  (_model . arhpiloti3 4 -1
+  )
+)

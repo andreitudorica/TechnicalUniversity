@@ -1,0 +1,14 @@
+[Files List]
+C:\Program Files (x86)\Aldec\Active-HDL 6.3\VLIB\STD/src/standard.vhd=S
+C:\Program Files (x86)\Aldec\Active-HDL 6.3\VLIB\IEEE/src/stdlogic.vhd=S
+C:\Program Files (x86)\Aldec\Active-HDL 6.3\VLIB\IEEE/src/arith.vhd=S
+C:\Program Files (x86)\Aldec\Active-HDL 6.3\VLIB\IEEE/src/unsigned.vhd=S
+g:\Bilete_tren/src/Sumator_complet.vhd=S
+g:\Bilete_tren/src/sumator_scazator.vhd=S
+g:\Bilete_tren/src/Comparator.vhd=S
+g:\Bilete_tren/src/MUX_2_1.vhd=S
+g:\Bilete_tren/src/AFISARE_7_segmente.vhd=S
+g:\Bilete_tren/src/nrtor.vhd=S
+g:\Bilete_tren/src/Registu.vhd=S
+g:\Bilete_tren/src/MUX_7_1.vhd=S
+g:\Bilete_tren/src/APARAT.vhd=S

@@ -1,0 +1,47 @@
+timestamp=1124181519917
+
+[DSP]
+A/DSP=24|.\src\DSP.bde|10000|
+P/~emb=363,647,923,1230
+S/dsp=S/DSP 40|0|2*0
+
+[DSP_test]
+A/DSP_test=24|.\src\DSP_test.bde|10000|
+P/~emb=57,936,1325,1622
+
+[Filter_bessel]
+A/Filter_bessel=22|.\src\Filter_bessel.v|10000|
+P/~emb=337,670,980,1176
+S/filter_bessel=S/Filter_bessel 40|0|2*3408
+
+[Filter_simple]
+A/Filter_simple=22|.\src\Filter_simple.v|10000|
+P/~emb=317,611,904,1100
+S/filter_simple=S/Filter_simple 40|0|2*6030
+
+[abs]
+A/abs=22|.\src\abs.v|10000|
+P/~emb=109,254,385,505
+S/abs=40|0|2*8620
+
+[~A]
+./compile/DSP.v=0*3724*4289
+./compile/DSP_test.v=0*6962*8544
+./compile/dsp_test.v=0*4822*6408
+./src/abs.v=0*0*384
+./src/filter_bessel.v=0*2266*3169
+./src/filter_simple.v=0*913*1711
+ModifyID=102
+Version=73
+
+[~MFT]
+0=0|0matlab_demodulator.mgf|16483|0
+2=0|2matlab_demodulator.mgf|8620|0
+
+[~U]
+DSP=12|0*9098||0x93
+DSP_test=12|0*10511||0x90
+Filter_bessel=12|0*13115||0x93
+Filter_simple=12|0*14884||0x93
+abs=12|0*16483||0x93
+

@@ -1,0 +1,18 @@
+elbread.dll ver. 1.0.5.375 Mon May 16 21:10:05 2011
+
+
+------------------------------------
+Entity  | Architecture     | Library
+------------------------------------
+noua    | arhitectura_noua | NR_BIN
+------------------------------------
+
+-----------------------------
+Package             | Library
+-----------------------------
+standard            | std
+std_logic_1164      | ieee
+numeric_std         | ieee
+std_logic_arith     | ieee
+std_logic_unsigned  | ieee
+-----------------------------

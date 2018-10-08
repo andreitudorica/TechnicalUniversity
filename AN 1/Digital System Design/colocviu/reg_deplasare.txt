@@ -1,0 +1,88 @@
+library	IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.STD_LOGIC_UNSIGNED.all;	
+use IEEE.std_logic_arith.all;
+
+entity num2 is
+	port (pl,rst,clk : in std_logic;
+		  nr_pl: in std_logic_vector (1 downto 0);
+		  B: out  std_logic_vector (1 downto 0));
+end entity;
+
+architecture arh_num2 of num2 is
+begin
+	process (clk)
+	variable A1: std_logic_vector(1 downto 0):="00"; 
+	begin	   
+	if clk='1' and clk'event then
+	if rst='1' then B<="00";
+	elsif pl='1' then B<=nr_pl;
+		else
+			 A1:=A1+1;
+	B<=A1;
+	end if;
+	end if;
+	
+	end process;
+end arh_num2;
+
+entity registruu_de_deplasare is
+	port(Sel, CLK: in bit;
+	     Q:inout bit_vector(7 downto 0):="10010001");
+end entity registruu_de_deplasare;				    
+
+architecture arh3 of registruu_de_deplasare is
+begin			
+	process (CLK,Sel)	 
+	variable Q1: bit_vector(7 downto 0); 
+	begin											  
+		Q1:=Q;					
+        if (CLK'event) and (CLK='1') then
+			if Sel='1' then Q1:=Q1 sll 1; Q1(0) :='0';
+			           else Q1:=Q1 srl 1; Q1(7) :='0';end if;
+		Q<=Q1;				
+		end if;
+    end process;			
+end;	
+
+entity MSS_registru is
+end MSS_registru;
+
+architecture arh_MS_registru of MSS_registru is
+
+signal Sel, CLK: bit; 
+signal Q: bit_vector(7 downto 0); 
+shared variable END_SIM: BOOLEAN := false;
+
+component registruu_de_deplasare
+	port(Sel, CLK: in bit; 
+	     Q:inout bit_vector(7 downto 0));
+end component;
+
+begin
+	UST: registruu_de_deplasare port map(Sel, CLK, Q);
+	
+	GENERARE_TACT: process
+	begin			  
+		if not(END_SIM) then 
+		CLK<='1';
+		wait for 10 ns;
+		CLK<='0';
+		wait for 10 ns;
+		else wait;
+		end if;
+	 end process GENERARE_TACT;
+	
+MS: process
+	    begin
+	    sel<='1';
+		wait for 80ns; 
+		sel<='0';
+		wait for 80ns;
+		END_SIM:=true;
+		wait;
+	end process MS;
+end arh_MS_registru;
+
+
+		

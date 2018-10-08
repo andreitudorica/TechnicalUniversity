@@ -1,0 +1,70 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=colocviu
+
+[Library]
+colocviu=.\colocviu.lib
+
+[$LibMap$]
+colocviu=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+SYNTH_TOOL=<none>
+IMPL_TOOL=<none>
+FAMILY=
+FLOWTOOLS=ONLY_IMPL
+
+[IMPLEMENTATION]
+UCF=
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=comp|a_comport|0  
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/porti_logice.vhd=-1
+/xor_structural.vhd=-1
+/sau_ex_comp.vhd=-1
+/bcd_to_gray.vhd=-1
+/priority_encoder.vhd=-1
+/exces3_bcd.vhd=-1
+/mux.vhd=-1
+/si_flow.vhd=-1
+/sau_flow.vhd=-1
+/not_flow.vhd=-1
+/DCD3_8.vhd=-1
+/MUX_generics.vhd=-1
+/Dmux_generics.vhd=-1
+/comparator2biti_struct.vhd=-1
+/and4.vhd=-1
+/or6.vhd=-1
+
+[Files.Data]
+.\src\porti_logice.vhd=VHDL Source Code
+.\src\xor_structural.vhd=VHDL Source Code
+.\src\sau_ex_comp.vhd=VHDL Source Code
+.\src\bcd_to_gray.vhd=VHDL Source Code
+.\src\priority_encoder.vhd=VHDL Source Code
+.\src\exces3_bcd.vhd=VHDL Source Code
+.\src\mux.vhd=VHDL Source Code
+.\src\si_flow.vhd=VHDL Source Code
+.\src\sau_flow.vhd=VHDL Source Code
+.\src\not_flow.vhd=VHDL Source Code
+.\src\DCD3_8.vhd=VHDL Source Code
+.\src\MUX_generics.vhd=VHDL Source Code
+.\src\Dmux_generics.vhd=VHDL Source Code
+.\src\comparator2biti_struct.vhd=VHDL Source Code
+.\src\and4.vhd=VHDL Source Code
+.\src\or6.vhd=VHDL Source Code
+

@@ -1,0 +1,12 @@
+[Version]
+Version=7.2
+[Designs]
+sim_reg=.\sim_reg\sim_reg.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+sim_reg=1

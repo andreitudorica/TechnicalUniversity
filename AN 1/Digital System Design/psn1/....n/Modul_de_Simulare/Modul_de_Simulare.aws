@@ -1,0 +1,12 @@
+[Version]
+Version=7.2
+[Designs]
+modul_de_simulare=.\Modul_de_Simulare\Modul_de_Simulare.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+modul_de_simulare=1

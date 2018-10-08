@@ -1,0 +1,16 @@
+elbread.dll ver. 1.0.5.375 Tue May 17 14:39:58 2011
+
+
+----------------------------------------
+Entity      | Architecture  | Library 
+----------------------------------------
+modul       | arhmodul      | scaz_compl
+scaz_compl  | arhscaz_compl | scaz_compl
+----------------------------------------
+
+-------------------------
+Package         | Library
+-------------------------
+standard        | std
+std_logic_1164  | ieee
+-------------------------

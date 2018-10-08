@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\nimic\library.cfg"  -j "c:\My_Designs\nimic\nimic\projlib.cfg"  -d "c:\My_Designs\nimic\nimic\compile\"  -work nimic -dbg -e 100 "c:\My_Designs\nimic\nimic\src\nimic.vhd" 

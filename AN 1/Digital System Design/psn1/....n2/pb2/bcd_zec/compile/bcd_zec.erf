@@ -1,0 +1,6 @@
+MESSAGE "File: c:\My_Designs\pb2\bcd_zec\src\bcd_zec.vhd" 
+MESSAGE "Compile Entity "Decodificator"" 
+MESSAGE "Compile Architecture "Arhitectura" of Entity "Decodificator"" 
+MESSAGE "Top-level unit(s) detected:" 
+MESSAGE "Entity  =>   Decodificator" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 

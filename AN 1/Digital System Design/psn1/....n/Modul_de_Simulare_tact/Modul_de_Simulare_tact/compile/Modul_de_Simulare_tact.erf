@@ -1,0 +1,4 @@
+MESSAGE "File: c:\My_Designs\Colocviu\Modul_de_Simulare_tact\Modul_de_Simulare_tact\src\MS.vhd" 
+MESSAGE "Compile Entity "MS"" 
+MESSAGE "Compile Architecture "arhitectura_MS" of Entity "MS"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 

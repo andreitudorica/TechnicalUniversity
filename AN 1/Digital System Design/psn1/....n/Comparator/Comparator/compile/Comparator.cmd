@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\Colocviu\Comparator\library.cfg"  -j "c:\My_Designs\Colocviu\Comparator\Comparator\projlib.cfg"  -d "c:\My_Designs\Colocviu\Comparator\Comparator\compile\"  -work Comparator -dbg -e 100 "c:\My_Designs\Colocviu\Comparator\Comparator\src\patru.vhd" 

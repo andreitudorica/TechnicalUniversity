@@ -1,0 +1,6 @@
+MESSAGE "File: C:\My_Designs\num8_din2\num8_din2\src\num8_din2.vhd" 
+MESSAGE "Compile Entity "num2"" 
+MESSAGE "Compile Architecture "n2" of Entity "num2"" 
+MESSAGE "Compile Entity "num8"" 
+MESSAGE "Compile Architecture "n8" of Entity "num8"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 

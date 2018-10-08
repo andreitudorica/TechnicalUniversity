@@ -1,0 +1,6 @@
+MESSAGE "File: c:\My_Designs\memram\memram\src\memram.vhd" 
+MESSAGE "Compile Entity "ram_m"" 
+MESSAGE "Compile Architecture "ram" of Entity "ram_m"" 
+MESSAGE "Top-level unit(s) detected:" 
+MESSAGE "Entity  =>   ram_m" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 

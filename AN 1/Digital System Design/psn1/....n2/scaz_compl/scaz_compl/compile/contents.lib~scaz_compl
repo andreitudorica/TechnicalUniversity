@@ -1,0 +1,5 @@
+45
+~E 1 "./src/scaz_compl.vhd" 18 modul
+~A 1 "./src/scaz_compl.vhd" 21 arhmodul
+~E 1 "./src/scaz_compl.vhd" 6 scaz_compl
+~A 1 "./src/scaz_compl.vhd" 12 arhscaz_compl

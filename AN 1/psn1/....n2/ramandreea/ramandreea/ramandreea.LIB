@@ -1,0 +1,24 @@
+timestamp=1304853336721
+
+[ram]
+A/architecture_ram=A/architecture_RAM 21|./src/ramandreea.vhd|15|1*2031
+B/architecture_ram=3*0
+H/architecture_ram=0*4764
+I/architecture_ram=I/architecture_RAM 0*7374
+M=11|0|v38|1304852924486|./src/ramandreea.vhd|0*2682*0xd1a371b663830180d7a321a8ac3ad46bb13a4d76|0*2933*0xab87650576a395126dc296abb9b0e065
+M/architecture_ram=M/architecture_RAM 21|0|v38|1304853336665|./src/ramandreea.vhd|0*5722*0xb47bec09cce9a7fb12dc7cb8cb8f2ef4f803aa34|0*7289*0xab87650576a395126dc296abb9b0e065
+R=./src/ramandreea.vhd|6
+V=0*1547
+
+[~A]
+ModifyID=10
+Version=73
+
+[~MFT]
+0=13|0ramandreea.mgf|7374|958
+1=2|1ramandreea.mgf|2031|2031
+3=0|3ramandreea.mgf|0|0
+
+[~U]
+ram=RAM 11|0*958|0*1120
+

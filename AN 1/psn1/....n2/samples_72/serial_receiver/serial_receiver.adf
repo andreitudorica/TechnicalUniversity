@@ -1,0 +1,102 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=serial_receiver
+
+[Library]
+serial_receiver=.\serial_receiver.LIB
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+SYNTH_TOOL=
+IMPL_TOOL=
+FAMILY=
+HESPrepare=0
+FLOWTOOLS=ONLY_IMPL
+CSYNTH_TOOL=<none>
+Celoxica=0
+UseCeloxica=0
+SYNTH_STATUS=NONE
+IMPL_STATUS=NONE
+C_SERVER_SIM=
+ON_SERVERFARM_SIM=0
+C_SERVER_SYNTH=
+ON_SERVERFARM_SYNTH=0
+C_SERVER_IMPL=
+ON_SERVERFARM_IMPL=0
+FUNC_LIB=serial_receiver
+RUN_MODE_SYNTH=1
+TIM_LIB=serial_receiver_timing
+POST_LIB=serial_receiver_post_synthesis
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
+[$LibMap$]
+serial_receiver=.
+
+[Groups]
+vhdl=1
+verilog=1
+
+[Files]
+/readme.html=-1
+/runme_vhdl.do=-1
+/runme_verilog.do=-1
+/testwrapper.h=-1
+/transactor.h=-1
+/test.h=-1
+/testwrapper.cpp=-1
+/transactor.cpp=-1
+/test.cpp=-1
+/testwrapper.dlm=-1
+/transactor_args.h=-1
+/transactor_if.h=-1
+vhdl/test_env.bde=-1
+vhdl/rcv.bde=-1
+vhdl/rcv_reg.vhd=-1
+vhdl/synchronizer.vhd=-1
+vhdl/latched_val.vhd=-1
+vhdl/clk_gen.vhd=-1
+verilog/rcv.bde=-1
+verilog/test_env.bde=-1
+verilog/clk_gen.v=-1
+verilog/latched_val.v=-1
+verilog/rcv_reg.v=-1
+verilog/synchronizer.v=-1
+
+[Files.Data]
+.\src\readme.html=HTML Document
+.\src\runme_vhdl.do=Macro
+.\src\runme_verilog.do=Macro
+.\src\testwrapper.h=C++ Source Code
+.\src\transactor.h=C++ Source Code
+.\src\test.h=C++ Source Code
+.\src\testwrapper.cpp=C++ Source Code
+.\src\transactor.cpp=C++ Source Code
+.\src\test.cpp=C++ Source Code
+.\src\testwrapper.dlm=C/C++ Configuration
+.\src\transactor_args.h=C++ Source Code
+.\src\transactor_if.h=C++ Source Code
+.\src\vhdl\test_env.bde=Block Diagram
+.\src\vhdl\rcv.bde=Block Diagram
+.\src\vhdl\rcv_reg.vhd=VHDL Source Code
+.\src\vhdl\synchronizer.vhd=VHDL Source Code
+.\src\vhdl\latched_val.vhd=VHDL Source Code
+.\src\vhdl\clk_gen.vhd=VHDL Source Code
+.\src\verilog\rcv.bde=Block Diagram
+.\src\verilog\test_env.bde=Block Diagram
+.\src\verilog\clk_gen.v=Verilog Source Code
+.\src\verilog\latched_val.v=Verilog Source Code
+.\src\verilog\rcv_reg.v=Verilog Source Code
+.\src\verilog\synchronizer.v=Verilog Source Code
+

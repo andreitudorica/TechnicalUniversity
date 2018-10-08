@@ -1,0 +1,21 @@
+elbread.dll ver. 1.0.5.375 Tue May 17 01:54:48 2011
+
+
+-------------------------------------------
+Entity           | Architecture   | Library
+-------------------------------------------
+tot              | struct         | pro
+numardep         | numaratoruldep | pro
+numaraf          | numaratorulaf  | pro
+deplasare        | fct_depla      | pro
+decodificatorpr  | proiect        | pro
+-------------------------------------------
+
+-----------------------------
+Package             | Library
+-----------------------------
+standard            | std
+std_logic_1164      | ieee
+std_logic_arith     | ieee
+std_logic_unsigned  | ieee
+-----------------------------

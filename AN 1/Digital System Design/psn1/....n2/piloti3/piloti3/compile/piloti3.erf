@@ -1,0 +1,4 @@
+MESSAGE "File: c:\My_Designs\piloti3\piloti3\src\piloti3.vhd" 
+MESSAGE "Compile Entity "piloti3"" 
+MESSAGE "Compile Architecture "arhpiloti3" of Entity "piloti3"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]" 

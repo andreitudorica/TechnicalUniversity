@@ -1,0 +1,34 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=shifter3
+
+[Library]
+shifter3=.\shifter3.LIB
+
+[$LibMap$]
+shifter3=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[Files]
+/shifter3.vhd=-1
+
+[Files.Data]
+.\src\shifter3.vhd=VHDL Source Code
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=shifter3|arhshifter3|0   
+ShowHide=ShowTopLevel
+Selected=

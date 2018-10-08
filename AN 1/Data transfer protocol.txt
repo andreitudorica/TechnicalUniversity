@@ -1,0 +1,9 @@
+title Data transfer protocol
+
+Device->Host: Start bit (1 bit)
+
+Device->Host: Data (8 bits)
+
+Device->Host: Stop bit(1 bit)
+
+Host->Device: Acknoledge bit (1 bit)

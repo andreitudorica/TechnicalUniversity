@@ -1,0 +1,20 @@
+elbread.dll ver. 1.0.5.375 Sat May 14 16:15:38 2011
+
+
+-------------------------------------------------------
+Entity      | Architecture | Library                 
+-------------------------------------------------------
+counter     | count_str    | numarator_binar_8bit_2biti
+clock       | clk_clk      | numarator_binar_8bit_2biti
+count_2bit  | arh_count    | numarator_binar_8bit_2biti
+-------------------------------------------------------
+
+-----------------------------
+Package             | Library
+-----------------------------
+standard            | std
+textio              | std
+std_logic_1164      | ieee
+std_logic_arith     | ieee
+std_logic_unsigned  | ieee
+-----------------------------

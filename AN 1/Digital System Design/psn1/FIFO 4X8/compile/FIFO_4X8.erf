@@ -1,0 +1,4 @@
+MESSAGE "File: c:\My_Designs\Colocviu_PSN\FIFO 4X8\src\FIFO.vhd" 
+MESSAGE "Compile Entity "FIFO"" 
+MESSAGE "Compile Architecture "ARH_FIFO" of Entity "FIFO"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 

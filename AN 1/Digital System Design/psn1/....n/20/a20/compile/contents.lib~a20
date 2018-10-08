@@ -1,0 +1,5 @@
+40
+~E 1 "./src/douazeci.vhd" 28 a20
+~A 1 "./src/douazeci.vhd" 33 arhitectura_a20
+~E 1 "./src/registru.vhd" 28 registru
+~A 1 "./src/registru.vhd" 39 arhitectura_registrul

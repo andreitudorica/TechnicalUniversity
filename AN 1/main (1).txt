@@ -1,0 +1,115 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+/// FULL JUSTIFICATION
+
+FILE *fileOpen(FILE *f, const char *fileName, const char *mode)
+{
+    f = fopen(fileName, mode);
+    if(f == NULL) exit(1);
+    return f;
+}
+
+void maxLenght(FILE *f, int *len, int *rows)
+{
+    rewind(f);
+    *rows = 0;
+    *len = 0;
+    int i = 0;
+    char c;
+    while(!feof(f))
+    {
+       c = fgetc(f);
+       if(c == '\n')
+           {
+                (*rows)++;
+                if(i > *len)
+                    {
+                        *len = i;
+                    }
+                i = 0;
+            }
+            else i++;
+    }
+}
+
+int checkSpaces(char *p)
+{
+    int i, nr = 0;
+    for(i = 0; i < strlen(p); i++)
+        if(p[i] == ' ') nr++;
+    return nr;
+}
+
+void leftJustify(FILE *f, int len, int rows)
+{
+    rewind(f);
+    int i;
+
+    char *s1, *s2, *spaces;
+    s1 = (char *) malloc((len + 1) * sizeof(char));
+    if(!s1) exit(2);
+
+    s2 = (char *) malloc((len + 1) * sizeof(char));
+    if(!s2) exit(3);
+
+    spaces = (char *) malloc((len + 1) * sizeof(char));
+    if(!spaces) exit(4);
+    memset(spaces, ' ' , len * sizeof(char));
+    spaces[len] = '\0';
+
+    for(i = 0; i < rows; i++)
+    {
+        strcpy(s1, "");
+        strcpy(s2, "");
+
+        fgets(s1, len + 2, f);
+        if(s1[strlen(s1) - 1] == '\n') s1[strlen(s1) - 1] = '\0';
+
+        int nrOfSpacesNeeded = len - strlen(s1);
+        int nrOfSpaceIns1 = checkSpaces(s1);
+        if(nrOfSpaceIns1 > 0)
+        {
+            int k, ratio, spacesAdded = 0;
+            ratio = nrOfSpacesNeeded / nrOfSpaceIns1;
+            for(k = 0; k < nrOfSpaceIns1; k++)
+            {
+                int j = 1;
+                while(!(s1[j - 1] != ' ' && s1[j] == ' ' && s1[j + 1] != ' ')) j++; ///finding the position of the k-th space in the initial s1
+                if(k == nrOfSpaceIns1 - 1)
+                {
+                    strcpy(s2, s1 + j);
+                    strcpy(s1 + j, "");
+                    strncat(s1, spaces, nrOfSpacesNeeded - spacesAdded);
+                    strcat(s1, s2);
+                }
+                    else
+                    {
+                        strcpy(s2, s1 + j);
+                        strcpy(s1 + j, "");
+                        strncat(s1, spaces, ratio);
+                        strcat(s1, s2);
+                        spacesAdded += ratio;
+                    }
+            }
+            printf("%s\n", s1);
+        }
+        else printf("%s\n", s1);
+
+    }
+    free(s1);
+    free(s2);
+    free(spaces);
+}
+
+int main()
+{
+    FILE *fp;
+    fp = fileOpen(fp, "user_input.txt", "r");
+    int len, rows;
+    maxLenght(fp, &len, &rows);
+    leftJustify(fp, len, rows);
+    fclose(fp);
+    return 0;
+}

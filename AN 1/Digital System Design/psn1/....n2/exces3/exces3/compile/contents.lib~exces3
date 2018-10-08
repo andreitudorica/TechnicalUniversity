@@ -1,0 +1,13 @@
+496
+~E 1 "./src/exces3.vhd" 54 poarta_sau3
+~A 1 "./src/exces3.vhd" 59 arh_sau3
+~E 1 "./src/exces3.vhd" 76 inversor
+~A 1 "./src/exces3.vhd" 81 arh_inv
+~E 1 "./src/exces3.vhd" 28 exces3
+~A 1 "./src/exces3.vhd" 87 arhexces3
+~E 1 "./src/exces3.vhd" 43 poarta_sau2
+~A 1 "./src/exces3.vhd" 48 arh_sau2
+~E 1 "./src/exces3.vhd" 33 poarta_si2
+~A 1 "./src/exces3.vhd" 38 arh_si2
+~E 1 "./src/exces3.vhd" 64 poarta_si3
+~A 1 "./src/exces3.vhd" 69 arh_si3

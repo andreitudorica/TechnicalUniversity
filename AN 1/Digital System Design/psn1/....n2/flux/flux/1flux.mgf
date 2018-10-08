@@ -1,0 +1,26 @@
+V 000045 55 953           1304510233409 flux
+(_unit VHDL (si 0 28 (flux 0 36 ))
+  (_version v38)
+  (_time 1304510233409 2011.05.04 14:57:13)
+  (_source (\./src/flux.vhd\))
+  (_use (std(standard))(ieee(std_logic_1164)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304510217520)
+    (_use )
+  )
+  (_object
+    (_port (_internal x1 ~extSTD.STANDARD.BIT 0 29 (_entity (_in ))))
+    (_port (_internal x2 ~extSTD.STANDARD.BIT 0 29 (_entity (_in ))))
+    (_port (_internal x3 ~extSTD.STANDARD.BIT 0 29 (_entity (_in ))))
+    (_port (_internal y ~extSTD.STANDARD.BIT 0 30 (_entity (_out ))))
+    (_signal (_internal y_temp ~extSTD.STANDARD.BIT 0 37 (_architecture (_uni ))))
+    (_process
+      (line__39(_architecture 0 0 39 (_assignment (_simple)(_target(4))(_sensitivity(1)(0)))))
+      (line__40(_architecture 1 0 40 (_assignment (_simple)(_target(3))(_sensitivity(4)(2)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+  (_model . flux 2 -1
+  )
+)

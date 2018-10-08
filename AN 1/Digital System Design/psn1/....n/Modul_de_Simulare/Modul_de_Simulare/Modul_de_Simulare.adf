@@ -1,0 +1,36 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=Modul_de_Simulare
+
+[Library]
+Modul_de_Simulare=.\Modul_de_Simulare.LIB
+
+[$LibMap$]
+Modul_de_Simulare=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[Files]
+/exemplu.vhd=-1
+/si.vhd=-1
+
+[Files.Data]
+.\src\exemplu.vhd=VHDL Source Code
+.\src\si.vhd=VHDL Source Code
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=exemplu|arhitectura_exemplu|0   
+ShowHide=ShowTopLevel
+Selected=

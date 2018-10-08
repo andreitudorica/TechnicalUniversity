@@ -1,0 +1,56 @@
+timestamp=1096892449374
+
+[and2]
+A/and2=A/AND2 21|.\src\Functional\AND2.vhd|10000|
+S/and2=S/AND2 40|0|2*0
+
+[cnt_4b]
+A/cnt_4b=A/CNT_4b 21|.\src\Functional\CNT_4b.vhd|10000|
+S/cnt_4b=S/CNT_4b 40|0|2*1672
+
+[cnt_bcd]
+A/cnt_bcd=A/CNT_BCD 24|.\src\Functional\CNT_BCD.bde|10000|
+S/cnt_bcd=S/CNT_BCD 40|0|2*4166
+
+[control]
+A/control_arch=23|.\src\Functional\CONTROL.asf|10000|
+S/control=S/CONTROL 40|0|2*7592
+
+[hex2led]
+A/hex2led=21|.\src\Functional\hex2led.vhd|10000|
+S/hex2led=40|0|2*10098
+
+[top_frqm]
+A/top_frqm=24|.\src\Functional\top_frqm.bde|10000|
+
+[~A]
+./compile/CNT_BCD.vhd~CNT_BCD=0*0*406
+./compile/CNT_BCD.vhd~CNT_BCDCNT_BCD=0*475*1685
+./compile/CONTROL.vhd~control=0*1761*2112
+./compile/CONTROL.vhd~control_archcontrol=0*2181*2971
+./compile/top_frqm.vhd~top_frqm=0*3052*3496
+./compile/top_frqm.vhd~top_frqmtop_frqm=0*3567*5034
+./src/Functional/AND2.vhd~AND2=0*5113*5327
+./src/Functional/AND2.vhd~AND2AND2=0*5397*5530
+./src/Functional/CNT_4b.vhd~CNT_4b=0*5604*5935
+./src/Functional/CNT_4b.vhd~CNT_4bCNT_4b=0*6009*6408
+./src/Functional/hex2led.vhd~hex2led=0*6488*6735
+./src/Functional/hex2led.vhd~hex2ledhex2led=0*6811*7415
+./src/TestBench/top_frqm_TB.vhd~TB_ARCHITECTUREtop_frqm_tb=0*7498*13696
+./src/TestBench/top_frqm_TB.vhd~TESTBENCH_FOR_top_frqmtop_frqm_tb=0*13794*14069
+./src/TestBench/top_frqm_TB.vhd~top_frqm_tb=0*14174*14342
+ModifyID=141
+Version=73
+
+[~MFT]
+0=0|0freq_meter_2.mgf|15445|0
+2=0|2freq_meter_2.mgf|10098|0
+
+[~U]
+and2=AND2 11|0*14425||0x3
+cnt_4b=CNT_4b 11|0*14567||0x3
+cnt_bcd=CNT_BCD 11|0*14776||0x7
+control=11|0*15073||0x7
+hex2led=11|0*15286||0x3
+top_frqm=11|0*15445|
+

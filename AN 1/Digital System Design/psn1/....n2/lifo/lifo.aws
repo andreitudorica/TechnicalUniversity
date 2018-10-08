@@ -1,0 +1,12 @@
+[Version]
+Version=7.2
+[Designs]
+lifo=.\lifo\lifo.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+lifo=1

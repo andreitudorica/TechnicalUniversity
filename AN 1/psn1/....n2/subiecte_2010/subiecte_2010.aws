@@ -1,0 +1,17 @@
+[Version]
+Version=6.3
+[Designs]
+subiecte_2010=subiecte_2010.adf
+[Settings]
+Active=subiecte_2010
+[Expand]
+subiecte_2010=1
+subiect28=0
+subiect26=0
+subiect 1=0
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

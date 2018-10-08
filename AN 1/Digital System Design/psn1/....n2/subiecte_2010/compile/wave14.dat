@@ -1,0 +1,15 @@
+$WAVE4TIMED
+$RESOLUTION 1000
+I 1 "e#3#bitc2 01"
+$IN 1 1 s
+I 2 "a#18#BIT_VECTOR(0 to 3)1 rict0 3 e#3#bitc2 01"
+$BUS IN 21 2 4 a
+$SC 5-17/4
+$BUS OUT 38 2 4 q
+$SC 22-34/4
+$OUT +5 1 plin
+$OUT +4 1 gol
+I 3 "a#7#matrice1 rict0 3 a#18#BIT_VECTOR(0 to 3)1 rict0 3 e#3#bitc2 01"
+$BUS S +68 3 4 memorie
+$SC 47-+60/4
+$ENDWAVE

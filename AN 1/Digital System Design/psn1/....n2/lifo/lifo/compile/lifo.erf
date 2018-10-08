@@ -1,0 +1,6 @@
+MESSAGE "File: c:\My_Designs\lifo\lifo\src\lifo.vhd" 
+MESSAGE "Compile Entity "fifo"" 
+MESSAGE "Compile Architecture "arh1" of Entity "fifo"" 
+MESSAGE "Top-level unit(s) detected:" 
+MESSAGE "Entity  =>   fifo" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]" 

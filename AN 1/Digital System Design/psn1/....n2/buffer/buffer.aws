@@ -1,0 +1,12 @@
+[Version]
+Version=7.2
+[Designs]
+buffer8biti=.\buffer8biti\buffer8biti.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+buffer8biti=1

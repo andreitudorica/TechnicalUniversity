@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\piloti3\library.cfg"  -j "c:\My_Designs\piloti3\piloti3\projlib.cfg"  -d "c:\My_Designs\piloti3\piloti3\compile\"  -work piloti3 -dbg -e 100 "c:\My_Designs\piloti3\piloti3\src\piloti3.vhd" 

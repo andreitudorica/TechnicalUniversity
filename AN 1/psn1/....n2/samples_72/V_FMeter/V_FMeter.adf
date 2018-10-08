@@ -1,0 +1,66 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=1
+modified=329
+Current Config=compile
+
+[Configurations]
+compile=V_FMeter
+
+[Library]
+V_FMeter=.\V_FMeter.LIB
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VERILOG
+FAMILY=
+SYNTH_TOOL=
+FLOWTOOLS=ONLY_IMPL
+IMPL_TOOL=
+SYNTH_STATUS=NONE
+C_SERVER_SIM=NONE
+ON_SERVERFARM_SIM=0
+C_SERVER_SYNTH=NONE
+ON_SERVERFARM_SYNTH=0
+C_SERVER_IMPL=NONE
+ON_SERVERFARM_IMPL=0
+UseCeloxica=0
+REFRESH_FLOW=1
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
+[ORDER]
+autorefresh=0
+macro_path=
+macro_name=
+modified=1
+Synchronize=1
+
+[$LibMap$]
+V_FMeter=.
+
+[Files]
+/Hex2led.v=-1
+/CNT_10B.bde=-1
+/Bin2bcd.v=-1
+/CONTROL.asf=-1
+/freq_m.bde=-1
+/FREQUENCY_METER_TB.v=-1
+/Functional.do=-1
+/Readme.txt=-1
+
+[Files.Data]
+.\src\Hex2led.v=Verilog Source Code
+.\src\CNT_10B.bde=Block Diagram
+.\src\Bin2bcd.v=Verilog Source Code
+.\src\CONTROL.asf=State Diagram
+.\src\freq_m.bde=Block Diagram
+.\src\FREQUENCY_METER_TB.v=Verilog Test Bench
+.\src\Functional.do=Macro
+.\src\Readme.txt=Text File
+

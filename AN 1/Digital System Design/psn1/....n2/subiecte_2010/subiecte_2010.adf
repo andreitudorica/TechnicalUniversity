@@ -1,0 +1,123 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=subiecte_2010
+
+[Library]
+subiecte_2010=.\subiecte_2010.LIB
+
+[$LibMap$]
+subiecte_2010=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+SYNTH_TOOL=<none>
+IMPL_TOOL=<none>
+FAMILY=
+FLOWTOOLS=ONLY_IMPL
+
+[IMPLEMENTATION]
+UCF=
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
+[Folders]
+Name3=Makefiles
+Directory3=c:\My_Designs\subiecte_vhdl_2010\subiecte_2010\
+Extension3=mak
+Name4=Memory
+Directory4=c:\My_Designs\subiecte_vhdl_2010\subiecte_2010\src
+Extension4=mem;mif;hex
+Name5=Dll Libraries
+Directory5=c:\My_Designs\subiecte_vhdl_2010\subiecte_2010\
+Extension5=dll
+
+[Files]
+/subiect1.vhd=-1
+/subiect2.vhd=-1
+/subiect3.vhd=-1
+/subiect4.vhd=-1
+/subiect5.vhd=-1
+/subiect6.vhd=-1
+/subiect7.vhd=-1
+/subiect8.vhd=-1
+/subiect9.vhd=-1
+/subiect10+11+12.vhd=-1
+/subiect 13.vhd=-1
+/subiect 14.vhd=-1
+/subiect 15.vhd=-1
+/subiect 16.vhd=-1
+/subiect 17.vhd=-1
+/subiect 18.vhd=-1
+/subiect 19.vhd=-1
+/subiect 20.vhd=-1
+/subiect 21.vhd=-1
+/subiect22.vhd=-1
+/subiect23.vhd=-1
+/subiect 24.vhd=-1
+/subiect25.vhd=-1
+/subuect26.vhd=-1
+/subiect27.vhd=-1
+/subiect 28.vhd=-1
+/subiect 29.vhd=-1
+/subiect 30 .vhd=-1
+/subiect 31.vhd=-1
+/subiect 32.vhd=-1
+/subiect 33.vhd=-1
+/subiect 34.vhd=-1
+/subiect 35.vhd=-1
+/subiect 36.vhd=-1
+/subiect  bcd-exces3.vhd=-1
+/subiect bcd-exces3.vhd=-1
+/bcd-exces.vhd=-1
+
+[Files.Data]
+.\src\subiect1.vhd=VHDL Source Code
+.\src\subiect2.vhd=VHDL Source Code
+.\src\subiect3.vhd=VHDL Source Code
+.\src\subiect4.vhd=VHDL Source Code
+.\src\subiect5.vhd=VHDL Source Code
+.\src\subiect6.vhd=VHDL Source Code
+.\src\subiect7.vhd=VHDL Source Code
+.\src\subiect8.vhd=VHDL Source Code
+.\src\subiect9.vhd=VHDL Source Code
+.\src\subiect10+11+12.vhd=VHDL Source Code
+.\src\subiect 13.vhd=VHDL Source Code
+.\src\subiect 14.vhd=VHDL Source Code
+.\src\subiect 15.vhd=VHDL Source Code
+.\src\subiect 16.vhd=VHDL Source Code
+.\src\subiect 17.vhd=VHDL Source Code
+.\src\subiect 18.vhd=VHDL Source Code
+.\src\subiect 19.vhd=VHDL Source Code
+.\src\subiect 20.vhd=VHDL Source Code
+.\src\subiect 21.vhd=VHDL Source Code
+.\src\subiect22.vhd=VHDL Source Code
+.\src\subiect23.vhd=VHDL Source Code
+.\src\subiect 24.vhd=VHDL Source Code
+.\src\subiect25.vhd=VHDL Source Code
+.\src\subuect26.vhd=VHDL Source Code
+.\src\subiect27.vhd=VHDL Source Code
+.\src\subiect 28.vhd=VHDL Source Code
+.\src\subiect 29.vhd=VHDL Source Code
+.\src\subiect 30 .vhd=VHDL Source Code
+.\src\subiect 31.vhd=VHDL Source Code
+.\src\subiect 32.vhd=VHDL Source Code
+.\src\subiect 33.vhd=VHDL Source Code
+.\src\subiect 34.vhd=VHDL Source Code
+.\src\subiect 35.vhd=VHDL Source Code
+.\src\subiect 36.vhd=VHDL Source Code
+.\src\subiect  bcd-exces3.vhd=VHDL Source Code
+.\src\subiect bcd-exces3.vhd=VHDL Source Code
+.\src\bcd-exces.vhd=VHDL Source Code
+

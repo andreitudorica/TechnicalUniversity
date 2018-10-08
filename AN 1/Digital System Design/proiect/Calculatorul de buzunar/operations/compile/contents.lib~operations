@@ -1,0 +1,16 @@
+2368
+~E 1 "./src/impartire.vhd" 6 impartire
+~A 1 "./src/impartire.vhd" 12 division
+~E 1 "./src/and2.vhd" 28 and2
+~E 1 "./src/adunare.vhd" 6 adunare
+~A 1 "./src/adunare.vhd" 12 adding
+~E 1 "./src/and_gate.vhd" 6 and_2
+~E 1 "./src/multiplexor.vhd" 6 multiplexor
+~A 1 "./src/multiplexor.vhd" 12 multiplexer
+~E 1 "./src/inmultire.vhd" 6 inmultire
+~A 1 "./src/inmultire.vhd" 12 multiplication
+~E 1 "./src/scadere.vhd" 6 scadere
+~A 1 "./src/scadere.vhd" 12 substraction
+~E 1 "./src/operatii.vhd" 7 operations
+~A 1 "./src/operatii.vhd" 13 operatii
+~E 1 "./src/sum_dif.vhd" 7 ual

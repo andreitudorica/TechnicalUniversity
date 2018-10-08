@@ -1,0 +1,65 @@
+V 000055 55 718           1304952253134 arhitectura_si
+(_unit VHDL (si 0 28 (arhitectura_si 0 37 ))
+  (_version v38)
+  (_time 1304952253134 2011.05.09 17:44:13)
+  (_source (\./src/si.vhd\))
+  (_use (std(standard))(ieee(std_logic_1164)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304952253128)
+    (_use )
+  )
+  (_object
+    (_port (_internal A ~extSTD.STANDARD.BIT 0 30 (_entity (_in ))))
+    (_port (_internal B ~extSTD.STANDARD.BIT 0 30 (_entity (_in ))))
+    (_port (_internal F ~extSTD.STANDARD.BIT 0 31 (_entity (_out ))))
+    (_process
+      (line__39(_architecture 0 0 39 (_assignment (_simple)(_target(2))(_sensitivity(1)(0)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+  (_model . arhitectura_si 1 -1
+  )
+)
+V 000060 55 1253          1304952430331 arhitectura_exemplu
+(_unit VHDL (exemplu 0 28 (arhitectura_exemplu 0 33 ))
+  (_version v38)
+  (_time 1304952430364 2011.05.09 17:47:10)
+  (_source (\./src/exemplu.vhd\))
+  (_use (std(standard))(ieee(std_logic_1164)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304952430297)
+    (_use )
+  )
+  (_component
+    (si
+      (_object
+        (_port (_internal A ~extSTD.STANDARD.BIT 0 35 (_entity (_in ))))
+        (_port (_internal B ~extSTD.STANDARD.BIT 0 35 (_entity (_in ))))
+        (_port (_internal F ~extSTD.STANDARD.BIT 0 36 (_entity (_out ))))
+      )
+    )
+  )
+  (_instantiation U0 0 41 (_component si )
+    (_port
+      ((A)(A))
+      ((B)(B))
+      ((F)(F))
+    )
+    (_use (_entity . si)
+    )
+  )
+  (_object
+    (_signal (_internal A ~extSTD.STANDARD.BIT 0 39 (_architecture (_uni ))))
+    (_signal (_internal B ~extSTD.STANDARD.BIT 0 39 (_architecture (_uni ))))
+    (_signal (_internal F ~extSTD.STANDARD.BIT 0 39 (_architecture (_uni ))))
+    (_process
+      (line__42(_architecture 0 0 42 (_assignment (_simple)(_target(0)))))
+      (line__43(_architecture 1 0 43 (_assignment (_simple)(_target(1)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+  (_model . arhitectura_exemplu 2 -1
+  )
+)

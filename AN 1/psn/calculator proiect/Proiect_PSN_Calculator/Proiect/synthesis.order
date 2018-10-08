@@ -1,0 +1,7 @@
+i<>.\src\afisoare.vhd
+i<>.\src\Calculator.vhd
+i<>.\src\div_frec.vhd
+i<>.\src\Memory.vhd
+i<>.\src\zecimal_BCD.vhd
+i<>.\src\ALU.vhd
+i<>.\src\pachet_divide.vhd

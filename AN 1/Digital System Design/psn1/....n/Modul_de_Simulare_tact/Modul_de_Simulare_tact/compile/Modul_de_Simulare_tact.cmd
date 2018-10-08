@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\Colocviu\Modul_de_Simulare_tact\library.cfg"  -j "c:\My_Designs\Colocviu\Modul_de_Simulare_tact\Modul_de_Simulare_tact\projlib.cfg"  -d "c:\My_Designs\Colocviu\Modul_de_Simulare_tact\Modul_de_Simulare_tact\compile\"  -work Modul_de_Simulare_tact -dbg -e 100 "c:\My_Designs\Colocviu\Modul_de_Simulare_tact\Modul_de_Simulare_tact\src\MS.vhd" 

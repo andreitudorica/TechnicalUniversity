@@ -1,0 +1,30 @@
+timestamp=1138875804724
+
+[automachine]
+A/automachine_arch=23|.\src\automachine.asf|10000|
+S/automachine=40|0|2*0
+
+[counters]
+A/behaviour=A/Behaviour 21|./SRC/counters.vhd|18|
+S/counters=S/Counters 40|0|2*5512
+
+[press]
+A/schematic=A/Schematic 24|.\src\press.bde|10000|
+
+[press_top]
+A/schematic=A/Schematic 24|.\src\press_top.bde|10000|
+
+[~A]
+ModifyID=198
+Version=73
+
+[~MFT]
+0=0|0PressController.mgf|1051|0
+2=0|2PressController.mgf|5512|0
+
+[~U]
+automachine=11|0*0||0x7
+counters=Counters 11|0*365||0x7
+press=Press 11|0*696|
+press_top=11|0*1051|
+

@@ -1,0 +1,2129 @@
+--1. Functiile logice SAU-EXCLUSIV, COINCIDENTÃ si SI-SAU-NU – descriere
+--structuralã
+
+-------------------------------- INVERTOR ------------------------------
+
+library IEEE;								
+use IEEE.STD_LOGIC_1164.ALL;				
+											
+entity INV is	  							 -- Entitate
+	port ( X:  in STD_LOGIC;
+		  nX: out STD_LOGIC);	
+end INV;
+
+architecture comportamental of INV is		 -- Arhitectura
+begin
+	nX <= not (X);
+end architecture;
+
+
+-------------------------------- POARTA SI -----------------------------
+
+library IEEE;								
+use IEEE.STD_LOGIC_1164.ALL;				
+											
+entity SI is	  							 -- Entitate
+	port ( A, B:  in STD_LOGIC;
+		      Y: out STD_LOGIC);	
+end SI;
+
+architecture comportamental of SI is		 -- Arhitectura
+begin
+	Y <= A and B;
+end architecture;							 
+
+
+-------------------------------- POARTA SAU ----------------------------
+
+library IEEE;								
+use IEEE.STD_LOGIC_1164.ALL;				
+											
+entity SAU is	  							 -- Entitate
+	port ( A, B:  in STD_LOGIC;
+		      Y: out STD_LOGIC);	
+end SAU;
+
+architecture comportamental of SAU is		 -- Arhitectura
+begin
+	Y <= A or B;
+end architecture;		
+
+------------------------------- POARTA SAU-EXCLUSIV --------------------
+--Descriere structurala
+--Ecuatie: A XOR B = (A and not(B)) or (not(A) and B)
+
+library IEEE;								
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity SAU_EXCLUSIV is						  -- Entitate		
+	port ( A, B:  in STD_LOGIC;
+		      Y: out STD_LOGIC);
+end SAU_EXCLUSIV;
+
+architecture structural of SAU_EXCLUSIV is	  -- Arhitectura
+-- Componente:
+   component SI is	  					 	  -- Poarta SI	   	 
+	   port ( A, B:  in STD_LOGIC;
+		         Y: out STD_LOGIC);	
+   end component;
+   
+   component SAU is	  						  -- Poarta SAU
+	   port ( A, B:  in STD_LOGIC;
+		         Y: out STD_LOGIC);	
+   end component;
+   
+   component INV is	  						  -- Invertor  	
+	   port ( X:  in STD_LOGIC;
+		     nX: out STD_LOGIC);	
+   end component;			
+   
+-- Semnale:  
+SIGNAL Aneg,		 		-- A negat
+	   Bneg,			    -- B negat
+	   	 o1,				-- iesirea poartei SI nr1, o1 = A and not(B) 
+	   	 o2 :STD_LOGIC;		-- iesirea poartei SI nr2, o2 = not(A) and B
+			
+begin
+	
+	inv1: INV port map (A, Aneg);
+	inv2: INV port map (B, Bneg);
+	
+	si1: SI port map (A, Bneg, o1);
+	si2: SI port map (Aneg, B, o2);
+	
+	sau1: SAU port map (o1, o2, Y);
+
+end architecture; 
+
+--------------------- Fuctia logica de coincidenta (NXOR) ----------------------
+--Descriere structurala
+--Ecuatie: f = (A = B) = not (A xor B) = not ( (A and not(B)) or (not(A) and B) )
+
+library IEEE;								
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity egal is								  -- Entitate		
+	port ( A, B:  in STD_LOGIC;
+		      Y: out STD_LOGIC);
+end egal;
+
+architecture structural of egal is			  -- Arhitectura
+-- Componente:
+   component SI is	  					 	  -- Poarta SI	   	 
+	   port ( A, B:  in STD_LOGIC;
+		         Y: out STD_LOGIC);	
+   end component;
+   
+   component SAU is	  						  -- Poarta SAU
+	   port ( A, B:  in STD_LOGIC;
+		         Y: out STD_LOGIC);	
+   end component;
+   
+   component INV is	  						  -- Invertor  	
+	   port ( X:  in STD_LOGIC;
+		     nX: out STD_LOGIC);	
+   end component;			
+   
+-- Semnale:  
+SIGNAL Aneg,		 		-- A negat
+	   Bneg,			    -- B negat
+	   	 o1,				-- iesirea poartei SI nr1, o1 = A and not(B) 
+	   	 o2,				-- iesirea poartei SI nr2, o2 = not(A) and B
+		 o3	:STD_LOGIC;		-- iesirea poartei OR      o3 = A xor B 
+ 
+begin
+	
+	inv1: INV port map (A, Aneg);
+	inv2: INV port map (B, Bneg);
+	
+	si1: SI port map (A, Bneg, o1);
+	si2: SI port map (Aneg, B, o2);
+	
+	sau1: SAU port map (o1, o2, o3);
+	
+	inv3: INV port map (o3, Y);
+
+end architecture;
+
+
+	
+	
+
+
+-- 2. Convertor de cod din BCD în Gray ----------
+
+-- Entitate:
+entity BCD_to_Gray is
+	
+	-- Semanale de intrare si de iesire:	
+	port (
+			 BCD:  in BIT_VECTOR (3 downto 0);
+			Gray: out BIT_VECTOR (3 downto 0)
+		 );
+
+end entity;	
+
+-- Arhitectura: 
+architecture comportamental of BCD_to_Gray is
+begin
+	process (BCD)
+	begin
+		case BCD is
+			when "0000" =>  Gray <= "0000";	 --	0
+			when "0001" =>  Gray <= "0001";	 --	1
+			when "0010" =>  Gray <= "0011";	 --	2
+			when "0011" =>  Gray <= "0010";	 --	3
+			when "0100" =>  Gray <= "0110";	 --	4
+			when "0101" =>  Gray <= "0111";	 --	5
+			when "0110" =>  Gray <= "0101";  --	6
+			when "0111" =>  Gray <= "0100";	 --	7
+			when "1000" =>  Gray <= "1100";	 --	8
+			when "1001" =>  Gray <= "1101";	 -- 9
+			when others =>  Gray <= "1111";  -- >=10
+		end case;
+	end process;
+end architecture;
+
+
+
+
+
+-- 3. Convertor de cod din 2421 în BCD ----------
+
+-- Entitate:
+entity c2421_to_BCD is
+	
+	-- Semanale de intrare si de iesire:	
+	port (
+			 c2421:  in BIT_VECTOR (3 downto 0);
+			   BCD: out BIT_VECTOR (3 downto 0)
+		 );
+
+end entity;	
+
+-- Arhitectura: 
+architecture comportamental of c2421_to_BCD is
+begin
+	process (c2421)
+	begin
+		case c2421 is
+			when "0000" =>  BCD <= "0000";	 --	0
+			when "0001" =>  BCD <= "0001";	 --	1
+			when "0010" =>  BCD <= "0010";	 --	2
+			when "0011" =>  BCD <= "0011";	 --	3
+			when "0100" =>  BCD <= "0100";	 --	4
+			when "0101" =>  BCD <= "0101";	 --	5
+			when "0110" =>  BCD <= "0110";   --	6
+			when "0111" =>  BCD <= "0111";	 --	7
+			when "1110" =>  BCD <= "1000";	 --	8
+			when "1111" =>  BCD <= "1001";	 -- 9
+			when others =>  BCD <= "1111";   -- >=10
+		end case;
+	end process;
+end architecture;
+
+
+
+
+-- 3. Convertor de cod din Exces3 în BCD ----------
+
+-- Entitate:
+entity Exces3_to_BCD is
+	
+	-- Semanale de intrare si de iesire:	
+	port (
+			 Exces3:  in BIT_VECTOR (3 downto 0);
+			    BCD: out BIT_VECTOR (3 downto 0)
+		 );
+
+end entity;	
+
+-- Arhitectura: 
+architecture comportamental of Exces3_to_BCD is
+begin
+	process (Exces3)
+	begin
+		case Exces3 is
+			when "0011" =>  BCD <= "0000";	 --	0
+			when "0100" =>  BCD <= "0001";	 --	1
+			when "0101" =>  BCD <= "0010";	 --	2
+			when "0110" =>  BCD <= "0011";	 --	3
+			when "0111" =>  BCD <= "0100";	 --	4
+			when "1000" =>  BCD <= "0101";	 --	5
+			when "1001" =>  BCD <= "0110";   --	6
+			when "1010" =>  BCD <= "0111";	 --	7
+			when "1011" =>  BCD <= "1000";	 --	8
+			when "1100" =>  BCD <= "1001";	 -- 9
+			when others =>  BCD <= "1111";   -- >=10
+		end case;
+	end process;
+end architecture;
+
+
+
+
+-- 5. Codificator zecimal – BCD
+
+-- Entitate:
+entity zecimal_to_BCD is
+	
+	-- Semanale de intrare si de iesire:
+	port (
+	          X:  in BIT_VECTOR (9 downto 0);
+			BCD: out BIT_VECTOR (3 downto 0)
+		  );
+		  
+end entity;
+
+-- Arhitectura:
+architecture comportamental of zecimal_to_BCD is
+begin
+	process (X)
+	begin
+		   if X(0) = '1' then BCD <= "0000";   -- 0
+		elsif X(1) = '1' then BCD <= "0001";   -- 1
+		elsif X(2) = '1' then BCD <= "0010";   -- 2
+		elsif X(3) = '1' then BCD <= "0011";   -- 3
+		elsif X(4) = '1' then BCD <= "0100";   -- 4
+		elsif X(5) = '1' then BCD <= "0101";   -- 5
+		elsif X(6) = '1' then BCD <= "0110";   -- 6
+		elsif X(7) = '1' then BCD <= "0111";   -- 7
+		elsif X(8) = '1' then BCD <= "1000";   -- 8
+		elsif X(9) = '1' then BCD <= "1001";   -- 9
+						 else BCD <= "1111";   -- nici o intrare activata
+		   end if;
+		
+	end process;
+	
+end architecture;
+			
+
+
+
+-- 6. Decodificator BCD – zecimal
+
+-- Entitate:
+entity BCD_to_zecimal is
+	
+	-- Semanale de intrare si de iesire:	
+	port (
+			 BCD:  in BIT_VECTOR (3 downto 0);
+			   Y: out BIT_VECTOR (9 downto 0)
+		 );
+
+end entity;	
+
+-- Arhitectura: 
+architecture comportamental of BCD_to_zecimal is
+begin
+	process (BCD)
+	begin
+		case BCD is
+			when "0000" =>  Y <= "0000000001";		 --	0
+			when "0001" =>  Y <= "0000000010";		 --	1
+			when "0010" =>  Y <= "0000000100";		 --	2
+			when "0011" =>  Y <= "0000001000";		 --	3
+			when "0100" =>  Y <= "0000010000";		 --	4
+			when "0101" =>  Y <= "0000100000";		 --	5
+			when "0110" =>  Y <= "0001000000";	     -- 6
+			when "0111" =>  Y <= "0010000000";		 --	7
+			when "1000" =>  Y <= "0100000000";		 --	8
+			when "1001" =>  Y <= "1000000000";		 -- 9
+			when others =>  Y <= "0000000000";  	 -- >= 10  
+		end case;
+	end process;
+end architecture;
+
+
+
+
+
+-- 6. Decodificator BCD – zecimal
+
+-- Entitate:
+entity binar_to_zecimal is
+	
+	-- Semanale de intrare si de iesire:	
+	port (
+			 binar:  in BIT_VECTOR (3 downto 0);
+			     Y: out BIT_VECTOR (15 downto 0)
+		 );
+
+end entity;	
+
+-- Arhitectura: 
+architecture comportamental of binar_to_zecimal is
+begin
+	process (binar)
+	begin
+		case binar is
+			when "0000" =>  Y <= "0000000000000001";	 --	0
+			when "0001" =>  Y <= "0000000000000010";	 --	1
+			when "0010" =>  Y <= "0000000000000100";	 --	2
+			when "0011" =>  Y <= "0000000000001000";	 --	3
+			when "0100" =>  Y <= "0000000000010000";	 --	4
+			when "0101" =>  Y <= "0000000000100000";	 --	5
+			when "0110" =>  Y <= "0000000001000000";     -- 6
+			when "0111" =>  Y <= "0000000010000000";	 --	7
+			when "1000" =>  Y <= "0000000100000000";	 --	8
+			when "1001" =>  Y <= "0000001000000000";	 -- 9
+			when "1010" =>  Y <= "0000010000000000";     -- 10
+			when "1011" =>  Y <= "0000100000000000";  	 --	11
+			when "1100" =>  Y <= "0001000000000000";  	 --	12
+			when "1101" =>  Y <= "0010000000000000";  	 --	13
+			when "1110" =>  Y <= "0100000000000000";  	 --	14
+			when "1111" =>  Y <= "1000000000000000";  	 --	15
+		end case;
+	end process;
+end architecture;
+
+
+
+
+-- 8. MUX cu parametri generici –-----------------
+------ *exemplificare pt. MUX 8:1 ----------------
+
+Library	IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.STD_LOGIC_UNSIGNED.all;
+
+entity MUX is	  				        -- Entitate	
+-- Parametrii genericii:
+--     nr_sel : numarul intrarilor de selectie 
+
+	generic (					        
+			  nr_sel: INTEGER := 3      -- pentru MUX 8:1, nr_sel = 3
+		     );
+
+-- Semanle de intrare si de iesire:
+--     S : intrari de selctie
+--     X : intrari de date
+--     Q : iesirea multiplexorului
+
+	port (  						
+			S:  in STD_LOGIC_VECTOR (nr_sel - 1 downto 0);
+			X:  in STD_LOGIC_VECTOR (2**nr_sel - 1 downto 0);
+			O: out STD_LOGIC
+		  );
+end entity;
+
+architecture comportamental of MUX is	 -- Arhitectura
+begin
+	O <= X( conv_integer(S) );
+end architecture;
+									
+	
+
+
+-- 9. DEMUX cu parametri generici –-----------------
+------ *exemplificare pt. DEMUX 1:8 ----------------
+
+Library	IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.STD_LOGIC_UNSIGNED.all;
+
+entity DEMUX is	  				        -- Entitate	
+-- Parametrii genericii:
+--     nr_sel : numarul intrarilor de selectie 
+
+	generic (					        
+			  nr_sel: INTEGER := 3      -- pentru DEMUX 1:8, nr_sel = 3
+		     );
+
+-- Semanle de intrare si de iesire:
+--     S : intrari de selctie
+--     X : intrarea de date
+--     O : iesiriile demultiplexorului
+
+	port (  						
+			S:  in STD_LOGIC_VECTOR (nr_sel - 1 downto 0);
+			O: out STD_LOGIC_VECTOR (2**nr_sel - 1 downto 0);
+			X:  in STD_LOGIC
+		  );
+end entity;
+
+architecture comportamental of DEMUX is	 -- Arhitectura
+begin
+
+	process (S,X) 
+	variable tempO: STD_LOGIC_VECTOR (2**nr_sel - 1 downto 0);
+	begin
+		tempO := (tempO'range => '0');	 -- umplam vectorul cu '0' uri
+	    tempO(conv_integer (S)) := X;	 -- pe pozitia corespunzatoare punem pe X
+		O <= tempO;
+	end process;
+	
+end architecture;
+
+
+
+-- 10. Comparator de egalitate pe 2 biÑi – descriere structuralã
+-- 11. Comparator de egalitate pe 2 biÑi – descriere comportamentalã
+-- 12. Comparator de egalitate pe 2 biÑi – descriere “flux de date”
+
+-- portii logice:
+-------------------------------- INVERTOR ------------------------------
+
+library IEEE;								
+use IEEE.STD_LOGIC_1164.ALL;				
+											
+entity INV is	  							 -- Entitate
+	port ( X:  in STD_LOGIC;
+		  nX: out STD_LOGIC);	
+end INV;
+
+architecture comportamental of INV is		 -- Arhitectura
+begin
+	nX <= not (X);
+end architecture;
+
+
+-------------------------------- POARTA AND -----------------------------
+
+library IEEE;								
+use IEEE.STD_LOGIC_1164.ALL;				
+											
+entity AND3 is	  							 -- Entitate
+	port ( A, B, C:  in STD_LOGIC;
+		         Y: out STD_LOGIC);	
+end AND3;
+
+architecture comportamental of AND3 is		 -- Arhitectura
+begin
+	Y <= A and B and C;
+end architecture;							 
+
+
+-------------------------------- POARTA OR ----------------------------
+
+library IEEE;								
+use IEEE.STD_LOGIC_1164.ALL;				
+											
+entity OR3 is	  							 -- Entitate
+	port ( A, B, C:  in STD_LOGIC;
+		         Y: out STD_LOGIC);	
+end OR3;
+
+architecture comportamental of OR3 is		 -- Arhitectura
+begin
+	Y <= A or B or C;
+end architecture;					   
+
+-------------------------------- POARTA XOR ----------------------------
+
+library IEEE;								
+use IEEE.STD_LOGIC_1164.ALL;				
+											
+entity XOR2 is	  							 -- Entitate
+	port ( A, B:  in STD_LOGIC;
+		      Y: out STD_LOGIC);	
+end XOR2;
+
+architecture comportamental of XOR2 is		 -- Arhitectura
+begin
+	Y <= A xor B;
+end architecture;
+
+------------------------------------------------------------------------
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+-- Entitate:
+entity comp2 is
+	
+	--Semnale de iesire si de intrare:
+		-- A, B: cele doua intrari a comparatorul
+		-- mic:  A<B
+		-- mare: A>B
+		-- egal: A=B
+		
+	port (
+					   A, B:  in STD_LOGIC_VECTOR (1 downto 0);
+			mic, mare, egal: out STD_LOGIC 
+	   	  );
+	
+end entity;
+
+-- Arhitectura:
+-- Nr. 1. Descriere Structurala
+	
+
+architecture structural of comp2 is
+	-- Componente:
+	 -- 1. Invertor:
+		component INV is	  					
+			port ( X:  in STD_LOGIC;
+		  		  nX: out STD_LOGIC);	
+		end component INV;
+	 -- 2. Poarta AND:	
+		component AND3 is	  							 
+			port ( A, B, C:  in STD_LOGIC;
+		                 Y: out STD_LOGIC);	
+		end component AND3;
+	 -- 3. Poarta OR:
+	 	component OR3 is	  							 -- Entitate
+			port ( A, B, C:  in STD_LOGIC;
+		    		     Y: out STD_LOGIC);	
+		end component OR3;
+	 -- 4. Poarta XOR:
+	 	component XOR2 is	  							 -- Entitate
+			port ( A, B:  in STD_LOGIC;
+		   		      Y: out STD_LOGIC);	
+		end component XOR2;
+		
+-- Semnale:
+signal nA0, nA1, nB0, nB1,
+	   p1, p2, p3,
+	   q1, q2, q3,
+	   t1, t2, t3 : STD_LOGIC;
+	
+begin
+	
+	inv_1: INV port map ( A(0), nA0);
+	inv_2: INV port map ( A(1), nA1);
+	inv_3: INV port map ( B(0), nB0);
+	inv_4: INV port map ( B(1), nB1);
+
+-- mic:
+	and_1: AND3 port map ( B(1),  nA1,  '1', p1);
+	and_2: AND3 port map ( B(0),  nA0,  nA1, p2);
+	and_3: AND3 port map ( nA0,  B(1), B(0), p3);
+	
+	or1: OR3 port map (p1, p2, p3, mic);
+
+-- mare: 
+    and_4: AND3 port map ( A(1),   nB1,  '1', q1);
+	and_5: AND3 port map ( A(0),   nB0,  nB1, q2);
+	and_6: AND3 port map (  nB0,  A(1), A(0), q3);
+	
+	or2: OR3 port map (q1, q2, q3, mare);
+
+-- egal:
+	xor_1: XOR2 port map ( A(1), B(1), t1);
+	xor_2: XOR2 port map ( A(0), B(0), t2);
+	
+	or_3: OR3 port map ( t1, t2, '0', t3);
+	
+	inv_5: INV port map (t3, egal);
+	
+end architecture;
+
+
+-- Nr. 2. Descriere Comportamentala
+architecture comportamental of comp2 is
+begin
+	process (A,B)
+	begin
+		if (A<B) then
+			mic <= '1';
+		else 
+			mic <= '0';
+		end if;
+		
+		if (A=B) then 
+			egal <= '1';
+		else
+			egal <= '0';
+		end if;
+		
+		if (A>B) then
+			mare <= '1';
+		else 
+			mare <= '0';
+		end if;
+	end process;
+end architecture;
+
+-- Nr. 3. Descriere "Flux de Date"
+architecture flux_de_date of comp2 is
+begin
+	 mic <= ( B(1) and (not(A(1)))) or ( B(0) and (not(A(0))) and (not(A(1)))) or ( (not(A(0))) and B(1) and B(0) );
+	mare <= ( A(1) and (not(B(1)))) or ( A(0) and (not(B(0))) and (not(B(1)))) or ( (not(B(0))) and A(1) and A(0) );
+	egal <=  not ( (A(1) xor B(1)) or (A(0) xor B(0)) );
+end architecture;
+
+
+	
+	
+		
+	
+		
+-- 13. Scãzãtor complet pe 1 bit – descriere structuralã
+
+-------------------------------- INVERTOR ------------------------------
+
+library IEEE;								
+use IEEE.STD_LOGIC_1164.ALL;				
+											
+entity INV_1 is	  							 -- Entitate
+	port ( X:  in STD_LOGIC;
+		  nX: out STD_LOGIC);	
+end INV_1;
+
+architecture comportamental of INV_1 is		 -- Arhitectura
+begin
+	nX <= not (X);
+end architecture;
+
+
+-------------------------------- POARTA SI -----------------------------
+
+library IEEE;								
+use IEEE.STD_LOGIC_1164.ALL;				
+											
+entity SI_2 is	  							 -- Entitate
+	port ( A, B:  in STD_LOGIC;
+		      Y: out STD_LOGIC);	
+end SI_2;
+
+architecture comportamental of SI_2 is		 -- Arhitectura
+begin
+	Y <= A and B;
+end architecture;							 
+
+
+-------------------------------- POARTA SAU ----------------------------
+
+library IEEE;								
+use IEEE.STD_LOGIC_1164.ALL;				
+											
+entity SAU_3 is	  							 -- Entitate
+	port ( A, B, C:  in STD_LOGIC;
+		         Y: out STD_LOGIC);	
+end SAU_3;
+
+architecture comportamental of SAU_3 is		 -- Arhitectura
+begin
+	Y <= A or B or C;
+end architecture;
+
+-------------------------------- POARTA XOR ----------------------------
+
+library IEEE;								
+use IEEE.STD_LOGIC_1164.ALL;				
+											
+entity XOR_2 is	  							 -- Entitate
+	port ( A, B:  in STD_LOGIC;
+		      Y: out STD_LOGIC);	
+end XOR_2;
+
+architecture comportamental of XOR_2 is		 -- Arhitectura
+begin
+	Y <= A xor B;
+end architecture;
+
+------------------------------------------------------------------------
+
+library	IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+-- Entitate:
+entity scazator is
+	
+	-- Semnale de intrare si de iesire:
+	port (
+			 A, B, Cin:  in STD_LOGIC;
+			   S, Cout: out STD_LOGIC
+		  );						 
+
+end entity;
+
+
+-- Arhitectura:
+architecture structural of scazator is
+-- Componente:
+	   -- 1. Invertor:
+	   component INV_1 is	  							
+			port ( X:  in STD_LOGIC;
+		  		  nX: out STD_LOGIC);	
+	   end component INV_1;
+	   -- 2. Poarta SI:
+	   component SI_2 is	  							 -- Entitate
+			port ( A, B:  in STD_LOGIC;
+				      Y: out STD_LOGIC);	
+	   end component SI_2;
+	   -- 3. Poarta SAU:
+	   component SAU_3 is	  							 -- Entitate
+			port ( A, B, C:  in STD_LOGIC;
+		    		     Y: out STD_LOGIC);	
+	   end component SAU_3;
+	   -- 4. Poarta SAU-EXCLUSIV:
+	   component XOR_2 is	  							 -- Entitate
+			port ( A, B:  in STD_LOGIC;
+		    		  Y: out STD_LOGIC);	
+	   end component XOR_2;
+	
+	   
+-- Semnale:
+signal nA, nCin,
+	   x1, x2, x3,
+	   y1, y2, y3: STD_LOGIC;
+
+begin
+	inv_nr1: INV_1 port map ( Cin, nCin);
+	inv_nr2: INV_1 port map (   A,   nA);
+	
+-- S:
+	xor_nr1: XOR_2 port map ( A, B, x1);
+	inv_nr3: INV_1 port map (x1, x2);
+	xor_nr2: XOR_2 port map (x2, Cin, x3);
+	inv_nr4: INV_1 port map (x3, S);
+
+-- Cout:
+	si_nr1: SI_2 port map ( nA, B, y1);
+	si_nr2: SI_2 port map ( nA, Cin, y2);
+	si_nr3: SI_2 port map ( B, Cin, y3);
+	sau_nr1: SAU_3 port map (y1, y2, y3, Cout);
+
+end architecture;
+	
+	
+		
+
+
+-- 14. Sumator-scãzãtor pe 4 biti – descriere comportamentalã
+
+library	IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.STD_LOGIC_ARITH.all;
+use IEEE.STD_LOGIC_UNSIGNED.all;
+
+-- Entitate:
+entity sumator_scazator is
+	
+	-- Semnale de intrare si de iesire:
+	port (					  
+		        A, B:  in STD_LOGIC_VECTOR (3 downto 0);
+			Sel, Cin:  in STD_LOGIC;   
+				   S: out STD_LOGIC_VECTOR (3 downto 0);
+				Cout: out STD_LOGIC
+		  );
+		  
+end entity;
+
+-- Arhitectura:
+architecture comportamental of sumator_scazator is
+begin
+	process ( A, B, Sel, Cin)
+	variable X, Y, O, Z: STD_LOGIC_VECTOR (4 downto 0);
+	begin
+		if (Sel = '0') then 			-- adunare
+			Z := "00000";
+			Z(0) :=Cin;
+			X(4) := '0';
+			X(3 downto 0) := A;
+			Y(4) := '0';
+			y(3 downto 0) := B;
+			O := X + Y + Z;
+			S <= O(3 downto 0);
+			Cout <= O(4);
+		else
+			Z := "00000";
+			Z(0) :=Cin;
+			X(4) := '1';
+			X(3 downto 0) := A;
+			Y(4) := '0';
+			Y(3 downto 0) := B;
+			O := A - B - Z;
+			S <= O(3 downto 0);
+			Cout <= not ( O(4) );
+		end if;
+	end process;
+end architecture;
+			
+			
+			
+
+-- 15. Memorie ROM 16 x 4 biÑi
+
+library	IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.STD_LOGIC_UNSIGNED.all;
+
+-- Entitatea:
+entity ROM16_4 is
+	
+	-- Semnale de intrare si de iesire:
+	port (
+			     ADR:  in STD_LOGIC_VECTOR (3 downto 0);
+			 CLK, CS:  in STD_LOGIC;
+			    Dout: out STD_LOGIC_VECTOR (3 downto 0)
+		  );
+
+end entity;
+
+-- Architectura:
+architecture comportamental of ROM16_4 is
+type mem is array (15 downto 0) of STD_LOGIC_VECTOR (3 downto 0);
+signal M:mem := (	  --Continutul memoriei
+	"0000",    	-- 15
+	"0001",		-- 14
+	"0010",
+	"0011",
+	"0100",
+	"0101",
+	"0110",
+	"0111",
+	"1000",
+	"1001",
+	"1010",
+	"1011",
+	"1100",
+	"1101",
+	"1110",
+	"1111" );  -- 0
+begin
+	
+	process (CLK, CS, ADR)
+	begin
+		if CLK = '1' and CLK'EVENT and CS = '1' then
+			Dout <= M( conv_integer(ADR) );
+		end if;
+	end process;
+	
+end architecture;
+
+
+
+-- 15. Memorie ROM 16 x 4 biÑi
+
+library	IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.STD_LOGIC_UNSIGNED.all;
+
+-- Entitatea:
+entity RAM16_4 is
+	
+	-- Semnale de intrare si de iesire:
+	port (
+			         ADR:  in STD_LOGIC_VECTOR (3 downto 0);
+			 CLK, CS, WE:  in STD_LOGIC;  
+			         Din:  in STD_LOGIC_VECTOR (3 downto 0);
+			        Dout: out STD_LOGIC_VECTOR (3 downto 0)
+		  );
+
+end entity;
+
+-- Architectura:
+architecture comportamental of RAM16_4 is
+type mem is array (15 downto 0) of STD_LOGIC_VECTOR (3 downto 0);
+signal M:mem := (	  --Continutul memoriei
+	"0000",    	-- 15
+	"0001",		-- 14
+	"0010",
+	"0011",
+	"0100",
+	"0101",
+	"0110",
+	"0111",
+	"1000",
+	"1001",
+	"1010",
+	"1011",
+	"1100",
+	"1101",
+	"1110",
+	"1111" );  -- 0
+begin
+	
+	process (CLK, CS, ADR, WE)
+	begin
+		if CLK = '1' and CLK'EVENT and CS = '1' then
+			if (WE = '1') then
+				M (conv_integer(ADR)) <= Din;
+			end if;
+			Dout <= M( conv_integer(ADR) );
+		end if;
+	end process;
+	
+end architecture;
+
+
+
+-- 17. Unitate aritmetico-logicã (+, -, x, /; SI, NU, SAU, SAU-EXCLUSIV)
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.STD_LOGIC_ARITH.all;
+use IEEE.STD_LOGIC_UNSIGNED.all;
+
+-- Entitatea:
+entity UAL is
+	Port (
+			S:  in STD_LOGIC_VECTOR (2 downto 0);
+			A,B: in STD_LOGIC_VECTOR (7 downto 0);
+			Cin: in STD_LOGIC;
+			O: out STD_LOGIC_VECTOR (7 downto 0);
+			Cout: out STD_LOGIC
+		 );
+end entity;
+
+
+architecture comportamental of UAL is
+begin
+	process (S, A, B, Cin)
+	variable X, Y, Z, T: STD_LOGIC_VECTOR (8 downto 0);
+	variable		  H: STD_LOGIC_VECTOR (15 downto 0);	
+	begin
+		if (S = "000") then		  -- Adunare (+)
+			Z := "000000000";     Z(0) := Cin;
+			X(7 downto 0) := A;	  X(8) := '0';
+			Y(7 downto 0) := B;   Y(8) := '0';
+			T := X + Y + Z;
+			O <= T (7 downto 0);  Cout <= T(8);
+	 elsif (S = "001") then		  -- Scadere (-)
+			Z := "000000000";     Z(0) := Cin;
+			X(7 downto 0) := A;	  X(8) := '1';
+			Y(7 downto 0) := B;   Y(8) := '0';
+			T := X - Y - Z;
+			O <= T (7 downto 0);  Cout <= not T(8);
+	 elsif (S = "010") then		  -- Inmultire (*)
+		 	H := A * B;
+		 	O <= H(7 downto 0);	
+	 elsif (S = "011") then		  -- Inpartire (/)
+			null;
+	 elsif (S = "100") then		  -- AND
+		    O <= A and B;
+	 elsif (S = "101") then		  -- NOT
+		    O <= not (A);
+	 elsif (S = "110") then		  -- OR
+		    O <= A or B;
+	 elsif (S = "100") then		  -- XOR
+		    O <= A xor B;
+	 end if;
+	end process;
+end architecture;
+			
+
+			
+
+-- 18. Bistabil D sincron, cu intrãri asincrone si cu proces pt. tact – descriere comportamentalã
+
+library	IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+-- Entitate:
+entity bist_D is
+	port (
+			D, R, S:  in STD_LOGIC;
+				  Q: out STD_LOGIC
+		  );
+end entity;
+
+-- Arhitectura:
+architecture comportamental of bist_D is
+signal clk: STD_LOGIC := '1';
+begin
+	tact: process
+	begin
+		clk <= not clk;
+		wait for 10 ns;
+	end process;
+	
+	bist: process (D, R, S, clk)
+	begin
+		if (R = '1') then 
+			Q <= '0';
+	    elsif (S = '1') then
+			Q <= '1';
+		elsif clk'event and  clk = '1' then
+			Q <= D;
+		end if;
+	end process;
+end architecture;
+		
+
+
+
+-- 19. Bistabil JK sincron, cu intrãri asincrone si cu proces pt. tact – descriere comportamentalã
+
+library	IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+-- Entitate:
+entity bist_JK is
+	port (
+			J, K, R, S:  in STD_LOGIC;
+				     Q: out STD_LOGIC
+		  );
+end entity;
+
+-- Arhitectura:
+architecture comportamental of bist_JK is
+signal clk: STD_LOGIC := '1';
+signal M: STD_LOGIC;
+begin
+	tact: process
+	begin
+		clk <= not clk;
+		wait for 10 ns;
+	end process;
+	
+	bist: process (M, J, K, R, S, clk)
+	begin
+		if (R = '1') then 
+			M <= '0'; 
+	    elsif (S = '1') then
+			M <= '1';
+		elsif clk'event and  clk = '1' then	
+			if (J = '0') then
+				if (K = '0') then
+					null;
+				else
+					M <= '0';
+				end if;
+			else
+				if (K = '0') then
+					M <= '1';
+				else
+					M <= not(M);
+				end if;
+			end if;			
+		end if;
+		Q <= M;
+	end process;
+
+end architecture;
+
+	
+	
+	
+		
+
+-- 19. Bistabil T sincron, cu intrãri asincrone si cu proces pt. tact – descriere comportamentalã
+
+library	IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+-- Entitate:
+entity bist_T is
+	port (
+			T, R, S:  in STD_LOGIC;
+			      Q: out STD_LOGIC
+		  );
+end entity;
+
+-- Arhitectura:
+architecture comportamental of bist_T is
+signal clk: STD_LOGIC := '1';
+signal M: STD_LOGIC;
+begin
+	tact: process
+	begin
+		clk <= not clk;
+		wait for 10 ns;
+	end process;
+	
+	bist: process (M, T, R, S, clk)
+	begin
+		if (R = '1') then 
+			M <= '0'; 
+	    elsif (S = '1') then
+			M <= '1';
+		elsif clk'event and  clk = '1' then	
+			if (T = '1') then
+				M <= not (M);
+			end if;						
+		end if;
+		Q <= M;
+	end process;
+
+end architecture;
+		
+
+
+-- 21. Numãrãtor binar sincron (operaÑii: resetare, numãrare, încãrcare paralelã)
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.STD_LOGIC_UNSIGNED.all;
+
+
+-- Entitate:
+entity num_bin is
+	port (
+			      Din:  in STD_LOGIC_VECTOR (3 downto 0);
+			CLK, R, L:  in STD_LOGIC;
+					Q: out STD_LOGIC_VECTOR (3 downto 0)
+		  );
+end entity;
+
+-- Arhitectura:
+architecture comportamental of num_bin is
+signal M: STD_LOGIC_VECTOR (3 downto 0);
+begin
+	process (clk, r, l, Din)
+	begin
+		if (clk = '1') and (clk'event) then
+			if (R = '1') then
+				M <= "0000";
+			elsif (L = '1') then 
+				M <= Din;
+			else 
+				M <= M + "0001";
+			end if;
+		end if;
+	end process;
+	
+	Q <= M;
+end architecture;
+
+
+
+-- 22. Numãrãtor zecimal sincron (operaÑii: resetare, numãrare, încãrcare paralelã)
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.STD_LOGIC_UNSIGNED.all;
+
+
+-- Entitate:
+entity num_zecim is
+	port (
+			      Din:  in STD_LOGIC_VECTOR (3 downto 0);
+			CLK, R, L:  in STD_LOGIC;
+					Q: out STD_LOGIC_VECTOR (3 downto 0)
+		  );
+end entity;
+
+-- Arhitectura:
+architecture comportamental of num_zecim is
+signal M: STD_LOGIC_VECTOR (3 downto 0);
+begin
+	process (clk, r, l, Din)
+	begin
+		if (clk = '1') and (clk'event) then
+			if (R = '1') then
+				M <= "0000";
+			elsif (L = '1') then 
+				M <= Din;
+			else 
+				if (M <"1001") then
+					M <= M + "0001";
+				else 
+					M <="0000";
+				end if;
+			end if;
+		end if;
+	end process;
+	
+	Q <= M;
+end architecture;
+
+
+--23. Registru universal sincron (memorare, încãrcare paralelã, deplasare dreapta, deplasare
+--stânga, resetare)
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+
+-- Entitate:
+entity registru is
+	port (
+			CLK, L, ST, DR, R, SI:  in STD_LOGIC;
+						      Din:  in STD_LOGIC_VECTOR (7 downto 0);
+							 Dout: out STD_LOGIC_VECTOR (7 downto 0)
+		  );
+end entity;
+
+-- Arhitectura:
+architecture comportamental of registru is
+signal M: STD_LOGIC_VECTOR (7 downto 0);
+begin
+	process (CLK, L, ST, DR, R, SI, Din)
+	begin
+		if (CLK = '1') and (CLK'EVENT) then
+			if (R = '1') then 			   			-- Resetare
+				M <= "00000000";
+			elsif (L = '1') then					-- Incarcare paralela
+				M <= Din;
+			elsif (DR = '1') then					-- Deplasare dreapta
+				M(6 downto 0) <= M(7 downto 1);
+				M(7) <= SI;
+			elsif (ST = '1') then					-- Deplasare stanga
+				M(7 downto 1) <= M(6 downto 0);
+				M(0) <= SI;
+			end if;
+		end if;
+	end process;
+	Dout <= M;
+end architecture;
+
+
+-- 24. Generator de numere pseudoaleatoare pe 4 biÑi – descriere structuralã
+
+---------------------Registru universal ------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+-- Entitate:
+entity registru is
+	port (
+			CLK, L, ST, DR, R, SI:  in STD_LOGIC;
+						      Din:  in STD_LOGIC_VECTOR (7 downto 0);
+							 Dout: out STD_LOGIC_VECTOR (7 downto 0)
+		  );
+end entity;
+
+-- Arhitectura:
+architecture comportamental of registru is
+signal M: STD_LOGIC_VECTOR (7 downto 0);
+begin
+	process (CLK, L, ST, DR, R, SI, Din)
+	begin
+		if (CLK = '1') and (CLK'EVENT) then
+			if (R = '1') then 			   			-- Resetare
+				M <= "00000000";
+			elsif (L = '1') then					-- Incarcare paralela
+				M <= Din;
+			elsif (DR = '1') then					-- Deplasare dreapta
+				M(6 downto 0) <= M(7 downto 1);
+				M(7) <= SI; 
+			elsif (ST = '1') then					-- Deplasare stanga
+				M(7 downto 1) <= M(6 downto 0);
+				M(0) <= SI;
+			end if;
+		end if;
+	end process;
+	Dout <= M;
+end architecture;
+
+-------------------------------- POARTA XOR ----------------------------
+
+library IEEE;								
+use IEEE.STD_LOGIC_1164.ALL;				
+											
+entity XOR2 is	  							 -- Entitate
+	port ( A, B:  in STD_LOGIC;
+		      Y: out STD_LOGIC);	
+end XOR2;
+
+architecture comportamental of XOR2 is		 -- Arhitectura
+begin
+	Y <= A xor B;
+end architecture;
+------------------------------------------------------------------------
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+-- Entitatea:
+entity generator_SPA is
+	port (
+			R, CLK:  in STD_LOGIC;
+		      Dout: out STD_LOGIC_VECTOR (3 downto 0)
+		  );											 
+end entity;
+
+-- Arhitectura:
+architecture structural of generator_SPA is
+-- Componente:
+	-- 1. Registru universal
+	component registru is
+		port (
+				CLK, L, ST, DR, R, SI:  in STD_LOGIC;
+							      Din:  in STD_LOGIC_VECTOR (7 downto 0);
+								 Dout: out STD_LOGIC_VECTOR (7 downto 0)
+		  	  );
+	end component;
+	-- 2. Poarta XOR
+	component XOR2 is	  							 -- Entitate
+		port ( A, B:  in STD_LOGIC;
+			      Y: out STD_LOGIC);	
+	end component;
+
+-- Signal:
+signal X: STD_LOGIC;
+signal Y: STD_LOGIC_VECTOR (7 downto 0);
+begin
+	reg: registru port map (CLK => CLK, L=> R, ST => '0', DR => '1', R=> '0', SI => X, Din => "00010000", Dout => Y);
+	xor1: XOR2 port map (Y(7), Y(4), X);
+	Dout <= Y (7 downto 4);
+end architecture;
+
+
+
+
+--  25. Memorie FIFO 4 x 4 biti
+
+library	IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+
+-- Enititate:
+entity FIFO_4x4 is
+	
+	-- Semnale de intrare si de iesire:
+	port (
+			CLK, R, WE, RE:  in STD_LOGIC;
+					   Din:  in STD_LOGIC_VECTOR (3 downto 0);
+					  Dout: out STD_LOGIC_VECTOR (3 downto 0);
+			   Full, Empty: out STD_LOGIC
+		  );
+
+end entity;
+
+
+-- Arhitectura
+architecture comportamental of FIFO_4x4 is
+shared variable tEmpty, tFull: STD_LOGIC;
+shared variable	wPos: INTEGER range 0 to 4;
+
+type mem is array (3 downto 0) of STD_LOGIC_VECTOR (3 downto 0);
+shared variable M:mem := ("0000", "0000", "0000", "0000");
+begin
+	
+	process (CLK, R, WE, RE, Din)
+	begin
+		if (CLK = '1') and (CLK'EVENT) then
+			if (R = '1') then
+				tEmpty :='1';
+				tFull := '0';
+				wPos := 0;
+			elsif (WE = '1') and (tFull = '0') then
+				M( wPos ) := Din;
+				wPos := wPos + 1;
+				tEmpty := '0';
+				if (wPos = 4) then 
+					tFull := '1';
+				end if;
+			elsif (RE = '1') and (tEmpty = '0') then
+				Dout <= M(0);
+				M(2 downto 0) := M(3 downto 1);  
+				wPos := wPos - 1;
+				tFull := '0';
+				if (wPos = 0) then
+					tEmpty := '1';
+				end if;
+			end if;
+			Empty <= tEmpty;
+			Full <= tFull;
+		end if;
+	end process;
+end architecture;
+	
+	
+				
+			
+--  26. Memorie LIFO 4 x 4 biti
+
+library	IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+
+-- Enititate:
+entity LIFO_4x4 is
+	
+	-- Semnale de intrare si de iesire:
+	port (
+			CLK, R, WE, RE:  in STD_LOGIC;
+					   Din:  in STD_LOGIC_VECTOR (3 downto 0);
+					  Dout: out STD_LOGIC_VECTOR (3 downto 0);
+			   Full, Empty: out STD_LOGIC
+		  );
+
+end entity;
+
+
+-- Arhitectura
+architecture comportamental of LIFO_4x4 is
+shared variable tEmpty, tFull: STD_LOGIC;
+shared variable	Pos: INTEGER range 0 to 4;
+type mem is array (3 downto 0) of STD_LOGIC_VECTOR (3 downto 0);
+shared variable M:mem := ("0000", "0000", "0000", "0000");
+begin
+	
+	process (CLK, R, WE, RE, Din)
+	begin
+		if (CLK = '1') and (CLK'EVENT) then
+			if (R = '1') then
+				tEmpty :='1';
+				tFull := '0';
+				Pos := 0;
+			elsif (WE = '1') and (tFull = '0') then
+				M( Pos ) := Din;
+				Pos := Pos + 1;
+				tEmpty := '0';
+				if (Pos = 4) then 
+					tFull := '1';
+				end if;
+			elsif (RE = '1') and (tEmpty = '0') then
+				Dout <= M(Pos - 1);
+				Pos := Pos - 1;
+				tFull := '0';
+				if (Pos = 0) then
+					tEmpty := '1';
+				end if;
+			end if;
+			Empty <= tEmpty;
+			Full <= tFull;
+		end if;
+	end process;
+end architecture;
+	
+	
+
+-- 27. Modul de simulare pentru sumator complet pe 1 bit
+
+-- Sumator complet pe 1 bit:
+
+ library	IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.STD_LOGIC_UNSIGNED.all;
+
+
+-- Entitate:
+entity Sumator1 is
+	port (
+			A, B, Cin:  in STD_LOGIC;
+			  S, Cout: out STD_LOGIC
+	      );
+end entity;
+
+-- Arhitectura:
+architecture comportamental of Sumator1 is
+begin
+	process (A, B, Cin)
+	variable X, Y, Z, T: STD_LOGIC_VECTOR(1 downto 0);
+	begin
+		X(0) := A;   X(1) := '0';
+		Y(0) := B;   Y(1) := '0';
+		Z(0) := Cin; Z(1) := '0';
+		T := X + Y + Z;
+		S <= T(0);
+		Cout <= T(1);
+	end process;
+end architecture; 
+
+-- Modul de simulare
+library	IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.STD_LOGIC_UNSIGNED.all;
+
+
+-- Entitate:
+entity Modul_sumator is
+end entity;
+
+
+-- Arhitectura:
+architecture comportamental of Modul_sumator is
+	component Sumator1 is
+		port (
+				A, B, Cin:  in STD_LOGIC;
+				  S, Cout: out STD_LOGIC
+	      	  );	
+	end component;
+
+signal A, B, Cin, S, Cout: STD_LOGIC;	
+begin								
+	
+	UST: Sumator1 port map (A, B, Cin, S, Cout);
+	
+	A <= '0', '1' after 80 ns;
+	B <= '0', '1' after 40 ns, '0' after 80 ns, '1' after 120 ns;
+	Cin <= '0', '1' after 20 ns, '0' after 40 ns, '1' after 60 ns, '0' after 80 ns, '1' after 100 ns, '0' after 120 ns, '1' after 140 ns;
+
+end architecture;
+	
+	
+		
+		
+-- 28. Modul de simulare pentru scazator complet pe 1 bit
+
+-- Scazator complet pe 1 bit:
+
+library	IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.STD_LOGIC_UNSIGNED.all;
+
+
+-- Entitate:
+entity Scazator1 is
+	port (
+			A, B, Cin:  in STD_LOGIC;
+			  S, Cout: out STD_LOGIC
+	      );
+end entity;
+
+-- Arhitectura:
+architecture comportamental of Scazator1 is
+begin
+	process (A, B, Cin)
+	variable X, Y, Z, T: STD_LOGIC_VECTOR(1 downto 0);
+	begin
+		X(0) := A;   X(1) := '1';
+		Y(0) := B;   Y(1) := '0';
+		Z(0) := Cin; Z(1) := '0';
+		T := X - Y - Z;
+		S <= T(0);
+		Cout <= not T(1);
+	end process;
+end architecture; 
+
+-- Modul de simulare
+library	IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.STD_LOGIC_UNSIGNED.all;
+
+
+-- Entitate:
+entity Modul_scazator is
+end entity;
+
+
+-- Arhitectura:
+architecture comportamental of Modul_scazator is
+	component Scazator1 is
+		port (
+				A, B, Cin:  in STD_LOGIC;
+				  S, Cout: out STD_LOGIC
+	      	  );	
+	end component;
+
+signal A, B, Cin, S, Cout: STD_LOGIC;	
+begin								
+	
+	UST: Scazator1 port map (A, B, Cin, S, Cout);
+	
+	A <= '0', '1' after 80 ns;
+	B <= '0', '1' after 40 ns, '0' after 80 ns, '1' after 120 ns;
+	Cin <= '0', '1' after 20 ns, '0' after 40 ns, '1' after 60 ns, '0' after 80 ns, '1' after 100 ns, '0' after 120 ns, '1' after 140 ns;
+
+end architecture;
+	
+	
+		
+
+-- 29. Modul de simulare pentru comparator pe 1 bit
+
+-- Comparator pe 1 bit:
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+-- Entitate:
+entity comp1 is
+	port (
+			           A, B:  in STD_LOGIC;
+			mic, mare, egal: out STD_LOGIC
+		  );
+end entity;
+
+-- Arhitectura
+architecture flux of comp1 is
+begin
+	mic <= (not A) and B;
+	mare <= A and (not B);
+	egal <= not (A xor B);
+end;
+
+-- Modul de simulare:
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+-- Entitate:
+entity modul_comp1 is
+end entity;
+
+-- Arhitectura:
+architecture comportamental of modul_comp1 is
+	component comp1 is
+		port (
+				           A, B:  in STD_LOGIC;
+				mic, mare, egal: out STD_LOGIC
+		 	 );
+	end component;
+signal A, B, mic, mare, egal: STD_LOGIC;
+begin									
+	UST: comp1 port map ( A, B, mic, mare, egal);
+	
+	A <= '0', '1' after 80 ns;
+	B <= '0', '1' after 40 ns, '0' after 80 ns, '1' after 120 ns;
+end architecture;
+	
+	
+
+-- 30. Modul de simulare pt. MUX 4:1
+
+-- MUX 4:1
+
+Library	IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.STD_LOGIC_UNSIGNED.all;
+
+-- Entitate:
+entity MUX4_1 is	 
+	port (  						
+			S:  in STD_LOGIC_VECTOR (1 downto 0);
+			X:  in STD_LOGIC_VECTOR (3 downto 0);
+			O: out STD_LOGIC
+		  );
+end entity;
+
+--Arhitectura:
+architecture comportamental of MUX4_1 is	 -- Arhitectura
+begin
+	O <= X( conv_integer(S) );
+end architecture;
+
+
+-- Modul de simulare
+
+library	IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+-- Entitate
+entity modul_mux4 is
+end entity;
+
+-- Arhitectura:
+architecture comportamental of modul_mux4 is
+	component MUX4_1 is	 
+		port (  						
+				S:  in STD_LOGIC_VECTOR (1 downto 0);
+				X:  in STD_LOGIC_VECTOR (3 downto 0);
+				O: out STD_LOGIC
+		  	  );
+	end component;
+	
+signal S: STD_LOGIC_VECTOR (1 downto 0);
+signal X: STD_LOGIC_VECTOR (3 downto 0);
+signal O: STD_LOGIC;
+
+begin
+	
+	UST: MUX4_1 port map (S, X, O);
+	
+	X <= "0001", "0010" after 20 ns, "0100" after 40 ns, "1000" after 60 ns,
+	     "1110" after 80 ns, "1101" after 100 ns, "1011" after 120 ns, "0111" after 140 ns;
+	S <= "00", "01" after 20 ns, "10" after 40 ns, "11" after 60 ns,
+	"00" after 80 ns, "01" after 100 ns, "10" after 120 ns, "11" after 140 ns;
+	
+end architecture;
+
+
+
+
+-- 31. Modul de simulare pt. DMUX 4:1
+
+-- DMUX 4:1
+
+Library	IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.STD_LOGIC_UNSIGNED.all;
+
+-- Entitate:
+entity DMUX4_1 is	 
+	port (  						
+			S:  in STD_LOGIC_VECTOR (1 downto 0);
+			O: out STD_LOGIC_VECTOR (3 downto 0);
+			X:  in STD_LOGIC
+		  );
+end entity;
+
+--Arhitectura:
+architecture comportamental of DMUX4_1 is	 -- Arhitectura
+begin
+	process (S, X)
+	variable temp:STD_LOGIC_VECTOR (3 downto 0);
+	begin
+		temp := "0000";
+		temp( conv_integer(S) ) := X;
+		O <= temp;
+	end process;
+
+end architecture;
+
+
+-- Modul de simulare
+
+library	IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+-- Entitate
+entity modul_dmux4 is
+end entity;
+
+-- Arhitectura:
+architecture comportamental of modul_dmux4 is
+	component DMUX4_1 is	 
+		port (  						
+				S:  in STD_LOGIC_VECTOR (1 downto 0);
+				O: out STD_LOGIC_VECTOR (3 downto 0);
+				X:  in STD_LOGIC
+		  	  );
+	end component;
+	
+signal S: STD_LOGIC_VECTOR (1 downto 0);
+signal O: STD_LOGIC_VECTOR (3 downto 0);
+signal X: STD_LOGIC;
+
+begin
+	
+	UST: DMUX4_1 port map (S, O, X);
+	
+	X <= '0', '1' after 80 ns;
+	S <= "00", "01" after 20 ns, "10" after 40 ns, "11" after 60 ns,
+	"00" after 80 ns, "01" after 100 ns, "10" after 120 ns, "11" after 140 ns;
+	
+end architecture;
+
+
+
+
+-- 32. Modul de simulare pentru buffer three-state pe 8 biti	
+
+-- Buffer three-state
+library	IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+-- Entitate:
+entity Buff3s_8 is
+	port (
+			X:  in STD_LOGIC_VECTOR (7 downto 0);
+			E:  in STD_LOGIC;
+			O: out STD_LOGIC_VECTOR (7 downto 0)
+		  );
+end entity;
+
+--Arhitecutura:
+architecture comportamental of Buff3s_8 is
+begin
+	process (X, E)
+	begin
+		if (E = '1') then
+			O <= X;
+		else
+			O <= "ZZZZZZZZ";
+		end if;
+	end process;
+end architecture;
+
+
+-- Modul de simulare
+library	IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+-- Entitate:
+entity modul_buff3s is
+end entity;
+
+-- Arhitectura:
+architecture comportamental of modul_buff3s is
+	component Buff3s_8 is
+		port (
+				X:  in STD_LOGIC_VECTOR (7 downto 0);
+				E:  in STD_LOGIC;
+				O: out STD_LOGIC_VECTOR (7 downto 0)
+			  );
+	end component;
+signal X, O: STD_LOGIC_VECTOR (7 downto 0);
+signal E: STD_LOGIC;
+begin
+	UST: Buff3s_8 port map ( X, E, O);
+	
+	X <= "10110111";
+	E <= '1', '0' after 20 ns;
+end architecture;
+	
+
+
+-- 33. Modul de simulare pt. bistabil D sincron
+
+-- Bistabil D:
+library	IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+-- Entitate:
+entity bistD is
+	port (
+			D, R, S:  in STD_LOGIC;
+				  Q: out STD_LOGIC
+		  );
+end entity;
+
+-- Arhitectura:
+architecture comportamental of bistD is
+signal clk: STD_LOGIC := '1';
+begin
+	tact: process
+	begin
+		clk <= not clk;
+		wait for 5 ns;
+	end process;
+	
+	bist: process (D, R, S, clk)
+	begin
+		if (R = '1') then 
+			Q <= '0';
+	    elsif (S = '1') then
+			Q <= '1';
+		elsif clk'event and  clk = '1' then
+			Q <= D;
+		end if;
+	end process;
+end architecture;
+
+-- Modul de simulare:
+library	IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+-- Entitate:
+entity modul_bistD is
+end entity;
+
+-- Arhitectura:
+architecture comportamental of modul_bistD is
+
+	component bistD is
+		port (
+				D, R, S:  in STD_LOGIC;
+					  Q: out STD_LOGIC
+		  	  );
+	end component;
+	
+signal D, R, S, Q: STD_LOGIC;
+begin
+	UST: bistD port map (D, R, S, Q);
+	
+	S <= '1', '0' after 20 ns;
+	R <= '0', '1' after 20 ns, '0' after 40 ns;
+	D <= '0', '1' after 60 ns;
+end architecture;
+	
+
+
+34.library	IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+-- Entitate:
+entity bistJK is
+	port (
+			J, K, R, S:  in STD_LOGIC;
+				     Q: out STD_LOGIC
+		  );
+end entity;
+
+-- Arhitectura:
+architecture comportamental of bistJK is
+signal clk: STD_LOGIC := '1';
+signal M: STD_LOGIC;
+begin
+	tact: process
+	begin
+		clk <= not clk;
+		wait for 10 ns;
+	end process;
+	
+	bist: process (M, J, K, R, S, clk)
+	begin
+		if (R = '1') then 
+			M <= '0'; 
+	    elsif (S = '1') then
+			M <= '1';
+		elsif clk'event and  clk = '1' then	
+			if (J = '0') then
+				if (K = '0') then
+					null;
+				else
+					M <= '0';
+				end if;
+			else
+				if (K = '0') then
+					M <= '1';
+				else
+					M <= not(M);
+				end if;
+			end if;			
+		end if;
+		Q <= M;
+	end process;
+
+end architecture;
+
+--  Modul de simulare
+
+library	IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+-- Entitate
+entity modul_bistJK is
+end entity;
+
+-- Arhitectura
+architecture comportamental of modul_bistJK is
+	component bistJK is
+		port (
+				J, K, R, S:  in STD_LOGIC;
+					     Q: out STD_LOGIC
+		  	);
+	end component;
+	
+signal J, K, R, S, Q: STD_LOGIC;
+
+begin
+	UST: bistJK port map(J, K, R, S, Q);
+	
+	S <= '1', '0' after 20 ns;
+	R <= '0', '1' after 20 ns, '0' after 40 ns;
+	J <= '0', '1' after 80 ns;
+	K <= '0', '1' after 60 ns, '0' after 80 ns, '1' after 100 ns;
+end architecture;
+
+
+
+
+-- 35. Modul de simulare pt. bistabil T sincron
+
+-- Bistabil T:
+library	IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+-- Entitate:
+entity bistT is
+	port (
+			T, R, S:  in STD_LOGIC;
+			      Q: out STD_LOGIC
+		  );
+end entity;
+
+-- Arhitectura:
+architecture comportamental of bistT is
+signal clk: STD_LOGIC := '1';
+signal M: STD_LOGIC;
+begin
+	tact: process
+	begin
+		clk <= not clk;
+		wait for 10 ns;
+	end process;
+	
+	bist: process (M, T, R, S, clk)
+	begin
+		if (R = '1') then 
+			M <= '0'; 
+	    elsif (S = '1') then
+			M <= '1';
+		elsif clk'event and  clk = '1' then	
+			if (T = '1') then
+				M <= not (M);
+			end if;						
+		end if;
+		Q <= M;
+	end process;
+
+end architecture;
+
+-- Modul de simulare:
+library	IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+-- Entitate:
+entity modul_bistT is
+end entity;
+
+-- Arhitectura:
+architecture comportamental of modul_bistT is
+	component bistT is
+		port (
+				T, R, S:  in STD_LOGIC;
+				      Q: out STD_LOGIC
+			  );
+	end component;
+ 
+signal T, R, S, Q: STD_LOGIC;
+begin
+	
+	UST: bistT port map (T, R, S, Q);
+	
+	R <= '1', '0' after 20 ns;
+	S <= '0', '1' after 100 ns, '0' after 120 ns;
+	T <= '0', '1' after 40 ns, '0' after 100 ns, '1' after 140 ns;
+end architecture;
+
+		
+
+
+-- 36. Modul de simulare pt. registru de deplasare stânga-dreapta si dreapta-stânga
+
+-- Registru de deplasare:
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+
+-- Entitate:
+entity reg is
+	port (
+			CLK, L, ST, DR, R, SI:  in STD_LOGIC;
+						      Din:  in STD_LOGIC_VECTOR (7 downto 0);
+							 Dout: out STD_LOGIC_VECTOR (7 downto 0)
+		  );
+end entity;
+
+-- Arhitectura:
+architecture comportamental of reg is
+signal M: STD_LOGIC_VECTOR (7 downto 0);
+begin
+	process (CLK, L, ST, DR, R, SI, Din)
+	begin
+		if (CLK = '1') and (CLK'EVENT) then
+			if (R = '1') then 			   			-- Resetare
+				M <= "00000000";
+			elsif (L = '1') then					-- Incarcare paralela
+				M <= Din;
+			elsif (DR = '1') then					-- Deplasare dreapta
+				M(6 downto 0) <= M(7 downto 1);
+				M(7) <= SI;
+			elsif (ST = '1') then					-- Deplasare stanga
+				M(7 downto 1) <= M(6 downto 0);
+				M(0) <= SI;
+			end if;
+		end if;
+	end process;
+	Dout <= M;
+end architecture;
+
+-- Modul de simulare:
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+-- Entitate:
+entity modul_reg is
+end entity;
+
+-- Arhitectura:
+architecture comportamental of modul_reg is
+	component reg is
+		port (
+				CLK, L, ST, DR, R, SI:  in STD_LOGIC;
+							      Din:  in STD_LOGIC_VECTOR (7 downto 0);
+								 Dout: out STD_LOGIC_VECTOR (7 downto 0)
+		  	);
+	end component;
+
+signal CLK, L, ST, DR, R, SI: STD_LOGIC :='0';
+signal Din: STD_LOGIC_VECTOR (7 downto 0);
+signal Dout: STD_LOGIC_VECTOR (7 downto 0);
+
+begin
+	UST: reg port map (CLK, L, ST, DR, R, SI, Din, Dout);
+	
+	clock: process
+	begin
+		CLK <= not (CLK);
+		wait for 5 ns;
+	end process;
+	
+	Din <= "01101101", "00001111" after 10 ns;
+	L <= '1', '0' after 20 ns;
+	SI <= '0', '1' after 10 ns, '0' after 20 ns, '1' after 30 ns, '0' after 40 ns, '1' after 50 ns, '0' after 60 ns,
+		  '1' after 70 ns, '0' after 80 ns, '1' after 90 ns, '0' after 100 ns, '1' after 110 ns, '0' after 120 ns;
+	R <= '0', '1' after 20 ns, '0' after 30 ns;
+	ST <= '0', '1' after 30 ns, '0' after 80 ns;
+	DR <= '0', '1' after 80 ns;
+end architecture;
+	
+		
+	

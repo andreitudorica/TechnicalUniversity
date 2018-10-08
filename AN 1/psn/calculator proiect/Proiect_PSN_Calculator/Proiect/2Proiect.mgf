@@ -1,0 +1,686 @@
+V 000040 40 1939 1306143043170 div_frec
+SYMB0100
+HEADER
+{
+ VARIABLES
+ {
+  #HDL_ENTRIES=
+"library IEEE;\n"+
+"use ieee.std_logic_1164.all;"
+  #LANGUAGE="VHDL"
+  #MODIFIED="1306143043"
+ }
+}
+PAGE "" 
+{
+ PAGEHEADER
+ {
+  RECT (0,0,220,160)
+  FREEID 10
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (20,0,200,160)
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,26,25,58)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 2
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (195,26,195,58)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 4
+  }
+  TEXT  7, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (195,66,195,98)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 6
+  }
+  TEXT  9, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (195,106,195,138)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 8
+  }
+  PIN  2, 0, 0
+  {
+   COORD (0,40)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="clk"
+    #NUMBER="0"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  PIN  4, 0, 0
+  {
+   COORD (220,40)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="clk_div"
+    #NUMBER="0"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  PIN  6, 0, 0
+  {
+   COORD (220,80)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="clk_div_afis(1:0)"
+    #NUMBER="0"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  PIN  8, 0, 0
+  {
+   COORD (220,120)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="cnt_port(24:0)"
+    #NUMBER="0"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+ }
+}
+V 000041 40 1168 1306143043177 convertor
+SYMB0100
+HEADER
+{
+ VARIABLES
+ {
+  #HDL_ENTRIES=
+"library IEEE;\n"+
+"use ieee.std_logic_1164.all;"
+  #LANGUAGE="VHDL"
+  #MODIFIED="1306143043"
+ }
+}
+PAGE "" 
+{
+ PAGEHEADER
+ {
+  RECT (0,0,320,80)
+  FREEID 6
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (20,0,300,80)
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,26,25,58)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 2
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (295,26,295,58)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 4
+  }
+  PIN  2, 0, 0
+  {
+   COORD (0,40)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="nr_binar(15:0)"
+    #NUMBER="0"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  PIN  4, 0, 0
+  {
+   COORD (320,40)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="nr_BCD(15:0)"
+    #NUMBER="0"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+ }
+}
+V 000039 40 2472 1306143043380 reg_mem
+SYMB0100
+HEADER
+{
+ VARIABLES
+ {
+  #HDL_ENTRIES=
+"library STD,IEEE;\n"+
+"use STD.STANDARD.all,ieee.std_logic_1164.all;"
+  #LANGUAGE="VHDL"
+  #MODIFIED="1306143043"
+ }
+}
+PAGE "" 
+{
+ PAGEHEADER
+ {
+  RECT (0,0,260,160)
+  FREEID 12
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (20,0,240,160)
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,26,25,58)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 2
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (235,26,235,58)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 4
+  }
+  TEXT  7, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,66,25,98)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 6
+  }
+  TEXT  9, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (235,66,235,98)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 8
+  }
+  TEXT  11, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,106,25,138)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 10
+  }
+  PIN  2, 0, 0
+  {
+   COORD (0,40)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="A(15:0)"
+    #NUMBER="0"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  PIN  4, 0, 0
+  {
+   COORD (260,40)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #INITIAL_VALUE="\"0000000000000000\""
+    #LENGTH="20"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="A_mem(15:0)"
+    #NUMBER="0"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  PIN  6, 0, 0
+  {
+   COORD (0,80)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="B(7:0)"
+    #NUMBER="0"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  PIN  8, 0, 0
+  {
+   COORD (260,80)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #INITIAL_VALUE="\"00000000\""
+    #LENGTH="20"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="B_mem(7:0)"
+    #NUMBER="0"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  PIN  10, 0, 0
+  {
+   COORD (0,120)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="Semn(3:0)"
+    #NUMBER="0"
+    #VHDL_TYPE="BIT_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+ }
+}
+V 000035 40 2467 1306143043388 alu
+SYMB0100
+HEADER
+{
+ VARIABLES
+ {
+  #HDL_ENTRIES=
+"library STD,IEEE;\n"+
+"use STD.STANDARD.all,ieee.std_logic_1164.all;"
+  #LANGUAGE="VHDL"
+  #MODIFIED="1306143043"
+ }
+}
+PAGE "" 
+{
+ PAGEHEADER
+ {
+  RECT (0,0,200,160)
+  FREEID 12
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (20,0,180,160)
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,26,25,58)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 2
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (175,26,175,58)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 4
+  }
+  TEXT  7, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,66,25,98)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 6
+  }
+  TEXT  9, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (175,66,175,98)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 8
+  }
+  TEXT  11, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,106,25,138)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 10
+  }
+  PIN  2, 0, 0
+  {
+   COORD (0,40)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="A(15:0)"
+    #NUMBER="0"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  PIN  4, 0, 0
+  {
+   COORD (200,40)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #INITIAL_VALUE="\"0000000000000000\""
+    #LENGTH="20"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="S(15:0)"
+    #NUMBER="0"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  PIN  6, 0, 0
+  {
+   COORD (0,80)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="B(7:0)"
+    #NUMBER="0"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  PIN  8, 0, 0
+  {
+   COORD (200,80)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #INITIAL_VALUE="\"00000000\""
+    #LENGTH="20"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="rest(7:0)"
+    #NUMBER="0"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  PIN  10, 0, 0
+  {
+   COORD (0,120)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="Semn(3:0)"
+    #NUMBER="0"
+    #VHDL_TYPE="BIT_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+ }
+}
+V 000040 40 1952 1306143043396 afisoare
+SYMB0100
+HEADER
+{
+ VARIABLES
+ {
+  #HDL_ENTRIES=
+"library IEEE;\n"+
+"use ieee.std_logic_1164.all;"
+  #LANGUAGE="VHDL"
+  #MODIFIED="1306143043"
+ }
+}
+PAGE "" 
+{
+ PAGEHEADER
+ {
+  RECT (0,0,320,120)
+  FREEID 10
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (20,0,300,120)
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,26,25,58)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 2
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (295,26,295,58)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 4
+  }
+  TEXT  7, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,66,25,98)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 6
+  }
+  TEXT  9, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (295,66,295,98)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 8
+  }
+  PIN  2, 0, 0
+  {
+   COORD (0,40)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="clk"
+    #NUMBER="0"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  PIN  4, 0, 0
+  {
+   COORD (320,40)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="anod(3:0)"
+    #NUMBER="0"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  PIN  6, 0, 0
+  {
+   COORD (0,80)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="nr_zecimal1(15:0)"
+    #NUMBER="0"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  PIN  8, 0, 0
+  {
+   COORD (320,80)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="catod(7:0)"
+    #NUMBER="0"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+ }
+}

@@ -1,0 +1,5 @@
+20
+~E 1 "./src/main.vhd" 6 main
+~A 1 "./src/main.vhd" 19 arh_main
+~E 1 "./src/7SEGMENT.vhd" 6 segment
+~A 1 "./src/7SEGMENT.vhd" 11 lcd

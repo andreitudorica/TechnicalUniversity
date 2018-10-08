@@ -1,0 +1,64 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=Bilete_tren
+
+[Library]
+Bilete_tren=.\Bilete_tren.lib
+
+[$LibMap$]
+Bilete_tren=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+SYNTH_TOOL=<none>
+IMPL_TOOL=<none>
+FAMILY=
+FLOWTOOLS=ONLY_IMPL
+
+[IMPLEMENTATION]
+UCF=
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=aparat|bilete|0      
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/AFISARE_7_segmente.vhd=-1
+/timer.vhd=-1
+/Registu.vhd=-1
+/Comparator.vhd=-1
+/nrtor.vhd=-1
+/Waveform Editor 5.awf=-1
+/sumator_comportamental.vhd=-1
+/Sumator_complet.vhd=-1
+/sumator_scazator.vhd=-1
+/MUX_2_1.vhd=-1
+/MUX_7_1.vhd=-1
+/APARAT.vhd=-1
+/Waveform Editor 1.awf=-1
+
+[Files.Data]
+.\src\AFISARE_7_segmente.vhd=VHDL Source Code
+.\src\timer.vhd=VHDL Source Code
+.\src\Registu.vhd=VHDL Source Code
+.\src\Comparator.vhd=VHDL Source Code
+.\src\nrtor.vhd=VHDL Source Code
+.\src\Waveform Editor 5.awf=Waveform File
+.\src\sumator_comportamental.vhd=VHDL Source Code
+.\src\Sumator_complet.vhd=VHDL Source Code
+.\src\sumator_scazator.vhd=VHDL Source Code
+.\src\MUX_2_1.vhd=VHDL Source Code
+.\src\MUX_7_1.vhd=VHDL Source Code
+.\src\APARAT.vhd=VHDL Source Code
+.\src\Waveform Editor 1.awf=Waveform File
+

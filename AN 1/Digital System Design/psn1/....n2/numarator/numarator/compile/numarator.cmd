@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\numarator\library.cfg"  -j "c:\My_Designs\numarator\numarator\projlib.cfg"  -d "c:\My_Designs\numarator\numarator\compile\"  -work numarator -dbg -e 100 "c:\My_Designs\numarator\numarator\src\numarator.vhd" 

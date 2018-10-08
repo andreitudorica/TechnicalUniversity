@@ -1,0 +1,95 @@
+$WAVE4TIMED
+$RESOLUTION 1000
+I 1 "e#3#bitc2 01"
+$S 1 1 a
+I 2 "a#20#UNSIGNED(1 downto 0)1 ricd1 0 e#3#bitc2 01"
+$BUS S 13 2 2 sel
+$SC 5 9
+I 3 "a#20#UNSIGNED(3 downto 0)1 ricd3 0 e#3#bitc2 01"
+$BUS S 30 3 4 q
+$SC 14-26/4
+$ENDTIME 10000
+$WAVES 1
+=0 T 0
+R 1 2 =1 T 5k
+$VALUES
+V 3
+0
+1
+0
+$END
+$WAVES 26
+*0
+=2 D 5k 1
+$VALUES
+V 2
+0
+1
+$END
+$WAVES 9
+*0
+=3 T 10k
+$VALUES
+V 2
+0
+1
+$END
+$WAVES 5 +9-+8/4
+*0
+$VALUES
+V 1
+0
+$END
+$ENDTIME 20000
+$WAVES 1
+=4 T 20k
+$VALUES
+V 1
+1
+$END
+$WAVES 9
+*4
+$VALUES
+V 1
+0
+$END
+$WAVES 5
+*4
+$VALUES
+V 1
+1
+$END
+$WAVES 18
+=5 D 20k 1
+$VALUES
+V 1
+1
+$END
+$ENDTIME 30000
+$WAVES 1
+=6 T 25k
+*1
+$VALUES
+V 2
+0
+1
+$END
+$WAVES 9
+=7 T 30k
+$VALUES
+V 1
+1
+$END
+$WAVES +9
+=8 D 25k 1
+$VALUES
+V 1
+0
+$END
+$WAVES 14
+=9 D 30k 1
+$VALUES
+V 1
+1
+$END
+$ENDWAVE

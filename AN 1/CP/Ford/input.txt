@@ -1,0 +1,108 @@
+College Square
+Lewis Science Center
+200
+College Square
+Prince Center
+300
+Lewis Science Center
+Math-Comp Science
+150
+Lewis Science Center
+Speech Language Hearing
+250
+Speech Language Hearing
+Burdick
+100
+Speech Language Hearing
+Maintenance College
+120
+Math-Comp Science
+Burdick
+30
+Math-Comp Science
+Prince Center
+80
+Math-Comp Science
+Torreyson Library
+40
+Burdick
+Torreyson Library
+80
+Burdick
+Maintenance College
+300
+Torreyson Library
+Prince Center
+30
+Torreyson Library
+Old Main
+30
+Prince Center
+Police Dept.
+100
+Old Main
+Police Dept.
+200
+Old Main
+Fine Art
+90
+Old Main
+McALister Hall
+100
+Police Dept.
+Fine Art
+50
+Police Dept.
+Student Health Center
+100
+Fine Art
+Student Center
+80
+Fine Art
+McALister Hall
+180
+Student Health Center
+Student Center
+50
+Student Health Center
+Brewer-Hegeman
+200
+Student Center
+Wingo
+100
+Student Center
+McALister Hall
+100
+McALister Hall
+Wingo
+50
+Student Center
+New Business Building
+110
+McALister Hall
+Maintenance College
+150
+Wingo
+Maintenance College
+100
+Wingo
+New Business Building
+50
+New Business Building
+Maintenance College
+150
+Maintenance College
+Oak Tree Apt.
+160
+Oak Tree Apt.
+New Business Building
+30
+New Business Building
+Brewer-Hegeman
+20
+Oak Tree Apt.
+Brewer-Hegeman
+40
+Brewer-Hegeman
+Bear Village Apt.
+350

@@ -1,0 +1,47 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=proiect
+
+[Library]
+Proiect=.\Proiect.LIB
+
+[$LibMap$]
+Proiect=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation= 
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/Calculator.vhd=-1
+/ALU.vhd=-1
+/div_frec.vhd=-1
+/zecimal_BCD.vhd=-1
+/Memory.vhd=-1
+/afisoare.vhd=-1
+/pachet_divide.vhd=-1
+
+[Files.Data]
+.\src\Calculator.vhd=VHDL Source Code
+.\src\ALU.vhd=VHDL Source Code
+.\src\div_frec.vhd=VHDL Source Code
+.\src\zecimal_BCD.vhd=VHDL Source Code
+.\src\Memory.vhd=VHDL Source Code
+.\src\afisoare.vhd=VHDL Source Code
+.\src\pachet_divide.vhd=VHDL Source Code
+

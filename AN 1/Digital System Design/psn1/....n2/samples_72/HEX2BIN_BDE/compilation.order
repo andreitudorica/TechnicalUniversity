@@ -1,0 +1,14 @@
+.\src\CD4029.v
+.\src\ASCIIDEC.v
+.\src\INTELHEX.v
+.\src\DAT_CNT.v
+.\src\COMP.v
+.\src\REG4.v
+.\src\SUB.v
+.\src\DATREG.v
+.\src\ADRCNT.bde
+.\src\LRC.bde
+.\src\DAC_SC1.bde
+.\src\uut_std.v
+.\src\uut_pli.v
+.\src\external\read_byte_ex.dlm

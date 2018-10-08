@@ -1,0 +1,94 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=Simulink_modulation
+
+[$LibMap$]
+Simulink_modulation=.
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+SYNTH_TOOL=
+IMPL_TOOL=
+FAMILY=
+FLOWTOOLS=ONLY_IMPL
+CSYNTH_TOOL=<none>
+Celoxica=0
+UseCeloxica=0
+SYNTH_STATUS=NONE
+C_SERVER_SIM=NONE
+ON_SERVERFARM_SIM=0
+C_SERVER_SYNTH=NONE
+ON_SERVERFARM_SYNTH=0
+C_SERVER_IMPL=NONE
+ON_SERVERFARM_IMPL=0
+RUN_MODE_SYNTH=1
+REFRESH_FLOW=1
+
+[IMPLEMENTATION]
+UCF=
+FAMILY=
+DEVICE=
+SPEED=
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
+[ORDER]
+Synchronize=0
+
+[SYNTHESIS]
+FAMILY=
+DEVICE=
+SPEED=
+
+[Groups]
+packages=1
+
+[Library]
+Simulink_modulation=.\Simulink_modulation.LIB
+
+[Files]
+/readme.html=-1
+/compile_all.do=-1
+/fir_32.vhd=-1
+/abs.vhd=-1
+/sign.vhd=-1
+/top_demodulator.bde=-1
+/mult.vhd=-1
+packages/twos_complement_types_pkg.vhd=-1
+packages/generic_functions_pkg.vhd=-1
+packages/generic_conversions_pkg.vhd=-1
+packages/std_operators_pkg.vhd=-1
+packages/mixed_operators_pkg.vhd=-1
+packages/maths_class_pkg.vhd=-1
+packages/bus_class_pkg.vhd=-1
+packages/matrix_class_pkg.vhd=-1
+packages/fir_32_coeff_table.vhd=-1
+
+[Files.Data]
+.\src\readme.html=HTML Document
+.\src\compile_all.do=Macro
+.\src\fir_32.vhd=VHDL Source Code
+.\src\abs.vhd=VHDL Source Code
+.\src\sign.vhd=VHDL Source Code
+.\src\top_demodulator.bde=Block Diagram
+.\src\mult.vhd=VHDL Source Code
+.\src\packages\twos_complement_types_pkg.vhd=VHDL Source Code
+.\src\packages\generic_functions_pkg.vhd=VHDL Source Code
+.\src\packages\generic_conversions_pkg.vhd=VHDL Source Code
+.\src\packages\std_operators_pkg.vhd=VHDL Source Code
+.\src\packages\mixed_operators_pkg.vhd=VHDL Source Code
+.\src\packages\maths_class_pkg.vhd=VHDL Source Code
+.\src\packages\bus_class_pkg.vhd=VHDL Source Code
+.\src\packages\matrix_class_pkg.vhd=VHDL Source Code
+.\src\packages\fir_32_coeff_table.vhd=VHDL Source Code
+

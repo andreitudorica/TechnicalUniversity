@@ -1,0 +1,40 @@
+V 000056 55 1945          1305383403274 arhitectura_a12
+(_unit VHDL (a12 0 29 (arhitectura_a12 0 43 ))
+  (_version v38)
+  (_time 1305383403275 2011.05.14 17:30:03)
+  (_source (\./src/a12.vhd\))
+  (_use (std(standard))(ieee(numeric_std))(ieee(std_logic_1164)))
+  (_parameters dbg )
+  (_entity
+    (_time 1305383403223)
+    (_use )
+  )
+  (_object
+    (_port (_internal clk ~extieee.std_logic_1164.std_logic 0 31 (_entity (_in )(_event))))
+    (_port (_internal memorare ~extieee.std_logic_1164.std_logic 0 32 (_entity (_in ))))
+    (_port (_internal paralel_load ~extieee.std_logic_1164.std_logic 0 33 (_entity (_in ))))
+    (_type (_internal ~BIT_VECTOR{3~downto~0}~12 0 34 (_array ~extSTD.STANDARD.BIT ((_downto (i 3)(i 0))))))
+    (_port (_internal data_in ~BIT_VECTOR{3~downto~0}~12 0 34 (_entity (_in ))))
+    (_port (_internal shift ~extieee.std_logic_1164.std_logic 0 35 (_entity (_in ))))
+    (_port (_internal reset ~extieee.std_logic_1164.std_logic 0 36 (_entity (_in ))))
+    (_type (_internal ~BIT_VECTOR{3~downto~0}~122 0 37 (_array ~extSTD.STANDARD.BIT ((_downto (i 3)(i 0))))))
+    (_port (_internal outputs ~BIT_VECTOR{3~downto~0}~122 0 37 (_entity (_out ))))
+    (_type (_internal ~BIT_VECTOR{3~downto~0}~13 0 47 (_array ~extSTD.STANDARD.BIT ((_downto (i 3)(i 0))))))
+    (_variable (_internal var_outputs ~BIT_VECTOR{3~downto~0}~13 0 47 (_process 0 )))
+    (_process
+      (line__46(_architecture 0 0 46 (_process (_simple)(_target(6))(_sensitivity(2)(0)(5))(_read(3)(4)))))
+    )
+    (_subprogram
+      (_external resolved (ieee std_logic_1164 0))
+    )
+    (_type (_external ~extieee.std_logic_1164.std_ulogic (ieee std_logic_1164 std_ulogic)))
+    (_type (_external ~extieee.std_logic_1164.std_logic (ieee std_logic_1164 std_logic)))
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+    (_type (_external ~extSTD.STANDARD.BIT_VECTOR (std STANDARD BIT_VECTOR)))
+  )
+  (_static
+    (0 )
+  )
+  (_model . arhitectura_a12 1 -1
+  )
+)

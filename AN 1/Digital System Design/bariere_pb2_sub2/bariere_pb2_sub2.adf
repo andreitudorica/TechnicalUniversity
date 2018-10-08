@@ -1,0 +1,43 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=bariere_pb2_sub2
+
+[Library]
+bariere_pb2_sub2=.\bariere_pb2_sub2.lib
+
+[$LibMap$]
+bariere_pb2_sub2=.
+Active_lib=
+
+[Settings]
+SYNTH_TOOL=<none>
+IMPL_TOOL=<none>
+FAMILY=
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+FLOWTOOLS=ONLY_IMPL
+REFRESH_FLOW=1
+
+[IMPLEMENTATION]
+UCF=
+
+[Files]
+/bariere.vhd=-1
+/cale_ferata.vhd=-1
+/or_gate.vhd=-1
+
+[Files.Data]
+.\src\bariere.vhd=VHDL Source Code
+.\src\cale_ferata.vhd=VHDL Source Code
+.\src\or_gate.vhd=VHDL Source Code
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=bariere|arh_bariere|0  
+ShowHide=ShowTopLevel
+Selected=

@@ -1,0 +1,12 @@
+[Version]
+Version=7.2
+[Designs]
+scaz_compl=.\scaz_compl\scaz_compl.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+scaz_compl=1

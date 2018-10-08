@@ -1,0 +1,17 @@
+elbread.dll ver. 1.0.5.365 Sun May 23 20:38:23 2010
+
+
+---------------------------------
+Entity  | Architecture | Library
+---------------------------------
+comp    | a_comport    | colocviu
+---------------------------------
+
+-----------------------------
+Package             | Library
+-----------------------------
+standard            | std
+std_logic_1164      | ieee
+std_logic_arith     | ieee
+std_logic_unsigned  | ieee
+-----------------------------

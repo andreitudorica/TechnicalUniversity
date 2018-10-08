@@ -1,0 +1,38 @@
+V 000051 55 1956          1305576540087 arhsemafor
+(_unit VHDL (semafor 0 6 (arhsemafor 0 11 ))
+  (_version v38)
+  (_time 1305576540088 2011.05.16 23:09:00)
+  (_source (\./src/semafor.vhd\))
+  (_use (std(standard))(ieee(std_logic_1164)))
+  (_parameters dbg )
+  (_entity
+    (_time 1305576087423)
+    (_use )
+  )
+  (_object
+    (_port (_internal clk ~extieee.std_logic_1164.std_logic 0 7 (_entity (_in )(_event))))
+    (_port (_internal r ~extieee.std_logic_1164.std_logic 0 7 (_entity (_in ))))
+    (_port (_internal senzor1 ~extieee.std_logic_1164.std_logic 0 7 (_entity (_in ))))
+    (_port (_internal senzor2 ~extieee.std_logic_1164.std_logic 0 7 (_entity (_in ))))
+    (_port (_internal rosu1 ~extieee.std_logic_1164.std_logic 0 8 (_entity (_out ))))
+    (_port (_internal rosu2 ~extieee.std_logic_1164.std_logic 0 8 (_entity (_out ))))
+    (_port (_internal galben1 ~extieee.std_logic_1164.std_logic 0 8 (_entity (_out ))))
+    (_port (_internal galben2 ~extieee.std_logic_1164.std_logic 0 8 (_entity (_out ))))
+    (_port (_internal verde1 ~extieee.std_logic_1164.std_logic 0 8 (_entity (_out ))))
+    (_port (_internal verde2 ~extieee.std_logic_1164.std_logic 0 8 (_entity (_out ))))
+    (_type (_internal stare_t 0 12 (_enum1 st0 st1 st2 st3 st4 st5 st6 st7 (_to (i 0)(i 7)))))
+    (_signal (_internal stare stare_t 0 13 (_architecture (_uni ))))
+    (_signal (_internal nxstare stare_t 0 13 (_architecture (_uni ))))
+    (_process
+      (actualizeaza_stare(_architecture 0 0 15 (_process (_simple)(_target(10))(_sensitivity(1)(0))(_read(11)))))
+      (tranzitii(_architecture 1 0 23 (_process (_simple)(_target(11)(9)(8)(7)(6)(5)(4))(_sensitivity(10)(3)(2)))))
+    )
+    (_subprogram
+      (_external resolved (ieee std_logic_1164 0))
+    )
+    (_type (_external ~extieee.std_logic_1164.std_ulogic (ieee std_logic_1164 std_ulogic)))
+    (_type (_external ~extieee.std_logic_1164.std_logic (ieee std_logic_1164 std_logic)))
+  )
+  (_model . arhsemafor 2 -1
+  )
+)

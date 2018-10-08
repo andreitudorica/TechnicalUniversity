@@ -1,0 +1,126 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=matlab_fft_analysis
+
+[$LibMap$]
+simple_sample=.
+Active_lib=
+matlab_fft_analysis=.
+
+[Settings]
+SYNTH_TOOL=
+IMPL_TOOL=
+FAMILY=
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+FLOWTOOLS=ONLY_IMPL
+REFRESH_FLOW=1
+WireDelay=2
+NoTchkMsg=0
+NoTimingChecks=0
+HESPrepare=0
+CreateASDBDatabase=0
+ASDBDatabaseRefresh=0
+StackMemorySize=32
+ASDBREFTESHTIME=1
+RetvalMemorySize=32
+EnableCallbacks=1
+VitalAccel=1
+DisableVitalMsg=0
+ENABLE_ADV_DATAFLOW=1
+EnableXtrace=0
+SplitNetVectors=0
+DisableIEEEWarnings=1
+
+[IMPLEMENTATION]
+UCF=
+
+[Folders]
+Name3=Makefiles
+Directory3=C:\My_Designs\projects\Matlab\matlab_fft_analysis_tutorial\simple_sample\
+Extension3=mak
+Name4=Memory
+Directory4=C:\My_Designs\projects\Matlab\matlab_fft_analysis_tutorial\simple_sample\src
+Extension4=mem;mif;hex
+Name5=Dll Libraries
+Directory5=C:\My_Designs\projects\Matlab\matlab_fft_analysis_tutorial\simple_sample\
+Extension5=dll
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
+[sdf.ea.top_fft_tb-tb_architecture]
+SdfNoWarn=0
+IVG=0
+
+[Groups]
+cfft=1
+
+[Library]
+matlab_fft_analysis=.\matlab_fft_analysis.LIB
+
+[Files]
+/readme.html=-1
+/compile.do=-1
+/run.do=-1
+/control.asf=-1
+/ram.vhd=-1
+/top_fft.bde=-1
+/top_fft_tb.bde=-1
+/windows1024.mat=-1
+/prepare_workspace.m=-1
+/display_input.m=-1
+/display_output.m=-1
+/analyse.m=-1
+cfft/blockdram.vhd=-1
+cfft/cfft4.vhd=-1
+cfft/address.vhd=-1
+cfft/p2r_CordicPipe.vhd=-1
+cfft/p2r_cordic.vhd=-1
+cfft/sc_corproc.vhd=-1
+cfft/rofactor.vhd=-1
+cfft/div4limit.vhd=-1
+cfft/mulfactor.vhd=-1
+cfft/cfft.vhd=-1
+
+[Files.Data]
+.\src\readme.html=HTML Document
+.\src\compile.do=Macro
+.\src\run.do=Macro
+.\src\control.asf=State Diagram
+.\src\ram.vhd=VHDL Source Code
+.\src\top_fft.bde=Block Diagram
+.\src\top_fft_tb.bde=Block Diagram
+.\src\windows1024.mat=External File
+.\src\prepare_workspace.m=External File
+.\src\display_input.m=External File
+.\src\display_output.m=External File
+.\src\analyse.m=External File
+.\src\cfft\blockdram.vhd=VHDL Source Code
+.\src\cfft\cfft4.vhd=VHDL Source Code
+.\src\cfft\address.vhd=VHDL Source Code
+.\src\cfft\p2r_CordicPipe.vhd=VHDL Source Code
+.\src\cfft\p2r_cordic.vhd=VHDL Source Code
+.\src\cfft\sc_corproc.vhd=VHDL Source Code
+.\src\cfft\rofactor.vhd=VHDL Source Code
+.\src\cfft\div4limit.vhd=VHDL Source Code
+.\src\cfft\mulfactor.vhd=VHDL Source Code
+.\src\cfft\cfft.vhd=VHDL Source Code
+
+[file_out:/control.asf]
+/\compile\control.vhd=-1
+
+[file_out:/top_fft.bde]
+/\compile\top_fft.vhd=-1
+
+[file_out:/top_fft_tb.bde]
+/\compile\top_fft_tb.vhd=-1
+

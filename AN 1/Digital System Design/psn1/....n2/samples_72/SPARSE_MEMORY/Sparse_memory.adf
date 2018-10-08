@@ -1,0 +1,52 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=Sparse_memory
+
+[Library]
+Sparse_memory=.\Sparse_memory.LIB
+
+[$LibMap$]
+Sparse_memory=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+SYNTH_TOOL=
+IMPL_TOOL=
+FAMILY=
+FLOWTOOLS=ONLY_IMPL
+REFRESH_FLOW=1
+
+[ORDER]
+autorefresh=0
+macro_path=
+macro_name=
+modified=1
+Synchronize=1
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/code.txt=-1
+/load_code.v=-1
+/memunit.v=-1
+/readme.txt=-1
+/runme.do=-1
+
+[Files.Data]
+.\src\code.txt=Text File
+.\src\load_code.v=Verilog Source Code
+.\src\memunit.v=Verilog Source Code
+.\src\readme.txt=Text File
+.\src\runme.do=Macro
+

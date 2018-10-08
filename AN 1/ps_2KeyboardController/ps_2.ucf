@@ -1,0 +1,15 @@
+NET "clk" LOC=B8;
+NET "anods<3>" LOC=K14;
+NET "anods<2>" LOC=M13;
+NET "anods<1>" LOC=J12;
+NET "anods<0>" LOC=F12;
+NET "seven_segment<6>" LOC=L14;
+NET "seven_segment<5>" LOC=H12;
+NET "seven_segment<4>" LOC=N14;
+NET "seven_segment<3>" LOC=N11;
+NET "seven_segment<2>" LOC=P12;
+NET "seven_segment<1>" LOC=L13;
+NET "seven_segment<0>" LOC=M12;
+NET "ps2_clock" LOC=B1;
+NET "serial" LOC=C3;
+NET "rst" LOC = A7;

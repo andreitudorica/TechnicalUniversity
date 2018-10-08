@@ -1,0 +1,361 @@
+# DESIGN: Default Design Language: VHDL
+# DESIGN: Default BDE Language: VHDL
+# DESIGN: Flow Manager: Not Defined
+acom -reorder -work Numarator_zecimal_sinc -2002  $DSN/src/Count_zecimal.vhd
+# Compile with File Reorder...
+# File: c:\My_Designs\Colocviu_PSN\Numarator_zecimal_sinc\src\Count_zecimal.vhd
+# Compile Entity "Counter"
+# Compile Architecture "ARH_Count" of Entity "Counter"
+# Error: COMP96_0015: Count_zecimal.vhd : (26, 37): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -work Numarator_zecimal_sinc -2002  $DSN/src/Count_zecimal.vhd
+# Compile...
+# File: c:\My_Designs\Colocviu_PSN\Numarator_zecimal_sinc\src\Count_zecimal.vhd
+# Compile Entity "Counter"
+# Compile Architecture "ARH_Count" of Entity "Counter"
+# Error: COMP96_0367: Count_zecimal.vhd : (24, 21): Improper array length. Actual length is 8. Expected length is 5.
+# Error: COMP96_0143: Count_zecimal.vhd : (26, 19): Object "R" may not be written
+# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -work Numarator_zecimal_sinc -2002  $DSN/src/Count_zecimal.vhd
+# Compile...
+# File: c:\My_Designs\Colocviu_PSN\Numarator_zecimal_sinc\src\Count_zecimal.vhd
+# Compile Entity "Counter"
+# Compile Architecture "ARH_Count" of Entity "Counter"
+# Error: COMP96_0143: Count_zecimal.vhd : (26, 19): Object "R" may not be written
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -work Numarator_zecimal_sinc -2002  $DSN/src/Count_zecimal.vhd
+# Compile...
+# File: c:\My_Designs\Colocviu_PSN\Numarator_zecimal_sinc\src\Count_zecimal.vhd
+# Compile Entity "Counter"
+# Compile Architecture "ARH_Count" of Entity "Counter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# Design: Design Numarator_zecimal_sinc already active.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -advdataflow  counter arh_count
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1617 kB (elbread=1023 elab2=323 kernel=270 sdf=0)
+#  12:42 PM, Thursday, May 12, 2011
+#  Simulation has been initialized
+#  Selected Top-Level: counter (arh_count)
+run 10 ns
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  TOP instance,  Process: Numarare.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 10 ns,  Iteration: 0,  TOP instance,  Process: Numarare.
+# KERNEL: stopped at time: 10 ns
+run 10 ns
+# KERNEL: stopped at time: 20 ns
+run 10 ns
+# KERNEL: stopped at time: 30 ns
+run 10 ns
+# KERNEL: stopped at time: 40 ns
+run 10 ns
+# KERNEL: stopped at time: 50 ns
+run 10 ns
+# KERNEL: stopped at time: 60 ns
+run 10 ns
+# KERNEL: stopped at time: 70 ns
+run 10 ns
+# KERNEL: stopped at time: 80 ns
+run 10 ns
+# KERNEL: stopped at time: 90 ns
+run 10 ns
+# KERNEL: stopped at time: 100 ns
+run 10 ns
+# KERNEL: stopped at time: 110 ns
+run 10 ns
+# KERNEL: stopped at time: 120 ns
+run 10 ns
+# KERNEL: stopped at time: 130 ns
+run 10 ns
+# KERNEL: stopped at time: 140 ns
+run 10 ns
+# KERNEL: stopped at time: 150 ns
+run 10 ns
+# KERNEL: stopped at time: 160 ns
+run 10 ns
+# KERNEL: stopped at time: 170 ns
+run 10 ns
+# KERNEL: stopped at time: 180 ns
+run 10 ns
+# KERNEL: stopped at time: 190 ns
+run 10 ns
+# KERNEL: stopped at time: 200 ns
+run 10 ns
+# KERNEL: stopped at time: 210 ns
+run 10 ns
+# KERNEL: stopped at time: 220 ns
+run 10 ns
+# KERNEL: stopped at time: 230 ns
+acom -work Numarator_zecimal_sinc -2002  $DSN/src/Count_zecimal.vhd
+# Compile...
+# File: c:\My_Designs\Colocviu_PSN\Numarator_zecimal_sinc\src\Count_zecimal.vhd
+# Compile Entity "Counter"
+# Compile Architecture "ARH_Count" of Entity "Counter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1617 kB (elbread=1023 elab2=323 kernel=270 sdf=0)
+#  12:43 PM, Thursday, May 12, 2011
+#  Simulation has been initialized
+#  Selected Top-Level: counter (arh_count)
+endsim
+#  Simulation has been stopped
+asim -advdataflow  counter arh_count
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1617 kB (elbread=1023 elab2=323 kernel=270 sdf=0)
+#  12:43 PM, Thursday, May 12, 2011
+#  Simulation has been initialized
+#  Selected Top-Level: counter (arh_count)
+run 10 ns
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  TOP instance,  Process: Numarare.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 10 ns,  Iteration: 0,  TOP instance,  Process: Numarare.
+# KERNEL: stopped at time: 10 ns
+run 10 ns
+# KERNEL: stopped at time: 20 ns
+run 10 ns
+# KERNEL: stopped at time: 30 ns
+run 10 ns
+# KERNEL: stopped at time: 40 ns
+run 10 ns
+# KERNEL: stopped at time: 50 ns
+run 10 ns
+# KERNEL: stopped at time: 60 ns
+run 10 ns
+# KERNEL: stopped at time: 70 ns
+run 10 ns
+# KERNEL: stopped at time: 80 ns
+run 10 ns
+# KERNEL: stopped at time: 90 ns
+run 10 ns
+# KERNEL: stopped at time: 100 ns
+run 10 ns
+# KERNEL: stopped at time: 110 ns
+run 10 ns
+# KERNEL: stopped at time: 120 ns
+run 10 ns
+# KERNEL: stopped at time: 130 ns
+run 10 ns
+# KERNEL: stopped at time: 140 ns
+run 10 ns
+# KERNEL: stopped at time: 150 ns
+run 10 ns
+# KERNEL: stopped at time: 160 ns
+run 10 ns
+# KERNEL: stopped at time: 170 ns
+run 10 ns
+# KERNEL: stopped at time: 180 ns
+run 10 ns
+# KERNEL: stopped at time: 190 ns
+run 10 ns
+# KERNEL: stopped at time: 200 ns
+run 10 ns
+# KERNEL: stopped at time: 210 ns
+run 10 ns
+# KERNEL: stopped at time: 220 ns
+run 10 ns
+# KERNEL: stopped at time: 230 ns
+run 10 ns
+# KERNEL: stopped at time: 240 ns
+run 10 ns
+# KERNEL: stopped at time: 250 ns
+run 10 ns
+# KERNEL: stopped at time: 260 ns
+run 10 ns
+# KERNEL: stopped at time: 270 ns
+run 10 ns
+# KERNEL: stopped at time: 280 ns
+run 10 ns
+# KERNEL: stopped at time: 290 ns
+run 10 ns
+# KERNEL: stopped at time: 300 ns
+run 10 ns
+# KERNEL: stopped at time: 310 ns
+run 10 ns
+# KERNEL: stopped at time: 320 ns
+run 10 ns
+# KERNEL: stopped at time: 330 ns
+run 10 ns
+# KERNEL: stopped at time: 340 ns
+run 10 ns
+# KERNEL: stopped at time: 350 ns
+run 10 ns
+# KERNEL: stopped at time: 360 ns
+run 10 ns
+# KERNEL: stopped at time: 370 ns
+acom -work Numarator_zecimal_sinc -2002  $DSN/src/Count_zecimal.vhd
+# Compile...
+# File: c:\My_Designs\Colocviu_PSN\Numarator_zecimal_sinc\src\Count_zecimal.vhd
+# Compile Entity "Counter"
+# Compile Architecture "ARH_Count" of Entity "Counter"
+# Error: COMP96_0123: Count_zecimal.vhd : (24, 18): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0143: Count_zecimal.vhd : (24, 18): Object "Qa" may not be written
+# Error: COMP96_0123: Count_zecimal.vhd : (25, 21): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0143: Count_zecimal.vhd : (25, 21): Object "Qa" may not be written
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -work Numarator_zecimal_sinc -2002  $DSN/src/Count_zecimal.vhd
+# Compile...
+# File: c:\My_Designs\Colocviu_PSN\Numarator_zecimal_sinc\src\Count_zecimal.vhd
+# Compile Entity "Counter"
+# Compile Architecture "ARH_Count" of Entity "Counter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+endsim
+#  Simulation has been stopped
+asim -advdataflow  counter arh_count
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1617 kB (elbread=1023 elab2=323 kernel=270 sdf=0)
+#  12:44 PM, Thursday, May 12, 2011
+#  Simulation has been initialized
+#  Selected Top-Level: counter (arh_count)
+run 10 ns
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  TOP instance,  Process: Numarare.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 10 ns,  Iteration: 0,  TOP instance,  Process: Numarare.
+# KERNEL: stopped at time: 10 ns
+run 10 ns
+# KERNEL: stopped at time: 20 ns
+run 10 ns
+# KERNEL: stopped at time: 30 ns
+run 10 ns
+# KERNEL: stopped at time: 40 ns
+run 10 ns
+# KERNEL: stopped at time: 50 ns
+run 10 ns
+# KERNEL: stopped at time: 60 ns
+run 10 ns
+# KERNEL: stopped at time: 70 ns
+run 10 ns
+# KERNEL: stopped at time: 80 ns
+run 10 ns
+# KERNEL: stopped at time: 90 ns
+run 10 ns
+# KERNEL: stopped at time: 100 ns
+run 10 ns
+# KERNEL: stopped at time: 110 ns
+run 10 ns
+# KERNEL: stopped at time: 120 ns
+run 10 ns
+# KERNEL: stopped at time: 130 ns
+run 10 ns
+# KERNEL: stopped at time: 140 ns
+run 10 ns
+# KERNEL: stopped at time: 150 ns
+run 10 ns
+# KERNEL: stopped at time: 160 ns
+run 10 ns
+# KERNEL: stopped at time: 170 ns
+run 10 ns
+# KERNEL: stopped at time: 180 ns
+run 10 ns
+# KERNEL: stopped at time: 190 ns
+run 10 ns
+# KERNEL: stopped at time: 200 ns
+run 10 ns
+# KERNEL: stopped at time: 210 ns
+run 10 ns
+# KERNEL: stopped at time: 220 ns
+run 10 ns
+# KERNEL: stopped at time: 230 ns
+run 10 ns
+# KERNEL: stopped at time: 240 ns
+run 10 ns
+# KERNEL: stopped at time: 250 ns
+run 10 ns
+# KERNEL: stopped at time: 260 ns
+run 10 ns
+# KERNEL: stopped at time: 270 ns
+run 10 ns
+# KERNEL: stopped at time: 280 ns
+run 10 ns
+# KERNEL: stopped at time: 290 ns
+run 10 ns
+# KERNEL: stopped at time: 300 ns
+run 10 ns
+# KERNEL: stopped at time: 310 ns
+run 10 ns
+# KERNEL: stopped at time: 320 ns
+run 10 ns
+# KERNEL: stopped at time: 330 ns
+run 10 ns
+# KERNEL: stopped at time: 340 ns
+run 10 ns
+# KERNEL: stopped at time: 350 ns
+run 10 ns
+# KERNEL: stopped at time: 360 ns
+run 10 ns
+# KERNEL: stopped at time: 370 ns
+run 10 ns
+# KERNEL: stopped at time: 380 ns
+run 10 ns
+# KERNEL: stopped at time: 390 ns
+run 10 ns
+# KERNEL: stopped at time: 400 ns
+run 10 ns
+# KERNEL: stopped at time: 410 ns
+run 10 ns
+# KERNEL: stopped at time: 420 ns
+run 10 ns
+# KERNEL: stopped at time: 430 ns
+run 10 ns
+# KERNEL: stopped at time: 440 ns
+run 10 ns
+# KERNEL: stopped at time: 450 ns
+run 10 ns
+# KERNEL: stopped at time: 460 ns
+run 10 ns
+# KERNEL: stopped at time: 470 ns
+run 10 ns
+# KERNEL: stopped at time: 480 ns
+run 10 ns
+# KERNEL: stopped at time: 490 ns
+endsim
+#  Simulation has been stopped
+# Design: Design "Numarator_binar_sincron" has been set as active.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].

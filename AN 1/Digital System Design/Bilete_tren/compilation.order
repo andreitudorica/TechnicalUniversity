@@ -1,0 +1,11 @@
+.\src\AFISARE_7_segmente.vhd
+.\src\timer.vhd
+.\src\Registu.vhd
+.\src\Comparator.vhd
+.\src\nrtor.vhd
+.\src\sumator_comportamental.vhd
+.\src\Sumator_complet.vhd
+.\src\sumator_scazator.vhd
+.\src\MUX_2_1.vhd
+.\src\MUX_7_1.vhd
+.\src\APARAT.vhd

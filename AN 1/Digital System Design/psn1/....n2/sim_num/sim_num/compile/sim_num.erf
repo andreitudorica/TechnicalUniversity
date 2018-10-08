@@ -1,0 +1,6 @@
+MESSAGE "File: C:\Documents and Settings\Carmen Zdroba\Desktop\New Folder (2)\sim_num\sim_num\src\sim_num.vhd" 
+MESSAGE "Compile Entity "sim_num"" 
+MESSAGE "Compile Architecture "arhsim_num" of Entity "sim_num"" 
+MESSAGE "Compile Entity "simulare"" 
+MESSAGE "Compile Architecture "arhsim" of Entity "simulare"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]" 

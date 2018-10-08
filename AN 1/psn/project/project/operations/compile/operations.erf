@@ -1,0 +1,5 @@
+MESSAGE "File: c:\My_Designs\project\operations\src\impartire.vhd" 
+MESSAGE "Compile Entity "impartire"" 
+MESSAGE "Entity `impartire' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "division" of Entity "impartire"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]" 

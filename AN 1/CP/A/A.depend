@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1452712109 source:d:\victor\faculta\cp\probcoloc\a\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+

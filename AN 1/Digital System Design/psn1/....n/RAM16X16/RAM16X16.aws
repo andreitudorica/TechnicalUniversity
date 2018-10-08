@@ -1,0 +1,12 @@
+[Version]
+Version=7.2
+[Designs]
+ram16x16=.\RAM16x16\RAM16x16.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+ram16x16=1

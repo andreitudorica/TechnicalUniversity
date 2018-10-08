@@ -1,0 +1,6 @@
+MESSAGE "File: c:\My_Designs\colocviu\colocviu\src\comparator2biti_struct.vhd" 
+MESSAGE "Compile Entity "comp"" 
+MESSAGE "Entity `comp' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "a_struct" of Entity "comp"" 
+MESSAGE "Compile Architecture "a_comport" of Entity "comp"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]" 

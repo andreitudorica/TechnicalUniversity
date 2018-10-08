@@ -1,0 +1,34 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=reg_depl
+
+[Library]
+reg_depl=.\reg_depl.LIB
+
+[$LibMap$]
+reg_depl=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[Files]
+/reg_depl.vhd=-1
+
+[Files.Data]
+.\src\reg_depl.vhd=VHDL Source Code
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=reg_depl|arhreg_depl|0   
+ShowHide=ShowTopLevel
+Selected=

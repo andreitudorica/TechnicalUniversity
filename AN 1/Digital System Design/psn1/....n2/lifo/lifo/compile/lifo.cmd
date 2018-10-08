@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\lifo\library.cfg"  -j "c:\My_Designs\lifo\lifo\projlib.cfg"  -d "c:\My_Designs\lifo\lifo\compile\"  -work lifo -dbg -e 100 -o "c:\My_Designs\lifo\lifo\src\lifo.vhd" 

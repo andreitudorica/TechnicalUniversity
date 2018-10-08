@@ -1,0 +1,35 @@
+timestamp=1304975108391
+
+[bistabil_d]
+A/arhitectura_bistabil_d=21|./src/bistabil_d.vhd|37|1*0
+B/arhitectura_bistabil_d=3*0
+H/arhitectura_bistabil_d=0*0
+I/arhitectura_bistabil_d=0*1318
+M=11|0|v38|1304953480654|./src/bistabil_d.vhd|0*742*0xcc50e24aed8aa198eccd16fe8c706c2164df01c6|0*940*0xab87650576a395126dc296abb9b0e065
+M/arhitectura_bistabil_d=21|0|v38|1304953480660|./src/bistabil_d.vhd|0*1012*0x647630faa91a2844b5db6ab9860425c08c792733|0*1220*0xab87650576a395126dc296abb9b0e065
+R=./src/bistabil_d.vhd|28
+V=0*487
+
+[ms]
+A/arhitectura_ms=A/arhitectura_MS 21|./src/MS.vhd|33|1*8047
+B/arhitectura_ms=3*685
+H/arhitectura_ms=0*9567
+I/arhitectura_ms=I/arhitectura_MS 0*11005
+M=11|0|v38|1304953706821|./src/MS.vhd|0*1722*0x32cddc3223153977394376835390ad38f69327e8|0*1844*0xab87650576a395126dc296abb9b0e065
+M/arhitectura_ms=M/arhitectura_MS 21|0|v38|1304975108264|./src/MS.vhd|0*10310*0x19bc0a2d0a23053f4ffd6bd05bddf4d45fe2c2ad|0*10931*0xab87650576a395126dc296abb9b0e065
+R=./src/MS.vhd|28
+V=0*1654
+
+[~A]
+ModifyID=35
+Version=73
+
+[~MFT]
+0=42|0Modul_de_Simulare_tact.mgf|11005|3715
+1=11|1Modul_de_Simulare_tact.mgf|8047|7126
+3=11|3Modul_de_Simulare_tact.mgf|685|0
+
+[~U]
+bistabil_d=11|0*119|0*252
+ms=MS 11|0*1445|0*1492
+

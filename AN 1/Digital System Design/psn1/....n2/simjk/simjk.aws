@@ -1,0 +1,12 @@
+[Version]
+Version=7.2
+[Designs]
+simjk=.\simjk\simjk.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+simjk=1

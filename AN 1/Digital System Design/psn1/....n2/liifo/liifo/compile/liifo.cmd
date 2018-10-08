@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\liifo\library.cfg"  -j "c:\My_Designs\liifo\liifo\projlib.cfg"  -d "c:\My_Designs\liifo\liifo\compile\"  -work liifo -dbg -e 100 "c:\My_Designs\liifo\liifo\src\liifo.vhd" 

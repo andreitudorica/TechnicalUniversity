@@ -1,0 +1,12 @@
+-Poarta NOT:
+
+entity NOT is
+port (A: in bit;
+      Y: out bit);
+end NOT;
+architecture ARHITECTURA_NOT of NOT is
+begin
+Y <= not A;
+end ARHITECTURA_NOT;
+
+

@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\Colocviu\21\library.cfg"  -j "c:\My_Designs\Colocviu\21\a21\projlib.cfg"  -d "c:\My_Designs\Colocviu\21\a21\compile\"  -work a21 -dbg -e 100 -o "c:\My_Designs\Colocviu\21\a21\src\a21.vhd" 

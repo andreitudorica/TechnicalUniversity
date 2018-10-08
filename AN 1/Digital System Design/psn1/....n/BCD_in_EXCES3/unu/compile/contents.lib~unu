@@ -1,0 +1,13 @@
+45
+~E 1 "./src/si.vhd" 28 si
+~A 1 "./src/si.vhd" 36 arhitectura_si
+~E 1 "./src/sau_2.vhd" 28 sau_2
+~A 1 "./src/sau_2.vhd" 36 sau_2
+~E 1 "./src/inversor.vhd" 28 inversor
+~A 1 "./src/inversor.vhd" 36 arhitectura_inversor
+~E 1 "./src/sau_3.vhd" 28 sau_3
+~A 1 "./src/sau_3.vhd" 36 arhitectura_sau_3
+~E 1 "./src/si_3.vhd" 28 si_3
+~A 1 "./src/si_3.vhd" 36 si_3
+~E 1 "./src/unu.vhd" 28 unu
+~A 1 "./src/unu.vhd" 37 arhitectura_unu

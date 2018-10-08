@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\sum_compl_unbit\library.cfg"  -j "c:\My_Designs\sum_compl_unbit\sum_compl_unbit\projlib.cfg"  -d "c:\My_Designs\sum_compl_unbit\sum_compl_unbit\compile\"  -work sum_compl_unbit -dbg -e 100 "c:\My_Designs\sum_compl_unbit\sum_compl_unbit\src\sum_compl_unbit.vhd" 

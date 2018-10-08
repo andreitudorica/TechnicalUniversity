@@ -1,0 +1,14 @@
+[Version]
+Version=7.2
+[Designs]
+verilog_systemc_parameters=verilog_systemc_parameters.adf
+[Settings]
+Active=verilog_systemc_parameters
+[Expand]
+verilog_systemc_parameters=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1459200580 source:c:\users\radumatei\desktop\info\pb5.2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1459200580 source:c:\users\andrei\desktop\scoala\cp\pb5.2\pb5.2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

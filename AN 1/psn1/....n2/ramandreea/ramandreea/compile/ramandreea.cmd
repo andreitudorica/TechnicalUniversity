@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\ramandreea\library.cfg"  -j "c:\My_Designs\ramandreea\ramandreea\projlib.cfg"  -d "c:\My_Designs\ramandreea\ramandreea\compile\"  -work ramandreea -dbg -e 100 "c:\My_Designs\ramandreea\ramandreea\src\ramandreea.vhd" 

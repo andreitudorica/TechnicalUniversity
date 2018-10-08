@@ -1,0 +1,27 @@
+V 000050 55 1031          1304843375120 arhbistjk
+(_unit VHDL (bistjk 0 5 (arhbistjk 0 10 ))
+  (_version v38)
+  (_time 1304843375120 2011.05.08 11:29:35)
+  (_source (\./src/bistjk.vhd\))
+  (_use (std(standard))(ieee(std_logic_1164)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304843375113)
+    (_use )
+  )
+  (_object
+    (_port (_internal j ~extSTD.STANDARD.BIT 0 6 (_entity (_in ))))
+    (_port (_internal k ~extSTD.STANDARD.BIT 0 6 (_entity (_in ))))
+    (_port (_internal r ~extSTD.STANDARD.BIT 0 6 (_entity (_in ))))
+    (_port (_internal q ~extSTD.STANDARD.BIT 0 7 (_entity (_inout ))))
+    (_port (_internal nq ~extSTD.STANDARD.BIT 0 7 (_entity (_inout ))))
+    (_signal (_internal clock ~extSTD.STANDARD.BIT 0 11 (_architecture (_uni )(_lastevent))))
+    (_process
+      (CLK(_architecture 0 0 14 (_process (_wait_for)(_target(5)))))
+      (jk(_architecture 1 0 22 (_process (_simple)(_target(4)(3))(_sensitivity(5)(2))(_read(3)(1)(0)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+  (_model . arhbistjk 2 -1
+  )
+)

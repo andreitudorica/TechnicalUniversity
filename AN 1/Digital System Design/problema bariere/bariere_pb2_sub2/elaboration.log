@@ -1,0 +1,17 @@
+elbread.dll ver. 1.0.5.365 Thu Jul 01 12:43:23 2010
+
+
+------------------------------------------
+Entity   | Architecture | Library       
+------------------------------------------
+bariere  | arh_bariere  | bariere_pb2_sub2
+senzori  | arh_senzori  | bariere_pb2_sub2
+or_gate  | or_gate      | bariere_pb2_sub2
+------------------------------------------
+
+-------------------------
+Package         | Library
+-------------------------
+standard        | std
+std_logic_1164  | ieee
+-------------------------

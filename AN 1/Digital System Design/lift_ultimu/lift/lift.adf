@@ -1,0 +1,41 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=lift
+
+[Library]
+lift=.\lift.lib
+
+[$LibMap$]
+lift=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+SYNTH_TOOL=<none>
+IMPL_TOOL=<none>
+FAMILY=
+FLOWTOOLS=ONLY_IMPL
+
+[IMPLEMENTATION]
+UCF=
+
+[Files]
+/main.vhd=-1
+/7SEGMENT.vhd=-1
+
+[Files.Data]
+.\src\main.vhd=VHDL Source Code
+.\src\7SEGMENT.vhd=VHDL Source Code
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=main|arh_main|0 
+ShowHide=ShowTopLevel
+Selected=

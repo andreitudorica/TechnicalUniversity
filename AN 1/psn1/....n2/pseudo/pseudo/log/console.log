@@ -1,0 +1,38 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -work pseudo $DSN/src/pseudo.vhd
+# Compile...
+# File: C:\Documents and Settings\Carmen Zdroba\Desktop\New Folder (2)\pseudo\pseudo\src\pseudo.vhd
+# Compile Entity "entxor"
+# Compile Architecture "arhxor" of Entity "entxor"
+# Compile Entity "registru"
+# Compile Architecture "arhregistru" of Entity "registru"
+# Compile Entity "final"
+# Compile Architecture "arhfinal" of Entity "final"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -work pseudo $DSN/src/pseudo.vhd
+# Compile...
+# File: C:\Documents and Settings\Carmen Zdroba\Desktop\New Folder (2)\pseudo\pseudo\src\pseudo.vhd
+# Compile Entity "entxor"
+# Compile Architecture "arhxor" of Entity "entxor"
+# Compile Entity "registru"
+# Compile Architecture "arhregistru" of Entity "registru"
+# Compile Entity "final"
+# Compile Architecture "arhfinal" of Entity "final"
+# Error: COMP96_0078: pseudo.vhd : (76, 30): Unknown identifier "ser".
+# Error: COMP96_0133: pseudo.vhd : (76, 30): Cannot find object declaration.
+# Error: COMP96_0104: pseudo.vhd : (76, 30): Undefined type of expression.
+# Error: COMP96_0078: pseudo.vhd : (77, 33): Unknown identifier "ser".
+# Error: COMP96_0133: pseudo.vhd : (77, 33): Cannot find object declaration.
+# Error: COMP96_0104: pseudo.vhd : (77, 33): Undefined type of expression.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -work pseudo $DSN/src/pseudo.vhd
+# Compile...
+# File: C:\Documents and Settings\Carmen Zdroba\Desktop\New Folder (2)\pseudo\pseudo\src\pseudo.vhd
+# Compile Entity "entxor"
+# Compile Architecture "arhxor" of Entity "entxor"
+# Compile Entity "registru"
+# Compile Architecture "arhregistru" of Entity "registru"
+# Compile Entity "final"
+# Compile Architecture "arhfinal" of Entity "final"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]

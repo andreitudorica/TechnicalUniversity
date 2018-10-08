@@ -1,0 +1,4 @@
+MESSAGE "File: c:\My_Designs\numarator\numarator\src\numarator.vhd" 
+MESSAGE "Compile Entity "numarator"" 
+MESSAGE "Compile Architecture "arhnumarator" of Entity "numarator"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [s]" 

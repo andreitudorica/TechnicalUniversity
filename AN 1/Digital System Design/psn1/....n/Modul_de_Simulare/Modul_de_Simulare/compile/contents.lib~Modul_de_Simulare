@@ -1,0 +1,5 @@
+10
+~E 1 "./src/exemplu.vhd" 28 exemplu
+~A 1 "./src/exemplu.vhd" 33 arhitectura_exemplu
+~E 1 "./src/si.vhd" 28 si
+~A 1 "./src/si.vhd" 37 arhitectura_si

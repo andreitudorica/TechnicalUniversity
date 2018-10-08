@@ -1,0 +1,15 @@
+elbread.dll ver. 1.0.5.375 Sun May 15 12:01:42 2011
+
+
+------------------------------------
+Entity   | Architecture | Library 
+------------------------------------
+ms_jk    | arh_ms_jk    | MS_Bist_JK
+bist_jk  | arh_jk       | ms_bist_jk
+------------------------------------
+
+-------------------
+Package   | Library
+-------------------
+standard  | std
+-------------------

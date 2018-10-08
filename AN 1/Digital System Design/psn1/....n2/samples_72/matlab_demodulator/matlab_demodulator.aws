@@ -1,0 +1,14 @@
+[Version]
+Version=7.2
+[Designs]
+matlab_demodulator=matlab_demodulator.adf
+[Settings]
+Active=matlab_demodulator
+[Expand]
+matlab_demodulator=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

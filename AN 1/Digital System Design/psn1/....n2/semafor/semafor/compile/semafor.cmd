@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\semafor\library.cfg"  -j "c:\My_Designs\semafor\semafor\projlib.cfg"  -d "c:\My_Designs\semafor\semafor\compile\"  -work semafor -dbg -e 100 "c:\My_Designs\semafor\semafor\src\semafor.vhd" 

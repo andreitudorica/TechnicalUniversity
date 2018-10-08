@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Andrei\Desktop\ps_2KeyboardController\ps_2.ncd
+OUTFILE=C:\Users\Andrei\Desktop\ps_2KeyboardController\ps_2.bit
+FAMILY=Spartan3E
+PART=xc3s100e-5cp132
+WORKINGDIR=C:\Users\Andrei\Desktop\ps_2KeyboardController
+LICENSE=WebPack
+USER_INFO=211194061_0_0_452

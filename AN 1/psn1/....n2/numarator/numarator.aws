@@ -1,0 +1,12 @@
+[Version]
+Version=7.2
+[Designs]
+numarator=.\numarator\numarator.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+numarator=1

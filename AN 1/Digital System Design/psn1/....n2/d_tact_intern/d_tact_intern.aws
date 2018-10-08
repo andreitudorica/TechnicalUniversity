@@ -1,0 +1,12 @@
+[Version]
+Version=7.2
+[Designs]
+d_tact_intern=.\d_tact_intern\d_tact_intern.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+d_tact_intern=1

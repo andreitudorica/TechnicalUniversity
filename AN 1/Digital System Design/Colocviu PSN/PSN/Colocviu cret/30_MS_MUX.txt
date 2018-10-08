@@ -1,0 +1,35 @@
+entity MUX is
+	port (S: in BIT_VECTOR(1 downto 0);
+	X : in BIT_VECTOR(3 downto 0);
+	Y : out Bit);
+end MUX;
+
+architecture A_MUX of MUX is
+begin
+Y <= (X(0) and not(s(1)) and not(s(0))) or
+	      (X(1) and not(s(1)) and s(0)) or
+		  (X(2) and s(1) and not(s(0))) or
+		  (X(3) and s(1) and s(0));
+end architecture;
+
+entity MS_MUX is  
+end entity;
+
+architecture ARH_MS_MUX of MS_MUX is
+component MUX is 
+	port(X : in Bit_Vector(3 downto 0);
+	S:in Bit_Vector(1 downto 0);
+	Y : out Bit);
+end component;
+signal Y:Bit;
+signal S:Bit_Vector(1 downto 0); 
+signal X:Bit_Vector(3 downto 0);
+begin
+UST : MUX port map (X=>X,S=>S,Y=>Y);
+    X(0) <= '0';
+    X(1) <= '1';
+    X(2) <= '0';
+    X(3) <= '1';
+    S(0) <= '0','1' after 100 ns;
+	S(1) <= '0','1' after 50 ns,'0' after 100 ns,'1' after 150 ns;
+end architecture ;

@@ -1,0 +1,1 @@
+-w -s "C:\My_Designs\simjk\library.cfg"  -j "C:\My_Designs\simjk\simjk\projlib.cfg"  -d "C:\My_Designs\simjk\simjk\compile\"  -work simjk -dbg -e 100 "C:\My_Designs\simjk\simjk\src\simjk.vhd" 

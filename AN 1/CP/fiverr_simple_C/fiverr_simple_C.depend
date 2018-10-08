@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1451860534 source:c:\users\andrei\desktop\scoala\cp\fiverr_simple_c\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1451862893 source:c:\users\andrei\desktop\scoala\cp\fiverr_simple_c\main3.c
+	<stdio.h>
+	<string.h>
+
+1451863048 source:c:\users\andrei\desktop\scoala\cp\fiverr_simple_c\main4.c
+	<stdio.h>
+	<string.h>
+

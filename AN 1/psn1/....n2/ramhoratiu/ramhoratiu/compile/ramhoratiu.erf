@@ -1,0 +1,6 @@
+MESSAGE "File: c:\My_Designs\ramhoratiu\ramhoratiu\src\ramhoratiu.vhd" 
+MESSAGE "Compile Entity "sapte"" 
+MESSAGE "Compile Architecture "arhitectura_sapte" of Entity "sapte"" 
+MESSAGE "Top-level unit(s) detected:" 
+MESSAGE "Entity  =>   sapte" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]" 

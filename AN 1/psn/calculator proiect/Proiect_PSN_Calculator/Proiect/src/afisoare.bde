@@ -1,0 +1,845 @@
+SCHM0103
+
+HEADER
+{
+ FREEID 67
+ VARIABLES
+ {
+  #ARCHITECTURE="arch_afisoare"
+  #BLOCKTABLE_FILE="#HDL2DIAGRAM.bde"
+  #ENTITY="afisoare"
+  #LANGUAGE="VHDL"
+  AUTHOR="Microsoft"
+  COMPANY="Microsoft"
+  CREATIONDATE="5/23/2011"
+  SOURCE=".\\src\\afisoare.vhd"
+ }
+ SYMBOL "proiect" "div_frec" "div_frec"
+ {
+  HEADER
+  {
+   VARIABLES
+   {
+    #DESCRIPTION=""
+    #HDL_ENTRIES=
+"library IEEE;\n"+
+"use ieee.std_logic_1164.all;"
+    #LANGUAGE="VHDL"
+    #MODIFIED="1306143043"
+   }
+  }
+  PAGE "" 
+  {
+   PAGEHEADER
+   {
+    RECT (0,0,220,160)
+    FREEID 10
+   }
+   
+   BODY
+   {
+    RECT  1, -1, 0
+    {
+     VARIABLES
+     {
+      #OUTLINE_FILLING="1"
+     }
+     AREA (20,0,200,160)
+    }
+    TEXT  3, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (25,26,25,58)
+     ALIGN 4
+     MARGINS (1,1)
+     PARENT 2
+    }
+    TEXT  5, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (195,26,195,58)
+     ALIGN 6
+     MARGINS (1,1)
+     PARENT 4
+    }
+    TEXT  7, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (195,66,195,98)
+     ALIGN 6
+     MARGINS (1,1)
+     PARENT 6
+    }
+    TEXT  9, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (195,106,195,138)
+     ALIGN 6
+     MARGINS (1,1)
+     PARENT 8
+    }
+    PIN  2, 0, 0
+    {
+     COORD (0,40)
+     VARIABLES
+     {
+      #DIRECTION="IN"
+      #LENGTH="20"
+      #MDA_RECORD_TOKEN="OTHER"
+      #NAME="clk"
+      #NUMBER="0"
+      #VHDL_TYPE="STD_LOGIC"
+     }
+     LINE  2, 0, 0
+     {
+      POINTS ( (0,0), (20,0) )
+     }
+    }
+    PIN  4, 0, 0
+    {
+     COORD (220,40)
+     VARIABLES
+     {
+      #DIRECTION="OUT"
+      #LENGTH="20"
+      #MDA_RECORD_TOKEN="OTHER"
+      #NAME="clk_div"
+      #NUMBER="0"
+      #VHDL_TYPE="STD_LOGIC"
+     }
+     LINE  2, 0, 0
+     {
+      POINTS ( (-20,0), (0,0) )
+     }
+    }
+    PIN  6, 0, 0
+    {
+     COORD (220,80)
+     VARIABLES
+     {
+      #DIRECTION="OUT"
+      #DOWNTO="1"
+      #LENGTH="20"
+      #MDA_RECORD_TOKEN="OTHER"
+      #NAME="clk_div_afis(1:0)"
+      #NUMBER="0"
+      #VHDL_TYPE="STD_LOGIC_VECTOR"
+     }
+     LINE  2, 0, 0
+     {
+      POINTS ( (-20,0), (0,0) )
+     }
+    }
+    PIN  8, 0, 0
+    {
+     COORD (220,120)
+     VARIABLES
+     {
+      #DIRECTION="OUT"
+      #DOWNTO="1"
+      #LENGTH="20"
+      #MDA_RECORD_TOKEN="OTHER"
+      #NAME="cnt_port(24:0)"
+      #NUMBER="0"
+      #VHDL_TYPE="STD_LOGIC_VECTOR"
+     }
+     LINE  2, 0, 0
+     {
+      POINTS ( (-20,0), (0,0) )
+     }
+    }
+   }
+  }
+ }
+ SYMBOL "proiect" "convertor" "convertor"
+ {
+  HEADER
+  {
+   VARIABLES
+   {
+    #DESCRIPTION=""
+    #HDL_ENTRIES=
+"library IEEE;\n"+
+"use ieee.std_logic_1164.all;"
+    #LANGUAGE="VHDL"
+    #MODIFIED="1306143043"
+   }
+  }
+  PAGE "" 
+  {
+   PAGEHEADER
+   {
+    RECT (0,0,320,80)
+    FREEID 6
+   }
+   
+   BODY
+   {
+    RECT  1, -1, 0
+    {
+     VARIABLES
+     {
+      #OUTLINE_FILLING="1"
+     }
+     AREA (20,0,300,80)
+    }
+    TEXT  3, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (25,26,25,58)
+     ALIGN 4
+     MARGINS (1,1)
+     PARENT 2
+    }
+    TEXT  5, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (295,26,295,58)
+     ALIGN 6
+     MARGINS (1,1)
+     PARENT 4
+    }
+    PIN  2, 0, 0
+    {
+     COORD (0,40)
+     VARIABLES
+     {
+      #DIRECTION="IN"
+      #DOWNTO="1"
+      #LENGTH="20"
+      #MDA_RECORD_TOKEN="OTHER"
+      #NAME="nr_binar(15:0)"
+      #NUMBER="0"
+      #VHDL_TYPE="STD_LOGIC_VECTOR"
+     }
+     LINE  2, 0, 0
+     {
+      POINTS ( (0,0), (20,0) )
+     }
+    }
+    PIN  4, 0, 0
+    {
+     COORD (320,40)
+     VARIABLES
+     {
+      #DIRECTION="OUT"
+      #DOWNTO="1"
+      #LENGTH="20"
+      #MDA_RECORD_TOKEN="OTHER"
+      #NAME="nr_BCD(15:0)"
+      #NUMBER="0"
+      #VHDL_TYPE="STD_LOGIC_VECTOR"
+     }
+     LINE  2, 0, 0
+     {
+      POINTS ( (-20,0), (0,0) )
+     }
+    }
+   }
+  }
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  PAGESIZE (2492,1320)
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+ }
+ 
+ BODY
+ {
+  VHDLDESIGNUNITHDR  1, 0, 0
+  {
+   LABEL "Design Unit Header"
+   TEXT 
+"library ieee;\n"+
+"        use ieee.std_logic_1164.all;\n"+
+"        use ieee.std_logic_arith.all;\n"+
+"        use ieee.std_logic_unsigned.all;"
+   RECT (220,260,620,505)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  PROCESS  2, 0, 0
+  {
+   LABEL "P4"
+   TEXT 
+"P4 : process (clk_div_afis2)\n"+
+"                         variable segment7 : STD_LOGIC_VECTOR(7 downto 0) := \"00000000\";\n"+
+"                         variable p_anod : STD_LOGIC_VECTOR(3 downto 0) := \"0000\";\n"+
+"                       begin\n"+
+"                         case clk_div_afis2 is \n"+
+"                           when \"00\" => \n"+
+"                              p_anod := \"1110\";\n"+
+"                              case s_nr_BCD(3 downto 0) is \n"+
+"                                when \"0000\" => \n"+
+"                                   segment7 := \"00000011\";\n"+
+"                                when \"0001\" => \n"+
+"                                   segment7 := \"10011111\";\n"+
+"                                when \"0010\" => \n"+
+"                                   segment7 := \"00100101\";\n"+
+"                                when \"0011\" => \n"+
+"                                   segment7 := \"00001101\";\n"+
+"                                when \"0100\" => \n"+
+"                                   segment7 := \"10011001\";\n"+
+"                                when \"0101\" => \n"+
+"                                   segment7 := \"01001001\";\n"+
+"                                when \"0110\" => \n"+
+"                                   segment7 := \"01000001\";\n"+
+"                                when \"0111\" => \n"+
+"                                   segment7 := \"00011111\";\n"+
+"                                when \"1000\" => \n"+
+"                                   segment7 := \"00000001\";\n"+
+"                                when \"1001\" => \n"+
+"                                   segment7 := \"00001001\";\n"+
+"                                when others => \n"+
+"                                   segment7 := \"11111111\";\n"+
+"                              end case;\n"+
+"                           when \"01\" => \n"+
+"                              p_anod := \"1101\";\n"+
+"                              case s_nr_BCD(7 downto 4) is \n"+
+"                                when \"0000\" => \n"+
+"                                   segment7 := \"00000011\";\n"+
+"                                when \"0001\" => \n"+
+"                                   segment7 := \"10011111\";\n"+
+"                                when \"0010\" => \n"+
+"                                   segment7 := \"00100101\";\n"+
+"                                when \"0011\" => \n"+
+"                                   segment7 := \"00001101\";\n"+
+"                                when \"0100\" => \n"+
+"                                   segment7 := \"10011001\";\n"+
+"                                when \"0101\" => \n"+
+"                                   segment7 := \"01001001\";\n"+
+"                                when \"0110\" => \n"+
+"                                   segment7 := \"01000001\";\n"+
+"                                when \"0111\" => \n"+
+"                                   segment7 := \"00011111\";\n"+
+"                                when \"1000\" => \n"+
+"                                   segment7 := \"00000001\";\n"+
+"                                when \"1001\" => \n"+
+"                                   segment7 := \"00001001\";\n"+
+"                                when others => \n"+
+"                                   segment7 := \"11111111\";\n"+
+"                              end case;\n"+
+"                           when \"10\" => \n"+
+"                              p_anod := \"1011\";\n"+
+"                              case s_nr_BCD(11 downto 8) is \n"+
+"                                when \"0000\" => \n"+
+"                                   segment7 := \"00000011\";\n"+
+"                                when \"0001\" => \n"+
+"                                   segment7 := \"10011111\";\n"+
+"                                when \"0010\" => \n"+
+"                                   segment7 := \"00100101\";\n"+
+"                                when \"0011\" => \n"+
+"                                   segment7 := \"00001101\";\n"+
+"                                when \"0100\" => \n"+
+"                                   segment7 := \"10011001\";\n"+
+"                                when \"0101\" => \n"+
+"                                   segment7 := \"01001001\";\n"+
+"                                when \"0110\" => \n"+
+"                                   segment7 := \"01000001\";\n"+
+"                                when \"0111\" => \n"+
+"                                   segment7 := \"00011111\";\n"+
+"                                when \"1000\" => \n"+
+"                                   segment7 := \"00000001\";\n"+
+"                                when \"1001\" => \n"+
+"                                   segment7 := \"00001001\";\n"+
+"                                when others => \n"+
+"                                   segment7 := \"11111111\";\n"+
+"                              end case;\n"+
+"                           when \"11\" => \n"+
+"                              p_anod := \"0111\";\n"+
+"                              case s_nr_BCD(15 downto 12) is \n"+
+"                                when \"0000\" => \n"+
+"                                   segment7 := \"00000011\";\n"+
+"                                when \"0001\" => \n"+
+"                                   segment7 := \"10011111\";\n"+
+"                                when \"0010\" => \n"+
+"                                   segment7 := \"00100101\";\n"+
+"                                when \"0011\" => \n"+
+"                                   segment7 := \"00001101\";\n"+
+"                                when \"0100\" => \n"+
+"                                   segment7 := \"10011001\";\n"+
+"                                when \"0101\" => \n"+
+"                                   segment7 := \"01001001\";\n"+
+"                                when \"0110\" => \n"+
+"                                   segment7 := \"01000001\";\n"+
+"                                when \"0111\" => \n"+
+"                                   segment7 := \"00011111\";\n"+
+"                                when \"1000\" => \n"+
+"                                   segment7 := \"00000001\";\n"+
+"                                when \"1001\" => \n"+
+"                                   segment7 := \"00001001\";\n"+
+"                                when others => \n"+
+"                                   segment7 := \"11111111\";\n"+
+"                              end case;\n"+
+"                           when others => \n"+
+"                              p_anod := \"1111\";\n"+
+"                         end case;\n"+
+"                         anod <= p_anod;\n"+
+"                         catod <= segment7;\n"+
+"                       end process;\n"+
+"                      "
+   RECT (1520,300,1921,700)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWTEXT
+   VTX (  24, 28, 40, 44, 52 )
+   VARIABLES
+   {
+    #UPDATE_SENS_LIST="0"
+   }
+   LIST (  40, 44 )
+  }
+  INSTANCE  3, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusOutput"
+    #LIBRARY="#terminals"
+    #REFERENCE="anod(3:0)"
+    #SYMBOL="BusOutput"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (2020,320)
+   VERTEXES ( (2,25) )
+  }
+  INSTANCE  4, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusOutput"
+    #LIBRARY="#terminals"
+    #REFERENCE="catod(7:0)"
+    #SYMBOL="BusOutput"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (2020,360)
+   VERTEXES ( (2,29) )
+  }
+  INSTANCE  5, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="div_frec"
+    #LIBRARY="proiect"
+    #REFERENCE="P1"
+    #SYMBOL="div_frec"
+   }
+   COORD (1100,240)
+   VERTEXES ( (4,32), (6,36), (2,56) )
+  }
+  INSTANCE  6, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #LIBRARY="#terminals"
+    #REFERENCE="clk"
+    #SYMBOL="Input"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   COORD (960,280)
+   VERTEXES ( (2,57) )
+  }
+  INSTANCE  7, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="convertor"
+    #LIBRARY="proiect"
+    #REFERENCE="P2"
+    #SYMBOL="convertor"
+   }
+   COORD (1100,460)
+   VERTEXES ( (4,48), (2,60) )
+  }
+  INSTANCE  8, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #LIBRARY="#terminals"
+    #REFERENCE="nr_zecimal1(15:0)"
+    #SYMBOL="BusInput"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (960,500)
+   VERTEXES ( (2,61) )
+  }
+  TEXT  9, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (2072,320,2072,320)
+   ALIGN 4
+   PARENT 3
+  }
+  TEXT  10, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (2072,360,2072,360)
+   ALIGN 4
+   PARENT 4
+  }
+  TEXT  11, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1100,240,1100,240)
+   ALIGN 8
+   PARENT 5
+  }
+  TEXT  12, 0, 0
+  {
+   TEXT "$#COMPONENT"
+   RECT (1100,400,1100,400)
+   PARENT 5
+  }
+  TEXT  13, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (908,280,908,280)
+   ALIGN 6
+   PARENT 6
+  }
+  TEXT  14, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1100,460,1100,460)
+   ALIGN 8
+   PARENT 7
+  }
+  TEXT  15, 0, 0
+  {
+   TEXT "$#COMPONENT"
+   RECT (1100,540,1100,540)
+   PARENT 7
+  }
+  TEXT  16, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (908,500,908,500)
+   ALIGN 6
+   PARENT 8
+  }
+  NET WIRE  17, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="clk_div"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+  }
+  NET BUS  18, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="anod(3:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET BUS  19, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="catod(7:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET WIRE  20, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="clk"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+  }
+  NET BUS  21, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="nr_zecimal1(15:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET BUS  22, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="s_nr_BCD(15:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET BUS  23, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="clk_div_afis2(1:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  VTX  24, 0, 0
+  {
+   COORD (1921,320)
+  }
+  VTX  25, 0, 0
+  {
+   COORD (2020,320)
+  }
+  BUS  26, 0, 0
+  {
+   NET 18
+   VTX 24, 25
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  27, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1970,320,1970,320)
+   ALIGN 9
+   PARENT 26
+  }
+  VTX  28, 0, 0
+  {
+   COORD (1921,360)
+  }
+  VTX  29, 0, 0
+  {
+   COORD (2020,360)
+  }
+  BUS  30, 0, 0
+  {
+   NET 19
+   VTX 28, 29
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  31, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1970,360,1970,360)
+   ALIGN 9
+   PARENT 30
+  }
+  VTX  32, 0, 0
+  {
+   COORD (1320,280)
+  }
+  VTX  33, 0, 0
+  {
+   COORD (1500,280)
+  }
+  WIRE  34, 0, 0
+  {
+   NET 17
+   VTX 32, 33
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  35, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1410,280,1410,280)
+   ALIGN 9
+   PARENT 34
+  }
+  VTX  36, 0, 0
+  {
+   COORD (1320,320)
+  }
+  VTX  37, 0, 0
+  {
+   COORD (1500,320)
+  }
+  BUS  38, 0, 0
+  {
+   NET 23
+   VTX 36, 37
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  39, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1410,320,1410,320)
+   ALIGN 9
+   PARENT 38
+  }
+  VTX  40, 0, 0
+  {
+   COORD (1520,320)
+  }
+  VTX  41, 0, 0
+  {
+   COORD (1500,320)
+  }
+  BUS  42, 0, 0
+  {
+   NET 23
+   VTX 40, 41
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  43, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1510,320,1510,320)
+   ALIGN 9
+   PARENT 42
+  }
+  VTX  44, 0, 0
+  {
+   COORD (1520,320)
+  }
+  VTX  45, 0, 0
+  {
+   COORD (1500,320)
+  }
+  BUS  46, 0, 0
+  {
+   NET 23
+   VTX 44, 45
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  47, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1510,320,1510,320)
+   ALIGN 9
+   PARENT 46
+  }
+  VTX  48, 0, 0
+  {
+   COORD (1420,500)
+  }
+  VTX  49, 0, 0
+  {
+   COORD (1500,500)
+  }
+  BUS  50, 0, 0
+  {
+   NET 22
+   VTX 48, 49
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  51, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1460,500,1460,500)
+   ALIGN 9
+   PARENT 50
+  }
+  VTX  52, 0, 0
+  {
+   COORD (1520,360)
+  }
+  VTX  53, 0, 0
+  {
+   COORD (1500,360)
+  }
+  BUS  54, 0, 0
+  {
+   NET 22
+   VTX 52, 53
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  55, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1510,360,1510,360)
+   ALIGN 9
+   PARENT 54
+  }
+  VTX  56, 0, 0
+  {
+   COORD (1100,280)
+  }
+  VTX  57, 0, 0
+  {
+   COORD (960,280)
+  }
+  WIRE  58, 0, 0
+  {
+   NET 20
+   VTX 56, 57
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  59, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1030,280,1030,280)
+   ALIGN 9
+   PARENT 58
+  }
+  VTX  60, 0, 0
+  {
+   COORD (1100,500)
+  }
+  VTX  61, 0, 0
+  {
+   COORD (960,500)
+  }
+  BUS  62, 0, 0
+  {
+   NET 21
+   VTX 60, 61
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  63, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1030,500,1030,500)
+   ALIGN 9
+   PARENT 62
+  }
+  BUS  64, 0, 0
+  {
+   NET 22
+   VTX 53, 49
+  }
+  BUS  65, 0, 0
+  {
+   NET 23
+   VTX 37, 41
+  }
+  BUS  66, 0, 0
+  {
+   NET 23
+   VTX 41, 45
+  }
+ }
+ 
+}
+

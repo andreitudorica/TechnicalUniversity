@@ -1,0 +1,31 @@
+elbread.dll ver. 1.0.5.365 Sat Jun 01 17:30:49 2013
+
+
+----------------------------------------------------
+Entity            | Architecture       | Library  
+----------------------------------------------------
+aparat            | bilete             | Bilete_tren
+mux_bani          | multiplex          | bilete_tren
+sumator_scazator  | operatie           | bilete_tren
+registru_9b       | memorare           | bilete_tren
+numarator         | numara             | bilete_tren
+fa                | sumator_complet    | bilete_tren
+full_adder        | arhas              | bilete_tren
+afisare_pret      | ap                 | bilete_tren
+afisare_numar     | afis_nr            | bilete_tren
+count_to_3        | count              | bilete_tren
+mux_4_to_1        | mux                | bilete_tren
+bcd_to_7_seg      | a1                 | bilete_tren
+an_select         | an                 | bilete_tren
+comparator        | comparare          | bilete_tren
+mux_2_1           | multiplexare_nbiti | bilete_tren
+----------------------------------------------------
+
+-----------------------------
+Package             | Library
+-----------------------------
+standard            | std
+std_logic_1164      | ieee
+std_logic_arith     | ieee
+std_logic_unsigned  | ieee
+-----------------------------

@@ -1,0 +1,105 @@
+2329
+~E 1 "./src/subiect 36.vhd" 5 reg
+~A 1 "./src/subiect 36.vhd" 10 arh
+~E 1 "./src/subiect2.vhd" 4 convert_bcd
+~A 1 "./src/subiect2.vhd" 8 conv_bcd
+~E 1 "./src/subiect 35.vhd" 5 bistt
+~A 1 "./src/subiect 35.vhd" 9 arht
+~E 1 "./src/subiect 20.vhd" 5 bist_t
+~A 1 "./src/subiect 20.vhd" 9 bistabil
+~E 1 "./src/subiect1.vhd" 22 and_b
+~A 1 "./src/subiect1.vhd" 26 poarta_si
+~E 1 "./src/subiect 17.vhd" 5 alu
+~A 1 "./src/subiect 17.vhd" 11 arh_alu
+~E 1 "./src/subiect 19.vhd" 5 bist_jk
+~A 1 "./src/subiect 19.vhd" 9 bistabil
+~E 1 "./src/subiect32.vhd" 5 bistd
+~A 1 "./src/subiect 33.vhd" 9 arh
+~E 1 "./src/subiect 18.vhd" 5 bistabil_d
+~A 1 "./src/subiect 18.vhd" 9 bistabil
+~E 1 "./src/subiect 34.vhd" 5 bistjk
+~A 1 "./src/subiect 34.vhd" 9 arhit
+~E 1 "./src/subiect 29.vhd" 5 comp
+~A 1 "./src/subiect 29.vhd" 9 comparator
+~E 1 "./src/subiect5.vhd" 5 codif
+~A 1 "./src/subiect5.vhd" 9 codificator
+~E 1 "./src/subiect 32.vhd" 5 buff
+~A 1 "./src/subiect 32.vhd" 10 buff3st
+~E 1 "./src/subiect10+11+12.vhd" 29 coincidenta
+~A 1 "./src/subiect10+11+12.vhd" 33 arh_coincidenta
+~E 1 "./src/subiect3.vhd" 4 conv_2421
+~A 1 "./src/subiect3.vhd" 8 convertor
+~E 1 "./src/subiect10+11+12.vhd" 4 comparator
+~A 1 "./src/subiect10+11+12.vhd" 22 flux_de_date
+~A 1 "./src/subiect10+11+12.vhd" 8 comportamentala
+~A 1 "./src/subiect10+11+12.vhd" 47 structurala
+~E 1 "./src/subiect4.vhd" 4 conv_excess3
+~A 1 "./src/subiect4.vhd" 8 convertor
+~E 1 "./src/subiect24.vhd" 5 generator
+~A 1 "./src/subiect24.vhd" 11 arh1
+~E 1 "./src/subiect1.vhd" 69 descr_struct_and
+~A 1 "./src/subiect1.vhd" 81 struct_and
+~E 1 "./src/subiect 31.vhd" 4 demux
+~A 1 "./src/subiect9.vhd" 10 demuxx
+~A 1 "./src/subiect 31.vhd" 9 demultiplex
+~E 1 "./src/subiect6.vhd" 5 decod
+~A 1 "./src/subiect6.vhd" 9 decodificator
+~E 1 "./src/subiect1.vhd" 51 desc_struct_xor
+~A 1 "./src/subiect1.vhd" 55 struct_xor
+~E 1 "./src/subiect25.vhd" 5 fifo
+~A 1 "./src/subiect25.vhd" 11 arh1
+~E 1 "./src/subiect1.vhd" 60 descr_struct_xnor
+~A 1 "./src/subiect1.vhd" 68 struct_xnor
+~E 1 "./src/subiect 24.vhd" 43 gen_a
+~A 1 "./src/subiect 24.vhd" 48 arh_struct
+~E 1 "./src/subiect1.vhd" 42 not_b
+~A 1 "./src/subiect1.vhd" 46 poarta_nu
+~E 1 "./src/subiect 15.vhd" 5 mem_rom
+~A 1 "./src/subiect 15.vhd" 10 rom
+~E 1 "./src/subuect26.vhd" 5 lifo
+~A 1 "./src/subuect26.vhd" 11 arh
+~E 1 "./src/subiect8.vhd" 5 mux
+~A 1 "./src/subiect8.vhd" 11 muxx
+~A 1 "./src/subiect 30 .vhd" 10 multiplex
+~E 1 "./src/subiect1.vhd" 32 or_b
+~A 1 "./src/subiect1.vhd" 36 poarta_sau
+~E 1 "./src/subiect 21.vhd" 5 numarator
+~A 1 "./src/subiect 21.vhd" 10 num
+~E 1 "./src/subiect 16.vhd" 5 ram_m
+~A 1 "./src/subiect 16.vhd" 11 ram
+~E 1 "./src/subiect 32.vhd" 18 simbuff
+~A 1 "./src/subiect 32.vhd" 20 simulare
+~E 1 "./src/subiect10+11+12.vhd" 38 si
+~A 1 "./src/subiect10+11+12.vhd" 42 poarta_si
+~E 1 "./src/subiect 28.vhd" 5 scad
+~A 1 "./src/subiect 28.vhd" 9 scaz
+~E 1 "./src/subiect 24.vhd" 14 registru
+~A 1 "./src/subiect23.vhd" 11 reg
+~A 1 "./src/subiect 24.vhd" 19 arhreg
+~E 1 "./src/subiect 13.vhd" 39 scazator
+~A 1 "./src/subiect 13.vhd" 43 scasator_arh
+~E 1 "./src/subiect 30 .vhd" 22 sim
+~A 1 "./src/subiect 31.vhd" 22 simulare
+~E 1 "./src/subiect1.vhd" 51 si_sau_nu
+~A 1 "./src/subiect1.vhd" 55 struct
+~E 1 "./src/subiect32.vhd" 19 simbist
+~A 1 "./src/subiect 33.vhd" 21 simulare
+~E 1 "./src/subiect27.vhd" 14 simulare
+~A 1 "./src/subiect 36.vhd" 32 simreg
+~A 1 "./src/subiect 28.vhd" 16 sim
+~E 1 "./src/subiect 35.vhd" 26 simt
+~A 1 "./src/subiect 35.vhd" 29 simult
+~E 1 "./src/subiect 34.vhd" 28 simjk
+~A 1 "./src/subiect 34.vhd" 30 simuljk
+~E 1 "./src/subiect 31.vhd" 20 simul
+~A 1 "./src/subiect 31.vhd" 22 simulare
+~E 1 "./src/subiect 14.vhd" 6 sum
+~A 1 "./src/subiect 14.vhd" 10 sumator
+~A 1 "./src/subiect27.vhd" 9 arh
+~E 1 "./src/subiect 36.vhd" 30 simularer
+~A 1 "./src/subiect 36.vhd" 32 simreg
+~E 1 "./src/subiect1.vhd" 12 xnor_b
+~A 1 "./src/subiect1.vhd" 16 coincidenta
+~E 1 "./src/subiect 24.vhd" 5 xor_b
+~A 1 "./src/subiect1.vhd" 6 sau_exclusiv
+~A 1 "./src/subiect 24.vhd" 9 arh_xor

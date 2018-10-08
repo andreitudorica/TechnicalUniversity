@@ -1,0 +1,51 @@
+timestamp=1172067036544
+
+[AND2]
+A/AND2=22|./src/and2.v|1|
+P/~emb=129,277,389,484
+S/and2=S/AND2 40|0|2*0
+
+[AND3]
+A/AND3=22|./src/and3.v|1|
+P/~emb=156,307,421,521
+S/and3=S/AND3 40|0|2*1434
+
+[AND4]
+A/AND4=22|./src/and4.v|1|
+P/~emb=183,337,454,557
+S/and4=S/AND4 40|0|2*3241
+
+[CRV]
+A/CRV=24|.\src\crv.bde|10000|
+P/~emb=169,406,792,1196
+
+[c2or]
+A/c2or=A/C2OR 21|./src/c2or.vhd|12|
+S/c2or=S/C2OR 40|0|2*5423
+
+[filter]
+A/filter=24|.\src\filter.bde|10000|
+P/~emb=165,353,534,717
+
+[~A]
+ModifyID=376
+Version=73
+c:/My_Designs/mixed_VHDL_Verilog/compile/CRV.v=0*4161*4810
+c:/My_Designs/mixed_VHDL_Verilog/compile/crv.v=0*0*649
+c:/My_Designs/mixed_VHDL_Verilog/src/and2.v=0*2551*2829
+c:/My_Designs/mixed_VHDL_Verilog/src/and3.v=0*1824*2107
+c:/My_Designs/mixed_VHDL_Verilog/src/and4.v=0*1096*1380
+c:/My_Designs/mixed_VHDL_Verilog/src/oscil.v=0*3273*3716
+
+[~MFT]
+0=0|0mixed_VHDL_Verilog.mgf|8799|0
+2=0|2mixed_VHDL_Verilog.mgf|5423|0
+
+[~U]
+AND2=12|0*5257||0x93
+AND3=12|0*5836||0x93
+AND4=12|0*6452||0x93
+CRV=12|0*7104||0x90
+c2or=C2OR 11|0*8615||0x3
+filter=11|0*8799|
+

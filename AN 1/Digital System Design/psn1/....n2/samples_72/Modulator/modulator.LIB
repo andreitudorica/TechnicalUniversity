@@ -1,0 +1,34 @@
+[cosinegenerator]
+A/cosinegenerator=A/CosineGenerator 21|./src/CosineGenerator.vhd|22|
+S/cosinegenerator=S/CosineGenerator 40|0|2*0
+
+[modulator]
+A/modulator=A/Modulator 24|.\src\modulator.bde|10000|
+
+[multiplier]
+A/multiplier=A/Multiplier 21|./src/multiplier.vhd|23|
+S/multiplier=S/Multiplier 40|0|2*2291
+
+[sawgenerator]
+A/sawgenerator=A/SawGenerator 21|./src/sawgenerator.vhd|22|
+S/sawgenerator=S/SawGenerator 40|0|2*5056
+
+[sinegenerator]
+A/sinegenerator=A/SineGenerator 21|./src/SineGenerator.vhd|22|
+S/sinegenerator=S/SineGenerator 40|0|2*7344
+
+[~A]
+ModifyID=44
+Version=73
+
+[~MFT]
+0=0|0modulator.mgf|797|1
+2=0|2modulator.mgf|7344|1
+
+[~U]
+cosinegenerator=CosineGenerator 11|0*0||7
+modulator=Modulator 11|0*189|
+multiplier=Multiplier 11|0*440||7
+sawgenerator=SawGenerator 11|0*617||7
+sinegenerator=SineGenerator 11|0*797||7
+

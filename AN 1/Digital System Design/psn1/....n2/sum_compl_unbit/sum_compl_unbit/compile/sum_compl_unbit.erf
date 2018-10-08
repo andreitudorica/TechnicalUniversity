@@ -1,0 +1,4 @@
+MESSAGE "File: c:\My_Designs\sum_compl_unbit\sum_compl_unbit\src\sum_compl_unbit.vhd" 
+MESSAGE "Compile Entity "sum_compl_unbit"" 
+MESSAGE "Compile Architecture "arhsum_compl_unbit" of Entity "sum_compl_unbit"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 

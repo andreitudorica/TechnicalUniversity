@@ -1,0 +1,73 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+///CHILD PLAY
+int encryptDigits( int n)
+{
+    int a = 0, i = 1;
+    while(n > 0)
+    {
+        a = a + i * ((n%10 + 11) % 10);
+        i *= 10;
+        n /= 10;
+    }
+    return a;
+}
+
+void hexConversion(int n,  char *s)
+{
+    strcpy(s,"");
+    int q, r, i = 3;
+    memset(s, 0, 4 * sizeof(char));
+    s[4] = '\0';
+    while(n > 0)
+    {
+        q = n / 16;
+        r = n % 16;
+        n = q;
+
+        switch(r)
+        {
+            case 10: s[i] = 'A';
+                    break;
+            case 11: s[i] = 'B';
+                    break;
+            case 12: s[i] = 'C';
+                    break;
+            case 13: s[i] = 'D';
+                    break;
+            case 14: s[i] = 'E';
+                    break;
+            case 15: s[i] = 'F';
+                    break;
+            default: s[i] = '0' + r;
+        }
+        i--;
+    }
+
+}
+int main()
+{
+    int n, ne;
+    char *hexNr;
+    hexNr = (char *) malloc(5 * sizeof(char));
+    if(!hexNr) exit(2);
+
+    scanf("%d", &n);
+    ne = encryptDigits(n);
+    hexConversion(ne, hexNr);
+
+    char aux;
+
+    aux = hexNr[0];
+    hexNr[0] = hexNr[2];
+    hexNr[2] = aux;
+
+    aux = hexNr[1];
+    hexNr[1] = hexNr[3];
+    hexNr[3] = aux;
+
+    printf("%s", hexNr);
+    return 0;
+}

@@ -1,0 +1,5 @@
+.\src\SineGenerator.vhd
+.\src\CosineGenerator.vhd
+.\src\sawgenerator.vhd
+.\src\multiplier.vhd
+.\src\modulator.bde

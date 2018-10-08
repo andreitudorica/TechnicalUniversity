@@ -1,0 +1,64 @@
+/*//problem 2
+#include <fstream>
+#include <iostream>
+using namespace std;
+ifstream f("input.in");
+ofstream g("output.out");
+int n,m1,m2,x;
+int main()
+{
+    f>>n; //read number of elements
+    f>>x;//reald first element
+    m1=m2=x;//m1 is the biggest element in the array and m2 is the second one
+    for(int i=1;i<n;i++)
+    {
+        f>>x;
+        if(x>m1) //if we find a new maximum
+        {
+            m2=m1;//we make the old maximum the second greatest element
+            m1=x;//and save the new found maximum as the greatest value of the array
+        }
+        else if(x<m1 && x>m2)//if we find a new 2nd maximum
+            m2=x;//we save it
+    }
+    g << "the second largest element is " <<m2;
+    return 0;
+}
+*/
+/*
+//problem 3
+#include <fstream>
+#include <iostream>
+using namespace std;
+ifstream f("input.in");
+ofstream g("output.out");
+int n,m,result;
+
+int logarithmic_exponentiation(int n,int k,int p) //a better explanation of this algorithm you can find here https://en.wikipedia.org/wiki/Exponentiation_by_squaring
+{
+    if(!p) return k;
+    if(p%2==1) return logarithmic_exponentiation(n*n,k*n,p/2);
+    return logarithmic_exponentiation(n*n,k,p/2);
+}
+int main()
+{
+    f>>n>>m;
+    int log_res=logarithmic_exponentiation(n,1,m);
+    g<<"the complexity of the logarithmic exponentiation is O(log(m)) result: "<<log_res;
+    int i,k=1;
+    for(i=1;i<=m;i++) k*=n;
+    g<<"the complexity of the linear exponentiation is O(m) result: "<<k;
+    return 0;
+}
+*/
+#include <fstream>
+#include <iostream>
+using namespace std;
+ifstream f("input.in");
+ofstream g("output.out");
+
+int main()
+{
+
+    return 0;
+}

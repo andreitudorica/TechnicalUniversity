@@ -1,0 +1,5 @@
+140
+~E 1 "./src/buffer8biti.vhd" 6 buffer8biti
+~A 1 "./src/buffer8biti.vhd" 14 arhbuffer8biti
+~E 1 "./src/buffer8biti.vhd" 38 simulare
+~A 1 "./src/buffer8biti.vhd" 41 arhsim

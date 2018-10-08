@@ -1,0 +1,46 @@
+entity Sumator is
+	port(A,B,CIN : in Bit;
+	COUT,S : out Bit);
+end entity;
+
+architecture A_Sumator of Sumator is
+begin
+S<=(A xor B) xor CIN ;
+COUT<=(A and CIN) or (B and CIN) or ( A and B);
+end architecture;		 
+
+entity MS_Sum is
+end entity;
+
+architecture A_MS_Sumator of MS_Sum is
+component Sumator is
+	port (A,B,CIN: in Bit;
+	COUT,S : out Bit);
+end component;			
+signal a,b,cin,s,cout : Bit;
+begin		  
+U1: Sumator port map (a,b,cin,cout,s);
+a <= '0','1' after 100 ns;
+	b <= '0','1' after 50 ns,'0' after 100 ns,'1' after 150 ns;
+	PROCES: process
+	begin
+	cin <= '0';
+	wait for 25 ns;
+	cin <= '1';
+	wait for 25 ns;
+	cin <= '0';
+	wait for 25 ns;
+	cin <= '1';
+	wait for 25 ns;
+	cin <= '0';
+	wait for 25 ns;
+	cin <= '1';
+	wait for 25 ns;
+	cin <= '0';
+	wait for 25 ns;
+	cin <= '1';
+	wait for 25 ns;
+	wait;
+end process PROCES;
+
+end architecture;

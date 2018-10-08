@@ -1,0 +1,34 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=buffer8biti
+
+[Library]
+buffer8biti=.\buffer8biti.LIB
+
+[$LibMap$]
+buffer8biti=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[Files]
+/buffer8biti.vhd=-1
+
+[Files.Data]
+.\src\buffer8biti.vhd=VHDL Source Code
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=simulare|arhsim|0    
+ShowHide=ShowTopLevel
+Selected=

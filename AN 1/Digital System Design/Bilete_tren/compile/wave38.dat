@@ -1,0 +1,52 @@
+$WAVE4TIMED
+$RESOLUTION 1000
+I 1 "a#28#std_logic_vector(6 downto 0)1 ricd6 0 e#9#std_logicc9 UX01ZWLH-"
+I 2 "e#9#std_logicc9 UX01ZWLH-"
+$BUS IN 29 1 7 SW
+$SC 1-25/4
+$IN +5 2 BTN1
+$IN +4 2 BTN2
+$IN +4 2 CLK_50H
+$OUT +4 2 SUMA_PREA_MICA
+$OUT +4 2 ELIBERARE_BILET
+$OUT +4 2 IMPOSIBILITATE_REST
+$OUT +4 2 LIPSA_BILETE
+I 3 "a#28#std_logic_vector(8 downto 0)1 ricd8 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS OUT 94 3 9 REST
+$SC 58-90/4
+$BUS S +41 3 9 pret
+$SC 95-+32/4
+$BUS S +41 3 9 distanta
+$SC 132-+32/4
+$BUS S +41 3 9 scaderer
+$SC 169-+32/4
+$S +5 2 rest_posib
+$S +4 2 5 0 exact
+$S +4 2 6 1 libera
+$S +4 2 reset_suma_curenta
+$S +4 2 elib_bilet_timer
+$S +4 2 suma_nenula
+$S +4 2 eliberare_temp
+$S +4 2 suma_prea_mare
+$S +4 2 5 0 exacta
+$S +4 2 adunare_moneda
+$BUS S +40 3 9 rest_temp
+$SC 246-+32/4
+$BUS S +41 3 9 diferenta_bani
+$SC 283-+32/4
+$BUS S +41 3 9 nr_monezi
+$SC 320-+32/4
+$BUS S +41 3 9 bilete_ramase
+$SC 357-+32/4
+I 4 "a#28#std_logic_vector(2 downto 0)1 ricd2 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +17 4 3 selectie_bani
+$SC 394-+8/4
+$BUS S +41 3 9 suma_temp
+$SC 407-+32/4
+$BUS S +41 3 9 5 0 curenta
+$SC 444-+32/4
+$BUS S +41 3 9 bani
+$SC 481-+32/4
+$IN +5 2 RESET
+$IN +0 0 5 0 ""
+$ENDWAVE

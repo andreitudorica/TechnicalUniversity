@@ -1,0 +1,709 @@
+V 000036 40 1345 1024578109622 and2
+SYMB0100
+
+HEADER
+{
+ FREEID 10
+ VARIABLES
+ {
+  #DESCRIPTION=""
+  #HDL_ENTRIES=
+"library VL;\n"+
+"use VL.VERILOG_LOGIC;"
+  #LANGUAGE="VERILOG"
+  #MODIFIED="1024578109"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (0,-20,160,140)
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (20,0,140,120)
+  }
+  PIN  2, 0, 0
+  {
+   COORD (0,40)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="A0"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,30,51,54)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 2
+  }
+  PIN  4, 0, 0
+  {
+   COORD (160,40)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #NAME="Y"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (121,30,135,54)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 4
+  }
+  PIN  6, 0, 0
+  {
+   COORD (0,80)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="A1"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  7, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,70,51,94)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 6
+  }
+ }
+ 
+}
+
+V 000038 40 2014 1024578104919 cnt_4b
+SYMB0100
+
+HEADER
+{
+ FREEID 14
+ VARIABLES
+ {
+  #DESCRIPTION=""
+  #HDL_ENTRIES=
+"library VL;\n"+
+"use VL.VERILOG_LOGIC;"
+  #LANGUAGE="VERILOG"
+  #MODIFIED="1024578104"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (0,-20,200,180)
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (20,0,180,160)
+  }
+  PIN  2, 0, 0
+  {
+   COORD (0,40)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="CLK"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,30,65,54)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 2
+  }
+  PIN  4, 0, 0
+  {
+   COORD (200,40)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #NAME="FULL"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (126,30,175,54)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 4
+  }
+  PIN  6, 0, 0
+  {
+   COORD (0,80)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="ENABLE"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  7, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,70,103,94)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 6
+  }
+  PIN  8, 0, 0
+  {
+   COORD (200,80)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="Q(3:0)"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  TEXT  9, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (119,70,175,94)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 8
+  }
+  PIN  10, 0, 0
+  {
+   COORD (0,120)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="RESET"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  11, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,110,92,134)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 10
+  }
+ }
+ 
+}
+
+V 000039 40 2700 1024578140182 cnt_bcd
+SYMB0100
+HEADER
+{
+ VARIABLES
+ {
+  #DESCRIPTION=""
+  #HDL_ENTRIES=
+"library VL;\n"+
+"use VL.VERILOG_LOGIC;"
+  #LANGUAGE="VERILOG"
+  #MODIFIED="1024578140"
+ }
+}
+PAGE "" 
+{
+ PAGEHEADER
+ {
+  RECT (0,-20,240,220)
+  FREEID 17
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (20,0,220,200)
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,30,65,54)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 2
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (109,30,215,54)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 4
+  }
+  TEXT  7, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,70,80,94)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 6
+  }
+  TEXT  9, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (109,70,215,94)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 8
+  }
+  TEXT  11, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,110,92,134)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 10
+  }
+  TEXT  13, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (108,110,215,134)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 12
+  }
+  TEXT  15, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (108,150,215,174)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 14
+  }
+  PIN  2, 0, 0
+  {
+   COORD (0,40)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="CLK"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  PIN  4, 0, 0
+  {
+   COORD (240,40)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="BCD_A(3:0)"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  PIN  6, 0, 0
+  {
+   COORD (0,80)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="GATE"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  PIN  8, 0, 0
+  {
+   COORD (240,80)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="BCD_B(3:0)"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  PIN  10, 0, 0
+  {
+   COORD (0,120)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="RESET"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  PIN  12, 0, 0
+  {
+   COORD (240,120)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="BCD_C(3:0)"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  PIN  14, 0, 0
+  {
+   COORD (240,160)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="BCD_D(3:0)"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+ }
+}
+V 000039 40 2434 1024578164351 control
+SYMB0100
+HEADER
+{
+ VARIABLES
+ {
+  #DESCRIPTION=""
+  #FUB="1"
+  #LANGUAGE="VERILOG"
+  #MODIFIED="958998299"
+ }
+}
+PAGE "" 
+{
+ PAGEHEADER
+ {
+  RECT (0,0,300,200)
+  FREEID 60
+ }
+ 
+ BODY
+ {
+  TEXT  15, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (14,8,129,32)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 14
+  }
+  TEXT  27, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (14,88,80,112)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 26
+  }
+  TEXT  33, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (14,168,81,192)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 32
+  }
+  TEXT  50, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (220,80,275,104)
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 40
+   FONT (8,0,0,400,0,1,0,"Arial")
+  }
+  TEXT  54, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (160,120,278,144)
+   MARGINS (1,1)
+   COLOR (0,0,192)
+   PARENT 45
+   FONT (8,0,0,400,0,1,0,"Arial")
+  }
+  RECT  59, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (0,0,300,200)
+  }
+  PIN  14, 0, 0
+  {
+   COORD (0,20)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #MODIFIED="1"
+    #NAME="F_PATTERN"
+    #NUMBER="0"
+    #SIDE="left"
+    #VERILOG_TYPE="wire"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,-10), (0,10), (10,0), (0,-10) )
+   }
+  }
+  PIN  26, 0, 0
+  {
+   COORD (0,100)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #MODIFIED="1"
+    #NAME="START"
+    #NUMBER="0"
+    #SIDE="left"
+    #VERILOG_TYPE="wire"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,-10), (0,10), (10,0), (0,-10) )
+   }
+  }
+  PIN  32, 0, 0
+  {
+   COORD (0,180)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #MODIFIED="1"
+    #NAME="RESET"
+    #NUMBER="0"
+    #SIDE="left"
+    #VERILOG_TYPE="wire"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,-10), (0,10), (10,0), (0,-10) )
+   }
+  }
+  PIN  40, 0, 0
+  {
+   COORD (300,80)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LABEL="Out"
+    #MODIFIED="1"
+    #NAME="GATE"
+    #NUMBER="1"
+    #SIDE="right"
+    #VERILOG_TYPE="reg"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (-10,10), (-10,-10), (0,0) )
+   }
+  }
+  PIN  45, 0, 0
+  {
+   COORD (300,120)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LABEL="Out"
+    #MODIFIED="1"
+    #NAME="END_RESET"
+    #NUMBER="2"
+    #SIDE="right"
+    #VERILOG_TYPE="reg"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (-10,10), (-10,-10), (0,0) )
+   }
+  }
+ }
+}
+V 000039 40 1067 1024578140900 hex2led
+SYMB0100
+HEADER
+{
+ VARIABLES
+ {
+  #DESCRIPTION=""
+  #HDL_ENTRIES=
+"library VL;\n"+
+"use VL.VERILOG_LOGIC;"
+  #LANGUAGE="VERILOG"
+  #MODIFIED="958998300"
+ }
+}
+PAGE "" 
+{
+ PAGEHEADER
+ {
+  RECT (0,-20,220,100)
+  FREEID 6
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (20,0,200,80)
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,30,105,54)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 2
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (116,30,195,54)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 4
+  }
+  PIN  2, 0, 0
+  {
+   COORD (0,40)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="HEX(3:0)"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  PIN  4, 0, 0
+  {
+   COORD (220,40)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="LED(6:0)"
+    #NUMBER="0"
+    #VERILOG_TYPE="reg"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+ }
+}

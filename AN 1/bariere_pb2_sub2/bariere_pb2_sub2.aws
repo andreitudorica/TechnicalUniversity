@@ -1,0 +1,14 @@
+[Version]
+Version=6.3
+[Designs]
+bariere_pb2_sub2=bariere_pb2_sub2.adf
+[Settings]
+Active=bariere_pb2_sub2
+[Expand]
+bariere_pb2_sub2=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

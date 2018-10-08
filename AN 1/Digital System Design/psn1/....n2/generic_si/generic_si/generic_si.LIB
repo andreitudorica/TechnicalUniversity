@@ -1,0 +1,17 @@
+timestamp=1304518029698
+
+[poarta_si]
+M=11|0|v38|1304518029696|./src/generic_si.vhd|0*1229*0xacdd299f89fe7094487aeca5da1b915c672d4f7b|0*1489*0xab87650576a395126dc296abb9b0e065
+R=./src/generic_si.vhd|28
+V=0*524
+
+[~A]
+ModifyID=2
+Version=73
+
+[~MFT]
+0=4|0generic_si.mgf|1489|0
+
+[~U]
+poarta_si=11|0*0|0*174
+

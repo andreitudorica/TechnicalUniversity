@@ -1,0 +1,5 @@
+96
+~E 1 "./src/sim_num.vhd" 6 sim_num
+~A 1 "./src/sim_num.vhd" 13 arhsim_num
+~E 1 "./src/sim_num.vhd" 36 simulare
+~A 1 "./src/sim_num.vhd" 39 arhsim

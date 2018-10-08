@@ -1,0 +1,34 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=flux
+
+[Library]
+flux=.\flux.LIB
+
+[$LibMap$]
+flux=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[Files]
+/flux.vhd=-1
+
+[Files.Data]
+.\src\flux.vhd=VHDL Source Code
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=si|flux|0 
+ShowHide=ShowTopLevel
+Selected=

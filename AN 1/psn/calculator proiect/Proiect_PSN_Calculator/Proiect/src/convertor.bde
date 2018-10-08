@@ -1,0 +1,197 @@
+SCHM0103
+
+HEADER
+{
+ FREEID 17
+ VARIABLES
+ {
+  #ARCHITECTURE="arch_convertor"
+  #BLOCKTABLE_FILE="#HDL2DIAGRAM.bde"
+  #ENTITY="convertor"
+  #LANGUAGE="VHDL"
+  AUTHOR="Microsoft"
+  COMPANY="Microsoft"
+  CREATIONDATE="5/23/2011"
+  SOURCE=".\\src\\zecimal_BCD.vhd"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+ }
+ 
+ BODY
+ {
+  VHDLDESIGNUNITHDR  1, 0, 0
+  {
+   LABEL "Design Unit Header"
+   TEXT 
+"library ieee;\n"+
+"        use ieee.std_logic_1164.all;\n"+
+"        use ieee.std_logic_arith.all;\n"+
+"        use ieee.std_logic_unsigned.all;"
+   RECT (220,260,620,505)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  PROCESS  2, 0, 0
+  {
+   LABEL "process_13"
+   TEXT 
+"process (nr_binar)\n"+
+"                         variable p_nr_binar : STD_LOGIC_VECTOR(15 downto 0);\n"+
+"                         variable p_nr_BCD : STD_LOGIC_VECTOR(15 downto 0);\n"+
+"                       begin\n"+
+"                         if nr_binar(13 downto 0) > \"10011100001111\" then\n"+
+"                            nr_BCD <= (others => '1');\n"+
+"                         else \n"+
+"                            p_nr_BCD := \"0000000000000000\";\n"+
+"                            p_nr_binar := nr_binar;\n"+
+"                            for i in 0 to 13 loop\n"+
+"                                if p_nr_BCD(3 downto 0) > \"0100\" then\n"+
+"                                   p_nr_BCD := p_nr_BCD + \"0000000000000011\";\n"+
+"                                end if;\n"+
+"                                if p_nr_BCD(7 downto 4) > \"0100\" then\n"+
+"                                   p_nr_BCD := p_nr_BCD + \"0000000000110000\";\n"+
+"                                end if;\n"+
+"                                if p_nr_BCD(11 downto 8) > \"0100\" then\n"+
+"                                   p_nr_BCD := p_nr_BCD + \"0000001100000000\";\n"+
+"                                end if;\n"+
+"                                if p_nr_BCD(15 downto 12) > \"0100\" then\n"+
+"                                   p_nr_BCD := p_nr_BCD + \"0011000000000000\";\n"+
+"                                end if;\n"+
+"                                p_nr_BCD := p_nr_BCD(14 downto 0) & '0';\n"+
+"                                p_nr_BCD(0) := p_nr_binar(13);\n"+
+"                                p_nr_binar := p_nr_binar(14 downto 0) & '0';\n"+
+"                                nr_BCD <= p_nr_BCD;\n"+
+"                            end loop;\n"+
+"                         end if;\n"+
+"                       end process;\n"+
+"                      "
+   RECT (1060,240,1461,640)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWTEXT
+   VTX (  9, 13 )
+   VARIABLES
+   {
+    #UPDATE_SENS_LIST="0"
+   }
+   LIST (  13 )
+  }
+  INSTANCE  3, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusOutput"
+    #LIBRARY="#terminals"
+    #REFERENCE="nr_BCD(15:0)"
+    #SYMBOL="BusOutput"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (1560,260)
+   VERTEXES ( (2,10) )
+  }
+  INSTANCE  4, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #LIBRARY="#terminals"
+    #REFERENCE="nr_binar(15:0)"
+    #SYMBOL="BusInput"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (920,260)
+   VERTEXES ( (2,14) )
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1612,260,1612,260)
+   ALIGN 4
+   PARENT 3
+  }
+  TEXT  6, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (868,260,868,260)
+   ALIGN 6
+   PARENT 4
+  }
+  NET BUS  7, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="nr_BCD(15:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET BUS  8, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="nr_binar(15:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  VTX  9, 0, 0
+  {
+   COORD (1461,260)
+  }
+  VTX  10, 0, 0
+  {
+   COORD (1560,260)
+  }
+  BUS  11, 0, 0
+  {
+   NET 7
+   VTX 9, 10
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  12, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1510,260,1510,260)
+   ALIGN 9
+   PARENT 11
+  }
+  VTX  13, 0, 0
+  {
+   COORD (1060,260)
+  }
+  VTX  14, 0, 0
+  {
+   COORD (920,260)
+  }
+  BUS  15, 0, 0
+  {
+   NET 8
+   VTX 13, 14
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  16, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (990,260,990,260)
+   ALIGN 9
+   PARENT 15
+  }
+ }
+ 
+}
+

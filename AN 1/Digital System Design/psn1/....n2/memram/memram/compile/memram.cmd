@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\memram\library.cfg"  -j "c:\My_Designs\memram\memram\projlib.cfg"  -d "c:\My_Designs\memram\memram\compile\"  -work memram -dbg -e 100 -o "c:\My_Designs\memram\memram\src\memram.vhd" 

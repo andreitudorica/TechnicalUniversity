@@ -1,0 +1,1 @@
+-w -s "C:\My_Designs\sum_scaz\library.cfg"  -j "C:\My_Designs\sum_scaz\sum_scaz\projlib.cfg"  -d "C:\My_Designs\sum_scaz\sum_scaz\compile\"  -work sum_scaz -dbg -e 100 "C:\My_Designs\sum_scaz\sum_scaz\src\sum_scaz.vhd" 

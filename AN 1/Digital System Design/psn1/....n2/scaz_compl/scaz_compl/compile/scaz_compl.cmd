@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\scaz_compl\library.cfg"  -j "c:\My_Designs\scaz_compl\scaz_compl\projlib.cfg"  -d "c:\My_Designs\scaz_compl\scaz_compl\compile\"  -work scaz_compl -dbg -e 100 "c:\My_Designs\scaz_compl\scaz_compl\src\scaz_compl.vhd" 

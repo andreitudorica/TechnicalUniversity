@@ -1,0 +1,34 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=bcd_zec
+
+[Library]
+bcd_zec=.\bcd_zec.LIB
+
+[$LibMap$]
+bcd_zec=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[Files]
+/bcd_zec.vhd=-1
+
+[Files.Data]
+.\src\bcd_zec.vhd=VHDL Source Code
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=decodificator|arhitectura|0  
+ShowHide=ShowTopLevel
+Selected=

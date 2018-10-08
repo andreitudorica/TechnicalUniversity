@@ -1,0 +1,30 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom $DSN/src/main.vhd
+# Compile...
+# File: D:\Incercari\VHDL\lift3i\lif\src\main.vhd
+# Compile Entity "main"
+# Entity `main' has been skipped - no difference detected.
+# Compile Architecture "arh_main" of Entity "main"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+acom $DSN/src/main.vhd
+# Compile...
+# File: D:\Incercari\VHDL\lift3i\lif\src\main.vhd
+# Compile Entity "main"
+# Entity `main' has been skipped - no difference detected.
+# Compile Architecture "arh_main" of Entity "main"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom $DSN/src/main.vhd
+# Compile...
+# File: D:\Incercari\VHDL\lift3i\lif\src\main.vhd
+# Compile Entity "main"
+# Entity `main' has been skipped - no difference detected.
+# Compile Architecture "arh_main" of Entity "main"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom $DSN/src/main.vhd
+# Compile...
+# File: D:\Incercari\VHDL\lift3i\lif\src\main.vhd
+# Compile Entity "main"
+# Entity `main' has been skipped - no difference detected.
+# Compile Architecture "arh_main" of Entity "main"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]

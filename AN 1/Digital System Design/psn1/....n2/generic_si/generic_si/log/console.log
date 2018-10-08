@@ -1,0 +1,34 @@
+# Design: Design generic_si already active.
+# DESIGN: Default Design Language: VHDL
+# DESIGN: Default BDE Language: VHDL
+# DESIGN: Flow Manager: Not Defined
+acom -reorder -work generic_si $DSN/src/generic_si.vhd
+# Compile with File Reorder...
+# File: c:\My_Designs\generic_si\generic_si\src\generic_si.vhd
+# Error: COMP96_0016: generic_si.vhd : (28, 1): Design unit declaration expected.
+# Error: COMP96_0016: generic_si.vhd : (28, 10): Design unit declaration expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [s]
+acom -reorder -work generic_si $DSN/src/generic_si.vhd
+# Compile with File Reorder...
+# File: c:\My_Designs\generic_si\generic_si\src\generic_si.vhd
+# Compile Entity "poarta_si"
+# Error: COMP96_0016: generic_si.vhd : (35, 1): Design unit declaration expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [s]
+acom -work generic_si $DSN/src/generic_si.vhd
+# Compile...
+# File: c:\My_Designs\generic_si\generic_si\src\generic_si.vhd
+# Compile Entity "poarta_si"
+# Error: COMP96_0016: generic_si.vhd : (34, 1): Design unit declaration expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [s]
+acom -work generic_si $DSN/src/generic_si.vhd
+# Compile...
+# File: c:\My_Designs\generic_si\generic_si\src\generic_si.vhd
+# Error: COMP96_0016: generic_si.vhd : (34, 1): Design unit declaration expected.
+# Error: COMP96_0016: generic_si.vhd : (34, 10): Design unit declaration expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [s]
+acom -work generic_si $DSN/src/generic_si.vhd
+# Compile...
+# File: c:\My_Designs\generic_si\generic_si\src\generic_si.vhd
+# Compile Entity "poarta_si"
+# Error: COMP96_0016: generic_si.vhd : (34, 1): Design unit declaration expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [s]

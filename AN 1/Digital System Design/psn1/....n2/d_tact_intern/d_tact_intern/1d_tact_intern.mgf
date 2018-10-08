@@ -1,0 +1,30 @@
+V 000057 55 1304          1304778193892 arhd_tact_intern
+(_unit VHDL (d_tact_intern 0 28 (arhd_tact_intern 0 35 ))
+  (_version v38)
+  (_time 1304778193893 2011.05.07 17:23:13)
+  (_source (\./src/d_tact_intern.vhd\))
+  (_use (std(standard))(ieee(std_logic_1164)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304778162541)
+    (_use )
+  )
+  (_object
+    (_port (_internal m ~extSTD.STANDARD.BIT 0 29 (_entity (_in ))))
+    (_port (_internal d ~extSTD.STANDARD.BIT 0 29 (_entity (_in ))))
+    (_port (_internal q ~extSTD.STANDARD.BIT 0 30 (_entity (_out ))))
+    (_port (_internal nq ~extSTD.STANDARD.BIT 0 30 (_entity (_out ))))
+    (_signal (_internal s1 ~extSTD.STANDARD.BIT 0 36 (_architecture (_uni ))))
+    (_signal (_internal s2 ~extSTD.STANDARD.BIT 0 36 (_architecture (_uni ))))
+    (_signal (_internal clock ~extSTD.STANDARD.BIT 0 36 (_architecture (_uni ))))
+    (_process
+      (clk(_architecture 0 0 38 (_process (_wait_for)(_target(6)))))
+      (N1(_architecture 1 0 45 (_process (_simple)(_target(4))(_sensitivity(0)))))
+      (NAND1(_architecture 2 0 50 (_process (_simple)(_target(5))(_sensitivity(4)(6)))))
+      (D1(_architecture 3 0 55 (_process (_simple)(_target(3)(2))(_sensitivity(5))(_read(1)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+  (_model . arhd_tact_intern 4 -1
+  )
+)

@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\recunoastere\library.cfg"  -j "c:\My_Designs\recunoastere\recunoastere\projlib.cfg"  -d "c:\My_Designs\recunoastere\recunoastere\compile\"  -work recunoastere -dbg -e 100 "c:\My_Designs\recunoastere\recunoastere\src\recunoastere.vhd" 

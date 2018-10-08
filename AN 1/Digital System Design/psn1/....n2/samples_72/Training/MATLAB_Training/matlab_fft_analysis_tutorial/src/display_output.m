@@ -1,0 +1,13 @@
+figure('Position',pos2,'Name','Hardware FFT vs MATLAB FFT','NumberTitle','off');
+x = 1:512;
+%subplot('Position',[0.07,0.78,0.23,0.18]);
+subplot(2,1,1);
+plot(x,mag_in,x,mag_out);
+axis([0,512,-Inf,Inf]);
+title(windows1024(w).name);
+ylabel('Magnitude');
+%subplot('Position',[0.07,0.55,0.23,0.18]);
+subplot(2,1,2);
+plot(mag_err);
+axis([0,512,-Inf,Inf]);
+ylabel('Magnitude error');

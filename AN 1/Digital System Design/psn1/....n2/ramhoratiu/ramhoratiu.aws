@@ -1,0 +1,12 @@
+[Version]
+Version=7.2
+[Designs]
+ramhoratiu=.\ramhoratiu\ramhoratiu.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+ramhoratiu=1

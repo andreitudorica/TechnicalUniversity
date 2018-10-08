@@ -1,0 +1,27 @@
+[AND2]
+A/AND2=22|./src/functional/and2.v|1|
+P/~emb=129,324,438,489
+S/and2=S/AND2 40|0|2*0
+
+[CNT_4b]
+A/CNT_4b=22|./src/FUNCTIONAL/CNT_4b.v|1|
+P/~emb=213,465,664,715
+S/cnt_4b=S/CNT_4b 40|0|2*1381
+
+[CNT_BCD]
+A/CNT_BCD=24|.\src\FUNCTIONAL\CNT_BCD.bde|10000|
+P/~emb=123,484,616,667
+
+[~A]
+ModifyID=72
+Version=73
+
+[~MFT]
+0=0|0FRQ_METER_1.mgf|1632|0
+2=0|2FRQ_METER_1.mgf|1381|0
+
+[~U]
+AND2=12|0*0||147
+CNT_4b=12|0*624||147
+CNT_BCD=12|0*1632||144
+

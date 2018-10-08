@@ -1,0 +1,4 @@
+MESSAGE "File: c:\My_Designs\RAM16X16\RAM16x16\src\sapte.vhd" 
+MESSAGE "Compile Entity "sapte"" 
+MESSAGE "Compile Architecture "arhitectura_sapte" of Entity "sapte"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]" 

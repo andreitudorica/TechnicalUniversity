@@ -1,0 +1,13 @@
+# Design Explorer: Shortcut to "D:\School\PSN\calculator proiect\Proiect_PSN_Calculator\Proiect_PSN_Calculator.aws" design added.
+acom -work proiect $DSN/src/calculator.vhd $DSN/src/alu.vhd $DSN/src/div_frec.vhd $DSN/src/zecimal_bcd.vhd $DSN/src/memory.vhd $DSN/src/afisoare.vhd $DSN/src/pachet_divide.vhd
+# Compile...
+# File: D:\School\PSN\calculator proiect\Proiect_PSN_Calculator\Proiect\src\calculator.vhd
+# Compile Entity "Calculator"
+# Compile Architecture "Arh_Calc" of Entity "Calculator"
+# Warning: ELAB1_0026: calculator.vhd : (46, 0): There is no default binding for component "Reg_mem".(No entity named "Reg_mem" was found).
+# Warning: ELAB1_0026: calculator.vhd : (47, 0): There is no default binding for component "ALU".(No entity named "ALU" was found).
+# Warning: ELAB1_0026: calculator.vhd : (49, 0): There is no default binding for component "afisoare".(No entity named "afisoare" was found).
+# File: D:\School\PSN\calculator proiect\Proiect_PSN_Calculator\Proiect\src\alu.vhd
+# Compile Entity "ALU"
+# Error: VLM_0001: Unit `pachet_divide' has incompatible library format.
+# Compile failure 1 Errors 3 Warnings  Analysis time :  0.4 [s]

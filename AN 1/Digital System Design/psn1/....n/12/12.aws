@@ -1,0 +1,12 @@
+[Version]
+Version=7.2
+[Designs]
+a12=.\a12\a12.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+a12=1

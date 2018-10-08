@@ -1,0 +1,7 @@
+31
+~E 1 "./src/or_gate.vhd" 28 or_gate
+~A 1 "./src/or_gate.vhd" 35 or_gate
+~E 1 "./src/bariere.vhd" 28 bariere
+~A 1 "./src/bariere.vhd" 35 arh_bariere
+~E 1 "./src/cale_ferata.vhd" 28 senzori
+~A 1 "./src/cale_ferata.vhd" 35 arh_senzori

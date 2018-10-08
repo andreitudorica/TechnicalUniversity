@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\Colocviu\Modul_de_Simulare\library.cfg"  -j "c:\My_Designs\Colocviu\Modul_de_Simulare\Modul_de_Simulare\projlib.cfg"  -d "c:\My_Designs\Colocviu\Modul_de_Simulare\Modul_de_Simulare\compile\"  -work Modul_de_Simulare -dbg -e 100 "c:\My_Designs\Colocviu\Modul_de_Simulare\Modul_de_Simulare\src\exemplu.vhd" 

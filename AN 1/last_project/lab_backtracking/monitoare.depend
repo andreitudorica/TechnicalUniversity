@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1462873257 source:c:\maha\monitoare\main.c
+	<stdio.h>
+	<stdlib.h>
+

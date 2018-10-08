@@ -1,0 +1,20 @@
+elbread.dll ver. 1.0.5.375 Fri May 13 14:38:06 2011
+
+
+--------------------------------------------------
+Entity   | Architecture | Library               
+--------------------------------------------------
+pseudo   | arh_str      | secventa_pseudoaleatoare
+clock    | clk_clk      | secventa_pseudoaleatoare
+shifter  | arh_shift    | secventa_pseudoaleatoare
+--------------------------------------------------
+
+-----------------------------
+Package             | Library
+-----------------------------
+standard            | std
+textio              | std
+std_logic_1164      | ieee
+std_logic_arith     | ieee
+std_logic_unsigned  | ieee
+-----------------------------

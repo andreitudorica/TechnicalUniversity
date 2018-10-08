@@ -1,0 +1,16 @@
+elbread.dll ver. 1.0.5.375 Tue May 17 02:27:53 2011
+
+
+--------------------------------------------------
+Entity   | Architecture        | Library        
+--------------------------------------------------
+exemplu  | arhitectura_exemplu | Modul_de_Simulare
+si       | arhitectura_si      | modul_de_simulare
+--------------------------------------------------
+
+-------------------------
+Package         | Library
+-------------------------
+standard        | std
+std_logic_1164  | ieee
+-------------------------

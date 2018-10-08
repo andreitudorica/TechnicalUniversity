@@ -1,0 +1,11 @@
+217
+~E 1 "./src/subiect 30.vhd" 3 demux41
+~A 1 "./src/subiect 30.vhd" 9 demux
+~E 1 "./src/subiect28.vhd" 2 com1bit
+~A 1 "./src/subiect28.vhd" 7 a1
+~E 1 "./src/subiect29.vhd" 3 mux41
+~A 1 "./src/subiect29.vhd" 9 mux
+~E 1 "./src/subiect29.vhd" 19 simulare
+~A 1 "./src/subiect 30.vhd" 24 simudm
+~A 1 "./src/subiect29.vhd" 21 simu
+~A 1 "./src/subiect29.vhd" 24 simum

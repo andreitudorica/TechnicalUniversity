@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1461058315 source:c:\maha\greedy_\main.c
+	<stdio.h>
+	<stdlib.h>
+

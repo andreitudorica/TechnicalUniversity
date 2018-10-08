@@ -1,0 +1,6 @@
+MESSAGE "File: c:\My_Designs\comport\comport\src\comport.vhd" 
+MESSAGE "Compile Entity "porti_si"" 
+MESSAGE "Compile Architecture "comport" of Entity "porti_si"" 
+MESSAGE "Top-level unit(s) detected:" 
+MESSAGE "Entity  =>   porti_si" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 

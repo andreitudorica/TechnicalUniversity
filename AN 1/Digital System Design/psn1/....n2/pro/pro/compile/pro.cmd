@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\pro\library.cfg"  -j "c:\My_Designs\pro\pro\projlib.cfg"  -d "c:\My_Designs\pro\pro\compile\"  -work pro -dbg -e 100 -o "c:\My_Designs\pro\pro\src\pro.vhd" 

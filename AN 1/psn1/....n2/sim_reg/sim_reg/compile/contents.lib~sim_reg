@@ -1,0 +1,5 @@
+105
+~E 1 "./src/sim_reg.vhd" 6 sim_reg
+~A 1 "./src/sim_reg.vhd" 14 arhsim_reg
+~E 1 "./src/sim_reg.vhd" 42 simulare
+~A 1 "./src/sim_reg.vhd" 45 arh_sim

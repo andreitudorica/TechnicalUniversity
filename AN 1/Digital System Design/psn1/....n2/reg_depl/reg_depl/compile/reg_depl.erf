@@ -1,0 +1,4 @@
+MESSAGE "File: c:\My_Designs\reg_depl\reg_depl\src\reg_depl.vhd" 
+MESSAGE "Compile Entity "reg_depl"" 
+MESSAGE "Compile Architecture "arhreg_depl" of Entity "reg_depl"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]" 

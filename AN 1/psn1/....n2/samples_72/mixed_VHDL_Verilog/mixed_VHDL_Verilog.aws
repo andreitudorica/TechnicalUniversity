@@ -1,0 +1,14 @@
+[Version]
+Version=7.2
+[Designs]
+mixed_VHDL_Verilog=.\mixed_VHDL_Verilog.adf
+[Settings]
+Active=mixed_VHDL_Verilog
+[Expand]
+mixed_vhdl_verilog=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

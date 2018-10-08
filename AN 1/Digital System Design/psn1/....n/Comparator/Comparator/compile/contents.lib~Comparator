@@ -1,0 +1,9 @@
+29
+~E 1 "./src/patru.vhd" 28 patru
+~A 1 "./src/patru.vhd" 37 arhitectura_patru
+~E 1 "./src/inversor.vhd" 28 inversor
+~A 1 "./src/inversor.vhd" 37 arhitectura_inversor
+~E 1 "./src/sau.vhd" 28 sau
+~A 1 "./src/sau.vhd" 36 sau
+~E 1 "./src/si.vhd" 28 si
+~A 1 "./src/si.vhd" 36 si

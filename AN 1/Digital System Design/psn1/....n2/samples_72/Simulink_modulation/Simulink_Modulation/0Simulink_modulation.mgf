@@ -1,0 +1,43 @@
+V 000044 11 460 1172132513813 fir_32tap_8_8
+E FIR_32tap_8_8 VHDL
+L SIMULINK_MODULATION;IEEE;
+U Simulink_modulation.maths_class;ieee.std_logic_1164;
+G coeff01 single = 0.0
+G coeff02 single = 0.0
+G coeff03 single = 0.0
+G coeff04 single = 0.0
+G coeff05 single = 0.0
+G coeff06 single = 0.0
+G coeff07 single = 0.0
+G coeff08 single = 0.0
+G coeff09 single = 0.0
+G coeff10 single = 0.0
+P a _in std_ulogic_vector[7:0]
+P clock _in std_ulogic
+P reset _in std_ulogic
+P y _out std_ulogic_vector[20:0]
+X FIR_32tap_8_8
+V 000036 11 119 1172132513299 m_abs
+E m_abs VHDL
+L IEEE;
+U ieee.std_logic_1164;
+P In1 _in std_logic_vector[30:0]
+P Out1 _out std_logic_vector[7:0]
+X m_abs
+V 000035 11 117 1172132513563 sign
+E sign VHDL
+L IEEE;
+U ieee.std_logic_1164;
+P In1 _in std_logic_vector[30:0]
+P Out1 _out std_logic_vector[7:0]
+X sign
+V 000046 11 228 1172132514638 top_demodulator
+E top_demodulator VHDL
+L IEEE;
+U ieee.std_logic_1164;
+P clk _in std_ulogic
+P reset _in std_ulogic
+P In1 _in std_logic_vector[30:0]
+P carrier _out std_ulogic_vector[20:0]
+P envelope _out std_ulogic_vector[20:0]
+X top_demodulator

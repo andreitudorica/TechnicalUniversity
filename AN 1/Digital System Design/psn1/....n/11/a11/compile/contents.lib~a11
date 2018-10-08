@@ -1,0 +1,5 @@
+84
+~E 1 "./src/2_biti.vhd" 30 \2_biti\
+~A 1 "./src/2_biti.vhd" 40 arhitectura_2_biti
+~E 1 "./src/a11.vhd" 28 a11
+~A 1 "./src/a11.vhd" 37 arhitectura_a11

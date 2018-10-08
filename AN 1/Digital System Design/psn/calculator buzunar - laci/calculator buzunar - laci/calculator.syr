@@ -1,0 +1,933 @@
+Release 13.1 - xst O.40d (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Reading design: calculator.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "calculator.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "calculator"
+Output Format                      : NGC
+Target Device                      : xc3s250e-4-cp132
+
+---- Source Options
+Top Module Name                    : calculator
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/project_Laci/calculator.vhd" in Library work.
+Entity <calculator> compiled.
+Entity <calculator> (Architecture <calc>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <calculator> in library <work> (architecture <calc>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <calculator> in library <work> (Architecture <calc>).
+INFO:Xst:1739 - HDL ADVISOR - "D:/project_Laci/calculator.vhd" line 11: declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output.
+WARNING:Xst:819 - "D:/project_Laci/calculator.vhd" line 115: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <div1ms>
+WARNING:Xst:819 - "D:/project_Laci/calculator.vhd" line 246: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <egal>
+Entity <calculator> analyzed. Unit <calculator> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <calculator>.
+    Related source file is "D:/project_Laci/calculator.vhd".
+INFO:Xst:1608 - Relative priorities of control signals on register <clkafis> differ from those commonly found in the selected device family. This will result in additional logic around the register.
+WARNING:Xst:737 - Found 1-bit latch for signal <clkafis>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:643 - "D:/project_Laci/calculator.vhd" line 284: The result of a 32x6-bit multiplication is partially used. Only the 32 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "D:/project_Laci/calculator.vhd" line 302: The result of a 32x17-bit multiplication is partially used. Only the 32 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "D:/project_Laci/calculator.vhd" line 295: The result of a 32x32-bit multiplication is partially used. Only the 32 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 4-bit register for signal <anod>.
+    Found 7-bit register for signal <seg_out>.
+    Found 4-bit comparator greater for signal <bcd_11$cmp_gt0000> created at line 74.
+    Found 4-bit comparator greater for signal <bcd_11$cmp_gt0001> created at line 74.
+    Found 4-bit comparator greater for signal <bcd_11$cmp_gt0002> created at line 74.
+    Found 4-bit comparator greater for signal <bcd_11$cmp_gt0003> created at line 74.
+    Found 4-bit comparator greater for signal <bcd_11$cmp_gt0004> created at line 74.
+    Found 4-bit comparator greater for signal <bcd_11$cmp_gt0005> created at line 74.
+    Found 4-bit adder for signal <bcd_11_8$add0000> created at line 75.
+    Found 4-bit adder for signal <bcd_11_8$add0001> created at line 75.
+    Found 4-bit adder for signal <bcd_11_8$add0002> created at line 75.
+    Found 4-bit adder for signal <bcd_11_8$add0003> created at line 75.
+    Found 4-bit adder for signal <bcd_11_8$add0004> created at line 75.
+    Found 4-bit adder for signal <bcd_11_8$add0005> created at line 75.
+    Found 4-bit adder for signal <bcd_11_8$add0006> created at line 75.
+    Found 4-bit comparator greater for signal <bcd_12$cmp_gt0000> created at line 78.
+    Found 4-bit comparator greater for signal <bcd_12$cmp_gt0001> created at line 78.
+    Found 4-bit comparator greater for signal <bcd_12$cmp_gt0002> created at line 78.
+    Found 4-bit comparator greater for signal <bcd_12$cmp_gt0003> created at line 78.
+    Found 4-bit adder for signal <bcd_15_12$add0000> created at line 79.
+    Found 4-bit adder for signal <bcd_15_12$add0001> created at line 79.
+    Found 4-bit adder for signal <bcd_15_12$add0002> created at line 79.
+    Found 4-bit adder for signal <bcd_15_12$add0003> created at line 79.
+    Found 4-bit comparator greater for signal <bcd_2$cmp_gt0000> created at line 66.
+    Found 4-bit comparator greater for signal <bcd_2$cmp_gt0001> created at line 66.
+    Found 4-bit comparator greater for signal <bcd_2$cmp_gt0002> created at line 66.
+    Found 4-bit comparator greater for signal <bcd_2$cmp_gt0003> created at line 66.
+    Found 4-bit comparator greater for signal <bcd_2$cmp_gt0004> created at line 66.
+    Found 4-bit comparator greater for signal <bcd_2$cmp_gt0005> created at line 66.
+    Found 4-bit comparator greater for signal <bcd_2$cmp_gt0006> created at line 66.
+    Found 4-bit comparator greater for signal <bcd_2$cmp_gt0007> created at line 66.
+    Found 4-bit comparator greater for signal <bcd_2$cmp_gt0008> created at line 66.
+    Found 4-bit comparator greater for signal <bcd_2$cmp_gt0009> created at line 66.
+    Found 4-bit comparator greater for signal <bcd_2$cmp_gt0010> created at line 66.
+    Found 4-bit comparator greater for signal <bcd_2$cmp_gt0011> created at line 66.
+    Found 4-bit comparator greater for signal <bcd_2$cmp_gt0012> created at line 66.
+    Found 4-bit adder for signal <bcd_3_0$add0000> created at line 67.
+    Found 4-bit adder for signal <bcd_3_0$add0001> created at line 67.
+    Found 4-bit adder for signal <bcd_3_0$add0002> created at line 67.
+    Found 4-bit adder for signal <bcd_3_0$add0003> created at line 67.
+    Found 4-bit adder for signal <bcd_3_0$add0004> created at line 67.
+    Found 4-bit adder for signal <bcd_3_0$add0005> created at line 67.
+    Found 4-bit adder for signal <bcd_3_0$add0006> created at line 67.
+    Found 4-bit adder for signal <bcd_3_0$add0007> created at line 67.
+    Found 4-bit adder for signal <bcd_3_0$add0008> created at line 67.
+    Found 4-bit adder for signal <bcd_3_0$add0009> created at line 67.
+    Found 4-bit adder for signal <bcd_3_0$add0010> created at line 67.
+    Found 4-bit adder for signal <bcd_3_0$add0011> created at line 67.
+    Found 4-bit adder for signal <bcd_3_0$add0012> created at line 67.
+    Found 4-bit comparator greater for signal <bcd_4$cmp_gt0000> created at line 70.
+    Found 4-bit comparator greater for signal <bcd_4$cmp_gt0001> created at line 70.
+    Found 4-bit comparator greater for signal <bcd_4$cmp_gt0002> created at line 70.
+    Found 4-bit comparator greater for signal <bcd_4$cmp_gt0003> created at line 70.
+    Found 4-bit comparator greater for signal <bcd_4$cmp_gt0004> created at line 70.
+    Found 4-bit comparator greater for signal <bcd_4$cmp_gt0005> created at line 70.
+    Found 4-bit comparator greater for signal <bcd_4$cmp_gt0006> created at line 70.
+    Found 4-bit comparator greater for signal <bcd_4$cmp_gt0007> created at line 70.
+    Found 4-bit comparator greater for signal <bcd_4$cmp_gt0008> created at line 70.
+    Found 4-bit comparator greater for signal <bcd_4$cmp_gt0009> created at line 70.
+    Found 4-bit adder for signal <bcd_7_4$add0000> created at line 71.
+    Found 4-bit adder for signal <bcd_7_4$add0001> created at line 71.
+    Found 4-bit adder for signal <bcd_7_4$add0002> created at line 71.
+    Found 4-bit adder for signal <bcd_7_4$add0003> created at line 71.
+    Found 4-bit adder for signal <bcd_7_4$add0004> created at line 71.
+    Found 4-bit adder for signal <bcd_7_4$add0005> created at line 71.
+    Found 4-bit adder for signal <bcd_7_4$add0006> created at line 71.
+    Found 4-bit adder for signal <bcd_7_4$add0007> created at line 71.
+    Found 4-bit adder for signal <bcd_7_4$add0008> created at line 71.
+    Found 4-bit adder for signal <bcd_7_4$add0009> created at line 71.
+    Found 4-bit comparator greater for signal <bcd_8$cmp_gt0000> created at line 74.
+    Found 32-bit up counter for signal <c>.
+    Found 2-bit up counter for signal <count2>.
+    Found 32-bit up counter for signal <div1ms>.
+    Found 32-bit register for signal <hanyados>.
+    Found 32-bit register for signal <maradek>.
+    Found 32-bit adder for signal <maradek$addsub0000> created at line 302.
+    Found 32-bit comparator less for signal <maradek$cmp_lt0000> created at line 301.
+    Found 32x17-bit multiplier for signal <maradek$mult0001> created at line 302.
+    Found 32-bit addsub for signal <maradek$mux0000> created at line 301.
+    Found 17-bit adder for signal <p1$addsub0000> created at line 103.
+    Found 17-bit adder for signal <p1$addsub0001> created at line 103.
+    Found 17-bit adder for signal <p1$addsub0002> created at line 103.
+    Found 17-bit adder for signal <p1$addsub0003> created at line 103.
+    Found 17-bit adder for signal <p1$addsub0004> created at line 103.
+    Found 17-bit adder for signal <p1$addsub0005> created at line 103.
+    Found 17-bit adder for signal <p1$addsub0006> created at line 103.
+    Found 17-bit adder for signal <p1$addsub0007> created at line 103.
+    Found 17-bit adder for signal <p1$addsub0008> created at line 103.
+    Found 17-bit adder for signal <p1$addsub0009> created at line 103.
+    Found 17-bit adder for signal <p1$addsub0010> created at line 103.
+    Found 17-bit adder for signal <p1$addsub0011> created at line 103.
+    Found 17-bit adder for signal <p1$addsub0012> created at line 103.
+    Found 17-bit adder for signal <p1$addsub0013> created at line 103.
+    Found 17-bit adder for signal <p1$addsub0014> created at line 103.
+    Found 17-bit subtractor for signal <p1$sub0000> created at line 100.
+    Found 17-bit subtractor for signal <p1$sub0001> created at line 100.
+    Found 17-bit subtractor for signal <p1$sub0002> created at line 100.
+    Found 17-bit subtractor for signal <p1$sub0003> created at line 100.
+    Found 17-bit subtractor for signal <p1$sub0004> created at line 100.
+    Found 17-bit subtractor for signal <p1$sub0005> created at line 100.
+    Found 17-bit subtractor for signal <p1$sub0006> created at line 100.
+    Found 17-bit subtractor for signal <p1$sub0007> created at line 100.
+    Found 17-bit subtractor for signal <p1$sub0008> created at line 100.
+    Found 17-bit subtractor for signal <p1$sub0009> created at line 100.
+    Found 17-bit subtractor for signal <p1$sub0010> created at line 100.
+    Found 17-bit subtractor for signal <p1$sub0011> created at line 100.
+    Found 17-bit subtractor for signal <p1$sub0012> created at line 100.
+    Found 17-bit subtractor for signal <p1$sub0013> created at line 100.
+    Found 17-bit subtractor for signal <p1$sub0014> created at line 100.
+    Found 17-bit subtractor for signal <p1$sub0015> created at line 100.
+    Found 32-bit register for signal <rezult>.
+    Found 32x32-bit multiplier for signal <rezult$mult0000> created at line 295.
+    Found 32-bit 4-to-1 multiplexer for signal <rezult$mux0001> created at line 292.
+    Found 32-bit 4-to-1 multiplexer for signal <rezult$mux0002> created at line 292.
+    Found 32-bit addsub for signal <rezult$share0000> created at line 292.
+    Found 16-bit adder for signal <rezultat$addsub0000>.
+    Found 32-bit comparator greater for signal <rezultat$cmp_gt0000> created at line 259.
+    Found 32-bit comparator less for signal <rezultat$cmp_lt0000> created at line 248.
+    Found 32-bit register for signal <x>.
+    Found 32-bit adder for signal <x$addsub0000> created at line 284.
+    Found 32x6-bit multiplier for signal <x$mult0000> created at line 284.
+    Summary:
+	inferred   3 Counter(s).
+	inferred 139 D-type flip-flop(s).
+	inferred  70 Adder/Subtractor(s).
+	inferred   3 Multiplier(s).
+	inferred  37 Comparator(s).
+	inferred  64 Multiplexer(s).
+Unit <calculator> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 3
+ 32x17-bit multiplier                                  : 1
+ 32x32-bit multiplier                                  : 1
+ 32x6-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 70
+ 16-bit adder                                          : 1
+ 17-bit adder                                          : 15
+ 17-bit subtractor                                     : 16
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 2
+ 4-bit adder                                           : 34
+# Counters                                             : 2
+ 32-bit up counter                                     : 2
+# Registers                                            : 9
+ 1-bit register                                        : 4
+ 32-bit register                                       : 4
+ 7-bit register                                        : 1
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Comparators                                          : 37
+ 32-bit comparator greater                             : 1
+ 32-bit comparator less                                : 2
+ 4-bit comparator greater                              : 34
+# Multiplexers                                         : 2
+ 32-bit 4-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <hanyados_16> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hanyados_17> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hanyados_18> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hanyados_19> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hanyados_20> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hanyados_21> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hanyados_22> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hanyados_23> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hanyados_24> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hanyados_25> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hanyados_26> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hanyados_27> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hanyados_28> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hanyados_29> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hanyados_30> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hanyados_31> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <calculator>.
+	Found pipelined multiplier on signal <x_mult0000>:
+		- 1 pipeline level(s) found in a register on signal <x>.
+		Pushing register(s) into the multiplier macro.
+	Found pipelined multiplier on signal <maradek_mult0001>:
+		- 1 pipeline level(s) found in a register on signal <x>.
+		Pushing register(s) into the multiplier macro.
+	Found pipelined multiplier on signal <rezult_mult0000>:
+		- 1 pipeline level(s) found in a register on signal <rezult>.
+		Pushing register(s) into the multiplier macro.
+
+		- 1 pipeline level(s) found in a register on signal <x>.
+		Pushing register(s) into the multiplier macro.
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_x_mult0000 by adding 2 register level(s).
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_maradek_mult0001 by adding 2 register level(s).
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_rezult_mult0000 by adding 3 register level(s).
+Unit <calculator> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 3
+ 32x17-bit registered multiplier                       : 1
+ 32x32-bit registered multiplier                       : 1
+ 32x6-bit registered multiplier                        : 1
+# Adders/Subtractors                                   : 70
+ 15-bit adder                                          : 1
+ 16-bit adder                                          : 1
+ 16-bit subtractor                                     : 2
+ 17-bit adder                                          : 14
+ 17-bit subtractor                                     : 14
+ 3-bit adder                                           : 4
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 2
+ 4-bit adder                                           : 30
+# Counters                                             : 2
+ 32-bit up counter                                     : 2
+# Registers                                            : 139
+ Flip-Flops                                            : 139
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Comparators                                          : 37
+ 32-bit comparator greater                             : 1
+ 32-bit comparator less                                : 2
+ 4-bit comparator greater                              : 34
+# Multiplexers                                         : 2
+ 32-bit 4-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <hanyados_16> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hanyados_17> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hanyados_18> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hanyados_19> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hanyados_20> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hanyados_21> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hanyados_22> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hanyados_23> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hanyados_24> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hanyados_25> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hanyados_26> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hanyados_27> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hanyados_28> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hanyados_29> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hanyados_30> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hanyados_31> has a constant value of 0 in block <calculator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <Mmult_rezult_mult0000_submult_11> of sequential type is unconnected in block <calculator>.
+
+Optimizing unit <calculator> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block calculator, actual ratio is 38.
+FlipFlop x_0 has been replicated 1 time(s)
+FlipFlop x_1 has been replicated 1 time(s)
+FlipFlop x_10 has been replicated 1 time(s)
+FlipFlop x_11 has been replicated 1 time(s)
+FlipFlop x_12 has been replicated 1 time(s)
+FlipFlop x_13 has been replicated 1 time(s)
+FlipFlop x_14 has been replicated 1 time(s)
+FlipFlop x_2 has been replicated 1 time(s)
+FlipFlop x_3 has been replicated 1 time(s)
+FlipFlop x_4 has been replicated 1 time(s)
+FlipFlop x_5 has been replicated 1 time(s)
+FlipFlop x_6 has been replicated 1 time(s)
+FlipFlop x_7 has been replicated 1 time(s)
+FlipFlop x_8 has been replicated 1 time(s)
+FlipFlop x_9 has been replicated 1 time(s)
+Latch clkafis has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 202
+ Flip-Flops                                            : 202
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : calculator.ngr
+Top Level Output File Name         : calculator
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 24
+
+Cell Usage :
+# BELS                             : 3357
+#      GND                         : 1
+#      INV                         : 54
+#      LUT1                        : 93
+#      LUT2                        : 410
+#      LUT2_L                      : 4
+#      LUT3                        : 424
+#      LUT3_D                      : 6
+#      LUT3_L                      : 1
+#      LUT4                        : 814
+#      LUT4_D                      : 8
+#      LUT4_L                      : 34
+#      MUXCY                       : 751
+#      MUXF5                       : 22
+#      VCC                         : 1
+#      XORCY                       : 734
+# FlipFlops/Latches                : 204
+#      FDC                         : 32
+#      FDE                         : 48
+#      FDRE                        : 120
+#      FDSE                        : 2
+#      LDCP                        : 2
+# Clock Buffers                    : 3
+#      BUFG                        : 1
+#      BUFGP                       : 2
+# IO Buffers                       : 22
+#      IBUF                        : 10
+#      OBUF                        : 12
+# MULTs                            : 7
+#      MULT18X18SIO                : 7
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s250ecp132-4 
+
+ Number of Slices:                      974  out of   2448    39%  
+ Number of Slice Flip Flops:            203  out of   4896     4%  
+ Number of 4 input LUTs:               1848  out of   4896    37%  
+ Number of IOs:                          24
+ Number of bonded IOBs:                  24  out of     92    26%  
+    IOB Flip Flops:                       1
+ Number of MULT18X18SIOs:                 7  out of     12    58%  
+ Number of GCLKs:                         3  out of     24    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 166   |
+clkafis_OBUF                       | NONE(seg_out_0)        | 11    |
+reset                              | IBUF+BUFG              | 2     |
+clkprincipal                       | BUFGP                  | 32    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+------------------------------------------+------------------------+-------+
+Control Signal                            | Buffer(FF name)        | Load  |
+------------------------------------------+------------------------+-------+
+div1ms_or0000(div1ms_or00001:O)           | NONE(div1ms_0)         | 32    |
+clkafis_and0000(clkafis_and000032:O)      | NONE(clkafis)          | 2     |
+clkafis_cmp_eq0000(clkafis_cmp_eq000025:O)| NONE(clkafis)          | 2     |
+------------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 105.642ns (Maximum Frequency: 9.466MHz)
+   Minimum input arrival time before clock: 44.982ns
+   Maximum output required time after clock: 4.991ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 105.642ns (frequency: 9.466MHz)
+  Total number of paths / destination ports: 34770619884260804000000000000000000000 / 396
+-------------------------------------------------------------------------
+Delay:               105.642ns (Levels of Logic = 131)
+  Source:            rezult_0 (FF)
+  Destination:       Mmult_rezult_mult0000_submult_01 (MULT)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: rezult_0 to Mmult_rezult_mult0000_submult_01
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             6   0.591   0.844  rezult_0 (rezult_0)
+     LUT1:I0->O            1   0.704   0.000  Madd_rezultat_addsub0000_cy<0>_rt (Madd_rezultat_addsub0000_cy<0>_rt)
+     MUXCY:S->O            1   0.464   0.000  Madd_rezultat_addsub0000_cy<0> (Madd_rezultat_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_rezultat_addsub0000_cy<1> (Madd_rezultat_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_rezultat_addsub0000_cy<2> (Madd_rezultat_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_rezultat_addsub0000_cy<3> (Madd_rezultat_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_rezultat_addsub0000_cy<4> (Madd_rezultat_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_rezultat_addsub0000_cy<5> (Madd_rezultat_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_rezultat_addsub0000_cy<6> (Madd_rezultat_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_rezultat_addsub0000_cy<7> (Madd_rezultat_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_rezultat_addsub0000_cy<8> (Madd_rezultat_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_rezultat_addsub0000_cy<9> (Madd_rezultat_addsub0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_rezultat_addsub0000_cy<10> (Madd_rezultat_addsub0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_rezultat_addsub0000_cy<11> (Madd_rezultat_addsub0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_rezultat_addsub0000_cy<12> (Madd_rezultat_addsub0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_rezultat_addsub0000_cy<13> (Madd_rezultat_addsub0000_cy<13>)
+     MUXCY:CI->O           0   0.059   0.000  Madd_rezultat_addsub0000_cy<14> (Madd_rezultat_addsub0000_cy<14>)
+     XORCY:CI->O           1   0.804   0.455  Madd_rezultat_addsub0000_xor<15> (rezultat_addsub0000<15>)
+     LUT3:I2->O            2   0.704   0.526  rezultat_mux0000<15>1 (rezultat_mux0000<15>)
+     LUT2:I1->O            1   0.704   0.000  Msub_p1_sub0000_lut<0> (Msub_p1_sub0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Msub_p1_sub0000_cy<0> (Msub_p1_sub0000_cy<0>)
+     XORCY:CI->O           3   0.804   0.610  Msub_p1_sub0000_xor<1> (p1_sub0000<1>)
+     LUT2:I1->O            1   0.704   0.000  Madd_p1_addsub0000_lut<1> (Madd_p1_addsub0000_lut<1>)
+     MUXCY:S->O            1   0.464   0.000  Madd_p1_addsub0000_cy<1> (Madd_p1_addsub0000_cy<1>)
+     XORCY:CI->O           2   0.804   0.482  Madd_p1_addsub0000_xor<2> (p1_addsub0000<2>)
+     LUT3:I2->O            0   0.704   0.000  p1_mux0000<2>1 (p1_mux0000<2>)
+     MUXCY:DI->O           1   0.888   0.000  Msub_p1_sub0001_cy<3> (Msub_p1_sub0001_cy<3>)
+     XORCY:CI->O           3   0.804   0.610  Msub_p1_sub0001_xor<4> (p1_sub0001<4>)
+     LUT2:I1->O            1   0.704   0.000  Madd_p1_addsub0001_lut<4> (Madd_p1_addsub0001_lut<4>)
+     MUXCY:S->O            1   0.464   0.000  Madd_p1_addsub0001_cy<4> (Madd_p1_addsub0001_cy<4>)
+     XORCY:CI->O           2   0.804   0.482  Madd_p1_addsub0001_xor<5> (p1_addsub0001<5>)
+     LUT3:I2->O            0   0.704   0.000  p1_mux0001<5>1 (p1_mux0001<5>)
+     MUXCY:DI->O           1   0.888   0.000  Msub_p1_sub0002_cy<6> (Msub_p1_sub0002_cy<6>)
+     XORCY:CI->O           3   0.804   0.610  Msub_p1_sub0002_xor<7> (p1_sub0002<7>)
+     LUT2:I1->O            1   0.704   0.000  Madd_p1_addsub0002_lut<7> (Madd_p1_addsub0002_lut<7>)
+     MUXCY:S->O            1   0.464   0.000  Madd_p1_addsub0002_cy<7> (Madd_p1_addsub0002_cy<7>)
+     XORCY:CI->O           2   0.804   0.482  Madd_p1_addsub0002_xor<8> (p1_addsub0002<8>)
+     LUT3:I2->O            0   0.704   0.000  p1_mux0002<8>1 (p1_mux0002<8>)
+     MUXCY:DI->O           1   0.888   0.000  Msub_p1_sub0003_cy<9> (Msub_p1_sub0003_cy<9>)
+     XORCY:CI->O           3   0.804   0.610  Msub_p1_sub0003_xor<10> (p1_sub0003<10>)
+     LUT2:I1->O            1   0.704   0.000  Madd_p1_addsub0003_lut<10> (Madd_p1_addsub0003_lut<10>)
+     MUXCY:S->O            1   0.464   0.000  Madd_p1_addsub0003_cy<10> (Madd_p1_addsub0003_cy<10>)
+     XORCY:CI->O           2   0.804   0.482  Madd_p1_addsub0003_xor<11> (p1_addsub0003<11>)
+     LUT3:I2->O            0   0.704   0.000  p1_mux0003<11>1 (p1_mux0003<11>)
+     MUXCY:DI->O           1   0.888   0.000  Msub_p1_sub0004_cy<12> (Msub_p1_sub0004_cy<12>)
+     XORCY:CI->O           3   0.804   0.610  Msub_p1_sub0004_xor<13> (p1_sub0004<13>)
+     LUT2:I1->O            1   0.704   0.000  Madd_p1_addsub0004_lut<13> (Madd_p1_addsub0004_lut<13>)
+     XORCY:LI->O           2   0.527   0.482  Madd_p1_addsub0004_xor<13> (p1_addsub0004<13>)
+     LUT3:I2->O            0   0.704   0.000  p1_mux0004<13>1 (p1_mux0004<13>)
+     MUXCY:DI->O           0   0.888   0.000  Msub_p1_sub0005_cy<14> (Msub_p1_sub0005_cy<14>)
+     XORCY:CI->O          31   0.804   1.297  Msub_p1_sub0005_xor<15> (p1_sub0005<15>)
+     LUT3:I2->O            0   0.704   0.000  p1_mux0005<0>1 (p1_mux0005<0>)
+     MUXCY:DI->O           1   0.888   0.000  Msub_p1_sub0006_cy<1> (Msub_p1_sub0006_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Msub_p1_sub0006_cy<2> (Msub_p1_sub0006_cy<2>)
+     XORCY:CI->O           3   0.804   0.610  Msub_p1_sub0006_xor<3> (p1_sub0006<3>)
+     LUT2:I1->O            1   0.704   0.000  Madd_p1_addsub0007_lut<3> (Madd_p1_addsub0007_lut<3>)
+     MUXCY:S->O            1   0.464   0.000  Madd_p1_addsub0007_cy<3> (Madd_p1_addsub0007_cy<3>)
+     XORCY:CI->O           2   0.804   0.482  Madd_p1_addsub0007_xor<4> (p1_addsub0007<4>)
+     LUT3:I2->O            0   0.704   0.000  p1_mux0006<4>1 (p1_mux0006<4>)
+     MUXCY:DI->O           1   0.888   0.000  Msub_p1_sub0007_cy<5> (Msub_p1_sub0007_cy<5>)
+     XORCY:CI->O           3   0.804   0.610  Msub_p1_sub0007_xor<6> (p1_sub0007<6>)
+     LUT2:I1->O            1   0.704   0.000  Madd_p1_addsub0009_lut<6> (Madd_p1_addsub0009_lut<6>)
+     MUXCY:S->O            1   0.464   0.000  Madd_p1_addsub0009_cy<6> (Madd_p1_addsub0009_cy<6>)
+     XORCY:CI->O           2   0.804   0.482  Madd_p1_addsub0009_xor<7> (p1_addsub0009<7>)
+     LUT3:I2->O            0   0.704   0.000  p1_mux0007<7>1 (p1_mux0007<7>)
+     MUXCY:DI->O           1   0.888   0.000  Msub_p1_sub0008_cy<8> (Msub_p1_sub0008_cy<8>)
+     XORCY:CI->O           3   0.804   0.610  Msub_p1_sub0008_xor<9> (p1_sub0008<9>)
+     LUT2:I1->O            1   0.704   0.000  Madd_p1_addsub0011_lut<9> (Madd_p1_addsub0011_lut<9>)
+     MUXCY:S->O            1   0.464   0.000  Madd_p1_addsub0011_cy<9> (Madd_p1_addsub0011_cy<9>)
+     XORCY:CI->O           2   0.804   0.482  Madd_p1_addsub0011_xor<10> (p1_addsub0011<10>)
+     LUT3:I2->O            0   0.704   0.000  p1_mux0008<10>1 (p1_mux0008<10>)
+     MUXCY:DI->O           1   0.888   0.000  Msub_p1_sub0009_cy<11> (Msub_p1_sub0009_cy<11>)
+     XORCY:CI->O           3   0.804   0.610  Msub_p1_sub0009_xor<12> (p1_sub0009<12>)
+     LUT2:I1->O            1   0.704   0.000  Madd_p1_addsub0013_lut<12> (Madd_p1_addsub0013_lut<12>)
+     MUXCY:S->O            1   0.464   0.000  Madd_p1_addsub0013_cy<12> (Madd_p1_addsub0013_cy<12>)
+     XORCY:CI->O           2   0.804   0.482  Madd_p1_addsub0013_xor<13> (p1_addsub0013<13>)
+     LUT3:I2->O            0   0.704   0.000  p1_mux0009<13>1 (p1_mux0009<13>)
+     MUXCY:DI->O           0   0.888   0.000  Msub_p1_sub0010_cy<14> (Msub_p1_sub0010_cy<14>)
+     XORCY:CI->O          31   0.804   1.297  Msub_p1_sub0010_xor<15> (p1_sub0010<15>)
+     LUT3:I2->O            0   0.704   0.000  p1_mux0010<0>1 (p1_mux0010<0>)
+     MUXCY:DI->O           1   0.888   0.000  Msub_p1_sub0011_cy<1> (Msub_p1_sub0011_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Msub_p1_sub0011_cy<2> (Msub_p1_sub0011_cy<2>)
+     XORCY:CI->O           3   0.804   0.610  Msub_p1_sub0011_xor<3> (p1_sub0011<3>)
+     LUT2:I1->O            1   0.704   0.000  Madd_p1_addsub0008_lut<3> (Madd_p1_addsub0008_lut<3>)
+     MUXCY:S->O            1   0.464   0.000  Madd_p1_addsub0008_cy<3> (Madd_p1_addsub0008_cy<3>)
+     XORCY:CI->O           2   0.804   0.482  Madd_p1_addsub0008_xor<4> (p1_addsub0008<4>)
+     LUT3:I2->O            0   0.704   0.000  p1_mux0011<4>1 (p1_mux0011<4>)
+     MUXCY:DI->O           1   0.888   0.000  Msub_p1_sub0012_cy<5> (Msub_p1_sub0012_cy<5>)
+     XORCY:CI->O           3   0.804   0.610  Msub_p1_sub0012_xor<6> (p1_sub0012<6>)
+     LUT2:I1->O            1   0.704   0.000  Madd_p1_addsub0010_lut<6> (Madd_p1_addsub0010_lut<6>)
+     MUXCY:S->O            1   0.464   0.000  Madd_p1_addsub0010_cy<6> (Madd_p1_addsub0010_cy<6>)
+     XORCY:CI->O           2   0.804   0.482  Madd_p1_addsub0010_xor<7> (p1_addsub0010<7>)
+     LUT3:I2->O            0   0.704   0.000  p1_mux0012<7>1 (p1_mux0012<7>)
+     MUXCY:DI->O           1   0.888   0.000  Msub_p1_sub0013_cy<8> (Msub_p1_sub0013_cy<8>)
+     XORCY:CI->O           3   0.804   0.610  Msub_p1_sub0013_xor<9> (p1_sub0013<9>)
+     LUT2:I1->O            1   0.704   0.000  Madd_p1_addsub0012_lut<9> (Madd_p1_addsub0012_lut<9>)
+     MUXCY:S->O            1   0.464   0.000  Madd_p1_addsub0012_cy<9> (Madd_p1_addsub0012_cy<9>)
+     XORCY:CI->O           2   0.804   0.482  Madd_p1_addsub0012_xor<10> (p1_addsub0012<10>)
+     LUT3:I2->O            0   0.704   0.000  p1_mux0013<10>1 (p1_mux0013<10>)
+     MUXCY:DI->O           1   0.888   0.000  Msub_p1_sub0014_Madd_cy<11> (Msub_p1_sub0014_Madd_cy<11>)
+     XORCY:CI->O           3   0.804   0.610  Msub_p1_sub0014_Madd_xor<12> (p1_sub0014<12>)
+     LUT2:I1->O            1   0.704   0.000  Madd_p1_addsub0014_Madd_lut<12> (Madd_p1_addsub0014_Madd_lut<12>)
+     MUXCY:S->O            1   0.464   0.000  Madd_p1_addsub0014_Madd_cy<12> (Madd_p1_addsub0014_Madd_cy<12>)
+     XORCY:CI->O           2   0.804   0.482  Madd_p1_addsub0014_Madd_xor<13> (p1_addsub0014<13>)
+     LUT3:I2->O            0   0.704   0.000  p1_mux0014<13>1 (p1_mux0014<13>)
+     MUXCY:DI->O           0   0.888   0.000  Msub_p1_sub0015_Madd_cy<14> (Msub_p1_sub0015_Madd_cy<14>)
+     XORCY:CI->O           3   0.804   0.531  Msub_p1_sub0015_Madd_xor<15> (p1_sub0015<15>)
+     INV:I->O              2   0.704   0.447  a1_0_mux00151_INV_0 (a1_0_mux0015)
+     MULT18X18SIO:B0->P17    1   4.873   0.499  Mmult_maradek_mult0001 (Mmult_maradek_mult0001_P_to_Adder_A_17)
+     LUT2:I1->O            1   0.704   0.000  Mmult_maradek_mult00010_Madd_lut<17> (Mmult_maradek_mult00010_Madd_lut<17>)
+     MUXCY:S->O            1   0.464   0.000  Mmult_maradek_mult00010_Madd_cy<17> (Mmult_maradek_mult00010_Madd_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  Mmult_maradek_mult00010_Madd_cy<18> (Mmult_maradek_mult00010_Madd_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  Mmult_maradek_mult00010_Madd_cy<19> (Mmult_maradek_mult00010_Madd_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  Mmult_maradek_mult00010_Madd_cy<20> (Mmult_maradek_mult00010_Madd_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  Mmult_maradek_mult00010_Madd_cy<21> (Mmult_maradek_mult00010_Madd_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  Mmult_maradek_mult00010_Madd_cy<22> (Mmult_maradek_mult00010_Madd_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  Mmult_maradek_mult00010_Madd_cy<23> (Mmult_maradek_mult00010_Madd_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  Mmult_maradek_mult00010_Madd_cy<24> (Mmult_maradek_mult00010_Madd_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  Mmult_maradek_mult00010_Madd_cy<25> (Mmult_maradek_mult00010_Madd_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  Mmult_maradek_mult00010_Madd_cy<26> (Mmult_maradek_mult00010_Madd_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  Mmult_maradek_mult00010_Madd_cy<27> (Mmult_maradek_mult00010_Madd_cy<27>)
+     XORCY:CI->O           2   0.804   0.526  Mmult_maradek_mult00010_Madd_xor<28> (maradek_mult0001<28>)
+     LUT2:I1->O            1   0.704   0.000  Madd_maradek_addsub0000_lut<28> (Madd_maradek_addsub0000_lut<28>)
+     MUXCY:S->O            1   0.464   0.000  Madd_maradek_addsub0000_cy<28> (Madd_maradek_addsub0000_cy<28>)
+     XORCY:CI->O           2   0.804   0.482  Madd_maradek_addsub0000_xor<29> (maradek_addsub0000<29>)
+     LUT3:I2->O            0   0.704   0.000  maradek_mux0002<29>1 (maradek_mux0002<29>)
+     MUXCY:DI->O           1   0.888   0.000  Maddsub_maradek_mux0000_cy<29> (Maddsub_maradek_mux0000_cy<29>)
+     XORCY:CI->O           5   0.804   0.637  Maddsub_maradek_mux0000_xor<30> (maradek_mux0000<30>)
+     LUT4:I3->O            0   0.704   0.000  Mmux_rezult_mux0002331 (rezult_mux0002<30>)
+     MUXCY:DI->O           0   0.888   0.000  Maddsub_rezult_share0000_cy<30> (Maddsub_rezult_share0000_cy<30>)
+     XORCY:CI->O           1   0.804   0.424  Maddsub_rezult_share0000_xor<31> (rezult_share0000<31>)
+     LUT4:I3->O            5   0.704   0.633  Mmux_rezult_mux00015032 (rezult_mux0001<31>)
+     MULT18X18SIO:A14          0.223          Mmult_rezult_mult0000_submult_01
+    ----------------------------------------
+    Total                    105.642ns (82.848ns logic, 22.794ns route)
+                                       (78.4% logic, 21.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clkafis_OBUF'
+  Clock period: 8.489ns (frequency: 117.800MHz)
+  Total number of paths / destination ports: 109 / 22
+-------------------------------------------------------------------------
+Delay:               8.489ns (Levels of Logic = 8)
+  Source:            anod_0 (FF)
+  Destination:       seg_out_5 (FF)
+  Source Clock:      clkafis_OBUF rising
+  Destination Clock: clkafis_OBUF rising
+
+  Data Path: anod_0 to seg_out_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            21   0.591   1.163  anod_0 (anod_0)
+     LUT4:I2->O            1   0.704   0.000  seg_out_mux0001<1>4131 (seg_out_mux0001<1>4131)
+     MUXF5:I1->O           1   0.321   0.499  seg_out_mux0001<1>413_f5 (seg_out_mux0001<1>413)
+     LUT4:I1->O            1   0.704   0.455  seg_out_mux0001<1>4110 (seg_out_mux0001<1>4110)
+     LUT4:I2->O            3   0.704   0.535  seg_out_mux0001<1>4125 (N58)
+     LUT4:I3->O            1   0.704   0.000  seg_out_mux0001<1>291 (seg_out_mux0001<1>291)
+     MUXF5:I1->O           1   0.321   0.455  seg_out_mux0001<1>29_f5 (seg_out_mux0001<1>29)
+     LUT4:I2->O            1   0.704   0.000  seg_out_mux0001<1>196_F (N812)
+     MUXF5:I0->O           1   0.321   0.000  seg_out_mux0001<1>196 (seg_out_mux0001<1>)
+     FDRE:D                    0.308          seg_out_5
+    ----------------------------------------
+    Total                      8.489ns (5.382ns logic, 3.107ns route)
+                                       (63.4% logic, 36.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clkprincipal'
+  Clock period: 5.204ns (frequency: 192.160MHz)
+  Total number of paths / destination ports: 528 / 32
+-------------------------------------------------------------------------
+Delay:               5.204ns (Levels of Logic = 32)
+  Source:            div1ms_1 (FF)
+  Destination:       div1ms_31 (FF)
+  Source Clock:      clkprincipal rising
+  Destination Clock: clkprincipal rising
+
+  Data Path: div1ms_1 to div1ms_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.622  div1ms_1 (div1ms_1)
+     LUT1:I0->O            1   0.704   0.000  Mcount_div1ms_cy<1>_rt (Mcount_div1ms_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  Mcount_div1ms_cy<1> (Mcount_div1ms_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_div1ms_cy<2> (Mcount_div1ms_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_div1ms_cy<3> (Mcount_div1ms_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_div1ms_cy<4> (Mcount_div1ms_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_div1ms_cy<5> (Mcount_div1ms_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_div1ms_cy<6> (Mcount_div1ms_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_div1ms_cy<7> (Mcount_div1ms_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_div1ms_cy<8> (Mcount_div1ms_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_div1ms_cy<9> (Mcount_div1ms_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_div1ms_cy<10> (Mcount_div1ms_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_div1ms_cy<11> (Mcount_div1ms_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_div1ms_cy<12> (Mcount_div1ms_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_div1ms_cy<13> (Mcount_div1ms_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_div1ms_cy<14> (Mcount_div1ms_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_div1ms_cy<15> (Mcount_div1ms_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_div1ms_cy<16> (Mcount_div1ms_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_div1ms_cy<17> (Mcount_div1ms_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_div1ms_cy<18> (Mcount_div1ms_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_div1ms_cy<19> (Mcount_div1ms_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_div1ms_cy<20> (Mcount_div1ms_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_div1ms_cy<21> (Mcount_div1ms_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_div1ms_cy<22> (Mcount_div1ms_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_div1ms_cy<23> (Mcount_div1ms_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_div1ms_cy<24> (Mcount_div1ms_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_div1ms_cy<25> (Mcount_div1ms_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_div1ms_cy<26> (Mcount_div1ms_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_div1ms_cy<27> (Mcount_div1ms_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_div1ms_cy<28> (Mcount_div1ms_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_div1ms_cy<29> (Mcount_div1ms_cy<29>)
+     MUXCY:CI->O           0   0.059   0.000  Mcount_div1ms_cy<30> (Mcount_div1ms_cy<30>)
+     XORCY:CI->O           1   0.804   0.000  Mcount_div1ms_xor<31> (Result<31>1)
+     FDC:D                     0.308          div1ms_31
+    ----------------------------------------
+    Total                      5.204ns (4.582ns logic, 0.622ns route)
+                                       (88.0% logic, 12.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 26525 / 524
+-------------------------------------------------------------------------
+Offset:              12.067ns (Levels of Logic = 23)
+  Source:            hanyad_marad (PAD)
+  Destination:       Mmult_rezult_mult0000_submult_0 (MULT)
+  Destination Clock: clk rising
+
+  Data Path: hanyad_marad to Mmult_rezult_mult0000_submult_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           124   1.218   1.466  hanyad_marad_IBUF (hanyad_marad_IBUF)
+     LUT4:I0->O            2   0.704   0.482  Mmux_rezult_mux00022_SW0_SW0 (N212)
+     LUT4:I2->O            1   0.704   0.499  maradek_mux0001<0>1_SW0 (N543)
+     LUT3:I1->O            1   0.704   0.424  Mmux_rezult_mux00022 (rezult_mux0002<0>)
+     LUT4:I3->O            1   0.704   0.000  Maddsub_rezult_share0000_lut<0> (Maddsub_rezult_share0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Maddsub_rezult_share0000_cy<0> (Maddsub_rezult_share0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_rezult_share0000_cy<1> (Maddsub_rezult_share0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_rezult_share0000_cy<2> (Maddsub_rezult_share0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_rezult_share0000_cy<3> (Maddsub_rezult_share0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_rezult_share0000_cy<4> (Maddsub_rezult_share0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_rezult_share0000_cy<5> (Maddsub_rezult_share0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_rezult_share0000_cy<6> (Maddsub_rezult_share0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_rezult_share0000_cy<7> (Maddsub_rezult_share0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_rezult_share0000_cy<8> (Maddsub_rezult_share0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_rezult_share0000_cy<9> (Maddsub_rezult_share0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_rezult_share0000_cy<10> (Maddsub_rezult_share0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_rezult_share0000_cy<11> (Maddsub_rezult_share0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_rezult_share0000_cy<12> (Maddsub_rezult_share0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_rezult_share0000_cy<13> (Maddsub_rezult_share0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_rezult_share0000_cy<14> (Maddsub_rezult_share0000_cy<14>)
+     XORCY:CI->O           2   0.804   0.451  Maddsub_rezult_share0000_xor<15> (rezult_share0000<15>)
+     LUT4:I3->O            1   0.704   0.455  Mmux_rezult_mux00011414 (Mmux_rezult_mux00011414)
+     LUT4:I2->O            3   0.704   0.531  Mmux_rezult_mux00011458 (rezult_mux0001<15>)
+     MULT18X18SIO:A15          0.223          Mmult_rezult_mult0000_submult_0
+    ----------------------------------------
+    Total                     12.067ns (7.759ns logic, 4.308ns route)
+                                       (64.3% logic, 35.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clkafis_OBUF'
+  Total number of paths / destination ports: 3610663239 / 29
+-------------------------------------------------------------------------
+Offset:              44.982ns (Levels of Logic = 35)
+  Source:            egal (PAD)
+  Destination:       seg_out_4 (FF)
+  Destination Clock: clkafis_OBUF rising
+
+  Data Path: egal to seg_out_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            54   1.218   1.444  egal_IBUF (egal_IBUF)
+     LUT3:I0->O           16   0.704   1.069  rezultat<0>21 (N67)
+     LUT4:I2->O            5   0.704   0.808  rezultat<15>1 (Madd_bcd_3_0_add0000_lut<2>)
+     LUT4:I0->O            6   0.704   0.748  bcd_2_cmp_gt00011 (bcd_2_cmp_gt0001)
+     LUT3:I1->O            3   0.704   0.610  Madd_bcd_3_0_add0002_cy<1>11 (Madd_bcd_3_0_add0002_cy<1>)
+     LUT3:I1->O            3   0.704   0.535  bcd_2_cmp_gt00021 (bcd_2_cmp_gt0002)
+     LUT4:I3->O            3   0.704   0.706  bcd_1_mux00021 (Madd_bcd_3_0_add0003_lut<2>)
+     LUT3:I0->O            3   0.704   0.535  bcd_2_cmp_gt00031 (bcd_2_cmp_gt0003)
+     LUT4:I3->O            3   0.704   0.706  bcd_1_mux00031 (Madd_bcd_3_0_add0004_lut<2>)
+     LUT3:I0->O            3   0.704   0.535  bcd_2_cmp_gt00041 (bcd_2_cmp_gt0004)
+     LUT4:I3->O            3   0.704   0.706  bcd_1_mux00041 (Madd_bcd_3_0_add0005_lut<2>)
+     LUT3:I0->O            3   0.704   0.610  bcd_2_cmp_gt00051 (bcd_2_cmp_gt0005)
+     LUT3:I1->O            3   0.704   0.566  Madd_bcd_3_0_add0006_cy<1>11 (Madd_bcd_3_0_add0006_cy<1>)
+     LUT3:I2->O            4   0.704   0.622  bcd_3_mux00061 (Madd_bcd_7_4_add0004_cy<0>)
+     LUT3:I2->O            3   0.704   0.566  Madd_bcd_7_4_add0004_cy<1>11 (Madd_bcd_7_4_add0004_cy<1>)
+     LUT3:I2->O            4   0.704   0.622  bcd_7_mux00041 (Madd_bcd_11_8_add0002_cy<0>)
+     LUT3:I2->O            3   0.704   0.610  Madd_bcd_11_8_add0002_cy<1>11 (Madd_bcd_11_8_add0002_cy<1>)
+     LUT3:I1->O            3   0.704   0.535  bcd_11_cmp_gt00011 (bcd_11_cmp_gt0001)
+     LUT4:I3->O            4   0.704   0.762  bcd_9_mux00021 (Madd_bcd_11_8_add0003_lut<2>)
+     LUT3:I0->O            3   0.704   0.610  bcd_11_cmp_gt00021 (bcd_11_cmp_gt0002)
+     LUT3:I1->O            3   0.704   0.566  Madd_bcd_11_8_add0004_cy<1>11 (Madd_bcd_11_8_add0004_cy<1>)
+     LUT3:I2->O            7   0.704   0.743  bcd_11_mux00041 (Madd_bcd_15_12_add0002_Madd_cy<0>)
+     LUT3:I2->O            2   0.704   0.526  Madd_bcd_15_12_add0002_Madd_cy<1>11 (Madd_bcd_15_12_add0002_Madd_cy<1>)
+     LUT3:I1->O            4   0.704   0.591  bcd_12_cmp_gt0002139 (bcd_12_cmp_gt0002)
+     LUT4:I3->O            1   0.704   0.455  bcd_12_cmp_gt000368_SW0 (N698)
+     LUT4:I2->O            2   0.704   0.622  bcd_12_cmp_gt000368 (bcd_12_cmp_gt000368)
+     LUT4:I0->O            5   0.704   0.637  bcd_12_cmp_gt0003180 (bcd_12_cmp_gt0003)
+     LUT4:I3->O            9   0.704   0.995  bcd_13_mux00031 (bcd_13_mux0003)
+     LUT4:I0->O            1   0.704   0.000  seg_out_mux0001<1>11_G (N809)
+     MUXF5:I1->O           3   0.321   0.535  seg_out_mux0001<1>11 (N42)
+     LUT4:I3->O            1   0.704   0.000  seg_out_mux0001<2>60_F (N810)
+     MUXF5:I0->O           1   0.321   0.499  seg_out_mux0001<2>60 (seg_out_mux0001<2>60)
+     LUT2:I1->O            1   0.704   0.000  seg_out_mux0001<2>1131 (seg_out_mux0001<2>1131)
+     MUXF5:I1->O           1   0.321   0.595  seg_out_mux0001<2>113_f5 (seg_out_mux0001<2>113)
+     LUT4:I0->O            1   0.704   0.000  seg_out_mux0001<2>156 (seg_out_mux0001<2>)
+     FDRE:D                    0.308          seg_out_4
+    ----------------------------------------
+    Total                     44.982ns (24.313ns logic, 20.669ns route)
+                                       (54.1% logic, 45.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            clkafis_1 (LATCH)
+  Destination:       clkafis (PAD)
+  Source Clock:      reset falling
+
+  Data Path: clkafis_1 to clkafis
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCP:G->Q             1   0.676   0.420  clkafis_1 (clkafis_1)
+     OBUF:I->O                 3.272          clkafis_OBUF (clkafis)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clkafis_OBUF'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              4.991ns (Levels of Logic = 1)
+  Source:            anod_0 (FF)
+  Destination:       anod<0> (PAD)
+  Source Clock:      clkafis_OBUF rising
+
+  Data Path: anod_0 to anod<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            21   0.591   1.128  anod_0 (anod_0)
+     OBUF:I->O                 3.272          anod_0_OBUF (anod<0>)
+    ----------------------------------------
+    Total                      4.991ns (3.863ns logic, 1.128ns route)
+                                       (77.4% logic, 22.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 38.00 secs
+Total CPU time to Xst completion: 37.91 secs
+ 
+--> 
+
+Total memory usage is 312368 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   39 (   0 filtered)
+Number of infos    :    7 (   0 filtered)
+

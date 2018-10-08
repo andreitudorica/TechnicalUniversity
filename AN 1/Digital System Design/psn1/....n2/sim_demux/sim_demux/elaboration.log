@@ -1,0 +1,17 @@
+elbread.dll ver. 1.0.5.375 Tue May 17 15:45:19 2011
+
+
+------------------------------------
+Entity    | Architecture | Library
+------------------------------------
+simdemux  | arhsim       | sim_demux
+demux     | arhdemux     | sim_demux
+------------------------------------
+
+-------------------------
+Package         | Library
+-------------------------
+standard        | std
+std_logic_1164  | ieee
+numeric_bit     | ieee
+-------------------------

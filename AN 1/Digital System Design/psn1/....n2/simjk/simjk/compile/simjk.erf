@@ -1,0 +1,6 @@
+MESSAGE "File: C:\My_Designs\simjk\simjk\src\simjk.vhd" 
+MESSAGE "Compile Entity "simjk"" 
+MESSAGE "Compile Architecture "arhsimjk" of Entity "simjk"" 
+MESSAGE "Compile Entity "simulare"" 
+MESSAGE "Compile Architecture "arhsim" of Entity "simulare"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 

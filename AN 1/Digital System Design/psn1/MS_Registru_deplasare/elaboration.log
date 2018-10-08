@@ -1,0 +1,15 @@
+elbread.dll ver. 1.0.5.375 Sun May 15 17:50:49 2011
+
+
+----------------------------------------------------
+Entity      | Architecture   | Library            
+----------------------------------------------------
+ms_shifter  | arh_ms_shifter | ms_registru_deplasare
+shifter     | arh_shifter    | ms_registru_deplasare
+----------------------------------------------------
+
+-------------------
+Package   | Library
+-------------------
+standard  | std
+-------------------

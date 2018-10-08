@@ -1,0 +1,12 @@
+[Version]
+Version=7.2
+[Designs]
+nr_bin=.\NR_BIN\NR_BIN.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+nr_bin=1

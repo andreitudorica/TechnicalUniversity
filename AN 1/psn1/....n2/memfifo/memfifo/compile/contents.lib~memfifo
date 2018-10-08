@@ -1,0 +1,5 @@
+99
+~E 1 "./src/lifo.vhd" 5 lifo
+~A 1 "./src/lifo.vhd" 11 arh
+~E 1 "./src/memfifo.vhd" 7 memfifo
+~A 1 "./src/memfifo.vhd" 15 arhmemfifo

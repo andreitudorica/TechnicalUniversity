@@ -1,0 +1,50 @@
+V 000046 11 143 1024583938121 cosinegenerator
+E CosineGenerator VHDL
+L STD;
+U STD.STANDARD;
+P CLK _in BIT
+P CosEnable _in BIT
+P CosFreq _in INTEGER
+P COS1 _out REAL = 0.0
+X CosineGenerator
+V 000040 11 211 1024583940074 modulator
+E Modulator VHDL
+L STD;
+U STD.STANDARD;
+P CosEnable _in BIT
+P CosFreq _in INTEGER
+P SawEnable _in BIT
+P SawFreq _in INTEGER
+P SinEnable _in BIT
+P SinFreq _in INTEGER
+P clk _in BIT
+P OUTPUT _out REAL
+X Modulator
+V 000041 11 136 1024583938590 multiplier
+E Multiplier VHDL
+L STD;
+U STD.STANDARD;
+P clk _in BIT
+P IN1 _in REAL
+P IN2 _in REAL
+P IN3 _in REAL
+P OUT1 _out REAL = 0.0
+X Multiplier
+V 000043 11 137 1024583938355 sawgenerator
+E SawGenerator VHDL
+L STD;
+U STD.STANDARD;
+P CLK _in BIT
+P SawEnable _in BIT
+P SawFreq _in INTEGER
+P SAW1 _out REAL = 0.0
+X SawGenerator
+V 000044 11 139 1024583937871 sinegenerator
+E SineGenerator VHDL
+L STD;
+U STD.STANDARD;
+P CLK _in BIT
+P SinEnable _in BIT
+P SinFreq _in INTEGER
+P SIN1 _out REAL = 0.0
+X SineGenerator

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1462215351 source:c:\maha\tema\main.c
+	<stdio.h>
+	<stdlib.h>
+

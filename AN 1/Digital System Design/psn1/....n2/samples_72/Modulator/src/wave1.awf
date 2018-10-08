@@ -1,0 +1,32 @@
+$WAVE4
+$RESOLUTION 1000
+I 1 "f#4#realrrct-1e+308 1e+308 "
+$OUT 1 1 OUTPUT
+$S 2 1 SIN1
+$S 3 1 COS1
+$S 4 1 SAW1
+I 2 "i#7#integerrict-2147483648 2147483647 "
+$IN 5 2 SINFREQ
+$IN 6 2 COSFREQ
+$IN 7 2 SAWFREQ
+I 3 "e#3#bitc2 01"
+$IN 8 3 SINENABLE
+$IN 9 3 0 6 COS
+$IN +1 3 0 6 SAW
+$IN +1 3 CLK
+P 0 1-4 "Analog range" "-1.0000 1.0000"
+P 0 1 Bold "1"
+P 0 1-11 CS "0"
+P 0 2-8/3 Color "50267136"
+P 0 1 Color "50267391"
+P 0 3-9/3 Color "50292017"
+P 0 4-+6/3 Color "50317056"
+P 0 +1 Color "8405120"
+P 0 1 Height "30"
+P 0 1 Inverted "1"
+P 0 5-7 Radix "10"
+P 0 1-4 8-+2 Radix "2"
+P 0 1-4 Shape "1"
+P 0 5-7 Shape "2"
+P 0 8-+2 Shape "3"
+$ENDWAVE

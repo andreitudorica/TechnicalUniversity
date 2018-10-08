@@ -1,0 +1,19 @@
+elbread.dll ver. 1.0.5.375 Sat May 07 23:57:21 2011
+
+
+----------------------------------------
+Entity       | Architecture    | Library
+----------------------------------------
+compar       | arhcompar       | compar
+inversor     | arh_inv         | compar
+poarta_si    | arh_si          | compar
+coincidenta  | arh_coincidenta | compar
+poarta_sau   | arh_sau         | compar
+----------------------------------------
+
+-------------------------
+Package         | Library
+-------------------------
+standard        | std
+std_logic_1164  | ieee
+-------------------------

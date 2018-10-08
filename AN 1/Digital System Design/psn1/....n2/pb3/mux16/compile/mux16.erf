@@ -1,0 +1,4 @@
+MESSAGE "File: c:\My_Designs\pb3\mux16\src\mux16.vhd" 
+MESSAGE "Compile Entity "mux"" 
+MESSAGE "Compile Architecture "muxx" of Entity "mux"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [s]" 

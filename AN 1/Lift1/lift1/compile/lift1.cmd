@@ -1,0 +1,1 @@
+-w -s "C:\My_Designs\Lift1\library.cfg"  -j "C:\My_Designs\Lift1\lift1\projlib.cfg"  -d "C:\My_Designs\Lift1\lift1\compile\"  -work lift1 -dbg -e 100 "C:\My_Designs\Lift1\lift1\src\lift.vhd" 

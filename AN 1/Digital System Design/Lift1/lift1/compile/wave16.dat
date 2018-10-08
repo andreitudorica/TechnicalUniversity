@@ -1,0 +1,18 @@
+$WAVE4TIMED
+$RESOLUTION 1000
+I 1 "e#3#bitc2 01"
+$IN 1 1 E1
+$IN 5 1 E2
+$IN 9 1 E3
+I 2 "i#7#integerrict-2147483648 2147483647 "
+$OUT +4 2 etaj
+$IN +4 1 MEM
+$IN +4 1 RESET
+$IN +4 1 UP
+$OUT +4 1 USI
+I 3 "a#19#BIT_VECTOR(0 to 12)1 rict0 12 e#3#bitc2 01"
+$BUS OUT 85 3 13 V
+$SC 33-81/4
+$S +5 1 CLK
+$IN +4 1 E0
+$ENDWAVE

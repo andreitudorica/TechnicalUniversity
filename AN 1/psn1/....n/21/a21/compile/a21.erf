@@ -1,0 +1,6 @@
+MESSAGE "File: c:\My_Designs\Colocviu\21\a21\src\a21.vhd" 
+MESSAGE "Compile Entity "a21"" 
+MESSAGE "Compile Architecture "a21" of Entity "a21"" 
+MESSAGE "Top-level unit(s) detected:" 
+MESSAGE "Entity  =>   a21" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  1.0 [s]" 

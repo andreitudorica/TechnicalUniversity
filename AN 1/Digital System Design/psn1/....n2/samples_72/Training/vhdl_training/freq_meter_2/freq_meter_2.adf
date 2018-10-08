@@ -1,0 +1,59 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=1
+modified=20
+Current Config=compile
+
+[Configurations]
+compile=freq_meter_2
+
+[Groups]
+Functional=1
+TestBench=1
+
+[Library]
+freq_meter_2=.\freq_meter_2.LIB
+
+[Settings]
+SYNTH_TOOL=Synopsys
+IMPL_TOOL=Xilinx
+FAMILY=XC4000E
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+
+[$LibMap$]
+freq_meter_2=.
+Active_lib=XC4000E
+xilinxun=XC4000E
+UnlinkedDesignLibrary=XC4000E
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/cnt_4b.do=-1
+Functional/hex2led.vhd=-1
+Functional/CNT_4b.vhd=-1
+Functional/AND2.vhd=-1
+Functional/CNT_BCD.bde=-1
+Functional/CONTROL.asf=-1
+Functional/top_frqm.bde=-1
+TestBench/top_frqm_TB.vhd=-1
+TestBench/top_frqm_TB_runtest.do=-1
+
+[Files.Data]
+.\src\cnt_4b.do=Macro
+.\src\Functional\hex2led.vhd=VHDL Source Code
+.\src\Functional\CNT_4b.vhd=VHDL Source Code
+.\src\Functional\AND2.vhd=VHDL Source Code
+.\src\Functional\CNT_BCD.bde=Block Diagram
+.\src\Functional\CONTROL.asf=State Diagram
+.\src\Functional\top_frqm.bde=Block Diagram
+.\src\TestBench\top_frqm_TB.vhd=VHDL Test Bench
+.\src\TestBench\top_frqm_TB_runtest.do=Macro
+

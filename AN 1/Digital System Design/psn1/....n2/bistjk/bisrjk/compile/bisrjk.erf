@@ -1,0 +1,4 @@
+MESSAGE "File: C:\My_Designs\bistjk\bisrjk\src\bistjk.vhd" 
+MESSAGE "Compile Entity "bistjk"" 
+MESSAGE "Compile Architecture "arhbistjk" of Entity "bistjk"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]" 

@@ -1,0 +1,36 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=a20
+
+[Library]
+a20=.\a20.LIB
+
+[$LibMap$]
+a20=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[Files]
+/douazeci.vhd=-1
+/registru.vhd=-1
+
+[Files.Data]
+.\src\douazeci.vhd=VHDL Source Code
+.\src\registru.vhd=VHDL Source Code
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=a20|arhitectura_a20|0 registru|arhitectura_registrul|0 
+ShowHide=ShowTopLevel
+Selected=

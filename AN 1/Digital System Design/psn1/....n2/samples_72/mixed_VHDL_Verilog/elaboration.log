@@ -1,0 +1,29 @@
+elbread.dll ver. 1.0.5.375 Wed Feb 21 15:10:20 2007
+
+
+------------------------------------------------------------
+Entity                | Architecture    | Library         
+------------------------------------------------------------
+filter_functional_tb  | tb_architecture | mixed_VHDL_Verilog
+filter                | filter          | mixed_vhdl_verilog
+pfdiv                 | pfdiv           | mixed_vhdl_verilog
+cb4ce                 | cb4ce           | mixed_vhdl_verilog
+C2OR                  | c2or            | mixed_vhdl_verilog
+------------------------------------------------------------
+
+----------------------------
+Module  | Library         
+----------------------------
+oscil   | mixed_vhdl_verilog
+CRV     | mixed_vhdl_verilog
+----------------------------
+
+---------------------------
+Package           | Library
+---------------------------
+standard          | std
+textio            | std
+std_logic_1164    | ieee
+std_logic_textio  | ieee
+std_logic_arith   | ieee
+---------------------------

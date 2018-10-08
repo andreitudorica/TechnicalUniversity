@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\prim\library.cfg"  -j "c:\My_Designs\prim\prim\projlib.cfg"  -d "c:\My_Designs\prim\prim\compile\"  -work prim -dbg -e 100 "c:\My_Designs\prim\prim\src\prim.vhd" 

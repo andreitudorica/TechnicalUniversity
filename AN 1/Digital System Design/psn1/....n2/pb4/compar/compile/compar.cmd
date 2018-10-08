@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\pb4\library.cfg"  -j "c:\My_Designs\pb4\compar\projlib.cfg"  -d "c:\My_Designs\pb4\compar\compile\"  -work compar -dbg -e 100 "c:\My_Designs\pb4\compar\src\compar.vhd" 

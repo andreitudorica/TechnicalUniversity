@@ -1,0 +1,5 @@
+MESSAGE "File: C:\My_Designs\Lift1\lift1\src\lift.vhd" 
+MESSAGE "Compile Entity "lift"" 
+MESSAGE "Entity `lift' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "ARCH" of Entity "lift"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 

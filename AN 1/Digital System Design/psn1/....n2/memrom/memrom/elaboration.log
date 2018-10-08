@@ -1,0 +1,16 @@
+elbread.dll ver. 1.0.5.375 Sun May 08 14:36:47 2011
+
+
+---------------------------------
+Entity   | Architecture | Library
+---------------------------------
+mem_rom  | rom          | memrom
+---------------------------------
+
+-------------------------
+Package         | Library
+-------------------------
+standard        | std
+std_logic_1164  | ieee
+numeric_bit     | ieee
+-------------------------

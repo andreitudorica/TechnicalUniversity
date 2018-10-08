@@ -1,0 +1,14 @@
+[Version]
+Version=7.2
+[Designs]
+generator=generator.adf
+[Settings]
+Active=generator
+[Browser]
+sort=order
+mode=none
+[Expand]
+generator=1
+[Order]
+order=1
+macro=

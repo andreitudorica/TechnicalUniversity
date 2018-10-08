@@ -1,0 +1,44 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=unu
+
+[Library]
+unu=.\unu.LIB
+
+[$LibMap$]
+unu=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[Files]
+/unu.vhd=-1
+/si.vhd=-1
+/inversor.vhd=-1
+/sau_2.vhd=-1
+/si_3.vhd=-1
+/sau_3.vhd=-1
+
+[Files.Data]
+.\src\unu.vhd=VHDL Source Code
+.\src\si.vhd=VHDL Source Code
+.\src\inversor.vhd=VHDL Source Code
+.\src\sau_2.vhd=VHDL Source Code
+.\src\si_3.vhd=VHDL Source Code
+.\src\sau_3.vhd=VHDL Source Code
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=unu|arhitectura_unu|0     
+ShowHide=ShowTopLevel
+Selected=

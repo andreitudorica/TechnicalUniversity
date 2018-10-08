@@ -1,0 +1,12 @@
+[Files List]
+d:\program files\Active HDL 8.1\Vlib\Std/src/standard.vhd=S
+d:\program files\Active HDL 8.1\Vlib\Std/src/textio.vhd=S
+d:\program files\Active HDL 8.1\Vlib\IEEE/src/std_logic_1164.vhdl=S
+d:\program files\Active HDL 8.1\Vlib\IEEE/src/std_logic_1164-body.vhdl=S
+d:\program files\Active HDL 8.1\Vlib\IEEE/src/arith_p.vhd=S
+d:\program files\Active HDL 8.1\Vlib\IEEE/src/arith_b.vhd=S
+d:\program files\Active HDL 8.1\Vlib\IEEE/src/unsigned_p.vhd=S
+d:\program files\Active HDL 8.1\Vlib\IEEE/src/unsigned_b.vhd=S
+C:\My_Designs\Proiect_PSN_Calculator\Proiect/src/zecimal_BCD.vhd=S
+C:\My_Designs\Proiect_PSN_Calculator\Proiect/src/div_frec.vhd=S
+C:\My_Designs\Proiect_PSN_Calculator\Proiect/src/afisoare.vhd=S

@@ -1,0 +1,4 @@
+MESSAGE "File: c:\My_Designs\flux\flux\src\flux.vhd" 
+MESSAGE "Compile Entity "si"" 
+MESSAGE "Compile Architecture "flux" of Entity "si"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [s]" 

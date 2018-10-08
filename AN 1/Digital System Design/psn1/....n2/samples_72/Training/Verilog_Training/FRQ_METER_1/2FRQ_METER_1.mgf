@@ -1,0 +1,263 @@
+V 000036 40 1345 1024577805194 and2
+SYMB0100
+
+HEADER
+{
+ FREEID 10
+ VARIABLES
+ {
+  #DESCRIPTION=""
+  #HDL_ENTRIES=
+"library VL;\n"+
+"use VL.VERILOG_LOGIC;"
+  #LANGUAGE="VERILOG"
+  #MODIFIED="1024577805"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (0,-20,160,140)
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (20,0,140,120)
+  }
+  PIN  2, 0, 0
+  {
+   COORD (0,40)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="A0"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,30,51,54)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 2
+  }
+  PIN  4, 0, 0
+  {
+   COORD (160,40)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #NAME="Y"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (121,30,135,54)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 4
+  }
+  PIN  6, 0, 0
+  {
+   COORD (0,80)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="A1"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  7, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,70,51,94)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 6
+  }
+ }
+ 
+}
+
+V 000038 40 2014 1024577798976 cnt_4b
+SYMB0100
+
+HEADER
+{
+ FREEID 15
+ VARIABLES
+ {
+  #DESCRIPTION=""
+  #HDL_ENTRIES=
+"library VL;\n"+
+"use VL.VERILOG_LOGIC;"
+  #LANGUAGE="VERILOG"
+  #MODIFIED="1024577798"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (0,-20,200,180)
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (20,0,180,160)
+  }
+  PIN  2, 0, 0
+  {
+   COORD (0,40)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="CLK"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,30,65,54)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 2
+  }
+  PIN  4, 0, 0
+  {
+   COORD (200,40)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #NAME="FULL"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (126,30,175,54)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 4
+  }
+  PIN  6, 0, 0
+  {
+   COORD (0,80)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="ENABLE"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  7, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,70,103,94)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 6
+  }
+  PIN  8, 0, 0
+  {
+   COORD (200,80)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #DOWNTO="1"
+    #LENGTH="20"
+    #NAME="Q(3:0)"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (-20,0), (0,0) )
+   }
+  }
+  TEXT  9, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (119,70,175,94)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 8
+  }
+  PIN  10, 0, 0
+  {
+   COORD (0,120)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="RESET"
+    #NUMBER="0"
+   }
+   LINE  2, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+  TEXT  11, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (25,110,92,134)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 10
+  }
+ }
+ 
+}
+

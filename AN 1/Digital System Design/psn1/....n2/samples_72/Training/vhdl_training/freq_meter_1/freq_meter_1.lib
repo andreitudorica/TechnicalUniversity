@@ -1,0 +1,35 @@
+timestamp=1096891903223
+
+[and2]
+A/and2=A/AND2 21|.\src\Functional\AND2.vhd|10000|
+S/and2=S/AND2 40|0|2*0
+
+[cnt_4b]
+A/cnt_4b=A/CNT_4b 21|.\src\Functional\CNT_4b.vhd|10000|
+S/cnt_4b=S/CNT_4b 40|0|2*1672
+
+[cnt_bcd]
+A/cnt_bcd=A/CNT_BCD 24|.\src\Functional\CNT_BCD.bde|10000|
+S/cnt_bcd=S/CNT_BCD 40|0|2*4166
+
+[~A]
+./compile/CNT_BCD.vhd~CNT_BCD=0*0*406
+./compile/CNT_BCD.vhd~CNT_BCDCNT_BCD=0*475*1685
+./src/Functional/AND2.vhd~AND2=0*1761*1975
+./src/Functional/AND2.vhd~AND2AND2=0*2045*2178
+./src/Functional/CNT_4b.vhd~CNT_4b=0*2252*2583
+./src/Functional/CNT_4b.vhd~CNT_4bCNT_4b=0*2657*3056
+./src/Functional/hex2led.vhd~hex2led=0*3136*3383
+./src/Functional/hex2led.vhd~hex2ledhex2led=0*3459*4063
+ModifyID=65
+Version=73
+
+[~MFT]
+0=0|0freq_meter_1.mgf|4497|0
+2=0|2freq_meter_1.mgf|4166|0
+
+[~U]
+and2=AND2 11|0*4146||0x3
+cnt_4b=CNT_4b 11|0*4288||0x3
+cnt_bcd=CNT_BCD 11|0*4497||0x3
+

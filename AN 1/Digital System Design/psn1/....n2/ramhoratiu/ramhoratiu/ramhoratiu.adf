@@ -1,0 +1,34 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=ramhoratiu
+
+[Library]
+ramhoratiu=.\ramhoratiu.LIB
+
+[$LibMap$]
+ramhoratiu=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[Files]
+/ramhoratiu.vhd=-1
+
+[Files.Data]
+.\src\ramhoratiu.vhd=VHDL Source Code
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=sapte|arhitectura_sapte|0   
+ShowHide=ShowTopLevel
+Selected=

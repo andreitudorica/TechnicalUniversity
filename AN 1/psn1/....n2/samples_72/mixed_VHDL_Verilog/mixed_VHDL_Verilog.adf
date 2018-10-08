@@ -1,0 +1,59 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=mixed_VHDL_Verilog
+
+[Library]
+mixed_VHDL_Verilog=.\mixed_VHDL_Verilog.LIB
+
+[$LibMap$]
+mixed_VHDL_Verilog=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FAMILY=
+SYNTH_TOOL=
+IMPL_TOOL=
+
+[Groups]
+Testbench=1
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/and2.v=-1
+/and3.v=-1
+/and4.v=-1
+/c2or.vhd=-1
+/cb4ce.vhd=-1
+/filter.bde=-1
+/oscil.v=-1
+/pfdiv.vhd=-1
+/crv.bde=-1
+Testbench/filter1_functional_tb.vhd=-1
+Testbench/run_rtl.do=-1
+
+[Files.Data]
+.\src\and2.v=Verilog Source Code
+.\src\and3.v=Verilog Source Code
+.\src\and4.v=Verilog Source Code
+.\src\c2or.vhd=VHDL Source Code
+.\src\cb4ce.vhd=VHDL Source Code
+.\src\filter.bde=Block Diagram
+.\src\oscil.v=Verilog Source Code
+.\src\pfdiv.vhd=VHDL Source Code
+.\src\crv.bde=Block Diagram
+.\src\Testbench\filter1_functional_tb.vhd=VHDL Source Code
+.\src\Testbench\run_rtl.do=Macro
+

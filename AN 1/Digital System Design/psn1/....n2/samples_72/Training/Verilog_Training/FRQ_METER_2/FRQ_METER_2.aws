@@ -1,0 +1,14 @@
+[Version]
+Version=5.2
+[Designs]
+FRQ_METER_2=FRQ_METER_2.adf
+[Settings]
+Active=FRQ_METER_2
+[Expand]
+frq_meter_2=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

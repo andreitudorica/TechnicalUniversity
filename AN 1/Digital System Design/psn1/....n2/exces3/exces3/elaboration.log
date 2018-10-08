@@ -1,0 +1,20 @@
+elbread.dll ver. 1.0.5.375 Tue May 17 14:51:37 2011
+
+
+-------------------------------------
+Entity       | Architecture | Library
+-------------------------------------
+exces3       | arhexces3    | exces3
+poarta_si2   | arh_si2      | exces3
+poarta_sau3  | arh_sau3     | exces3
+inversor     | arh_inv      | exces3
+poarta_si3   | arh_si3      | exces3
+poarta_sau2  | arh_sau2     | exces3
+-------------------------------------
+
+-------------------------
+Package         | Library
+-------------------------
+standard        | std
+std_logic_1164  | ieee
+-------------------------

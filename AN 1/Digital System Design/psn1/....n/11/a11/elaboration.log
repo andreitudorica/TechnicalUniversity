@@ -1,0 +1,18 @@
+elbread.dll ver. 1.0.5.375 Tue May 17 01:48:20 2011
+
+
+----------------------------------------
+Entity    | Architecture       | Library
+----------------------------------------
+a11       | arhitectura_a11    | a11
+\2_biti\  | arhitectura_2_biti | a11
+----------------------------------------
+
+-----------------------------
+Package             | Library
+-----------------------------
+standard            | std
+std_logic_1164      | ieee
+std_logic_arith     | ieee
+std_logic_unsigned  | ieee
+-----------------------------

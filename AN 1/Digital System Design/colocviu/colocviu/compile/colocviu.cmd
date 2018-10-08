@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\colocviu\library.cfg"  -j "c:\My_Designs\colocviu\colocviu\projlib.cfg"  -d "c:\My_Designs\colocviu\colocviu\compile\"  -work colocviu -dbg -e 100 "c:\My_Designs\colocviu\colocviu\src\comparator2biti_struct.vhd" 

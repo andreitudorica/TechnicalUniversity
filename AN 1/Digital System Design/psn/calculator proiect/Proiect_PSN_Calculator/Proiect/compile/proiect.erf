@@ -1,0 +1,10 @@
+MESSAGE "File: D:\School\PSN\calculator proiect\Proiect_PSN_Calculator\Proiect\src\calculator.vhd" 
+MESSAGE "Compile Entity "Calculator"" 
+MESSAGE "Compile Architecture "Arh_Calc" of Entity "Calculator"" 
+WARNING ELAB1_0026: "There is no default binding for component "Reg_mem".(No entity named "Reg_mem" was found)." "D:\School\PSN\calculator proiect\Proiect_PSN_Calculator\Proiect\src\calculator.vhd" 46 0
+WARNING ELAB1_0026: "There is no default binding for component "ALU".(No entity named "ALU" was found)." "D:\School\PSN\calculator proiect\Proiect_PSN_Calculator\Proiect\src\calculator.vhd" 47 0
+WARNING ELAB1_0026: "There is no default binding for component "afisoare".(No entity named "afisoare" was found)." "D:\School\PSN\calculator proiect\Proiect_PSN_Calculator\Proiect\src\calculator.vhd" 49 0
+MESSAGE "File: D:\School\PSN\calculator proiect\Proiect_PSN_Calculator\Proiect\src\alu.vhd" 
+MESSAGE "Compile Entity "ALU"" 
+ERROR VLM_0001: "Unit `pachet_divide' has incompatible library format." 
+FAILURE "Compile failure 1 Errors 3 Warnings  Analysis time :  0.4 [s]" 

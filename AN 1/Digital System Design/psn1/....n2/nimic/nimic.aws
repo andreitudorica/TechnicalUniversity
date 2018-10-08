@@ -1,0 +1,12 @@
+[Version]
+Version=7.2
+[Designs]
+nimic=.\nimic\nimic.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+nimic=1

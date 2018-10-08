@@ -1,0 +1,159 @@
+library	ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+entity BCD_to_7_seg is
+	port (I:in std_logic_vector (3 downto 0);
+		 a,b,c,d,e,f,g:out std_logic);
+end BCD_to_7_seg;
+
+architecture a1 of BCD_to_7_seg is
+begin
+	process(I)
+	begin
+	case I is
+		when  "0000" => a<='0'; b<='0';c<='0';d<='0';e<='0';f<='0';g<='1';
+		when "0001" => a<='1'; b<='0';c<='0';d<='1';e<='1';f<='1';g<='1';
+		when "0010"=>  a<='0'; b<='0';c<='1';d<='0';e<='0';f<='1';g<='0';
+		when "0011"=>  a<='0'; b<='0';c<='0';d<='0';e<='1';f<='1';g<='0';
+		when "0100" =>  a<='1'; b<='0';c<='0';d<='1';e<='1';f<='0';g<='0';
+		when "0101"=>  a<='0'; b<='1';c<='0';d<='0';e<='1';f<='0';g<='0';
+		when "0110" => a<='0'; b<='1';c<='0';d<='0';e<='0';f<='0';g<='0';
+		when  "0111"=> a<='0'; b<='0';c<='0';d<='1';e<='1';f<='1';g<='1';
+		when "1000" =>  a<='0'; b<='0';c<='0';d<='0';e<='0';f<='0';g<='0';
+		when "1001"=>   a<='0'; b<='0';c<='0';d<='0';e<='1';f<='0';g<='0';
+		when "1010"=>  a<='0'; b<='0';c<='0';d<='1';e<='0';f<='0';g<='0';
+		when "1011"=> a<='1'; b<='1';c<='0';d<='0';e<='0';f<='0';g<='0';
+		when "1100"=> a<='0'; b<='1';c<='1';d<='0';e<='0';f<='0';g<='1';
+		when "1101"=> a<='1'; b<='0';c<='0';d<='1';e<='0';f<='1';g<='0';
+		when "1110"=> a<='0'; b<='1';c<='1';d<='0';e<='0';f<='0';g<='0';
+		when others => a<='0'; b<='1';c<='1';d<='1';e<='0';f<='0';g<='0';
+	end case;
+end process;
+end a1;
+
+library	ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+entity MUX_4_to_1 is
+	port(A:in std_logic_vector(3 downto 0); 
+	B:in std_logic_vector(3 downto 0);
+	C:in std_logic_vector(3 downto 0);
+	D:in std_logic_vector(3 downto 0);
+	SEL:in std_logic_vector(1 downto 0);
+	Y:out std_logic_vector(3 downto 0));
+end MUX_4_to_1;
+
+architecture MUX of MUX_4_to_1 is
+begin
+	process(SEL)
+	begin
+	case SEL is
+		when "00"=> Y<=A;
+		when "01"=> Y<=B;
+		when "10"=> Y<=C;
+		when "11"=> Y<=D; 
+		when others => null;
+	end case;
+	end process;
+	
+end MUX;
+
+library	ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+entity count_to_3 is
+	port(CLK:in std_logic;
+	Q:out std_logic_vector(1 downto 0));
+end count_to_3;
+
+architecture count of count_to_3 is
+begin
+	process(CLK)
+	variable A:std_logic_vector(1 downto 0):="00";
+	begin
+	if (CLK'EVENT) and (CLK='1') then A:=A+1;
+	end if;
+	Q<=A;
+	end process;
+end count;
+
+library	ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+entity an_select is
+	port(SEL:in std_logic_vector(1 downto 0);
+	AN:out std_logic_vector(3 downto 0));
+end an_select;
+
+architecture an of an_select is
+begin
+	  process(SEL)
+	begin
+	case SEL is
+		when "00"=> AN(0)<='0'; AN(1)<='1'; AN(2)<='1'; AN(3)<='1';
+		when "01"=> AN(0)<='1'; AN(1)<='0'; AN(2)<='1'; AN(3)<='1';
+		when "10"=> AN(0)<='1'; AN(1)<='1'; AN(2)<='0'; AN(3)<='1';
+		when "11"=> AN(0)<='1'; AN(1)<='1'; AN(2)<='1'; AN(3)<='0';
+		when others => null;
+	end case;
+	end process;
+	
+end an;
+
+
+library	ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity afisare_numar is
+	port(C4,C3,C2,C1:in std_logic_vector (3 downto 0);
+	CLK:in std_logic;
+	Y: out std_logic_vector (6 downto 0);
+	DP:out std_logic;
+	AN: out std_logic_vector (3 downto 0));
+end afisare_numar;
+
+architecture afis_nr of afisare_numar is
+signal SELEC:std_logic_vector(1 downto 0);signal Y_temp:STD_LOGIC_VECTOR (3 downto 0);
+component an_select is
+	port(SEL:in std_logic_vector(1 downto 0);
+	AN:out std_logic_vector(3 downto 0));
+end component an_select;
+component  count_to_3 is
+	port(CLK:in std_logic;
+	Q:out std_logic_vector(1 downto 0));
+end component count_to_3;
+component MUX_4_to_1 is
+	port(A:in std_logic_vector(3 downto 0); 
+	B:in std_logic_vector(3 downto 0);
+	C:in std_logic_vector(3 downto 0);
+	D:in std_logic_vector(3 downto 0);
+	SEL:in std_logic_vector(1 downto 0);
+	Y:out std_logic_vector(3 downto 0));
+end component MUX_4_to_1;
+component BCD_to_7_seg is
+	port (I:in std_logic_vector (3 downto 0);	
+		 a,b,c,d,e,f,g:out std_logic);
+end component BCD_to_7_seg;
+begin 
+	COUNT: count_to_3 port map (CLK,SELEC);
+	MUX_SELECT:MUX_4_to_1 port map(C4,C3,C2,C1,SELEC,Y_temp);
+	DECODE:BCD_to_7_seg port map(Y_temp,Y(6),Y(5),Y(4),Y(3),Y(2),Y(1),Y(0));
+	ANODE: an_select port map (SELEC,AN);
+	process(SELEC)
+	begin
+	if SELEC="10" then DP<='0';
+	else
+		DP<='1';
+	end if;
+		
+	end process;
+
+end afis_nr;
+
+

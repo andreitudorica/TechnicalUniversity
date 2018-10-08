@@ -1,0 +1,36 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=NUMARATOR_STRUCTURAL
+
+[Library]
+NUMARATOR_STRUCTURAL=.\NUMARATOR_STRUCTURAL.LIB
+
+[$LibMap$]
+NUMARATOR_STRUCTURAL=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[Files]
+/unspe.vhd=-1
+/suma2.vhd=-1
+
+[Files.Data]
+.\src\unspe.vhd=VHDL Source Code
+.\src\suma2.vhd=VHDL Source Code
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=suma2|arhitectura_suma2|0   
+ShowHide=ShowTopLevel
+Selected=

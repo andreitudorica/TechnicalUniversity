@@ -1,0 +1,5 @@
+89
+~E 1 "./src/nimic.vhd" 28 and_b
+~A 1 "./src/nimic.vhd" 33 arhand_b
+~E 1 "./src/nimic.vhd" 40 nimic
+~A 1 "./src/nimic.vhd" 47 arhnimic

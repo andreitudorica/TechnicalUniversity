@@ -1,0 +1,14 @@
+[Version]
+Version=7.2
+[Designs]
+datapath=datapath.adf
+[Settings]
+Active=datapath
+[Expand]
+datapath=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

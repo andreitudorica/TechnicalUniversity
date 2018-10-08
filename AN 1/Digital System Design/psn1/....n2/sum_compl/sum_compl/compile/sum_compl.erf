@@ -1,0 +1,8 @@
+MESSAGE "File: c:\My_Designs\sum_compl\sum_compl\src\sum_compl.vhd" 
+MESSAGE "Compile Entity "sum_compl"" 
+MESSAGE "Compile Architecture "struct_sum_compl" of Entity "sum_compl"" 
+WARNING ELAB1_0026: "There is no default binding for component "semi_sum".(No entity named "semi_sum" was found)." "c:\My_Designs\sum_compl\sum_compl\src\sum_compl.vhd" 51 0
+WARNING ELAB1_0026: "There is no default binding for component "poarta_sau".(No entity named "poarta_sau" was found)." "c:\My_Designs\sum_compl\sum_compl\src\sum_compl.vhd" 53 0
+MESSAGE "Top-level unit(s) detected:" 
+MESSAGE "Entity  =>   sum_compl" 
+SUCCESS "Compile success 0 Errors 2 Warnings  Analysis time :  0.0 [s]" 

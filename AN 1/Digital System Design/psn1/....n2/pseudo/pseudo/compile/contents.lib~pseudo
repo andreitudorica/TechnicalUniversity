@@ -1,0 +1,7 @@
+365
+~E 1 "./src/pseudo.vhd" 54 final
+~A 1 "./src/pseudo.vhd" 60 arhfinal
+~E 1 "./src/pseudo.vhd" 6 entxor
+~A 1 "./src/pseudo.vhd" 11 arhxor
+~E 1 "./src/pseudo.vhd" 17 registru
+~A 1 "./src/pseudo.vhd" 23 arhregistru

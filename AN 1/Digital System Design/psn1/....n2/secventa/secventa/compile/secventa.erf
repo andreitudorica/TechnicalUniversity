@@ -1,0 +1,4 @@
+MESSAGE "File: c:\My_Designs\secventa\secventa\src\secventa.vhd" 
+MESSAGE "Compile Entity "secventa"" 
+MESSAGE "Compile Architecture "arhsecventa" of Entity "secventa"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [s]" 

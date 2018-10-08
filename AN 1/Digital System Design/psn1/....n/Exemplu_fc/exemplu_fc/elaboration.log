@@ -1,0 +1,16 @@
+elbread.dll ver. 1.0.5.375 Mon May 16 21:58:58 2011
+
+
+-------------------------------------------------
+Entity      | Architecture           | Library 
+-------------------------------------------------
+exemplu_fc  | arhitectura_exemplu_fc | exemplu_fc
+-------------------------------------------------
+
+-------------------------
+Package         | Library
+-------------------------
+standard        | std
+std_logic_1164  | ieee
+numeric_std     | ieee
+-------------------------

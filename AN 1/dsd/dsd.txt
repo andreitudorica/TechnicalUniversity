@@ -1,0 +1,163 @@
+-- DIVIZOR DE FRECVENTA
+
+library	ieee;
+
+use ieee.std_logic_1164.all;
+
+use ieee.std_logic_arith.all;
+
+use ieee.std_logic_unsigned.all;
+
+
+entity DIVIZOR_FRECVENTA is
+	
+port(CLK, RST : in std_logic;
+			
+	NEW_CLK: out std_logic);
+		
+end DIVIZOR_FRECVENTA;
+		
+
+architecture DIV of DIVIZOR_FRECVENTA is 
+
+
+
+begin
+	
+	
+	process(CLK, RST)
+
+	
+	variable V : std_logic_vector(26 downto 0) := (others => '0');	 
+	
+	variable C: std_logic := '0';
+
+	begin  
+	if RST = '1' then
+
+		
+		V := (others => '0');
+		
+		C := '0';
+	
+	
+	
+		else  if CLK'EVENT and CLK = '1' then
+ 
+			
+			 V := V + 1;
+			C := V(26);
+
+			end if; 
+		end if;
+NEW_CLK <= C;
+
+end process;
+
+end DIV;
+
+
+-- universal register
+
+library	ieee;
+
+use ieee.std_logic_1164.all;
+
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+
+entity REGISTRU_UNIVERSAL is
+	
+	port(CLK, SER_RIGHT, SER_LEFT, RST: in std_logic; --SER_RIGHT = when we shift right, MSB will receive the bit SER_RIGHT
+	
+		NR_IN: in std_logic_vector(3 downto 0); -- numarul pe 4 biti pt paralel load
+	
+		SEL: in std_logic_vector(1 downto 0);	 --"00" = HOLD, "11" = PL, "01" = shift right, "10" = shift left
+	
+		Q: inout std_logic_vector(3 downto 0)); --numarul pe 4 biti din registru
+
+end REGISTRU_UNIVERSAL;
+
+
+
+architecture reg of REGISTRU_UNIVERSAL is
+
+
+component DIVIZOR_FRECVENTA 
+	
+	port(CLK, RST : in std_logic;
+			
+		NEW_CLK: out std_logic);
+		
+end component;
+		
+signal NEW_CLK: std_logic;
+
+	
+begin
+	
+
+	U1: DIVIZOR_FRECVENTA port map (CLK, RST, NEW_CLK);
+
+	
+process(NEW_CLK, NR_IN, SEL, SER_RIGHT, SER_LEFT, RST)
+
+
+
+	variable V_NR: std_logic_vector(3 downto 0); 	 
+
+	
+
+begin 
+	
+	if RST = '1' then
+		V_NR := "0000";
+	
+	elsif SEL = "11" then
+			V_NR := NR_IN; --PL
+	
+	elsif NEW_CLK'EVENT and NEW_CLK = '1' then
+		
+		
+		case SEL is
+			
+			when "00" => 	V_NR := Q; --hold
+
+			
+			when "01" => V_NR := Q;--shift right
+					for I in 0 to 2 loop
+								
+					V_NR(I) := V_NR(I + 1);
+							
+					end loop;
+							
+					
+					V_NR(3) := SER_RIGHT;
+
+			when "10" =>	 V_NR := Q;--shift left
+					for I in 3 downto 1 loop
+						V_NR(I) := V_NR(I - 1);
+					end loop;
+
+
+					V_NR(0) := SER_LEFT;
+			
+		
+			when others => V_NR := "0000"; 
+			
+		end case;
+			
+		
+	end if;
+		
+	Q <= V_NR;
+
+	
+end process;
+	
+	
+end reg;
+		
+					
+						

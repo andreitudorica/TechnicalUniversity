@@ -1,0 +1,32 @@
+V 000044 55 1486          1304852389458 ram
+(_unit VHDL (ram_m 0 5 (ram 0 11 ))
+  (_version v38)
+  (_time 1304852389459 2011.05.08 13:59:49)
+  (_source (\./src/memram.vhd\))
+  (_use (std(standard))(ieee(numeric_bit)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304852389448)
+    (_use )
+  )
+  (_object
+    (_type (_internal ~UNSIGNED{3~downto~0}~12 0 6 (_array ~extSTD.STANDARD.BIT ((_downto (i 3)(i 0))))))
+    (_port (_internal s ~UNSIGNED{3~downto~0}~12 0 6 (_entity (_in ))))
+    (_port (_internal ce ~extSTD.STANDARD.BIT 0 7 (_entity (_in ))))
+    (_port (_internal we ~extSTD.STANDARD.BIT 0 8 (_entity (_in ))))
+    (_type (_internal ~UNSIGNED{3~downto~0}~122 0 9 (_array ~extSTD.STANDARD.BIT ((_downto (i 3)(i 0))))))
+    (_port (_internal y ~UNSIGNED{3~downto~0}~122 0 9 (_entity (_inout ))))
+    (_type (_internal ~UNSIGNED{0~to~3}~13 0 12 (_array ~extSTD.STANDARD.BIT ((_to (i 0)(i 3))))))
+    (_type (_internal matrice 0 12 (_array ~UNSIGNED{0~to~3}~13 ((_to (i 0)(i 15))))))
+    (_variable (_internal memorie matrice 0 15 (_process 0 )))
+    (_variable (_internal i ~extSTD.STANDARD.INTEGER 0 16 (_process 0 )))
+    (_process
+      (line__14(_architecture 0 0 14 (_process (_simple)(_target(3))(_sensitivity(0)(1)(2))(_read(3)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+    (_type (_external ~extieee.numeric_bit.UNSIGNED (ieee numeric_bit UNSIGNED)))
+    (_type (_external ~extSTD.STANDARD.INTEGER (std STANDARD INTEGER)))
+  )
+  (_model . ram 1 -1
+  )
+)

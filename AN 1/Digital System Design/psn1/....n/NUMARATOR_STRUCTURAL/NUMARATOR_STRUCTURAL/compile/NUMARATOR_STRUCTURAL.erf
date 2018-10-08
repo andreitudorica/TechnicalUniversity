@@ -1,0 +1,4 @@
+MESSAGE "File: c:\My_Designs\Colocviu\NUMARATOR_STRUCTURAL\NUMARATOR_STRUCTURAL\src\suma2.vhd" 
+MESSAGE "Compile Entity "suma2"" 
+MESSAGE "Compile Architecture "arhitectura_suma2" of Entity "suma2"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 

@@ -1,0 +1,5 @@
+MESSAGE "File: E:\ptr. facultate\Sem 2\PSN\colcviu_psnnn\subiecte_2010\src\subiect6.vhd" 
+MESSAGE "Compile Entity "decod"" 
+MESSAGE "Entity `decod' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "decodificator" of Entity "decod"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]" 

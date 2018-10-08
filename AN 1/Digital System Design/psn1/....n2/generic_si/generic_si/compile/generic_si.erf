@@ -1,0 +1,4 @@
+MESSAGE "File: c:\My_Designs\generic_si\generic_si\src\generic_si.vhd" 
+MESSAGE "Compile Entity "poarta_si"" 
+ERROR COMP96_0016: "Design unit declaration expected." "c:\My_Designs\generic_si\generic_si\src\generic_si.vhd" 34 1
+FAILURE "Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [s]" 

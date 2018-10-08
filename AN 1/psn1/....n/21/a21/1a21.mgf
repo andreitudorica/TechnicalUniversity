@@ -1,0 +1,26 @@
+V 000044 55 990           1305393488038 a21
+(_unit VHDL (a21 0 28 (a21 0 39 ))
+  (_version v38)
+  (_time 1305393488039 2011.05.14 20:18:08)
+  (_source (\./src/a21.vhd\))
+  (_use (std(standard))(ieee(std_logic_1164)))
+  (_parameters dbg )
+  (_entity
+    (_time 1305393487980)
+    (_use )
+  )
+  (_object
+    (_port (_internal clk ~extSTD.STANDARD.BIT 0 30 (_entity (_in )(_event))))
+    (_port (_internal data_in ~extSTD.STANDARD.BIT 0 31 (_entity (_in ))))
+    (_port (_internal ok ~extSTD.STANDARD.BIT 0 32 (_entity (_out ))))
+    (_type (_internal ~BIT_VECTOR{3~downto~0}~13 0 42 (_array ~extSTD.STANDARD.BIT ((_downto (i 3)(i 0))))))
+    (_variable (_internal vector ~BIT_VECTOR{3~downto~0}~13 0 42 (_process 0 )))
+    (_process
+      (line__41(_architecture 0 0 41 (_process (_simple)(_target(2))(_sensitivity(0))(_read(1)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+    (_type (_external ~extSTD.STANDARD.BIT_VECTOR (std STANDARD BIT_VECTOR)))
+  )
+  (_model . a21 1 -1
+  )
+)

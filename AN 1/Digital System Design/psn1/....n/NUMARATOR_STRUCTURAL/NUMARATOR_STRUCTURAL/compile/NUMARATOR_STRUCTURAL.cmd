@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\Colocviu\NUMARATOR_STRUCTURAL\library.cfg"  -j "c:\My_Designs\Colocviu\NUMARATOR_STRUCTURAL\NUMARATOR_STRUCTURAL\projlib.cfg"  -d "c:\My_Designs\Colocviu\NUMARATOR_STRUCTURAL\NUMARATOR_STRUCTURAL\compile\"  -work NUMARATOR_STRUCTURAL -dbg -e 100 "c:\My_Designs\Colocviu\NUMARATOR_STRUCTURAL\NUMARATOR_STRUCTURAL\src\suma2.vhd" 

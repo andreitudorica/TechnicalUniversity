@@ -1,0 +1,33 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=descr_comp
+
+[Library]
+descr_comp=.\descr_comp.LIB
+
+[$LibMap$]
+descr_comp=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FAMILY=
+
+[Files]
+/descr_comp.vhd=-1
+
+[Files.Data]
+.\src\descr_comp.vhd=VHDL Source Code
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=sumator|descr_comp|0 
+ShowHide=ShowTopLevel
+Selected=

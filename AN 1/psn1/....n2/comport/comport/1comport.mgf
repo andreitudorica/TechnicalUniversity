@@ -1,0 +1,25 @@
+V 000048 55 875           1304509378773 comport
+(_unit VHDL (porti_si 0 28 (comport 0 35 ))
+  (_version v38)
+  (_time 1304509378774 2011.05.04 14:42:58)
+  (_source (\./src/comport.vhd\))
+  (_use (std(standard))(ieee(std_logic_1164)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304509378770)
+    (_use )
+  )
+  (_object
+    (_port (_internal x1 ~extSTD.STANDARD.BIT 0 29 (_entity (_in ))))
+    (_port (_internal x2 ~extSTD.STANDARD.BIT 0 29 (_entity (_in ))))
+    (_port (_internal x3 ~extSTD.STANDARD.BIT 0 29 (_entity (_in ))))
+    (_port (_internal y ~extSTD.STANDARD.BIT 0 30 (_entity (_out ))))
+    (_signal (_internal y_temp ~extSTD.STANDARD.BIT 0 36 (_architecture (_uni ))))
+    (_process
+      (porti(_architecture 0 0 38 (_process (_simple)(_target(4)(3))(_sensitivity(4)(2)(1)(0)))))
+    )
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+  )
+  (_model . comport 1 -1
+  )
+)

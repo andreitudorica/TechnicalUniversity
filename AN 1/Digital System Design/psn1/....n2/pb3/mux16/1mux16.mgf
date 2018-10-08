@@ -1,0 +1,58 @@
+I 000045 55 1301          1304797436153 muxx
+(_unit VHDL (mux 0 5 (muxx 0 11 ))
+  (_version v38)
+  (_time 1304797436153 2011.05.07 22:43:56)
+  (_source (\./src/mux16.vhd\))
+  (_use (std(standard))(ieee(std_logic_1164))(ieee(numeric_bit)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304797436149)
+    (_use )
+  )
+  (_object
+    (_generic (_internal nr_selectii ~extSTD.STANDARD.INTEGER 0 6 \4\ (_entity ((i 4)))))
+    (_type (_internal ~UNSIGNED{nr_selectii-1~downto~0}~12 0 7 (_array ~extSTD.STANDARD.BIT ((_downto (c 1 )(i 0))))))
+    (_port (_internal s ~UNSIGNED{nr_selectii-1~downto~0}~12 0 7 (_entity (_in ))))
+    (_type (_internal ~UNSIGNED{0~to~2**nr_selectii-1}~12 0 8 (_array ~extSTD.STANDARD.BIT ((_to (i 0)(c 2))))))
+    (_port (_internal a ~UNSIGNED{0~to~2**nr_selectii-1}~12 0 8 (_entity (_in ))))
+    (_port (_internal y ~extSTD.STANDARD.BIT 0 9 (_entity (_out ))))
+    (_variable (_internal i ~extSTD.STANDARD.INTEGER 0 14 (_process 0 )))
+    (_process
+      (line__13(_architecture 0 0 13 (_process (_simple)(_target(2))(_sensitivity(0)(1)))))
+    )
+    (_type (_external ~extSTD.STANDARD.INTEGER (std STANDARD INTEGER)))
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+    (_type (_external ~extieee.numeric_bit.UNSIGNED (ieee numeric_bit UNSIGNED)))
+  )
+  (_model . muxx 3 -1
+  )
+)
+V 000045 55 1301          1304797584241 muxx
+(_unit VHDL (mux 0 5 (muxx 0 11 ))
+  (_version v38)
+  (_time 1304797584241 2011.05.07 22:46:24)
+  (_source (\./src/mux16.vhd\))
+  (_use (std(standard))(ieee(std_logic_1164))(ieee(numeric_bit)))
+  (_parameters dbg )
+  (_entity
+    (_time 1304797436149)
+    (_use )
+  )
+  (_object
+    (_generic (_internal nr_selectii ~extSTD.STANDARD.INTEGER 0 6 \4\ (_entity ((i 4)))))
+    (_type (_internal ~UNSIGNED{nr_selectii-1~downto~0}~12 0 7 (_array ~extSTD.STANDARD.BIT ((_downto (c 1 )(i 0))))))
+    (_port (_internal s ~UNSIGNED{nr_selectii-1~downto~0}~12 0 7 (_entity (_in ))))
+    (_type (_internal ~UNSIGNED{0~to~2**nr_selectii-1}~12 0 8 (_array ~extSTD.STANDARD.BIT ((_to (i 0)(c 2))))))
+    (_port (_internal a ~UNSIGNED{0~to~2**nr_selectii-1}~12 0 8 (_entity (_in ))))
+    (_port (_internal y ~extSTD.STANDARD.BIT 0 9 (_entity (_out ))))
+    (_variable (_internal i ~extSTD.STANDARD.INTEGER 0 14 (_process 0 )))
+    (_process
+      (line__13(_architecture 0 0 13 (_process (_simple)(_target(2))(_sensitivity(0)(1)))))
+    )
+    (_type (_external ~extSTD.STANDARD.INTEGER (std STANDARD INTEGER)))
+    (_type (_external ~extSTD.STANDARD.BIT (std STANDARD BIT)))
+    (_type (_external ~extieee.numeric_bit.UNSIGNED (ieee numeric_bit UNSIGNED)))
+  )
+  (_model . muxx 3 -1
+  )
+)

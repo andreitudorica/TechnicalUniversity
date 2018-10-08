@@ -1,0 +1,12 @@
+[Version]
+Version=7.2
+[Designs]
+unu=.\unu\unu.adf
+[Browser]
+sort=order
+mode=asc
+[Order]
+order=1
+macro=
+[Expand]
+unu=1

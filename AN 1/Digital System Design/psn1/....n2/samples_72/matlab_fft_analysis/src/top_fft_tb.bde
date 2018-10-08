@@ -1,0 +1,1592 @@
+SCHM0103
+
+HEADER
+{
+ FREEID 7498
+ VARIABLES
+ {
+  #ARCHITECTURE="TB_ARCHITECTURE"
+  #BLOCKTABLE_FILE="#HDL2DIAGRAM.bde"
+  #BLOCKTABLE_INCLUDED="1"
+  #ENTITY="top_fft_tb"
+  #LANGUAGE="VHDL"
+  AUTHOR="Aldec"
+  COMPANY="s"
+  CREATIONDATE="10/03/2005"
+  SOURCE=".\\src\\testbench.vhd"
+  TITLE="No Title"
+ }
+ SYMBOL "#default" "top_fft" "top_fft"
+ {
+  HEADER
+  {
+   VARIABLES
+   {
+    #DESCRIPTION=""
+    #GENERIC0="WIDTH:NATURAL:=16"
+    #GENERIC1="POINT:NATURAL:=1024"
+    #GENERIC2="STAGE:NATURAL:=5"
+    #HDL_ENTRIES=
+"library STD,IEEE;\n"+
+"use STD.STANDARD.all,ieee.std_logic_1164.all;"
+    #LANGUAGE="VHDL"
+    #MODIFIED="1123250569"
+   }
+  }
+  PAGE "" 
+  {
+   PAGEHEADER
+   {
+    RECT (0,0,480,420)
+    FREEID 23
+   }
+   
+   BODY
+   {
+    RECT  1, -1, 0
+    {
+     VARIABLES
+     {
+      #OUTLINE_FILLING="1"
+     }
+     AREA (20,0,460,420)
+    }
+    TEXT  3, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (25,30,97,54)
+     ALIGN 4
+     MARGINS (1,1)
+     PARENT 2
+    }
+    TEXT  5, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (371,30,455,54)
+     ALIGN 6
+     MARGINS (1,1)
+     PARENT 4
+    }
+    TEXT  7, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (25,70,106,94)
+     ALIGN 4
+     MARGINS (1,1)
+     PARENT 6
+    }
+    TEXT  9, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (425,270,455,294)
+     ALIGN 6
+     MARGINS (1,1)
+     PARENT 8
+    }
+    TEXT  11, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (25,150,48,174)
+     ALIGN 4
+     MARGINS (1,1)
+     PARENT 10
+    }
+    TEXT  13, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (362,70,455,94)
+     ALIGN 6
+     MARGINS (1,1)
+     PARENT 12
+    }
+    TEXT  15, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (25,190,50,214)
+     ALIGN 4
+     MARGINS (1,1)
+     PARENT 14
+    }
+    TEXT  17, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (25,110,50,134)
+     ALIGN 4
+     MARGINS (1,1)
+     PARENT 16
+    }
+    TEXT  19, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (25,270,48,294)
+     ALIGN 4
+     MARGINS (1,1)
+     PARENT 18
+    }
+    TEXT  21, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (25,230,63,254)
+     ALIGN 4
+     MARGINS (1,1)
+     PARENT 20
+    }
+    PIN  2, 0, 0
+    {
+     COORD (0,40)
+     VARIABLES
+     {
+      #DIRECTION="IN"
+      #DOWNTO="1"
+      #LENGTH="20"
+      #MDA_RECORD_TOKEN="OTHER"
+      #NAME="Iin(15:0)"
+      #NUMBER="0"
+     }
+     LINE  2, 0, 0
+     {
+      POINTS ( (0,0), (20,0) )
+     }
+    }
+    PIN  4, 0, 0
+    {
+     COORD (480,40)
+     VARIABLES
+     {
+      #DIRECTION="OUT"
+      #DOWNTO="1"
+      #LENGTH="20"
+      #MDA_RECORD_TOKEN="OTHER"
+      #NAME="Iout(17:0)"
+      #NUMBER="0"
+     }
+     LINE  2, 0, 0
+     {
+      POINTS ( (-20,0), (0,0) )
+     }
+    }
+    PIN  6, 0, 0
+    {
+     COORD (0,80)
+     VARIABLES
+     {
+      #DIRECTION="IN"
+      #DOWNTO="1"
+      #LENGTH="20"
+      #MDA_RECORD_TOKEN="OTHER"
+      #NAME="Qin(15:0)"
+      #NUMBER="0"
+     }
+     LINE  2, 0, 0
+     {
+      POINTS ( (0,0), (20,0) )
+     }
+    }
+    PIN  8, 0, 0
+    {
+     COORD (480,280)
+     VARIABLES
+     {
+      #DIRECTION="OUT"
+      #LENGTH="20"
+      #MDA_RECORD_TOKEN="OTHER"
+      #NAME="OE"
+      #NUMBER="0"
+      #SIDE="right"
+     }
+     LINE  2, 0, 0
+     {
+      POINTS ( (-20,0), (0,0) )
+     }
+    }
+    PIN  10, 0, 0
+    {
+     COORD (0,160)
+     VARIABLES
+     {
+      #DIRECTION="IN"
+      #LENGTH="20"
+      #MDA_RECORD_TOKEN="OTHER"
+      #NAME="ce"
+      #NUMBER="0"
+      #SIDE="left"
+     }
+     LINE  2, 0, 0
+     {
+      POINTS ( (0,0), (20,0) )
+     }
+    }
+    PIN  12, 0, 0
+    {
+     COORD (480,80)
+     VARIABLES
+     {
+      #DIRECTION="OUT"
+      #DOWNTO="1"
+      #LENGTH="20"
+      #MDA_RECORD_TOKEN="OTHER"
+      #NAME="Qout(17:0)"
+      #NUMBER="0"
+      #SIDE="right"
+     }
+     LINE  2, 0, 0
+     {
+      POINTS ( (-20,0), (0,0) )
+     }
+    }
+    PIN  14, 0, 0
+    {
+     COORD (0,200)
+     VARIABLES
+     {
+      #DIRECTION="IN"
+      #LENGTH="20"
+      #MDA_RECORD_TOKEN="OTHER"
+      #NAME="clk"
+      #NUMBER="0"
+      #SIDE="left"
+     }
+     LINE  2, 0, 0
+     {
+      POINTS ( (0,0), (20,0) )
+     }
+    }
+    PIN  16, 0, 0
+    {
+     COORD (0,120)
+     VARIABLES
+     {
+      #DIRECTION="IN"
+      #LENGTH="20"
+      #MDA_RECORD_TOKEN="OTHER"
+      #NAME="inv"
+      #NUMBER="0"
+      #SIDE="left"
+     }
+     LINE  2, 0, 0
+     {
+      POINTS ( (0,0), (20,0) )
+     }
+    }
+    PIN  18, 0, 0
+    {
+     COORD (0,280)
+     VARIABLES
+     {
+      #DIRECTION="IN"
+      #LENGTH="20"
+      #MDA_RECORD_TOKEN="OTHER"
+      #NAME="rst"
+      #NUMBER="0"
+      #SIDE="left"
+     }
+     LINE  2, 0, 0
+     {
+      POINTS ( (0,0), (20,0) )
+     }
+    }
+    PIN  20, 0, 0
+    {
+     COORD (0,240)
+     VARIABLES
+     {
+      #DIRECTION="IN"
+      #LENGTH="20"
+      #MDA_RECORD_TOKEN="OTHER"
+      #NAME="start"
+      #NUMBER="0"
+      #SIDE="left"
+     }
+     LINE  2, 0, 0
+     {
+      POINTS ( (0,0), (20,0) )
+     }
+    }
+   }
+  }
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  PAGESIZE (4400,3400)
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+ }
+ 
+ BODY
+ {
+  VHDLDESIGNUNITHDR  1, 0, 0
+  {
+   LABEL "Design Unit Header"
+   TEXT 
+"library ieee;\n"+
+"\tuse ieee.std_logic_1164.all;\n"+
+"\tuse ieee.std_logic_arith.all;\n"+
+"library aldec;\n"+
+"    use aldec.matlab.all;"
+   RECT (620,340,1100,618)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  ARCHITECTUREDECLARATIONS  2, 0, 0
+  {
+   LABEL "Architecture Declaration"
+   TEXT 
+"shared variable Qin_Id : INTEGER := 0;\n"+
+"shared variable Iout_Id : INTEGER := 0;\n"+
+"shared variable Qout_Id : INTEGER := 0;\n"+
+"constant clk_period : TIME := 22727272ps;\n"+
+"constant in_period : TIME := 500us;\n"+
+"constant window_type : integer := 4;"
+   RECT (1180,340,1760,620)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  INSTANCE  5, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="top_fft"
+    #GENERIC0="STAGE:NATURAL:="
+    #GENERIC1="POINT:NATURAL:="
+    #GENERIC2="WIDTH:NATURAL:="
+    #LIBRARY="#default"
+    #REFERENCE="UUT"
+    #SYMBOL="top_fft"
+   }
+   COORD (2340,1260)
+   VERTEXES ( (6,6832), (4,6831), (12,6836), (8,6834) )
+   PINPROP 2,"#PORTVALUE","(others => '0')"
+   PINPROP 2,"#PIN_STATE","2"
+   PINPROP 10,"#PORTVALUE","'1'"
+   PINPROP 10,"#PIN_STATE","2"
+   PINPROP 12,"#PIN_STATE","0"
+   PINPROP 16,"#PORTVALUE","'0'"
+   PINPROP 16,"#PIN_STATE","2"
+  }
+  PROCESS  6, 0, 0
+  {
+   LABEL "CLOCK"
+   TEXT 
+"CLOCK : process\n"+
+"begin\n"+
+"\tif end_sim = false then\n"+
+"\t\tclk <= '0';\n"+
+"\t\twait for clk_period / 2;\n"+
+"\t\tclk <= '1';\n"+
+"\t\twait for clk_period / 2;\n"+
+"\telse \n"+
+"\t\twait;\n"+
+"\tend if;\n"+
+"end process;\n"+
+"                      "
+   RECT (980,720,1580,1140)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+   VTX (  7319, 7397 )
+   VARIABLES
+   {
+    #DIRECTION_LIST="7319 "
+    #UPDATE_SENS_LIST="0"
+   }
+   LIST (  7319 )
+  }
+  PROCESS  7, 0, 0
+  {
+   LABEL "ANALYSE_FFT"
+   TEXT 
+"ANALYSE_FFT :\n"+
+"process (clk)\n"+
+"-- Section above this comment may be overwritten according to\n"+
+"-- \"Update sensitivity list automatically\" option status\n"+
+"variable dim_constr : TDims(1 to 2) := (1,1);\n"+
+"begin\n"+
+"\tif rising_edge(clk) then\n"+
+"\t\tif start = '1' then\n"+
+"\t\t\tdim_constr(2) := 1;\n"+
+"\t\tend if;\n"+
+"\t\tif OE = '1' then\n"+
+"\t\t\tput_item(Iout,0,Iout_Id,dim_constr);\n"+
+"\t\t\tput_item(Qout,0,Qout_Id,dim_constr);\n"+
+"\t\t\tdim_constr(2) := dim_constr(2) + 1;\n"+
+"\t\tend if;\n"+
+"\t\tif (dim_constr(2) = 1025) then\n"+
+"\t\t\tdim_constr(2) := 1;\t\n"+
+"\t\t\tend_sim <= true;\n"+
+"\t\t\thdl2ml(Iout_Id);\n"+
+"\t\t\thdl2ml(Qout_Id);\n"+
+"\t\t\teval_string(\"analyse\");\n"+
+"\t\t\teval_string(\"display_output\");\n"+
+"\t\tend if;\n"+
+"\tend if;\n"+
+"end process;"
+   RECT (3120,1240,3960,2060)
+   FILL (0,(255,240,223),0)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWTEXT
+   CORNER 10
+   VTX (  6830, 6833, 6835, 7150, 7423 )
+   VARIABLES
+   {
+    #COMMENT=
+"Process ANALYSE_FFT: \n"+
+"1. Collects each sample of FFT output signals in temporary arrays referenced by \n"+
+"Qout_Id, Iout_Id:\n"+
+"\t\tput_item(Iout,0,Iout_Id,dim_constr);\n"+
+"\t\tput_item(Qout,0,Qout_Id,dim_constr);\n"+
+"2. Transfers whole arrays to MATLAB workspace in one transaction per array:\n"+
+"\t\thdl2ml(Iout_Id);\n"+
+"\t\thdl2ml(Qout_Id);\n"+
+"3. Calculates mathematical FFT of input buffer and plots magnitude spectra of both \n"+
+"input and output buffers by executing \"analyse.m\" M-File: \n"+
+"\t\teval_string(\"analyse\");\n"+
+"4. Plots comparison of mathematical and hardware FFT by executing \n"+
+"\"display_output.m\" M-File:\n"+
+"\t\teval_string(\"display_output\");"
+    #DIRECTION_LIST="6830 6833 6835 7423 "
+    #UPDATE_SENS_LIST="1"
+   }
+   LIST (  7423 )
+  }
+  PROCESS  8, 0, 0
+  {
+   LABEL "MATLAB_WINDOW"
+   TEXT 
+"MATLAB_WINDOW :\n"+
+"process (clk)\n"+
+"-- Section above this comment may be overwritten according to\n"+
+"-- \"Update sensitivity list automatically\" option status\n"+
+"variable Qin_var : std_logic_vector(15 downto 0);\n"+
+"variable i : integer;\t\t\t \n"+
+"variable frame_active : boolean;\n"+
+"begin\n"+
+"\tif rising_edge(clk) then\n"+
+"\t\tif start = '1' then\n"+
+"\t\t\tframe_active := true;\n"+
+"\t\t\ti := 1;\n"+
+"\t\tend if;\n"+
+"\t\tif frame_active then\n"+
+"\t\t\tput_variable(\"input\",in_wave);\n"+
+"\t\t\tput_variable(\"index\",i);\n"+
+"\t\t\teval_string(\"windowed_input = input * windows1024(w).coeff(index);\");\n"+
+"\t\t\tget_variable(\"windowed_input\",Qin_var);\n"+
+"\t\t\tQin <= Qin_var;\t\n"+
+"\t\t\ti := i + 1;\n"+
+"\t\tend if;\n"+
+"\t\tif i = 1025 and frame_active  then\n"+
+"\t\t\tframe_active := false;\n"+
+"\t\tend if;\n"+
+"\tend if;\n"+
+"end process;"
+   RECT (1080,1280,1900,2100)
+   FILL (0,(255,240,223),0)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWTEXT
+   CORNER 10
+   VTX (  6759, 6760, 7407 )
+   VARIABLES
+   {
+    #COMMENT=
+"Process MATLAB_WINDOW:\n"+
+"1. Transfers each sample of input square wave into MATLAB workspace:\n"+
+"\t\tput_variable(\"index\",i);\n"+
+"\t\tput_variable(\"input\",in_wave);\n"+
+"2. Multiplies input sample by selected window function coefficient:\n"+
+"\t\teval_string(\"windowed_input = input *windows1024(w).coeff(index);\")\n"+
+"3. Transfers calculated value of sample back to Active-HDL simulator:\n"+
+"\t\tget_variable(\"windowed_input\",Qin_var);"
+    #DIRECTION_LIST="6759 7407 "
+    #UPDATE_SENS_LIST="1"
+   }
+   LIST (  7407 )
+  }
+  PROCESS  9, 0, 0
+  {
+   LABEL "SQUARE_WAVE"
+   TEXT 
+"SQUARE_WAVE : process\n"+
+"begin\n"+
+"\tif end_sim = false then\n"+
+"\t\tin_wave <= \"0000100011110101\";\n"+
+"\t\twait for in_period / 2;\n"+
+"\t\tin_wave <= \"1111011100001010\";\n"+
+"\t\twait for in_period / 2;\n"+
+"\telse       \n"+
+"\t\twait;\n"+
+"\tend if;\n"+
+"end process;\n"+
+"                      "
+   RECT (360,1280,900,1740)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+   VTX (  6758, 7244 )
+   VARIABLES
+   {
+    #DIRECTION_LIST="7244 "
+    #UPDATE_SENS_LIST="0"
+   }
+   LIST (  7244 )
+  }
+  PROCESS  10, 0, 0
+  {
+   LABEL "CONTROL"
+   TEXT 
+"CONTROL : process\n"+
+"begin\n"+
+"\trst <= '1';\n"+
+"\tstart <= '0';\n"+
+"\twait for 1000us;\n"+
+"\trst <= '0';\n"+
+"\tstart <= '1';\n"+
+"\twait for 22.6us;\n"+
+"\tstart <= '0';\n"+
+"\twait;\n"+
+"end process;\n"+
+""
+   RECT (360,720,780,1140)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+   VTX (  7274, 7277 )
+   VARIABLES
+   {
+    #DIRECTION_LIST=""
+    #UPDATE_SENS_LIST="0"
+   }
+  }
+  TEXT  11, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (2340,1227,2401,1260)
+   ALIGN 8
+   PARENT 5
+  }
+  TEXT  12, 0, 0
+  {
+   TEXT "$#COMPONENT"
+   RECT (2340,1680,2420,1713)
+   PARENT 5
+  }
+  NET BUS  16, 0, 0
+  {
+   VARIABLES
+   {
+    #DOWNTO="1"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="in_wave(15:0)"
+    #VHDL_TYPE="std_logic_vector"
+   }
+  }
+  NET BUS  17, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="Iout(17:0)"
+    #VHDL_TYPE="std_logic_vector"
+   }
+  }
+  NET BUS  18, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="Qout(17:0)"
+    #VHDL_TYPE="std_logic_vector"
+   }
+  }
+  NET WIRE  21, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="OE"
+    #VHDL_TYPE="std_logic"
+   }
+  }
+  NET BUS  22, 0, 0
+  {
+   VARIABLES
+   {
+    #DOWNTO="1"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="Qin(15:0)"
+    #VHDL_TYPE="std_logic_vector"
+   }
+  }
+  TEXT  32, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1910,1338,2010,1365)
+   ALIGN 9
+   PARENT 6762
+  }
+  TEXT  36, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (2699,1313,2801,1340)
+   ALIGN 9
+   PARENT 6837
+  }
+  TEXT  40, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (2803,1313,2918,1340)
+   ALIGN 9
+   PARENT 6840
+  }
+  TEXT  64, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (2910,1273,3012,1300)
+   ALIGN 9
+   PARENT 6837
+  }
+  TEXT  68, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (2835,1313,2950,1340)
+   ALIGN 9
+   PARENT 6840
+  }
+  TEXT  76, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (3138,1893,3173,1920)
+   ALIGN 9
+   PARENT 6839
+  }
+  TEXT  100, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1910,1873,2010,1900)
+   ALIGN 9
+   PARENT 6838
+  }
+  TEXT  3540, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (906,1313,1054,1340)
+   ALIGN 9
+   PARENT 6761
+  }
+  PROCESS  3824, 0, 0
+  {
+   LABEL "DISPLAY_INPUT"
+   TEXT 
+"DISPLAY_INPUT :\n"+
+"process (clk)\n"+
+"-- Section above this comment may be overwritten according to\n"+
+"-- \"Update sensitivity list automatically\" option status\n"+
+"variable dim_constr : TDims(1 to 2) := (1,1);\n"+
+"variable frame_active : boolean;\n"+
+"begin\n"+
+"\tif rising_edge(clk) then\n"+
+"\t\tif start = '1' then\n"+
+"\t\t\tframe_active := true;\n"+
+"\t\t\tdim_constr(2) := 1;\n"+
+"\t\tend if;\n"+
+"\tend if;\n"+
+"\tif falling_edge(clk) then\t\t\n"+
+"\t\tif frame_active then\n"+
+"\t\t\tput_item(Qin,0,Qin_Id,dim_constr);\n"+
+"\t\t\tdim_constr(2) := dim_constr(2) + 1;\n"+
+"\t\tend if;\n"+
+"\t\tif (dim_constr(2) = 1025 and frame_active) then\n"+
+"\t\t\tframe_active := false;\n"+
+"\t\t\thdl2ml(Qin_Id);\n"+
+"\t\t\teval_string(\"display_input\");\n"+
+"\t\t\tdim_constr(2) := 1;\n"+
+"\t\tend if;\n"+
+"\tend if;\n"+
+"end process;"
+   RECT (2200,1920,2920,2720)
+   FILL (0,(255,240,223),0)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWTEXT
+   CORNER 10
+   VTX (  5905, 7415 )
+   VARIABLES
+   {
+    #COMMENT=
+"Process DISPLAY_INPUT: \n"+
+"1. Collects each sample of FFT input signal in temporary array referenced by Qin_Id:\n"+
+"\t\tput_item(Qin,0,Qin_Id,dim_constr);\n"+
+"2. Transfers whole array to MATLAB workspace in one transaction:\n"+
+"\t\thdl2ml(Qin_Id);\n"+
+"3. Plots input buffer by executing \"display_input.m\" M-File:\n"+
+"\t\teval_string(\"display_input\");"
+    #DIRECTION_LIST="7415 "
+    #UPDATE_SENS_LIST="1"
+   }
+   LIST (  7415 )
+  }
+  TEXT  3941, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (1929,1311,2031,1340)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 5913
+  }
+  PROCESS  4648, 0, 0
+  {
+   LABEL "MATLAB_INIT"
+   TEXT 
+"MATLAB_INIT : process\n"+
+"variable dim_constr : TDims(1 to 2) := (1,1024);\n"+
+"begin\n"+
+"\teval_string(\"prepare_workspace\");\n"+
+"\tput_variable(\"w\",window_type);\n"+
+"\tQin_Id := create_array(\"fft_Qin\",2,dim_constr);\n"+
+"\tIout_Id := create_array(\"fft_Iout\",2,dim_constr);\n"+
+"\tQout_Id := create_array(\"fft_Qout\",2,dim_constr);\n"+
+"\twait;\n"+
+"end process;\n"+
+""
+   RECT (1820,720,2580,1140)
+   FILL (0,(255,240,223),0)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+   VARIABLES
+   {
+    #COMMENT=
+"Process MATLAB_INIT: \n"+
+"1. Loads coefficients, sets up plots etc. by executing \"prepare_workspace.m\" M-File: \n"+
+"\t\teval_string(\"prepare_workspace\");\n"+
+"2. Selects window function by transferring its index (1 to 6):\n"+
+"\t\tput_variable(\"w\",window_type);\n"+
+"3. Creates temporary arrays for input and output buffers used in DISPLAY_INPUT and ANALYSE_FFT processes:\n"+
+"\t\tQin_Id := create_array(\"fft_Qin\",2,dim_constr);\n"+
+"\t\tIout_Id := create_array(\"fft_Iout\",2,dim_constr);\n"+
+"\t\tQout_Id := create_array(\"fft_Qout\",2,dim_constr);"
+    #DIRECTION_LIST=""
+    #UPDATE_SENS_LIST="0"
+   }
+  }
+  INSTANCE  5262, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Global"
+    #LIBRARY="#connectors"
+    #REFERENCE="clk"
+    #SYMBOL="Global"
+    #VHDL_TYPE="std_logic"
+   }
+   COORD (360,380)
+  }
+  TEXT  5263, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (375,363,413,398)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 5262
+  }
+  INSTANCE  5267, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Global"
+    #LIBRARY="#connectors"
+    #REFERENCE="start"
+    #SYMBOL="Global"
+    #VHDL_TYPE="std_logic"
+   }
+   COORD (360,440)
+  }
+  TEXT  5268, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (375,423,434,458)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 5267
+  }
+  INSTANCE  5272, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Global"
+    #INITIAL_VALUE="FALSE"
+    #LIBRARY="#connectors"
+    #REFERENCE="end_sim"
+    #SYMBOL="Global"
+    #VHDL_TYPE="BOOLEAN"
+   }
+   COORD (360,560)
+  }
+  TEXT  5273, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (375,543,488,578)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 5272
+  }
+  INSTANCE  5520, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Global"
+    #LIBRARY="#connectors"
+    #REFERENCE="rst"
+    #SYMBOL="Global"
+   }
+   COORD (360,500)
+  }
+  TEXT  5521, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (375,483,410,518)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 5520
+  }
+  VTX  5896, 0, 0
+  {
+   COORD (2100,1340)
+  }
+  VTX  5905, 0, 0
+  {
+   COORD (2200,1980)
+  }
+  VTX  5912, 0, 0
+  {
+   COORD (2100,1980)
+  }
+  BUS  5913, 0, 0
+  {
+   NET 22
+   VTX 5896, 5912
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  BUS  5914, 0, 0
+  {
+   NET 22
+   VTX 5912, 5905
+  }
+  TEXT  6555, 0, 0
+  {
+   TEXT 
+"Available window_type constant values:\n"+
+"1 = Bartlett\n"+
+"2 = Hanning\n"+
+"3 = Blackman\n"+
+"4 = Hamming\n"+
+"5 = Kaiser\n"+
+"6 = Rectangular"
+   RECT (1860,360,2370,593)
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (12,0,0,400,0,238,0,"Arial")
+   MULTILINE
+  }
+  TEXT  6593, 0, 0
+  {
+   TEXT "@COMMENT()"
+   RECT (1080,2100,2018,2364)
+   PARENT 8
+   FILL (0,(255,255,255),0)
+  }
+  TEXT  6597, 0, 0
+  {
+   TEXT "@COMMENT()"
+   RECT (2600,720,4064,1017)
+   PARENT 4648
+   FILL (0,(255,255,255),0)
+  }
+  TEXT  6601, 0, 0
+  {
+   TEXT "@COMMENT()"
+   RECT (2200,2720,3289,2951)
+   PARENT 3824
+   FILL (0,(255,255,255),0)
+  }
+  TEXT  6605, 0, 0
+  {
+   TEXT "@COMMENT()"
+   RECT (3120,2060,4198,2522)
+   PARENT 7
+   FILL (0,(255,255,255),0)
+  }
+  VTX  6758, 0, 0
+  {
+   COORD (900,1340)
+  }
+  VTX  6759, 0, 0
+  {
+   COORD (1080,1340)
+  }
+  VTX  6760, 0, 0
+  {
+   COORD (1900,1340)
+  }
+  BUS  6761, 0, 0
+  {
+   NET 16
+   VTX 6758, 6759
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  BUS  6762, 0, 0
+  {
+   NET 22
+   VTX 5896, 6760
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  VTX  6830, 0, 0
+  {
+   COORD (3120,1300)
+  }
+  VTX  6831, 0, 0
+  {
+   COORD (2820,1300)
+  }
+  VTX  6832, 0, 0
+  {
+   COORD (2340,1340)
+  }
+  VTX  6833, 0, 0
+  {
+   COORD (3120,1540)
+  }
+  VTX  6834, 0, 0
+  {
+   COORD (2820,1540)
+  }
+  VTX  6835, 0, 0
+  {
+   COORD (3120,1340)
+  }
+  VTX  6836, 0, 0
+  {
+   COORD (2820,1340)
+  }
+  BUS  6837, 0, 0
+  {
+   NET 17
+   VTX 6830, 6831
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  BUS  6838, 0, 0
+  {
+   NET 22
+   VTX 5896, 6832
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  WIRE  6839, 0, 0
+  {
+   NET 21
+   VTX 6833, 6834
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  BUS  6840, 0, 0
+  {
+   NET 18
+   VTX 6835, 6836
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  NET WIRE  7117, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="rst"
+   }
+  }
+  TEXT  7118, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (818,1010,847,1039)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 7276
+  }
+  NET WIRE  7129, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="start"
+    #VHDL_TYPE="std_logic"
+   }
+  }
+  TEXT  7130, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (820,1051,869,1080)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 7279
+  }
+  VTX  7150, 0, 0
+  {
+   COORD (3960,1300)
+  }
+  VTX  7151, 0, 0
+  {
+   COORD (4080,1300)
+  }
+  WIRE  7152, 0, 0
+  {
+   NET 7153
+   VTX 7150, 7151
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  NET WIRE  7153, 0, 0
+  {
+   VARIABLES
+   {
+    #INITIAL_VALUE="FALSE"
+    #NAME="end_sim"
+    #VHDL_TYPE="BOOLEAN"
+   }
+  }
+  TEXT  7154, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (3974,1270,4067,1299)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 7152
+  }
+  TEXT  7196, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (243,1350,336,1379)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 7246
+  }
+  VTX  7244, 0, 0
+  {
+   COORD (360,1380)
+  }
+  VTX  7245, 0, 0
+  {
+   COORD (240,1380)
+  }
+  WIRE  7246, 0, 0
+  {
+   NET 7153
+   VTX 7244, 7245
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  7247, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (863,790,956,819)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 7320
+  }
+  VTX  7274, 0, 0
+  {
+   COORD (780,1040)
+  }
+  VTX  7275, 0, 0
+  {
+   COORD (880,1040)
+  }
+  WIRE  7276, 0, 0
+  {
+   NET 7117
+   VTX 7274, 7275
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  VTX  7277, 0, 0
+  {
+   COORD (780,1080)
+  }
+  VTX  7278, 0, 0
+  {
+   COORD (880,1080)
+  }
+  WIRE  7279, 0, 0
+  {
+   NET 7129
+   VTX 7277, 7278
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  VTX  7318, 0, 0
+  {
+   COORD (860,820)
+  }
+  VTX  7319, 0, 0
+  {
+   COORD (980,820)
+  }
+  WIRE  7320, 0, 0
+  {
+   NET 7153
+   VTX 7318, 7319
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  VTX  7397, 0, 0
+  {
+   COORD (1580,820)
+  }
+  VTX  7398, 0, 0
+  {
+   COORD (1680,820)
+  }
+  WIRE  7400, 0, 0
+  {
+   NET 7401
+   VTX 7397, 7398
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  NET WIRE  7401, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="clk"
+    #VHDL_TYPE="std_logic"
+   }
+  }
+  TEXT  7402, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (1614,790,1646,819)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 7400
+  }
+  VTX  7406, 0, 0
+  {
+   COORD (980,1400)
+  }
+  VTX  7407, 0, 0
+  {
+   COORD (1080,1400)
+  }
+  WIRE  7409, 0, 0
+  {
+   NET 7401
+   VTX 7406, 7407
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  7410, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (1014,1370,1046,1399)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 7409
+  }
+  VTX  7414, 0, 0
+  {
+   COORD (2100,2040)
+  }
+  VTX  7415, 0, 0
+  {
+   COORD (2200,2040)
+  }
+  WIRE  7417, 0, 0
+  {
+   NET 7401
+   VTX 7414, 7415
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  7418, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (2134,2010,2166,2039)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 7417
+  }
+  VTX  7422, 0, 0
+  {
+   COORD (3000,1500)
+  }
+  VTX  7423, 0, 0
+  {
+   COORD (3120,1500)
+  }
+  WIRE  7425, 0, 0
+  {
+   NET 7401
+   VTX 7422, 7423
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  7426, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (3044,1470,3076,1499)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 7425
+  }
+ }
+ 
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  PAGESIZE (4400,3400)
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+  VARIABLES
+  {
+   #BLOCKTABLE_PAGE="1"
+   #BLOCKTABLE_TEMPL="1"
+   #BLOCKTABLE_VISIBLE="0"
+   #MODIFIED="1140772458"
+  }
+ }
+ 
+ BODY
+ {
+  TEXT  7464, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "Author:"
+   RECT (3344,3086,3476,3135)
+   ALIGN 6
+   MARGINS (16,8)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,0,0,"Arial")
+  }
+  TEXT  7465, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "$AUTHOR"
+   RECT (3504,3091,3609,3126)
+   ALIGN 4
+   MARGINS (16,1)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,128,0,"Arial")
+  }
+  TEXT  7466, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 5,1, (0,0,0)
+   TEXT "Created:"
+   RECT (3350,2966,3467,3019)
+   ALIGN 4
+   MARGINS (1,10)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,0,0,"Arial")
+  }
+  TEXT  7467, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "$CREATIONDATE"
+   RECT (3520,2973,3690,3008)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,128,0,"Arial")
+  }
+  TEXT  7468, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "Title:"
+   RECT (3351,3024,3422,3077)
+   ALIGN 4
+   MARGINS (1,10)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,0,0,"Arial")
+  }
+  TEXT  7469, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 5,1, (0,0,0)
+   TEXT "$TITLE"
+   RECT (3520,3033,3628,3068)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,128,0,"Arial")
+  }
+  LINE  7470, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (3340,2960), (4200,2960) )
+   FILL (1,(0,0,0),0)
+  }
+  LINE  7471, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (3340,3020), (4200,3020) )
+   FILL (1,(0,0,0),0)
+  }
+  LINE  7472, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (3500,2960), (3500,3200) )
+  }
+  LINE  7473, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (4200,3200), (4200,2820), (3340,2820), (3340,3200), (4200,3200) )
+   FILL (1,(0,0,0),0)
+  }
+  TEXT  7474, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT 
+"(C)ALDEC. Inc\n"+
+"2260 Corporate Circle\n"+
+"Henderson, NV 89074"
+   RECT (3350,2840,3645,2941)
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,0,0,"Arial")
+   MULTILINE
+  }
+  LINE  7475, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (3650,2820), (3650,2960) )
+  }
+  LINE  7476, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,4, (0,4,255)
+   POINTS ( (3826,2884), (3892,2884) )
+   FILL (0,(0,4,255),0)
+  }
+  LINE  7477, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (0,4,255)
+   POINTS ( (3795,2880), (3795,2880) )
+   FILL (0,(0,4,255),0)
+  }
+  LINE  7478, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,3, (0,4,255)
+   POINTS ( (3844,2884), (3860,2844) )
+   FILL (0,(0,4,255),0)
+  }
+  TEXT  7479, -4, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 5,0, (49,101,255)
+   TEXT "ALDEC"
+   RECT (3873,2826,4149,2928)
+   MARGINS (1,1)
+   COLOR (0,4,255)
+   FONT (36,0,0,700,0,128,0,"Arial")
+  }
+  LINE  7480, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,3, (0,4,255)
+   POINTS ( (3786,2844), (3761,2907) )
+   FILL (0,(0,4,255),0)
+  }
+  BEZIER  7481, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,3, (0,4,255)
+   FILL (0,(0,4,255),0)
+   ORIGINS ( (3793,2870), (3826,2884), (3793,2895), (3793,2870) )
+   CONTROLS (( (3817,2870), (3825,2869)),( (3823,2895), (3820,2895)),( (3793,2887), (3793,2882)) )
+  }
+  LINE  7482, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,4, (0,4,255)
+   POINTS ( (3705,2891), (3793,2891) )
+   FILL (0,(0,4,255),0)
+  }
+  LINE  7483, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,4, (0,4,255)
+   POINTS ( (3712,2874), (3793,2874) )
+   FILL (0,(0,4,255),0)
+  }
+  LINE  7484, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (0,4,255)
+   POINTS ( (3898,2851), (3721,2851) )
+   FILL (0,(0,4,255),0)
+  }
+  LINE  7485, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (0,4,255)
+   POINTS ( (3896,2858), (3718,2858) )
+   FILL (0,(0,4,255),0)
+  }
+  LINE  7486, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (0,4,255)
+   POINTS ( (3910,2866), (3716,2866) )
+   FILL (0,(0,4,255),0)
+  }
+  LINE  7487, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (0,4,255)
+   POINTS ( (3912,2874), (3720,2874) )
+   FILL (0,(0,4,255),0)
+  }
+  LINE  7488, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (0,4,255)
+   POINTS ( (3825,2882), (3709,2882) )
+   FILL (0,(0,4,255),0)
+  }
+  LINE  7489, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (0,4,255)
+   POINTS ( (3890,2891), (3705,2891) )
+   FILL (0,(0,4,255),0)
+  }
+  LINE  7490, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (0,4,255)
+   POINTS ( (3883,2899), (3702,2899) )
+   FILL (0,(0,4,255),0)
+  }
+  TEXT  7491, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "The Design Verification Company"
+   RECT (3692,2916,4142,2951)
+   MARGINS (1,1)
+   COLOR (0,4,255)
+   FONT (12,0,0,700,1,128,0,"Arial")
+  }
+  LINE  7492, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (0,4,255)
+   POINTS ( (3877,2907), (3699,2907) )
+   FILL (0,(0,4,255),0)
+  }
+  LINE  7493, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (0,4,255)
+   POINTS ( (3900,2844), (3724,2844) )
+   FILL (0,(0,4,255),0)
+  }
+  TEXT  7494, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "Source:"
+   RECT (3338,3142,3476,3191)
+   ALIGN 6
+   MARGINS (16,8)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,0,0,"Arial")
+  }
+  TEXT  7495, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "$SOURCE"
+   RECT (3500,3151,3803,3186)
+   ALIGN 4
+   MARGINS (16,1)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,128,0,"Arial")
+  }
+  LINE  7496, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (3340,3080), (4200,3080) )
+   FILL (1,(0,0,0),0)
+  }
+  LINE  7497, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 0,1, (128,128,128)
+   POINTS ( (3340,3140), (4200,3140) )
+   FILL (1,(0,0,0),0)
+  }
+ }
+ 
+}
+

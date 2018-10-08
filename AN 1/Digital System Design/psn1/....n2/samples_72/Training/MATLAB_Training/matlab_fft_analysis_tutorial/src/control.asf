@@ -1,0 +1,82 @@
+VERSION=1.19
+HEADER
+FILE="control.asf"
+FID=3b3c3692
+LANGUAGE=VHDL
+ENTITY="control"
+ARCHITECTURE="control"
+FREEOID=65
+"LIBRARIES=library IEEE;\nuse IEEE.std_logic_1164.all;\nuse IEEE.std_logic_arith.all;\nuse IEEE.std_logic_unsigned.all;\n"
+MULTIPLEARCHSTATUS=FALSE
+SYNTHESISATTRIBUTES=TRUE
+HEADER_PARAM="AUTHOR,"
+HEADER_PARAM="COMPANY,"
+HEADER_PARAM="CREATIONDATE,"
+HEADER_PARAM="TITLE,No Title"
+END
+BUNDLES
+B T "Declarations" 0,0,255 0 0 1 255,255,255 0 2812 0 0000 0 "Arial" 0
+B T "Conditions" 236,0,236 0 0 0 255,255,255 0 2812 0 0110 0 "Arial" 0
+B F "States" 0,0,0 0 0 1 0,255,0 1 3527 1480 0000 0 "Arial" 0
+B T "Actions" 0,0,0 0 0 1 255,255,255 0 2812 0 0000 0 "Arial" 0
+B T "Labels" 0,0,0 0 0 0 255,255,255 0 2812 0 0000 0 "Arial" 0
+B L "Transitions" 0,0,0 0 0 1 0,0,0 1 3527 1480 0000 0 "Arial" 0
+B F "Ports" 0,0,0 0 0 1 0,255,255 1 3527 1480 0000 0 "Arial" 0
+B L "Errors" 255,0,0 0 3 1 255,255,255 1 3527 1480 0000 0 "Arial" 0
+B T "State Labels" 0,0,0 0 0 0 255,255,255 0 2812 0 0000 0 "Arial" 4
+B F "Current State" 255,255,0 0 0 1 255,255,0 1 3527 1480 0000 0 "Arial" 0
+B T "Comments" 157,157,157 0 0 1 255,255,255 0 2812 0 0000 0 "Arial" 0
+B L "Info" 0,255,0 0 3 1 255,255,255 1 3527 1480 0000 0 "Arial" 0
+B F "Junction" 0,0,0 0 0 1 255,0,0 1 3527 1480 0000 0 "Arial" 0
+B F "Initial State Indicator" 0,0,0 0 0 1 240,140,40 1 3527 1480 0000 0 "Arial" 0
+END
+INSTHEADER 1
+PAGE 0,0 215900,279400
+MARGINS 12700,12700 12700,12700
+END
+OBJECTS
+L 15 14 0 TEXT "Labels" | 24524,236400 1 0 0 "inputbusy"
+I 14 0 0 Builtin InPort | 18024,236400 "" ""
+L 13 12 0 TEXT "Labels" | 24524,242400 1 0 0 "Addr[2*STAGE-1:0]"
+I 12 0 128 Builtin InPort | 18024,242400 "" ""
+L 11 10 0 TEXT "Labels" | 24524,248400 1 0 0 "clk"
+I 10 0 1 Builtin InPort | 18024,248400 "" ""
+L 9 8 0 TEXT "Labels" | 24524,254400 1 0 0 "ce"
+I 8 0 256 Builtin InPort | 18024,254400 "" ""
+L 7 6 0 TEXT "Labels" | 17592,213863 1 0 0 "Sreg0"
+F 6 0 536870912 10 8 "" 0 RECT 0,0,0 0 0 1 255,255,255 0 | 15276,15381 200494,216706
+A 5 0 1 TEXT "Actions" | 14732,263876 1 0 0 "-- diagram ACTION"
+G 1 0 0 TEXT 0,0,0 0 0 0 255,255,255 0 3527 1480 0000 0 "Arial" 0 | 97950,263700 1 0 0 "Entity: control\nArchitecture: control"
+S 31 6 8192 ELLIPSE "States" | 85620,155292 6500 6500
+L 30 31 0 TEXT "State Labels" | 85620,155292 1 0 0 "S3"
+S 29 6 4096 ELLIPSE "States" | 146608,155924 6500 6500
+L 28 29 0 TEXT "State Labels" | 146608,155924 1 0 0 "S2"
+S 27 6 0 ELLIPSE "States" | 116588,185944 6500 6500
+L 26 27 0 TEXT "State Labels" | 116588,185944 1 0 0 "S1"
+L 19 18 0 TEXT "Labels" | 70608,254400 1 0 0 "addr_out[2*STAGE-1:0]"
+I 18 0 128 Builtin OutPort | 64108,254400 "" ""
+L 17 16 0 TEXT "Labels" | 24524,230400 1 0 0 "outdataen"
+I 16 0 0 Builtin InPort | 18024,230400 "" ""
+I 35 0 642 Builtin Signal | 153200,240276 "(others => '0')" "std_logic_vector(2*STAGE-1 downto 0)" D
+L 34 35 0 TEXT "Labels" | 156200,240276 1 0 0 "count"
+I 40 0 0 Builtin InPort | 18000,224506 "" ""
+L 41 40 0 TEXT "Labels" | 24500,224506 1 0 0 "rst"
+L 43 44 0 TEXT "Labels" | 155884,254496 1 0 0 "STAGE=3"
+I 44 0 7 Builtin Constant | 152884,254496 "" I "" ""
+L 45 46 0 TEXT "Labels" | 156200,247544 1 0 0 "POINT=64"
+I 46 0 7 Builtin Constant | 153200,247544 "" I "" ""
+I 47 6 1024 Builtin Reset | 69504,204904
+W 48 6 0 47 27 BEZIER "Transitions" | 69504,204904 80722,200401 99348,192891 110566,188388
+C 49 48 0 TEXT "Conditions" | 84356,204588 1 0 0 "rst = '1'"
+A 51 27 4 TEXT "Actions" | 130492,191632 1 0 0 "count <= (others => '0');\naddr_out <= count;\noe <= '0';"
+W 52 6 0 27 29 BEZIER "Transitions" | 120799,180995 126961,175149 135593,166093 141755,160247
+C 54 52 0 TEXT "Conditions" | 132072,176464 1 0 0 "outdataen = '1'"
+A 55 29 4 TEXT "Actions" | 158300,159400 1 0 0 "--count <= (others => '1');\naddr_out <= addr;"
+W 58 6 0 29 31 BEZIER "Transitions" | 140112,155713 126287,155792 105944,155307 92119,155386
+C 59 58 0 TEXT "Conditions" | 103948,161612 1 0 0 "outdataen = '0'"
+A 60 31 4 TEXT "Actions" | 97944,149920 1 0 0 "addr_out <= count;\ncount <= count+1;\noe <= '1';"
+W 61 6 0 31 27 BEZIER "Transitions" | 89640,160398 96829,166481 104662,175412 111851,181495
+C 62 61 0 TEXT "Conditions" | 15990,181480 1 0 0 "count = CONV_STD_LOGIC_VECTOR(POINT-1,(2*STAGE))"
+L 63 64 0 TEXT "Labels" | 69910,248416 1 0 0 "oe"
+I 64 0 0 Builtin OutPort | 63910,248416 "" ""
+END

@@ -1,0 +1,12 @@
+[Version]
+Version=7.2
+[Designs]
+sum_scaz=.\sum_scaz\sum_scaz.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+sum_scaz=1

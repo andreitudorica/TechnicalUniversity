@@ -1,0 +1,1 @@
+-w -s "d:\Incercari\VHDL\lift_ultimu\library.cfg"  -j "d:\Incercari\VHDL\lift_ultimu\lift\projlib.cfg"  -d "d:\Incercari\VHDL\lift_ultimu\lift\compile\"  -work lift -dbg -e 100 "d:\Incercari\VHDL\lift_ultimu\lift\src\main.vhd" 

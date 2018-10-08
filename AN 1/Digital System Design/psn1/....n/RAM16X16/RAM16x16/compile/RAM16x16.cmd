@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\RAM16X16\library.cfg"  -j "c:\My_Designs\RAM16X16\RAM16x16\projlib.cfg"  -d "c:\My_Designs\RAM16X16\RAM16x16\compile\"  -work RAM16x16 -dbg -e 100 "c:\My_Designs\RAM16X16\RAM16x16\src\sapte.vhd" 

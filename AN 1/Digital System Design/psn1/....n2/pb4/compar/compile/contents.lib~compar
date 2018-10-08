@@ -1,0 +1,11 @@
+139
+~E 1 "./src/compar.vhd" 6 compar
+~A 1 "./src/compar.vhd" 54 arhcompar
+~E 1 "./src/compar.vhd" 42 coincidenta
+~A 1 "./src/compar.vhd" 47 arh_coincidenta
+~E 1 "./src/compar.vhd" 11 poarta_sau
+~A 1 "./src/compar.vhd" 16 arh_sau
+~E 1 "./src/compar.vhd" 32 inversor
+~A 1 "./src/compar.vhd" 37 arh_inv
+~E 1 "./src/compar.vhd" 22 poarta_si
+~A 1 "./src/compar.vhd" 27 arh_si

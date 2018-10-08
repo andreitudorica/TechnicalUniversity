@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\d_tact_intern\library.cfg"  -j "c:\My_Designs\d_tact_intern\d_tact_intern\projlib.cfg"  -d "c:\My_Designs\d_tact_intern\d_tact_intern\compile\"  -work d_tact_intern -dbg -e 100 "c:\My_Designs\d_tact_intern\d_tact_intern\src\d_tact_intern.vhd" 

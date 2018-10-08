@@ -1,0 +1,15 @@
+[Version]
+Version=8.1
+[Designs]
+proiect=.\Proiect\Proiect.adf
+[Expand]
+proiect=1
+decodificatorbcd_zecimal=0
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Settings]
+Active=proiect

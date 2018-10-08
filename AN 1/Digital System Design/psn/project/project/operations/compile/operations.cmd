@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\project\library.cfg"  -j "c:\My_Designs\project\operations\projlib.cfg"  -d "c:\My_Designs\project\operations\compile\"  -work operations -dbg -e 100 "c:\My_Designs\project\operations\src\impartire.vhd" 

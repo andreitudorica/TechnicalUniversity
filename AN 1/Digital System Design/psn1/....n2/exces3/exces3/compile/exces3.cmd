@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\exces3\library.cfg"  -j "c:\My_Designs\exces3\exces3\projlib.cfg"  -d "c:\My_Designs\exces3\exces3\compile\"  -work exces3 -dbg -e 100 "c:\My_Designs\exces3\exces3\src\exces3.vhd" 

@@ -1,0 +1,10 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -work buffer8biti $DSN/src/buffer8biti.vhd
+# Compile...
+# File: C:\Documents and Settings\Carmen Zdroba\Desktop\New Folder (2)\buffer\buffer8biti\src\buffer8biti.vhd
+# Compile Entity "buffer8biti"
+# Compile Architecture "arhbuffer8biti" of Entity "buffer8biti"
+# Compile Entity "simulare"
+# Compile Architecture "arhsim" of Entity "simulare"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]

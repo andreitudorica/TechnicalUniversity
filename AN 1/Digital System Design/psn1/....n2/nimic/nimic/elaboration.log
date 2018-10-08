@@ -1,0 +1,16 @@
+elbread.dll ver. 1.0.5.375 Wed May 04 14:53:17 2011
+
+
+--------------------------------
+Entity  | Architecture | Library
+--------------------------------
+nimic   | arhnimic     | nimic
+and_b   | arhand_b     | nimic
+--------------------------------
+
+-------------------------
+Package         | Library
+-------------------------
+standard        | std
+std_logic_1164  | ieee
+-------------------------

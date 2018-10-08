@@ -1,0 +1,4 @@
+MESSAGE "File: c:\My_Designs\prim\prim\src\prim.vhd" 
+MESSAGE "Compile Entity "deplasare"" 
+MESSAGE "Compile Architecture "fct_depla" of Entity "deplasare"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]" 

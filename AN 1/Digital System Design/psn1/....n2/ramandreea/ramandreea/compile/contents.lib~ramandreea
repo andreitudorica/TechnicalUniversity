@@ -1,0 +1,3 @@
+10
+~E 1 "./src/ramandreea.vhd" 6 ram
+~A 1 "./src/ramandreea.vhd" 15 architecture_ram

@@ -1,0 +1,4 @@
+MESSAGE "File: c:\My_Designs\Colocviu2\9\a9\src\a9.vhd" 
+MESSAGE "Compile Entity "a9"" 
+MESSAGE "Compile Architecture "arhitectura_a9" of Entity "a9"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 

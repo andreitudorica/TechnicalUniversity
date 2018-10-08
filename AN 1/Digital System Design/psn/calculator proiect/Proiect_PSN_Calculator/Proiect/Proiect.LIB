@@ -1,0 +1,96 @@
+timestamp=1337016910409
+
+[afisoare]
+A/arch_afisoare=21|./src/afisoare.vhd|13|1*388314
+B/arch_afisoare=3*131778
+I=0*51733
+I/arch_afisoare=0*54633
+M=11|0|v147|1306128799090|./src/afisoare.vhd|0*51308*0x9b19faf457034db109d5e31afef33d4b7c4cb55f|0*51659*0x7bd7e13dc0415552f89596087806a8cf
+M/arch_afisoare=21|0|v147|1330538878285|./src/afisoare.vhd|0*51969*0xe8ac81b5bb830a4f70a5afa88bcdac9fd186c531|0*54542*0x7bd7e13dc0415552f89596087806a8cf
+R=./src/afisoare.vhd|6
+S/afisoare=40|0|2*8201
+
+[alu]
+A/alu_arh=A/ALU_arh 21|./src/ALU.vhd|14|1*384480
+B/alu_arh=3*126339
+I=0*69243
+I/alu_arh=I/ALU_arh 0*114760
+M=11|0|v147|1306152212123|./src/ALU.vhd|0*68770*0x364f85b5dafab4ed3ce525d0f52364092f264760|0*69179*0x7bd7e13dc0415552f89596087806a8cf
+M/alu_arh=M/ALU_arh 21|0|v147|1306162995368|./src/ALU.vhd|0*113607*0x2f0215b018a678633a44a9994f4d7c71dd10c9b8|0*114685*0x7bd7e13dc0415552f89596087806a8cf
+R=./src/ALU.vhd|6
+S/alu=S/ALU 40|0|2*5699
+
+[calculator]
+A/arh_calc=A/Arh_Calc 21|./src/calculator.vhd|15|1*406056
+B/arh_calc=3*144932
+H/arh_calc=0*141107
+I/arh_calc=I/Arh_Calc 0*151914
+M=11|0|v38|1336417586217|./src/calculator.vhd|0*128238*0x94455dd8ac583fea25f95d64efb50b46d1aa0c0f|0*128710*0xab87650576a395126dc296abb9b0e065
+M/arh_calc=M/Arh_Calc 21|0|v38|1337016910021|./src/calculator.vhd|0*150532*0x26a20ef821e5a699bdd6096666360db5068eab8a|0*151830*0xab87650576a395126dc296abb9b0e065
+R=./src/calculator.vhd|6
+V=0*125632
+
+[convertor]
+A/arch_convertor=21|./src/zecimal_bcd.vhd|11|1*226781
+B/arch_convertor=3*94840
+I=0*44625
+I/arch_convertor=0*61715
+M=11|0|v147|1306128526700|./src/zecimal_BCD.vhd|0*44249*0x465cb5749baebce3ee5bda9a99ea3c21dee71489|0*44547*0x7bd7e13dc0415552f89596087806a8cf
+M/arch_convertor=21|0|v147|1306152293852|./src/zecimal_BCD.vhd|0*60782*0xde4c58f11cbe6d604dd9613c4d21cc36520240f1|0*61619*0x7bd7e13dc0415552f89596087806a8cf
+R=./src/zecimal_BCD.vhd|6
+S/convertor=40|0|2*1979
+
+[div_frec]
+A/arch_div_frec=21|./src/div_frec.vhd|13|1*225005
+B/arch_div_frec=3*93663
+I=0*5633
+I/arch_div_frec=0*6312
+M=11|0|v147|1305995857964|./src/div_frec.vhd|0*5215*0x67c97ccdcfd731212c273aa77848b67d6c3781f8|0*5559*0x7bd7e13dc0415552f89596087806a8cf
+M/arch_div_frec=21|0|v147|1306152293738|./src/div_frec.vhd|0*5869*0xd420f1fa629ae01c3091a9c25c4f2d6b310a899a|0*6221*0x7bd7e13dc0415552f89596087806a8cf
+R=./src/div_frec.vhd|6
+S/div_frec=40|0|2*0
+
+[impartire]
+I=0*68186
+M=11|0|v147|1306147892775|./src/Impartire.vhd|0*67594*0xbaa1592adda8293bab175fc2e5ad1a093a248e6d|0*68110*0x7bd7e13dc0415552f89596087806a8cf
+R=./src/Impartire.vhd|7
+
+[pachet_divide]
+B/pachet_divide=3*113087
+E=1*235533
+I=0*26805
+I/pachet_divide=0*27818
+M=3|0|v147|1306000310174|./src/pachet_divide.vhd|0*26428*0x2006acc1f5e462705950064ce7dde3e16c5e2b58|0*26721*0x7bd7e13dc0415552f89596087806a8cf
+M/pachet_divide=4|0|v147|1306152294172|./src/pachet_divide.vhd|0*27046*0xe6a9308f36921f28d1b35975aacc5f5baf0304c6|0*27718*0x7bd7e13dc0415552f89596087806a8cf
+R=./src/pachet_divide.vhd|6
+
+[reg_mem]
+A/reg=21|./src/memory.vhd|13|1*228884
+B/reg=3*98706
+I=0*21668
+I/reg=0*58689
+M=11|0|v147|1305997404194|./src/Memory.vhd|0*21227*0x73443ab216dca6f2b7f7aa7a1270136dc2f1a5df|0*21597*0x7bd7e13dc0415552f89596087806a8cf
+M/reg=21|0|v147|1306152293944|./src/Memory.vhd|0*58325*0xb444ba184ecdb94cdc7d4c3de933eed85e5f5b27|0*58611*0x7bd7e13dc0415552f89596087806a8cf
+R=./src/Memory.vhd|5
+S/reg_mem=S/Reg_mem 40|0|2*3188
+
+[~A]
+ModifyID=1702
+Version=73
+
+[~MFT]
+0=611|0Proiect.mgf|151914|117666
+1=200|1Proiect.mgf|406056|390782
+2=4|2Proiect.mgf|8201|0
+3=170|3Proiect.mgf|144932|114212
+
+[~U]
+afisoare=11|0*51081||0x3
+alu=11|0*68483||0x3
+calculator=Calculator 11|0*124484|0*124796
+convertor=11|0*44074||0x3
+div_frec=11|0*4992||0x3
+impartire=11|0*67233|
+pachet_divide=3|0*26199|0*26279
+reg_mem=11|0*20923||0x3
+

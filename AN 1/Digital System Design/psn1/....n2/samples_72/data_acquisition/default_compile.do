@@ -1,0 +1,6 @@
+acom "$DSN/src/clk_gen.vhd"
+acom "$DSN/src/clk_div.vhd"
+acom "$DSN/src/clocks.bde"
+acom "$DSN/src/fifo.vhd"
+comp "$DSN/src/testbench/tester.dlm"
+acom "$DSN/src/test_environment.bde"

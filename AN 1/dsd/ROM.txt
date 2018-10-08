@@ -1,0 +1,60 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity RAM_MEMORY is
+ port(A_RAM: in BIT_VECTOR (3 downto 0);
+  CS_RAM: in BIT;
+  WE: in BIT;
+  D_RAM: inout BIT_VECTOR (7 downto 0)) ;
+end RAM_MEMORY ; 
+
+architecture A of RAM_MEMORY is
+type matrice is array (0 to 15) of BIT_VECTOR (7 downto 0);
+begin
+ process(CS_RAM, A_RAM)
+ variable VEC: matrice:=("00000000", "00000001", "00000010", "00000011", "00000100","00000101", "00000110","00000111",
+ "00001000","00001001","00001010","00001011","00001100","00001101","00001110","00001111");
+ begin
+  if CS_RAM='1' then
+   if WE='0' then 
+    case A_RAM is
+     when "0000" => D_RAM <=VEC(0);
+     when "0001" => D_RAM <=VEC(1); 
+     when "0010" => D_RAM <=VEC(2);
+     when "0011" => D_RAM <=VEC(3);
+     when "0100" => D_RAM <=VEC(4);
+     when "0101" => D_RAM <=VEC(5);
+     when "0110" => D_RAM <=VEC(6);
+     when "0111" => D_RAM <=VEC(7);
+     when "1000" => D_RAM <=VEC(8);
+     when "1001" => D_RAM <=VEC(9);
+     when "1010" => D_RAM <=VEC(10);
+     when "1011" => D_RAM <=VEC(11);
+     when "1100" => D_RAM <=VEC(12);
+     when "1101" => D_RAM <=VEC(13);
+     when "1110" => D_RAM <=VEC(14);
+     when "1111" => D_RAM <=VEC(15); 
+    end case;
+   else 
+    case A_RAM is
+     when "0000" => VEC(0):=D_RAM;
+     when "0001" => VEC(1):=D_RAM;
+     when "0010" => VEC(2):=D_RAM;
+     when "0011" => VEC(3):=D_RAM;
+     when "0100" => VEC(4):=D_RAM;
+     when "0101" => VEC(5):=D_RAM;
+     when "0110" => VEC(6):=D_RAM;
+     when "0111" => VEC(7):=D_RAM;
+     when "1000" => VEC(8):=D_RAM;
+     when "1001" => VEC(9):=D_RAM;
+     when "1010" => VEC(10):=D_RAM;
+     when "1011" => VEC(11):=D_RAM;
+     when "1100" => VEC(12):=D_RAM;
+     when "1101" => VEC(13):=D_RAM;
+     when "1110" => VEC(14):=D_RAM;
+     when "1111" => VEC(15):=D_RAM;
+    end case;  
+   end if;
+  end if;
+ end process; 
+end A;

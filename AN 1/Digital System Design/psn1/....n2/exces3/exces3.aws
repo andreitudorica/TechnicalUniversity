@@ -1,0 +1,12 @@
+[Version]
+Version=7.2
+[Designs]
+exces3=.\exces3\exces3.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+exces3=1

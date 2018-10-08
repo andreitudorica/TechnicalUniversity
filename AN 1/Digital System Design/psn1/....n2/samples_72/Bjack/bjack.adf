@@ -1,0 +1,76 @@
+[Project]
+Current config=compile
+VCS=0
+modified=10
+version=1
+Current Flow=Multivendor
+
+[Configurations]
+Generic=bjack
+compile=bjack
+
+[Library]
+bjack=.\bjack.LIB
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+FAMILY=
+SYNTH_TOOL=
+FLOWTOOLS=ONLY_IMPL
+IMPL_TOOL=
+EnableCC=1
+CCDIRECTORY=coverage
+CCHierarchy=1
+CCAllHierarchy=1
+UseCeloxica=0
+SYNTH_STATUS=NONE
+C_SERVER_SIM=NONE
+ON_SERVERFARM_SIM=0
+C_SERVER_SYNTH=NONE
+ON_SERVERFARM_SYNTH=0
+C_SERVER_IMPL=NONE
+ON_SERVERFARM_IMPL=0
+RUN_MODE_SYNTH=1
+REFRESH_FLOW=1
+CSYNTH_TOOL=<none>
+Celoxica=0
+PHYSSYNTH_TOOL=<none>
+PHYSSYNTH_STATUS=NONE
+
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+SortInfo=u
+
+[ORDER]
+autorefresh=0
+macro_path=
+macro_name=
+modified=1
+Synchronize=1
+
+[$LibMap$]
+bjack=.
+
+[Files]
+/Readme.txt=-1
+/Bjack_c.asf=-1
+/disp_units.vhd=-1
+/Gates.vhd=-1
+/bjack.vhd=-1
+/Testbench.vhd=-1
+/Functional.do=-1
+/BjackOnTclTk.tcl=-1
+
+[Files.Data]
+.\src\Readme.txt=Text File
+.\src\Bjack_c.asf=State Diagram
+.\src\disp_units.vhd=VHDL Source Code
+.\src\Gates.vhd=VHDL Source Code
+.\src\bjack.vhd=VHDL Source Code
+.\src\Testbench.vhd=VHDL Test Bench
+.\src\Functional.do=Macro
+.\src\BjackOnTclTk.tcl=Tcl Script
+

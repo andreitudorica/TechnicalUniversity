@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\descr_comp\library.cfg"  -j "c:\My_Designs\descr_comp\projlib.cfg"  -d "c:\My_Designs\descr_comp\compile\"  -work descr_comp -dbg -e 100 -o "c:\My_Designs\descr_comp\src\descr_comp.vhd" 

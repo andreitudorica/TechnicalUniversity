@@ -1,0 +1,36 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=a11
+
+[Library]
+a11=.\a11.LIB
+
+[$LibMap$]
+a11=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[Files]
+/a11.vhd=-1
+/2_biti.vhd=-1
+
+[Files.Data]
+.\src\a11.vhd=VHDL Source Code
+.\src\2_biti.vhd=VHDL Source Code
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=a11|arhitectura_a11|0  
+ShowHide=ShowTopLevel
+Selected=

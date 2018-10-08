@@ -1,0 +1,56 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -work sim_reg $DSN/src/sim_reg.vhd
+# Compile...
+# File: C:\Documents and Settings\Carmen Zdroba\Desktop\New Folder (2)\sim_reg\sim_reg\src\sim_reg.vhd
+# Compile Entity "sim_reg"
+# Compile Architecture "arhsim_reg" of Entity "sim_reg"
+# Compile Entity "simulare"
+# Compile Architecture "arh_sim" of Entity "simulare"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+asim simulare arh_sim
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using a Student Edition of Active-HDL. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: To receive an unrestricted version contact sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1615 kB (elbread=1031 elab2=302 kernel=281 sdf=0)
+#  3:52 PM, Tuesday, May 17, 2011
+#  Simulation has been initialized
+#  Selected Top-Level: simulare (arh_sim)
+run 10 ns
+# KERNEL: stopped at time: 10 ns
+run 10 ns
+# KERNEL: stopped at time: 20 ns
+run 10 ns
+# KERNEL: stopped at time: 30 ns
+run 10 ns
+# KERNEL: stopped at time: 40 ns
+run 10 ns
+# KERNEL: stopped at time: 50 ns
+run 10 ns
+# KERNEL: stopped at time: 60 ns
+run 10 ns
+# KERNEL: stopped at time: 70 ns
+run 10 ns
+# KERNEL: stopped at time: 80 ns
+run 10 ns
+# KERNEL: stopped at time: 90 ns
+run 10 ns
+# KERNEL: stopped at time: 100 ns
+run 10 ns
+# KERNEL: stopped at time: 110 ns
+run 10 ns
+# KERNEL: stopped at time: 120 ns
+run 10 ns
+# KERNEL: stopped at time: 130 ns
+#  Simulation has been stopped

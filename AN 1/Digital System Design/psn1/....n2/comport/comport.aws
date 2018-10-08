@@ -1,0 +1,12 @@
+[Version]
+Version=7.2
+[Designs]
+comport=.\comport\comport.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+comport=1

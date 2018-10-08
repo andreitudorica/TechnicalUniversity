@@ -1,0 +1,59 @@
+[Project]
+Current config=compile
+VCS=0
+modified=0
+version=1
+Current Flow=Multivendor
+
+[Configurations]
+Generic=generator
+compile=generator
+
+[Library]
+generator=.\generator.LIB
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+FAMILY=
+SYNTH_TOOL=
+FLOWTOOLS=ONLY_IMPL
+IMPL_TOOL=
+SYNTH_STATUS=NONE
+C_SERVER_SIM=NONE
+ON_SERVERFARM_SIM=0
+C_SERVER_SYNTH=NONE
+ON_SERVERFARM_SYNTH=0
+C_SERVER_IMPL=NONE
+ON_SERVERFARM_IMPL=0
+UseCeloxica=0
+REFRESH_FLOW=1
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
+[ORDER]
+autorefresh=0
+macro_path=
+macro_name=
+modified=1
+Synchronize=1
+
+[$LibMap$]
+generator=.
+
+[Files]
+/Readme.txt=-1
+/generator.asf=-1
+/testbench.vhd=-1
+/Functional.do=-1
+
+[Files.Data]
+.\src\Readme.txt=Text File
+.\src\generator.asf=State Diagram
+.\src\testbench.vhd=VHDL Test Bench
+.\src\Functional.do=Macro
+

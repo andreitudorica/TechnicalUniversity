@@ -1,0 +1,22 @@
+$WAVE4
+$RESOLUTION 1000
+I 1 "e#9#std_logicc9 UX01ZWLH-"
+$IN 1 1 "UUT/U3/ACKA"
+I 2 "a#28#std_logic_vector(3 downto 0)1 ricd3 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS OUT 2 2 4 7 0 CODE
+$SC 3-6
+$OUT 7 1 7 0 INTA
+$IN 8 1 7 0 Key_0
+$IN 9 1 11 0 "1"
+$IN +1 1 11 0 "2"
+$IN +1 1 11 0 "3"
+$IN +1 1 11 0 "4"
+$IN +1 1 11 0 "5"
+$IN +1 1 11 0 "6"
+$IN +1 1 11 0 "7"
+$IN +1 1 11 0 "8"
+$IN +1 1 11 0 "9"
+$IN +1 1 7 0 RESET
+$S +1 1 7 1 IN
+P 0 1-19 CS "0"
+$ENDWAVE

@@ -1,0 +1,1 @@
+-w -s "C:\My_Designs\examen\library.cfg"  -j "C:\My_Designs\examen\bariere_pb2_sub2\projlib.cfg"  -d "C:\My_Designs\examen\bariere_pb2_sub2\compile\"  -work bariere_pb2_sub2 -dbg -e 100 "C:\My_Designs\examen\bariere_pb2_sub2\src\cale_ferata.vhd" 

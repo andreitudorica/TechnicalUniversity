@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1448974598 source:c:\users\andrei\desktop\scoala\cp\arbore\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

@@ -1,0 +1,1 @@
+-w -s "c:\My_Designs\secventa\library.cfg"  -j "c:\My_Designs\secventa\secventa\projlib.cfg"  -d "c:\My_Designs\secventa\secventa\compile\"  -work secventa -dbg -e 100 "c:\My_Designs\secventa\secventa\src\secventa.vhd" 

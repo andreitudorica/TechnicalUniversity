@@ -1,0 +1,22 @@
+elbread.dll ver. 1.0.5.375 Thu May 17 16:42:56 2012
+
+
+------------------------------------------
+Entity       | Architecture   | Library 
+------------------------------------------
+operations   | operatii       | operations
+adunare      | adding         | operations
+scadere      | substraction   | operations
+inmultire    | multiplication | operations
+impartire    | division       | operations
+multiplexor  | multiplexer    | operations
+------------------------------------------
+
+-----------------------------
+Package             | Library
+-----------------------------
+standard            | std
+std_logic_1164      | ieee
+std_logic_arith     | ieee
+std_logic_unsigned  | ieee
+-----------------------------

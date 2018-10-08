@@ -1,0 +1,115 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=vhdl_systemc_parameters
+
+[Library]
+vhdl_systemc_parameters=.\vhdl_systemc_parameters.LIB
+
+[$LibMap$]
+vhdl_systemc_parameters=.
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+SYNTH_TOOL=
+IMPL_TOOL=
+
+[Groups]
+systemc2vhdl=1
+systemc2vhdl\bit_vector=1
+systemc2vhdl\character=1
+systemc2vhdl\integer=1
+systemc2vhdl\real=1
+systemc2vhdl\std_logic_vector=1
+systemc2vhdl\string=1
+systemc2vhdl\user_defined_enumeration=1
+systemc2vhdl\user_defined_integer=1
+vhdl2systemc=1
+vhdl2systemc\integer=1
+vhdl2systemc\real=1
+vhdl2systemc\string=1
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/readme.txt=-1
+systemc2vhdl\bit_vector/runme.do=-1
+systemc2vhdl\bit_vector/systemc.cpp=-1
+systemc2vhdl\bit_vector/vhdl.vhd=-1
+systemc2vhdl\character/runme.do=-1
+systemc2vhdl\character/systemc.cpp=-1
+systemc2vhdl\character/vhdl.vhd=-1
+systemc2vhdl\integer/runme.do=-1
+systemc2vhdl\integer/systemc.cpp=-1
+systemc2vhdl\integer/vhdl.vhd=-1
+systemc2vhdl\real/runme.do=-1
+systemc2vhdl\real/systemc.cpp=-1
+systemc2vhdl\real/vhdl.vhd=-1
+systemc2vhdl\std_logic_vector/runme.do=-1
+systemc2vhdl\std_logic_vector/systemc.cpp=-1
+systemc2vhdl\std_logic_vector/vhdl.vhd=-1
+systemc2vhdl\string/runme.do=-1
+systemc2vhdl\string/systemc.cpp=-1
+systemc2vhdl\string/vhdl.vhd=-1
+systemc2vhdl\user_defined_enumeration/runme.do=-1
+systemc2vhdl\user_defined_enumeration/systemc.cpp=-1
+systemc2vhdl\user_defined_enumeration/vhdl.vhd=-1
+systemc2vhdl\user_defined_integer/runme.do=-1
+systemc2vhdl\user_defined_integer/systemc.cpp=-1
+systemc2vhdl\user_defined_integer/vhdl.vhd=-1
+vhdl2systemc\integer/runme.do=-1
+vhdl2systemc\integer/systemc.cpp=-1
+vhdl2systemc\integer/vhdl.vhd=-1
+vhdl2systemc\real/runme.do=-1
+vhdl2systemc\real/systemc.cpp=-1
+vhdl2systemc\real/vhdl.vhd=-1
+vhdl2systemc\string/runme.do=-1
+vhdl2systemc\string/systemc.cpp=-1
+vhdl2systemc\string/vhdl.vhd=-1
+
+[Files.Data]
+.\src\readme.txt=Text File
+.\src\systemc2vhdl\bit_vector\runme.do=Macro
+.\src\systemc2vhdl\bit_vector\systemc.cpp=C++ Source Code
+.\src\systemc2vhdl\bit_vector\vhdl.vhd=VHDL Source Code
+.\src\systemc2vhdl\character\runme.do=Macro
+.\src\systemc2vhdl\character\systemc.cpp=C++ Source Code
+.\src\systemc2vhdl\character\vhdl.vhd=VHDL Source Code
+.\src\systemc2vhdl\integer\runme.do=Macro
+.\src\systemc2vhdl\integer\systemc.cpp=C++ Source Code
+.\src\systemc2vhdl\integer\vhdl.vhd=VHDL Source Code
+.\src\systemc2vhdl\real\runme.do=Macro
+.\src\systemc2vhdl\real\systemc.cpp=C++ Source Code
+.\src\systemc2vhdl\real\vhdl.vhd=VHDL Source Code
+.\src\systemc2vhdl\std_logic_vector\runme.do=Macro
+.\src\systemc2vhdl\std_logic_vector\systemc.cpp=C++ Source Code
+.\src\systemc2vhdl\std_logic_vector\vhdl.vhd=VHDL Source Code
+.\src\systemc2vhdl\string\runme.do=Macro
+.\src\systemc2vhdl\string\systemc.cpp=C++ Source Code
+.\src\systemc2vhdl\string\vhdl.vhd=VHDL Source Code
+.\src\systemc2vhdl\user_defined_enumeration\runme.do=Macro
+.\src\systemc2vhdl\user_defined_enumeration\systemc.cpp=C++ Source Code
+.\src\systemc2vhdl\user_defined_enumeration\vhdl.vhd=VHDL Source Code
+.\src\systemc2vhdl\user_defined_integer\runme.do=Macro
+.\src\systemc2vhdl\user_defined_integer\systemc.cpp=C++ Source Code
+.\src\systemc2vhdl\user_defined_integer\vhdl.vhd=VHDL Source Code
+.\src\vhdl2systemc\integer\runme.do=Macro
+.\src\vhdl2systemc\integer\systemc.cpp=C++ Source Code
+.\src\vhdl2systemc\integer\vhdl.vhd=VHDL Source Code
+.\src\vhdl2systemc\real\runme.do=Macro
+.\src\vhdl2systemc\real\systemc.cpp=C++ Source Code
+.\src\vhdl2systemc\real\vhdl.vhd=VHDL Source Code
+.\src\vhdl2systemc\string\runme.do=Macro
+.\src\vhdl2systemc\string\systemc.cpp=C++ Source Code
+.\src\vhdl2systemc\string\vhdl.vhd=VHDL Source Code
+
